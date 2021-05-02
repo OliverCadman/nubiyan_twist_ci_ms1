@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 
-/* ----- Navbar ----- */
+/* ----- Font Style ----- */
 
 body {
     font-family: "Alatsi", sans-serif;
 }
 
-nav {
-    background-color: #fafafa00;
+/* ----- NavBar ----- */
+
+
+.navbar {
+    background-color: rgba(154, 208, 192, 0.678);
+
 }
 
 .navbar-brand img {
-    width: 170px;
-    height: 140px;
+    width: 120px;
+    height: 100px;
     margin-left: 20px;
 }
 
@@ -24,8 +28,14 @@ nav {
     padding: 0 40px;
 }
 
-.navbar-nav>li:hover {
+li:hover {
     color: orange;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: orange;
+    transition: 0.3s ease-in-out;
 }
 
 .dropdown:hover {
@@ -44,30 +54,34 @@ nav {
 
 .navbar-mobile-toggler {
     color: white;
-    font-size: 25px;
-    position: inherit;
+    font-size: 30px;
+
+
 }
-
-
 
 .navbar-toggler {
     border: none;
     outline: none;
 }
 
-/* ----- Hero Image/Carousel ----- */
+/* ----- Fixed Background Image ----- */
 
 .callout-container {
 
     height: 100vh;
-    max-width: 100%;
+    width: 100vw;
     background: url("../images/nt-kaleidescope.png") no-repeat bottom right fixed;
     background-size: cover;
-    background-position: center top;
     max-width: 100%;
-    max-height: 50%;
-
-
+    max-height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
 }
 
@@ -78,6 +92,23 @@ nav {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ----- Jumbotron ----- */
+
+.callout-jumbotron {
+    background-color: rgba(0, 0, 0, 0.144);
+    margin-top: 50px;
+}
+
+.callout-jumbotron h1 {
+    color: #f48826;
+    letter-spacing: 0.15em;
+    font-size: 4em;
+}
+
+.callout-jumbotron p {
+    color: #fafafa;
 }
 
 
@@ -93,8 +124,13 @@ nav {
 
 @media (max-width: 568px) {
 
+    .navbar-brand {
+        margin: 0;
+    }
+
     .navbar-brand img {
-        display: none;
+        width: 4.3rem;
+        height: 4rem;
     }
 
 }
