@@ -27,8 +27,9 @@
 <body>
 
     <!--Navigation Bar-->
-    <header>
-        <nav class="navbar navbar-expand-sm fixed-top">
+
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
                 <img src="assets/icons/nt-home-icon.png" alt="Clickable icon link to home page">
             </a>
@@ -37,7 +38,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navBarResponsive">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -61,20 +62,21 @@
                 </ul>
 
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
 
-    <!-- Hero Image/Carousel -->
+
+    <!-- Hero Image/Jumbotron -->
     <div class="container-fluid p-0">
         <article class="callout-container">
             <div class="opaque-overlay"></div>
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col-12">
                     <div class="jumbotron callout-jumbotron">
                         <section class="callout-section">
                             <h1 class="text-center text-uppercase"> Nubiyan Twist</h1>
-                            <p class="lead">"One of the UK's leading soulful collectives of the
+                            <p class="lead text-center">"One of the UK's leading soulful collectives of the
                                 current generation"
                             </p>
                         </section>
@@ -83,6 +85,8 @@
             </div>
         </article>
     </div>
+
+
     <!-- Testimonies -->
 
 
@@ -93,7 +97,27 @@
 
 
     <!-- Footer -->
-
+    <div class="container-fluid">
+        <div class="row text-center footer-section">
+            <div class="col-lg-4 earth-agency-icon">
+                <img src="assets/icons/earth-agency-icon.png" class="earth-agency-icon" alt="Booking Agent">
+            </div>
+            <div class="col-lg-4 strut-icon">
+                <img src="assets/icons/strut-icon.png" class="strut-icon" alt="Booking Agent">
+            </div>
+            <div class="col-lg-4 social">
+                <a href="https://www.facebook.com/NubiyanTwist/" target="_blank"><i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/nubiyantwist" target="_blank"><i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="https://www.twitter.com/Nubiyantwist" target="_blank"><i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.youtube.com/user/NubiyanTwist/featured" target="_blank"><i
+                        class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
 </body>
 
