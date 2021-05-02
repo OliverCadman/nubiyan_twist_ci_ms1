@@ -65,6 +65,18 @@ While the focus of the website should serve the needs of each of these criteria,
     4. As a venue owner, I want to easily navigate to the band's gig history, so I can see which venues they have played at in the past.
     5. As a venue owner, I want to see how many of their past shows have sold out, so I can be confident that my venue will be filled to capacity.
 
+## Wireframes
+
+[Home](assets/wireframes/homepage.pdf)
+
+
+
+
+# Features
+
+Each page features a responsive navigation bar, with a clickable logo icon positioned on the left (featured on desktop and tablet screen sizes, and hidden on
+mobile screen size). The font chosen for the navigation links is "Alatsi" from Google Fonts. This was chosen as it represents the font used on the album cover for Nubiyan Twist's latest release 'Freedom Fables', and so reinforces brand recognition.
+
 
 
 
