@@ -132,7 +132,7 @@ ul li a.active {
 /* ----- Footer ----- */
 
 .footer-section {
-    background-color: rgb(154, 208, 192);
+    background-color: rgb(92, 197, 166);
 
 }
 
@@ -235,6 +235,20 @@ ul li a.active {
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* ----- Footer ----- */
+
+    .social a {
+        font-size: 1.5em;
+        padding: 0.6em;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+
     }
 
 }
