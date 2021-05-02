@@ -33,6 +33,12 @@ li:hover {
     transition: 0.3s ease-in-out;
 }
 
+ul li a.active {
+    color: rgb(31, 31, 31);
+    text-decoration: 2px unset;
+
+}
+
 .navbar a:hover {
     color: orange;
     transition: 0.3s ease-in-out;
