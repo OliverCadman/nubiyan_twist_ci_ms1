@@ -10,7 +10,9 @@ body {
 
 
 .navbar {
-    background-color: rgba(154, 208, 192, 0.678);
+    background-color: rgb(154, 208, 192);
+    margin-bottom: 20px;
+
 
 }
 
@@ -25,7 +27,7 @@ body {
     font-size: 25px;
     letter-spacing: 2px;
     color: #fafafa;
-    padding: 0 40px;
+
 }
 
 li:hover {
@@ -53,18 +55,19 @@ ul li a.active {
 }
 
 .dropdown-menu {
-    background: none;
-    border: none;
+    background-color: rgb(117, 156, 145);
     color: #fafafa;
-    border: 2px solid white;
+    border: 1px solid #a0a0a0;
     border-radius: 5px;
     right: 0 !important;
     left: auto !important;
 }
 
+
 .dropdown-item:hover {
     background: none;
 }
+
 
 .navbar-mobile-toggler {
     color: white;
@@ -119,6 +122,7 @@ ul li a.active {
 
 .callout-jumbotron h1 {
     color: #f48826;
+    text-shadow: 1px rgb(209, 209, 209);
     letter-spacing: 0.15em;
     font-size: 4em;
 }
@@ -127,7 +131,76 @@ ul li a.active {
     color: #fafafa;
 }
 
+/* ----- Video Carousel ----- */
 
+.carousel-banner {
+    background: url("../images/carousel-banner.png") bottom no-repeat fixed;
+    background-size: cover;
+    text-transform: uppercase;
+
+}
+
+.carousel-header {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.video-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+/* ----- "For the Fans" Accordion Section ----- */
+
+.header-banner {
+    background: url("../images/carousel-banner.png") bottom no-repeat;
+
+
+}
+
+.header-banner button {
+    margin: 0 auto;
+}
+
+.accordion-container {
+    background: url("https://c8.alamy.com/comp/ENFAC1/filicinae-ferns-by-ernst-haeckel-1904-editorial-use-only-ENFAC1.jpg") no-repeat right top fixed;
+    background-size: cover;
+    padding: 50px;
+}
+
+#positioned-media-1 {
+    position: relative;
+    left: 150px;
+}
+
+#positioned-media-2 {
+    position: relative;
+    left: 250px;
+}
+
+.accordion-header {
+    color: #f48826;
+    text-shadow: 1px 2px 4px #141414;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.accordion-media {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+.accordion-video {
+    border: 3px solid orange;
+    border-radius: 5px;
+}
 
 /* ----- Footer ----- */
 
