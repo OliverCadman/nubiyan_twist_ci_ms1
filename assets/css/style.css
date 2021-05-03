@@ -159,8 +159,7 @@ ul li a.active {
 
 .header-banner {
     background: url("../images/carousel-banner.png") bottom no-repeat;
-
-
+    padding-bottom: 40px;
 }
 
 .header-banner button {
@@ -200,6 +199,16 @@ ul li a.active {
 .accordion-video {
     border: 3px solid orange;
     border-radius: 5px;
+}
+
+/* ----- Mailing List/Spotify Section */
+
+.mailing-spotify-section {
+    background-color: rgb(209, 209, 209);
+}
+
+.mailing-spotify-header {
+    padding-top: 40px;
 }
 
 /* ----- Footer ----- */
