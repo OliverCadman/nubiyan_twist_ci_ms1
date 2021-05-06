@@ -96,12 +96,11 @@ ul li a.active {
 
 /* ----- Fixed Background Image ----- */
 
-.callout-container {
+#hero-image {
 
-    height: 90vh;
+    height: 100vh;
     background: url("../images/nt-kaleidescope.png") no-repeat bottom fixed;
     background-size: cover;
-    max-width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -136,7 +135,7 @@ ul li a.active {
 .callout-jumbotron h2 {
     color: #f48826;
     text-shadow: rgb(209, 209, 209);
-    letter-spacing: 0.15em;
+    letter-spacing: 4px;
     font-size: 4em;
 }
 
@@ -147,7 +146,7 @@ ul li a.active {
 /* ----- Testimonies ----- */
 
 .testimonies-container {
-    background-color: #979797;
+    background-color: #0e0e0e;
     color: #fafafa;
     text-align: center;
     padding: 2.5em;
@@ -167,6 +166,10 @@ ul li a.active {
     right: 10px;
 }
 
+.testimonies-container p {
+    font-size: 20px;
+}
+
 .reviewer-header {
     text-transform: uppercase;
     font-size: 1.3em;
@@ -176,16 +179,18 @@ ul li a.active {
 /* ----- "For the Fans" Accordion Section ----- */
 
 .accordion-button {
-    font-size: 1.5em;
-
+    font-size: 1em;
 
 }
 
 
 .header-banner {
-    background: url("../images/carousel-banner.png") bottom no-repeat;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    background: url("../images/accordion-banner.png") bottom no-repeat;
+    background-color: #041E42;
+    background-size: contain;
+    padding-top: 100px;
+
+
 }
 
 
@@ -201,18 +206,16 @@ ul li a.active {
 
 .accordion-header {
     color: #fafafa;
-    margin-bottom: 1px;
-    margin-top: 50px
+
 }
 
 .accordion-dropdown {
-
     background: linear-gradient(#000853, #14205ace);
 }
 
 .accordion-media {
     margin-right: 5px;
-    height: 60vh;
+
 
 }
 
@@ -224,7 +227,7 @@ ul li a.active {
 
 .mailing-spotify-section {
 
-    padding: 4em;
+    padding: 4.8em;
     background: url("../images/nt-accordion-background(2).png") no-repeat fixed bottom;
     background-size: contain;
     color: #fafafa;
