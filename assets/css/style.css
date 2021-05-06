@@ -98,7 +98,7 @@ ul li a.active {
 
 #hero-image {
 
-    height: 100vh;
+    height: 95vh;
     background: url("../images/nt-kaleidescope.png") no-repeat bottom fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -155,7 +155,9 @@ ul li a.active {
 
 .testimonies-header {
     text-align: center;
+    font-size: 40px;
     text-transform: uppercase;
+    letter-spacing: 3px;
     margin-bottom: 40px;
     color: #f48826;
 
@@ -176,6 +178,11 @@ ul li a.active {
 
 }
 
+.quote-content {
+    padding-right: 0 30px;
+    padding-top: 30px;
+}
+
 /* ----- "For the Fans" Accordion Section ----- */
 
 .accordion-button {
@@ -185,10 +192,12 @@ ul li a.active {
 
 
 .header-banner {
-    background: url("../images/accordion-banner.png") bottom no-repeat;
+    background: url("../images/accordion-banner.png") no-repeat;
+
     background-color: #041E42;
     background-size: contain;
     padding-top: 100px;
+
 
 
 }
@@ -228,7 +237,7 @@ ul li a.active {
 .mailing-spotify-section {
 
     padding: 4.8em;
-    background: url("../images/nt-accordion-background(2).png") no-repeat fixed bottom;
+    background: url("../images/nt-accordion-background(2).png") no-repeat bottom fixed;
     background-size: contain;
     color: #fafafa;
 
@@ -243,6 +252,10 @@ ul li a.active {
     margin: 0 auto;
 } */
 
+.mail-icon {
+    position: relative;
+    right: 20px;
+}
 
 .mailing-spotify-header {
     color: #f48826;
