@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
-                <img src="assets/icons/nt-home-icon.png" alt="Clickable icon link to home page">
+                <img src="assets/icons/nt-home-icon.png" alt="Clickable logo. Links to home page">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
                 <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
@@ -42,7 +42,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navItemDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Shop</a>
-                        <div class="dropdown-menu" aria-labelledby="navItemDropdown" style="position:inline">
+                        <div class="dropdown-menu" aria-labelledby="navItemDropdown">
                             <a class="dropdown-item" href="musicshop.html">Records</a>
                             <a class="dropdown-item" href="clothingshop.html">Clothing/Prints</a>
                         </div>
@@ -59,52 +59,44 @@
 
 
     <!-- Hero Image/Jumbotron -->
-    <div class="container-fluid p-0">
-        <section class="callout-container">
+    <section class="callout-container">
+        <div class="container-fluid p-0">
             <div class="opaque-overlay"></div>
             <div class="row no-gutters">
                 <div class="col-12">
                     <div class="jumbotron callout-jumbotron">
-                        <section class="callout-section">
-                            <h1 class="text-center text-uppercase"> Nubiyan Twist</h1>
-                            <p class="lead text-center">"One of the UK's leading soulful collectives of the
-                                current generation"
-                            </p>
-                        </section>
+                        <h2 class="text-center text-uppercase"> Nubiyan Twist</h2>
+                        <p class="lead content-font text-center">"One of the UK's leading soulful collectives of the
+                            current generation"
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
 
+        </div>
+    </section>
 
     <!-- Testimonies -->
-    <div class="container padding">
+
+    <div class="container-fluid testimonies-container">
+        <h4 class="testimonies-header"><span class="testimonies-icon"><i class="fas fa-comments"></i></span>Testimonies
+        </h4>
         <div class="row">
             <div class="col-12">
-                <h1 class="testimonies-header">
-                    Testimonies
-                </h1>
+                <p class="content-font">"An explosive blend of cultural differences and styles"</p>
+                <h6 class="reviewer-header">Gigwise</h6>
+                <hr>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
-                <h6>Gilles Peterson</h6>
-            </div>
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
-                <h6>Gilles Peterson</h6>
-            </div>
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
-                <h6>Gilles Peterson</h6>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <p class="content-font">"A joyful escape into head-swinging afro-funk"</p>
+                    <h6 class="reviewer-header">Clash Magazine</h6>
+                </div>
+                <div class="col-md-6 col-sm-12 d-none d-md-block">
+                    <p class="content-font">"Nubiyan Twist’s collaborative shine continues to beam on Freedom Fables"
+                    </p>
+                    <h6 class="reviewer-header">Line of best fit</h6>
+                </div>
             </div>
         </div>
 
@@ -112,76 +104,69 @@
 
 
     <!-- Dropdown Container "for the fans" -->
+
     <article>
         <div class="container-fluid text-center p-0">
             <div class="container-fluid header-banner">
-                <button class="accordion mt-5 mb-6" data-toggle="collapse" data-target="#accordionDropdown"><span
-                        class="peace-icon"><i class="far fa-hand-peace"></span></i>For the
+                <span class="peace-icon"><i class="fab fa-angellist"></i></span>
+                <button class="btn accordion-button" data-toggle="collapse" data-target="#accordionDropdown">For
+                    the
                     Fans</button>
             </div>
             <div id="accordionDropdown" class="collapse">
-                <div class="container-fluid accordion-container">
+                <div class="container-fluid accordion-dropdown">
                     <div class="row">
                         <div class="col-12 accordion-header">
                             <h3>Fan Videos and Behind the Scenes</h3>
-                            <p><small>A selection of our favourite fan submissions, and some special behind-the-scenes
+                            <hr class="block-divider">
+                            <p class="content-font"><small>A selection of our favourite fan submissions, and some
+                                    special behind-the-scenes
                                     footage!</small></p>
+
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 accordion-media">
-                            <video src="assets/video/nt-instudio.mp4" alt="Video of Nubiyan Twist In Studio" controls
-                                width="400" class="accordion-video"></video>
-                        </div>
-                        <div class="col-md-4 col-sm-12 accordion-media">
-                            <video src="assets/video/nt-parkour.mp4"
-                                alt="Fan submission, parkour video to Nubiyan Twist song" controls width="300"
-                                height="300" class="accordion-video"></video>
-                        </div>
-                        <div class="col-md-2 col-sm-12 accordion-media">
-                            <video src="assets/video/nt-basscover.mp4"
-                                alt="Fan submission, bassist playing to Nubiyan Twist song" controls width="300"
+                    <div class="row accordion-media">
+                        <div class="col-12">
+                            <video src="assets/video/nt-basscover.mp4" controls width="300"
                                 class="accordion-video"></video>
                         </div>
-                        <div class="row">
-                            <div class="col-md-5 col-sm-12 ml-5 mt-4 accordion-media" id="positioned-media-1">
-                                <video src="assets/video/nt-dancer.mp4"
-                                    alt="Fan submission, dancer dancing to Nubiyan Twist song." controls width="300"
-                                    height="300" class="accordion-video"></video>
-                            </div>
-                            <div class="col-md-5 col-sm-12 ml-5 mt-4 accordion-media" id="positioned-media-2">
-                                <video src="assets/video/nt-instudio1.mp4" alt="Video of Nubiyan Twist in studio"
-                                    controls width="300" height="300" class="accordion-video"></video>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-    </article>
 
-    <!-- Mailing List/Spotify Player -->
-    <section class="mailing-spotify-section">
-        <div class="container-fluid mailing-spotify-container">
-            <div class="row text-center mailing-spotify-header">
-                <div class="col-md-4 col-sm-12">
-                    <h3>Sign up to our Mailing List</h3>
-                    <p>Win a signed copy of our album, and 2 Access-All-Area tickets to one of our shows!</p>
-                    <button class="btn  btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h4>Listen on Spotify</h4>
-                    <figure><img src="assets/icons/nubiyan-twist-spotify.jpg" alt="Nubiyan Twist Spotify Promo Image"
-                            style="width:50%"></figure>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <iframe src="https://open.spotify.com/embed/album/7dGOyxCI4QXNFxHEpgD4jt" width="300" height="380"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </div>
-    </section>
+    </article>
+
+    <!-- Mailing List/Spotify Player -->
+
+    <aside class="mailing-spotify-section  accordion-background">
+        <div class="container-fluid mailing-spotify-container">
+            <div class="row align-items-center text-center">
+                <div class="col-md-4 col-sm-12 mailing-cta">
+                    <h3 class="mailing-spotify-header">Join Us</h3>
+                    <p class="content-font">Win a signed copy of our album, and 2 Access-All-Area tickets to one of our
+                        shows!</p>
+                    <button class="btn btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up To Our Mailing
+                        List</button>
+                </div>
+                <div class="col-md-4 d-none d-md-block mailing-spotify-content">
+                    <figure><img src="assets/images/listen-on-spotify.png" alt="Nubiyan Twist Spotify Promo Banner"
+                            class="spotify-desktop-image"></figure>
+                </div>
+                <div class="spotify-mobile-banner d-md-none d-sm-block">
+                    <figure><img src="assets/images/spotify-leaderboard.jpg" alt="Nubiyan Twist Spotify Promo Banner"
+                            class="spotify-leaderboard"></figure>
+                </div>
+                <div class="col-md-4 col-sm-12 mailing-spotify-content">
+                    <iframe src=" https://open.spotify.com/embed/album/7dGOyxCI4QXNFxHEpgD4jt" width="300" height="80"
+                        allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+    </aside>
 
     <!-- Mailing List Modal Pop-up -->
+
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -209,6 +194,7 @@
     </div>
 
     <!-- Footer -->
+
     <div class="container-fluid">
         <div class="row text-center footer-section">
             <div class="col-lg-4 earth-agency-icon d-none d-md-block">
@@ -241,7 +227,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
 </body>
 
 </html>

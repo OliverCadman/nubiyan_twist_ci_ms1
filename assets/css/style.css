@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-/* ----- Font Style ----- */
+
+
+/* ----- Fonts ----- */
 
 body {
     font-family: "Alatsi", sans-serif;
+}
+
+.content-font {
+    font-family: "Alata", sans-serif;
 }
 
 /* ----- NavBar ----- */
@@ -13,8 +20,8 @@ body {
     background-color: rgb(154, 208, 192);
     margin-bottom: 20px;
 
-
 }
+
 
 .navbar-brand img {
     width: 120px;
@@ -22,27 +29,37 @@ body {
     margin-left: 20px;
 }
 
+.navbar a {
+    color: #0c0c0c;
+}
+
+
 .navbar-nav li {
 
-    font-size: 25px;
-    letter-spacing: 2px;
-    color: #fafafa;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0c0c0c;
+    padding: 0 2em;
+
 
 }
 
 li:hover {
-    color: orange;
+    color: #f48826;
     transition: 0.3s ease-in-out;
 }
 
 ul li a.active {
-    color: rgb(31, 31, 31);
-    text-decoration: 2px unset;
+    color: #af5500;
+
 
 }
 
 .navbar a:hover {
-    color: orange;
+    color: #f48826;
     transition: 0.3s ease-in-out;
 }
 
@@ -50,14 +67,10 @@ ul li a.active {
     cursor: pointer;
 }
 
-.navbar a {
-    color: #fafafa;
-}
-
 .dropdown-menu {
-    background-color: rgb(117, 156, 145);
+    background-color: rgb(154, 208, 192);
     color: #fafafa;
-    border: 1px solid #a0a0a0;
+    border: 2px solid black;
     border-radius: 5px;
     right: 0 !important;
     left: auto !important;
@@ -70,7 +83,7 @@ ul li a.active {
 
 
 .navbar-mobile-toggler {
-    color: white;
+    color: black;
     font-size: 30px;
 
 
@@ -85,11 +98,10 @@ ul li a.active {
 
 .callout-container {
 
-    height: 100vh;
+    height: 90vh;
     background: url("../images/nt-kaleidescope.png") no-repeat bottom fixed;
     background-size: cover;
     max-width: 100%;
-    max-height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -109,20 +121,21 @@ ul li a.active {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.747);
 
 }
 
 /* ----- Jumbotron ----- */
 
 .callout-jumbotron {
-    background-color: rgba(0, 0, 0, 0.144);
-    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: 65px;
 }
 
-.callout-jumbotron h1 {
+.callout-jumbotron h2 {
     color: #f48826;
-    text-shadow: 1px rgb(209, 209, 209);
+    text-shadow: rgb(209, 209, 209);
     letter-spacing: 0.15em;
     font-size: 4em;
 }
@@ -131,105 +144,149 @@ ul li a.active {
     color: #fafafa;
 }
 
-/* ----- Video Carousel ----- */
+/* ----- Testimonies ----- */
 
-.carousel-banner {
-    background: url("../images/carousel-banner.png") bottom no-repeat fixed;
-    background-size: cover;
+.testimonies-container {
+    background-color: #979797;
+    color: #fafafa;
+    text-align: center;
+    padding: 2.5em;
+
+}
+
+.testimonies-header {
+    text-align: center;
     text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #f48826;
 
 }
 
-.carousel-header {
-    padding-left: 20px;
-    font-weight: bold;
+.testimonies-icon {
+    position: relative;
+    right: 10px;
 }
 
-.video-overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+.reviewer-header {
+    text-transform: uppercase;
+    font-size: 1.3em;
 
 }
 
 /* ----- "For the Fans" Accordion Section ----- */
 
+.accordion-button {
+    font-size: 1.5em;
+
+
+}
+
+
 .header-banner {
     background: url("../images/carousel-banner.png") bottom no-repeat;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.header-banner button {
-    margin: 0 auto;
+
+
+.block-divider {
+    height: 5px;
+    width: 100px;
+    border: none;
+    background-color: white;
 }
 
-.accordion-container {
-    background: url("https://c8.alamy.com/comp/ENFAC1/filicinae-ferns-by-ernst-haeckel-1904-editorial-use-only-ENFAC1.jpg") no-repeat right top fixed;
-    background-size: cover;
-    padding: 50px;
-}
 
-#positioned-media-1 {
-    position: relative;
-    left: 150px;
-}
-
-#positioned-media-2 {
-    position: relative;
-    left: 250px;
-}
 
 .accordion-header {
-    color: #f48826;
-    text-shadow: 1px 2px 4px #141414;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    color: #fafafa;
+    margin-bottom: 1px;
+    margin-top: 50px
+}
+
+.accordion-dropdown {
+
+    background: linear-gradient(#000853, #14205ace);
 }
 
 .accordion-media {
-    display: inline-block;
     margin-right: 5px;
-    margin-bottom: 10px;
+    height: 60vh;
 
 }
 
 .accordion-video {
-    border: 3px solid orange;
     border-radius: 5px;
 }
 
 /* ----- Mailing List/Spotify Section */
 
 .mailing-spotify-section {
-    background-color: rgb(209, 209, 209);
+
+    padding: 4em;
+    background: url("../images/nt-accordion-background(2).png") no-repeat fixed bottom;
+    background-size: contain;
+    color: #fafafa;
+
 }
 
-.mailing-spotify-header {
-    padding-top: 40px;
+.mailing-spotify-container {
+    position: relative;
 }
+
+/* .mailing-spotify-content {
+    position: absolute;
+    margin: 0 auto;
+} */
+
+
+.mailing-spotify-header {
+    color: #f48826;
+    text-transform: uppercase;
+
+}
+
+.mailing-cta {
+    background: rgba(105, 158, 142, 0.596);
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.spotify-desktop-image {
+    position: relative;
+    height: 70px;
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+/* Spotify Player - Replaced depreciated
+   iframe properties with CSS */
+
+iframe {
+    border: none;
+    border-radius: 5px;
+}
+
 
 /* ----- Footer ----- */
 
 .footer-section {
-    background-color: rgb(92, 197, 166);
+    background-color: rgb(154, 208, 192);
 
 }
 
 .earth-agency-icon {
-    height: 50px;
-    display: inline;
-    margin: auto 0px;
+    height: 80px;
+    margin: auto 0;
 
 
 }
 
 .strut-icon {
-    height: 80px;
-    display: inline;
-    margin: auto 0px;
+    height: 100px;
+    margin: auto 0;
 }
 
 .social a {
@@ -279,17 +336,18 @@ ul li a.active {
 
 @media (max-width: 568px) {
 
+
     /* ----- Navbar ----- */
+
+
 
     .nav-link {
         font-size: 1rem;
-        display: inline;
+        text-align: center;
     }
 
-    .navbar {
-        background-color: transparent;
 
-    }
+
 
     .navbar-brand {
         margin: 0;
@@ -307,16 +365,41 @@ ul li a.active {
         background: none;
         border: none;
         color: #fafafa;
-        display: hidden;
     }
 
-    .opaque-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
+    /* ----- Accordion Section ----- */
+
+    .accordion-background {
+        background: url("../images/nt-accordion-background(2).png") no-repeat fixed;
+        background-size: cover;
+        background-position: 0% 0%;
+
+
+    }
+
+
+    /* ----- Mailing List / Spotify Section ----- */
+
+    .mailing-spotify-section {
+        background-color: #0c0c0c;
+        color: #fafafa;
+    }
+
+    .mailing-spotify-header {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        color: #f48826;
+
+    }
+
+
+    .spotify-mobile-banner {
+        margin: 30px 0;
+
+    }
+
+    .spotify-leaderboard {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
     }
 
     /* ----- Footer ----- */
@@ -338,7 +421,7 @@ ul li a.active {
 @media (min-width: 768px) {
 
 
-    .navbar-nav li {
+    .nab .navbar-nav li {
         padding: 0 15px;
         font-size: 1em;
     }
