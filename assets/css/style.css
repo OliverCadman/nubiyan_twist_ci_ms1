@@ -246,74 +246,26 @@ ul li a.active {
 
 }
 
-
-
-/* ----- "For the Fans" Accordion Section ----- */
-
-.accordion-button {
-    font-size: 1em;
-
-}
-
-
-.header-banner {
-    background: url("../images/accordion-banner.png") no-repeat;
-
-    background-color: #041E42;
-    background-size: contain;
-    padding-top: 100px;
-
-
-
-}
-
-
-
-.block-divider {
-    height: 5px;
-    width: 100px;
-    border: none;
-    background-color: white;
-}
-
-
-
-.accordion-header {
-    color: #fafafa;
-
-}
-
-.accordion-dropdown {
-    background: linear-gradient(#000853, #14205ace);
-}
-
-.accordion-media {
-    margin-right: 5px;
-
-
-}
-
-.accordion-video {
-    border-radius: 5px;
+.soweto-logo {
+    width: 100%;
 }
 
 /* ----- Mailing List/Spotify Section */
 
-.mailing-spotify-section {
+.mailing-spotify-container {
     background: url("../images/nt-accordion-background(3).png") no-repeat bottom fixed;
     background-size: contain;
+    background-color: #08172c;
     color: #fafafa;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
-.mailing-spotify-container {
-    position: relative;
-}
-
-/* .mailing-spotify-content {
-    position: absolute;
-    margin: 0 auto;
-} */
 
 .mail-icon {
     position: relative;
@@ -330,15 +282,31 @@ ul li a.active {
     background: rgba(105, 158, 142, 0.596);
     padding: 30px;
     border-radius: 3%;
+
+
+}
+
+.spotify-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .spotify-desktop-image {
-    position: relative;
+
     height: 70px;
     border-style: none;
     border-radius: 5px;
+    align-self: center;
+    margin: 0 auto;
+
+
 
 }
+
+
+
 
 /* Spotify Player - Replaced depreciated
    iframe properties with CSS */
@@ -353,13 +321,13 @@ iframe {
 
 .footer-section {
     background-color: rgb(154, 208, 192);
+    height: 80px;
+    overflow: hidden;
 
 }
 
 .earth-agency-icon {
-    height: 80px;
-    margin: auto 0;
-
+    height: 70px;
 
 }
 
@@ -369,7 +337,7 @@ iframe {
 }
 
 .social a {
-    font-size: 2.5em;
+    font-size: 2.3em;
     padding: 0.6em;
     text-decoration: none;
     display: inline-block;
@@ -448,12 +416,23 @@ iframe {
 
     /* ----- Album Promo Section ----- */
 
+    .testimonies-container {
+        padding-top: 30px;
+    }
 
-    #social-media-links {
-        display: inline;
-        list-style-type: none;
-        font-size: 10px;
-        padding: 0 20px;
+    .cta-listen {
+        margin-bottom: 40px;
+    }
+
+
+
+    #social-media-links li {
+        display: inline-block;
+        font-size: 2em;
+        letter-spacing: 1em;
+        padding: 0;
+
+
 
     }
 
@@ -504,6 +483,11 @@ iframe {
 
     /* ----- Mailing List / Spotify Section ----- */
 
+    .mailing-spotify-container {
+        height: 70vh;
+    }
+
+
     .mailing-spotify-section {
         background-color: #0c0c0c;
         color: #fafafa;
@@ -526,6 +510,23 @@ iframe {
         width: 100%;
     }
 
+    .mailing-cta {
+        padding-top: 0;
+        background: none;
+    }
+
+    .mailing-cta h3 {
+        padding: 0;
+        display: inline-block;
+    }
+
+
+
+    .spotify-player {
+
+        height: 80px;
+    }
+
     /* ----- Footer ----- */
 
     .social a {
@@ -545,7 +546,7 @@ iframe {
 @media (min-width: 768px) {
 
 
-    .nab .navbar-nav li {
+    .nav .navbar-nav li {
         padding: 0 15px;
         font-size: 1em;
     }
@@ -554,4 +555,11 @@ iframe {
         margin-left: 0 !important;
     }
 
+}
+
+@media (max-width: 575.98px) {
+
+    #cta-album {
+        padding: 0;
+    }
 }
