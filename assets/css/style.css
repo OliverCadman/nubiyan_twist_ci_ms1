@@ -53,14 +53,14 @@ li:hover {
 }
 
 ul li a.active {
-    color: #af5500;
+    color: #927975;
 
 
 }
 
 .navbar a:hover {
     color: #f48826;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .dropdown:hover {
@@ -143,30 +143,82 @@ ul li a.active {
     color: #fafafa;
 }
 
-/* ----- Testimonies ----- */
+/* ----- Album Promotion Section ----- */
+
 
 .testimonies-container {
-    background-color: #0e0e0e;
+    font-family: "Alata", sans-serif;
+    background-color: #DCB3AC;
     color: #fafafa;
     text-align: center;
-    padding: 2.5em;
+    padding: 6em 0;
 
 }
 
 .testimonies-header {
+
+
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 40px;
-    color: #f48826;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #131313;
 
 }
 
-.testimonies-icon {
-    position: relative;
-    right: 10px;
+
+
+
+#social-media-links li {
+    display: inline-block;
+    font-size: 3em;
+    padding: 0 50px;
+
 }
+
+#social-media-links li a span i {
+    color: rgb(70, 70, 70);
+}
+
+#social-media-links li a span i:hover {
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+#cta-album {
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    width: 100%;
+
+
+}
+
+#cta-album:hover {
+    text-decoration: none;
+}
+
+.cta-listen {
+
+    background-color: #131313;
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 0 !important;
+
+}
+
+.cta-listen:hover {
+
+    background-color: #dadada;
+    color: #131313;
+}
+
+
+
+
 
 .testimonies-container p {
     font-size: 20px;
@@ -182,6 +234,19 @@ ul li a.active {
     padding-right: 0 30px;
     padding-top: 30px;
 }
+
+#album-cover-image {
+
+    top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+
 
 /* ----- "For the Fans" Accordion Section ----- */
 
@@ -235,9 +300,7 @@ ul li a.active {
 /* ----- Mailing List/Spotify Section */
 
 .mailing-spotify-section {
-
-    padding: 4.8em;
-    background: url("../images/nt-accordion-background(2).png") no-repeat bottom fixed;
+    background: url("../images/nt-accordion-background(3).png") no-repeat bottom fixed;
     background-size: contain;
     color: #fafafa;
 
@@ -266,7 +329,7 @@ ul li a.active {
 .mailing-cta {
     background: rgba(105, 158, 142, 0.596);
     padding: 30px;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 .spotify-desktop-image {
@@ -383,15 +446,60 @@ iframe {
         color: #fafafa;
     }
 
-    /* ----- Accordion Section ----- */
+    /* ----- Album Promo Section ----- */
 
-    .accordion-background {
-        background: url("../images/nt-accordion-background(2).png") no-repeat fixed;
-        background-size: cover;
-        background-position: 0% 0%;
 
+    #social-media-links {
+        display: inline;
+        list-style-type: none;
+        font-size: 10px;
+        padding: 0 20px;
 
     }
+
+    .testimonies-header {
+
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 40px;
+        color: #131313;
+
+    }
+
+    .album-cover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #flex>.responsive-1 {
+        order: 2;
+    }
+
+    #flex>.responsive-2 {
+        order: 1;
+    }
+
+
+
+    .reviewer-header {
+        display: inline-block;
+    }
+
+    .testimonies-container p {
+        display: inline-block;
+        text-align: center;
+    }
+
+
 
 
     /* ----- Mailing List / Spotify Section ----- */
