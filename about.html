@@ -9,15 +9,6 @@
     <!-- Bootstrap CSS & jQuery CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -27,51 +18,72 @@
 <body>
 
     <!--Navigation Bar-->
-    <header>
-        <nav class="navbar navbar-expand-sm fixed-top">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">
-                    <img src="assets/icons/nt-home-icon.png" alt="Clickable icon link to home page">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
-                    <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navBarResponsive">
-                    <ul class="navbar-nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="liveshows.html">Live Shows</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navItemDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                            <div class="dropdown-menu" aria-labelledby="navItemDropdown">
-                                <a class="dropdown-item" href="musicshop.html">Records</a>
-                                <a class="dropdown-item" href="clothingshop.html">Clothing/Prints</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
 
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/icons/nt-home-icon.png" alt="Clickable icon link to home page">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
+                <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarResponsive">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="liveshows.html">Live Shows</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navItemDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Shop</a>
+                        <div class="dropdown-menu" aria-labelledby="navItemDropdown">
+                            <a class="dropdown-item" href="musicshop.html">Records</a>
+                            <a class="dropdown-item" href="clothingshop.html">Clothing/Prints</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="about-header">
+        <div id="container-fluid">
+            <div class="opaque-overlay"></div>
+            <div class="row no-gutters mr-4">
+                <div class="col-12">
+                    <h1>About</h1>
+                </div>
+                <div class="row justify-content-between no-gutters">
+                    <div class="col-6 float-right">
+                        <p><span class="quotation-mark">“</span>Versatility with deep soul… an elegant yet earthy
+                            hybrid of <span class="highlights">jazz</span>, <span class="highlights">UK soul</span> and
+                            <span class="highlights">highlife</span><span class="quotation-mark">”</span>
+                            (Uncut)</p>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <!-- Biography with Hero Image -->
-    <section>
-        <div id="page-header">
-            <h1>About</h1>
-            <p></p>
-        </div>
-        </div>
+
+    <!-- Biography -->
+    <section class=" bio-section">
+        <div class="container">
+
+            <div class="col-12">
+                <p>This is some content</p>
+            </div>
     </section>
+
     <!-- Featured Artists -->
     <section>
 
@@ -86,13 +98,13 @@
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 d-none d-md-block col-sm-12">
                     <div class="earth-agency-icon-flex">
                         <a href="https://strut.k7store.com/"><img src="assets/icons/earth-agency-icon.png"
                                 alt="Booking Agents Link" height="70" class="earth-agency-icon"></a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 d-none d-md-block ßcol-sm-12">
                     <div class="strut-icon">
                         <a href="https://earth-agency.com/"><img src="assets/icons/strut-icon.png"
                                 alt="Music Label Link" height="100"></a>
@@ -122,6 +134,16 @@
         </div>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

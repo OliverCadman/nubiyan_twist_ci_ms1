@@ -384,7 +384,52 @@ iframe {
 
 }
 
+/*------------------------------------------------------------------*/
 
+/* ------------------------- 'About' Page --------------------------*/
+
+/* Header */
+
+.about-header {
+    background: url("../images/about-background.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 110px;
+    width: 100%;
+
+}
+
+.about-header h1 {
+    text-transform: uppercase;
+    color: #f48826;
+    font-size: 4em;
+    float: right;
+
+}
+
+.about-header p {
+    font-family: 'Alata', sans-serif;
+    float: right;
+    clear: both;
+    color: #fafafa;
+}
+
+span.highlights {
+    font-family: 'Alatsi', sans-serif;
+    text-transform: uppercase;
+    color: #f48826;
+    font-size: 1.7em;
+}
+
+.quotation-mark {
+    font-size: 1.4em;
+}
+
+
+
+/* ------ Biography Section ------ */
+
+.bio-section {}
 
 
 
@@ -553,7 +598,29 @@ iframe {
 
     }
 
+    /*------------------------------------------------------------------*/
+
+    /* ------------------------- 'About' Page (min-width 568px) --------------------------*/
+
+    .about-header {
+        padding-top: 38px;
+
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
 
@@ -574,17 +641,4 @@ iframe {
     #cta-album {
         padding: 0;
     }
-}
-
-/*------------------------------------------------------------------*/
-
-/* ------------------------- 'About' Page --------------------------*/
-
-/* Header */
-
-#page-header {
-    font-family: "Alatsi", sans-serif;
-    font-size: 4em;
-    float: right;
-    padding-top: 110px;
 }
