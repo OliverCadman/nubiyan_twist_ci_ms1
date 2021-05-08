@@ -7,6 +7,7 @@
 
 body {
     font-family: "Alatsi", sans-serif;
+
 }
 
 .content-font {
@@ -19,6 +20,7 @@ body {
 .navbar {
     background-color: rgb(154, 208, 192);
     margin-bottom: 20px;
+    padding: 0;
 
 }
 
@@ -129,7 +131,7 @@ ul li a.active {
 .callout-jumbotron {
     background-color: rgba(0, 0, 0, 0);
     position: relative;
-    top: 65px;
+
 }
 
 .callout-jumbotron h2 {
@@ -319,58 +321,69 @@ iframe {
 
 /* ----- Footer ----- */
 
-.footer-section {
+#footer {
     background-color: rgb(154, 208, 192);
-    height: 80px;
-    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.earth-agency-icon-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
 
 }
 
 .earth-agency-icon {
-    height: 70px;
+    margin-top: 10px;
 
 }
+
+.footer-social-flex {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-social-icons li {
+    display: inline-block;
+}
+
 
 .strut-icon {
-    height: 100px;
-    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social a {
-    font-size: 2.3em;
-    padding: 0.6em;
+
+#footer-social-icons li a {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 2.5em;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    color: rgb(70, 70, 70);
 
 }
 
-.social a i:hover {
+#footer-social-icons li a i:hover {
     color: #292929;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+
 }
 
-.fa-facebook {
-    color: #3b5998;
-}
-
-.fa-twitter-square {
-    color: #108fbd;
-}
-
-.fa-instagram-square {
-    color: #9338b9;
-}
-
-.fa-youtube {
-    color: #bb0000;
-}
 
 
 
@@ -561,4 +574,17 @@ iframe {
     #cta-album {
         padding: 0;
     }
+}
+
+/*------------------------------------------------------------------*/
+
+/* ------------------------- 'About' Page --------------------------*/
+
+/* Header */
+
+#page-header {
+    font-family: "Alatsi", sans-serif;
+    font-size: 4em;
+    float: right;
+    padding-top: 110px;
 }
