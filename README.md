@@ -67,7 +67,9 @@ While the focus of the website should serve the needs of each of these criteria,
 
 ## Wireframes
 
-[Home](assets/wireframes/homepage.pdf)
+[Home](assets/wireframes/nt-homepage.pdf)
+
+[About](assets/wireframes/nt-about.pdf)
 
 
 
