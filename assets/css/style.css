@@ -697,6 +697,9 @@ iframe {
         height: 80px;
     }
 
+    #footer-social-icons {
+        margin-bottom: 0;
+    }
 
     footer #footer-social-icons li a {
         font-size: 1.2em;
