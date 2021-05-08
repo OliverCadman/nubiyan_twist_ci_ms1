@@ -40,11 +40,12 @@ body {
 
     font-family: 'Alata', sans-serif;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #0c0c0c;
     padding: 0 2em;
+    display: inline-block;
 
 
 }
@@ -324,9 +325,7 @@ iframe {
 #footer {
     background-color: rgb(154, 208, 192);
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 
 }
 
@@ -390,8 +389,8 @@ iframe {
 
 /* Header */
 
-.about-header {
-    background: url("../images/about-background.jpg") no-repeat fixed;
+.about-background {
+    background: url("../images/about-background.jpg") no-repeat right fixed;
     background-size: cover;
     height: 100vh;
     padding-top: 110px;
@@ -400,6 +399,8 @@ iframe {
 }
 
 .about-header h1 {
+
+    text-decoration: underline;
     text-transform: uppercase;
     color: #f48826;
     font-size: 4em;
@@ -414,7 +415,14 @@ iframe {
     color: #fafafa;
 }
 
-span.highlights {
+.header-quote {
+    font-size: 1.3em;
+
+    border-radius: 5%;
+    margin-top: 30px;
+}
+
+.highlights {
     font-family: 'Alatsi', sans-serif;
     text-transform: uppercase;
     color: #f48826;
@@ -422,7 +430,7 @@ span.highlights {
 }
 
 .quotation-mark {
-    font-size: 1.4em;
+    font-size: 2em;
 }
 
 
@@ -458,28 +466,34 @@ span.highlights {
         margin: 0;
     }
 
+
     .navbar-brand img {
         display: none;
     }
+
 
     .navbar-nav li {
         padding-left: 0;
     }
 
+
     .dropdown-menu {
         background: none;
         border: none;
         color: #fafafa;
+
     }
 
     /* ----- Album Promo Section ----- */
 
     .testimonies-container {
         padding-top: 30px;
+
     }
 
     .cta-listen {
         margin-bottom: 40px;
+
     }
 
 
@@ -489,8 +503,6 @@ span.highlights {
         font-size: 2em;
         letter-spacing: 1em;
         padding: 0;
-
-
 
     }
 
@@ -519,6 +531,7 @@ span.highlights {
 
     #flex>.responsive-1 {
         order: 2;
+
     }
 
     #flex>.responsive-2 {
@@ -586,9 +599,13 @@ span.highlights {
 
     /* ----- Footer ----- */
 
-    .social a {
-        font-size: 1.5em;
-        padding: 0.6em;
+    #footer-social-icons {
+        padding-left: 0;
+    }
+
+    footer #footer-social-icons li a {
+        font-size: 1.2em;
+        padding: 0 1em;
         text-decoration: none;
         display: inline-block;
         transition: all 0.35s ease-in-out;
@@ -602,8 +619,18 @@ span.highlights {
 
     /* ------------------------- 'About' Page (min-width 568px) --------------------------*/
 
-    .about-header {
-        padding-top: 38px;
+    .about-header h1 {
+
+        font-size: 3em;
+
+    }
+
+    .about-background {
+        background: url("../images/about-background.jpg") no-repeat right fixed;
+        background-size: cover;
+        height: 100vh;
+        padding-top: 110px;
+        width: 100%;
 
     }
 
@@ -613,32 +640,71 @@ span.highlights {
 
 
 
+@media (max-width: 768px) {
 
+    .navbar-nav li {
 
+        font-family: 'Alata', sans-serif;
+        font-weight: bold;
+        font-size: .8em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #0c0c0c;
 
-
-
-
-
-
-
-@media (min-width: 768px) {
-
-
-    .nav .navbar-nav li {
-        padding: 0 15px;
-        font-size: 1em;
     }
 
-    img {
-        margin-left: 0 !important;
+    .navbar-brand img {
+        width: 80px;
+        height: 70px;
+        margin-left: 20px;
     }
 
-}
 
-@media (max-width: 575.98px) {
+    /* ----- Mailing / Spotify Section ----- */
 
-    #cta-album {
-        padding: 0;
+    .mailing-spotify-container {
+        background: url("../images/nt-accordion-background(3).png") no-repeat bottom fixed;
+        background-size: contain;
+        background-color: #08172c;
+        color: #fafafa;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
     }
+
+    .mailing-spotify-container {
+
+        overflow: auto;
+    }
+
+
+    .mailing-cta {
+        background: rgba(255, 255, 255, 0.192);
+        margin-top: 6em;
+        border-radius: 3%;
+
+
+    }
+
+    .spotify-player {
+        height: 80px;
+    }
+
+
+    footer #footer-social-icons li a {
+        font-size: 2em;
+        padding: 0 2em;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+
+    }
+
 }
