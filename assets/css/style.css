@@ -465,16 +465,17 @@ iframe {
 
 }
 
+/* ----- Images of Album catalogue styled with two circle shapes with z-index ----- */
 
-.profile-card-container {
+.st-circle-container {
     margin-top: 100px;
 }
 
-.profile-card-outer {
+.st-circle-outer {
     margin-top: 100px;
-    width: 400px;
-    height: 400px;
-    background-color: srgb(70, 70, 70);
+    width: 300px;
+    height: 300px;
+    background-color: rgba(70, 70, 70);
     position: relative;
     border-radius: 50%;
     z-index: 3;
@@ -482,17 +483,106 @@ iframe {
     box-shadow: #131313;
 }
 
-.profile-card-inner {
+.st-circle-inner {
+    width: 250px;
+    height: 250px;
+    background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
+    border-radius: 50%;
+    background-size: contain;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
+}
+
+.ss-circle-container {
+    margin-top: 100px;
+}
+
+.ss-circle-outer {
+    margin-top: 100px;
     width: 300px;
     height: 300px;
-    background: url('../images/nt-background-1.jpeg') no-repeat bottom;
+    background-color: rgba(70, 70, 70);
+    position: relative;
+    border-radius: 50%;
+    z-index: 3;
+    margin: auto;
+    box-shadow: #131313;
+}
+
+.ss-circle-inner {
+    width: 250px;
+    height: 250px;
+    background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
     border-radius: 50%;
     background-size: cover;
     z-index: 10;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -150px 0px 0px -150px;
+    margin: -125px 0px 0px -125px;
+}
+
+.jr-circle-container {
+    margin-top: 100px;
+}
+
+.jr-circle-outer {
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(70, 70, 70);
+    position: relative;
+    border-radius: 50%;
+    z-index: 3;
+    margin: auto;
+    box-shadow: #131313;
+}
+
+.jr-circle-inner {
+    width: 250px;
+    height: 250px;
+    background: url('https://f4.bcbits.com/img/0018110379_0') no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
+}
+
+
+
+.ff-circle-container {
+    margin-top: 100px;
+}
+
+.ff-circle-outer {
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(70, 70, 70);
+    position: relative;
+    border-radius: 50%;
+    z-index: 3;
+    margin: auto;
+    box-shadow: #131313;
+}
+
+.ff-circle-inner {
+    width: 250px;
+    height: 250px;
+    background: url('../images/nt-background-1.jpeg') no-repeat bottom;
+    border-radius: 50%;
+    background-size: contain;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
 }
 
 .card-container {
@@ -690,7 +780,7 @@ iframe {
 
     /*------------------------------------------------------------------*/
 
-    /* ------------------------- 'About' Page (min-width 568px) --------------------------*/
+    /* ------------------------- 'About' Page (max-width 576px) --------------------------*/
 
     .about-header h1 {
 
@@ -706,10 +796,142 @@ iframe {
 
     }
 
-    /* ----- About the Band ----- */
 
-    .card {
-        width: s height: 50%;
+    /* ----- History ----- */
+
+    .profile-body {
+        text-align: center;
+    }
+
+    /* Clickable Images of Album covers in circular container layered with z-index */
+
+    .album-inline {
+        position: relative;
+    }
+
+
+    .st-circle-container {
+        margin-top: 100px;
+        position: absolute;
+
+    }
+
+    .st-circle-outer {
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        left: 20%;
+        top: 20%;
+        background-color: rgba(70, 70, 70);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+        box-shadow: #131313;
+    }
+
+    .st-circle-inner {
+        width: 90px;
+        height: 90px;
+        background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
+        border-radius: 50%;
+        background-size: contain;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -45px 0px 0px -45px;
+    }
+
+    .ss-circle-container {
+        margin-top: 100px;
+    }
+
+    .ss-circle-outer {
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        right: 20%;
+        bottom: 30%;
+        background-color: rgba(70, 70, 70);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+        box-shadow: #131313;
+    }
+
+    .ss-circle-inner {
+        width: 90px;
+        height: 90px;
+        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -45px 0px 0px -45px;
+    }
+
+    .jr-circle-container {
+        margin-top: 100px;
+    }
+
+    .jr-circle-outer {
+        margin-top: 100px;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(70, 70, 70);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+        box-shadow: #131313;
+    }
+
+    .jr-circle-inner {
+        width: 140px;
+        height: 140px;
+        background: url('https://f4.bcbits.com/img/0018110379_0') no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -70px 0px 0px -70px;
+    }
+
+
+
+    .ff-circle-container {
+        margin-top: 100px;
+    }
+
+    .ff-circle-outer {
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(70, 70, 70);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+        box-shadow: #131313;
+    }
+
+    .ff-circle-inner {
+        width: 180px;
+        height: 180px;
+        background: url('../images/nt-background-1.jpeg') no-repeat bottom;
+        border-radius: 50%;
+        background-size: contain;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -90px 0px 0px -90px;
     }
 
 }
