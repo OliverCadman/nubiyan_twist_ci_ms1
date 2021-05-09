@@ -36,7 +36,6 @@ body {
     background-color: rgb(154, 208, 192);
     margin-bottom: 20px;
     padding: 0;
-
 }
 
 
@@ -61,8 +60,6 @@ body {
     color: #0c0c0c;
     padding: 0 2em;
     display: inline-block;
-
-
 }
 
 li:hover {
@@ -72,8 +69,6 @@ li:hover {
 
 ul li a.active {
     color: #927975;
-
-
 }
 
 .navbar a:hover {
@@ -103,8 +98,6 @@ ul li a.active {
 .navbar-mobile-toggler {
     color: black;
     font-size: 30px;
-
-
 }
 
 .navbar-toggler {
@@ -127,7 +120,6 @@ ul li a.active {
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
 .opaque-overlay {
@@ -139,7 +131,6 @@ ul li a.active {
     padding: 0;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.747);
-
 }
 
 /* ----- Jumbotron ----- */
@@ -147,12 +138,10 @@ ul li a.active {
 .callout-jumbotron {
     background-color: rgba(0, 0, 0, 0);
     position: relative;
-
 }
 
 .callout-jumbotron h2 {
     color: #f48826;
-    text-shadow: rgb(209, 209, 209);
     letter-spacing: 4px;
     font-size: 4em;
 }
@@ -174,8 +163,6 @@ ul li a.active {
 }
 
 .testimonies-header {
-
-
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -183,7 +170,6 @@ ul li a.active {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #131313;
-
 }
 
 
@@ -193,7 +179,6 @@ ul li a.active {
     display: inline-block;
     font-size: 3em;
     padding: 0 50px;
-
 }
 
 #social-media-links li a span i {
@@ -225,7 +210,6 @@ ul li a.active {
     text-decoration: none;
     font-size: 40px;
     border-radius: 0 !important;
-
 }
 
 .cta-listen:hover {
@@ -233,9 +217,6 @@ ul li a.active {
     background-color: #dadada;
     color: #131313;
 }
-
-
-
 
 
 .testimonies-container p {
@@ -249,7 +230,6 @@ ul li a.active {
 }
 
 .quote-content {
-    padding-right: 0 30px;
     padding-top: 30px;
 }
 
@@ -260,8 +240,6 @@ ul li a.active {
     margin: auto;
     height: 100%;
     width: 100%;
-
-
 }
 
 .soweto-logo {
@@ -281,7 +259,6 @@ ul li a.active {
     align-items: center;
     justify-content: center;
 
-
 }
 
 
@@ -293,22 +270,18 @@ ul li a.active {
 .mailing-spotify-header {
     color: #f48826;
     text-transform: uppercase;
-
 }
 
 .mailing-cta {
     background: rgba(105, 158, 142, 0.596);
     padding: 30px;
     border-radius: 3%;
-
-
 }
 
 .spotify-badge {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .spotify-desktop-image {
@@ -318,12 +291,7 @@ ul li a.active {
     border-radius: 5px;
     align-self: center;
     margin: 0 auto;
-
-
-
 }
-
-
 
 
 /* Spotify Player - Replaced depreciated
@@ -334,43 +302,22 @@ iframe {
     border-radius: 5px;
 }
 
-
 /* ----- Footer ----- */
 
 #footer {
     background-color: rgb(154, 208, 192);
-    width: 100%;
-
-
 }
-
-
 
 .earth-agency-icon-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-
-
 }
 
 .earth-agency-icon {
     margin-top: 10px;
-
 }
-
-.footer-social-flex {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#footer-social-icons li {
-    display: inline-block;
-}
-
 
 .strut-icon {
     display: flex;
@@ -378,15 +325,20 @@ iframe {
     align-items: center;
 }
 
+#footer-social-icons {
+    margin-top: 20px;
+}
+
+#footer-social-icons li {
+    display: inline-block;
+}
 
 #footer-social-icons li a {
-    margin-top: 20px;
-    padding: 0 20px;
     font-size: 2.5em;
+    padding-left: 40px;
+    padding-right: 40px;
     text-decoration: none;
-    display: inline-block;
     color: rgb(70, 70, 70);
-
 }
 
 #footer-social-icons li a i:hover {
@@ -395,7 +347,6 @@ iframe {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-
 }
 
 /*------------------------------------------------------------------*/
@@ -410,17 +361,14 @@ iframe {
     height: 100vh;
     padding-top: 110px;
     width: 100%;
-
 }
 
 .about-header h1 {
-
     text-decoration: underline;
     text-transform: uppercase;
     color: #f48826;
     font-size: 4em;
     float: right;
-
 }
 
 .about-header p {
@@ -432,7 +380,6 @@ iframe {
 
 .header-quote {
     font-size: 1.3em;
-
     border-radius: 5%;
     margin-top: 30px;
 }
@@ -453,24 +400,31 @@ iframe {
 /* ------ Biography Section ------ */
 
 #about-band {
-
     background-color: #DCB3AC;
     min-height: 100vh;
-
-
 }
 
 .profile-body {
     font-family: "Alata", sans-serif;
-
-
 }
 
 /* ----- Images of Album catalogue styled with two circle shapes with z-index ----- */
 
 /* Displays images inline */
 
-.ss-st-display {
+#ss-st-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jr-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ff-display {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -490,7 +444,6 @@ iframe {
     border-radius: 50%;
     z-index: 3;
     margin: auto;
-    box-shadow: #131313;
 }
 
 .st-circle-inner {
@@ -522,7 +475,6 @@ iframe {
     border-radius: 50%;
     z-index: 3;
     margin: auto;
-    box-shadow: #131313;
 }
 
 .ss-circle-inner {
@@ -539,6 +491,22 @@ iframe {
     margin: -90px 0px 0px -90px;
 }
 
+.st-sa-cta p {
+    font-size: 1.6em;
+    color: #fafafa;
+    letter-spacing: 1px;
+}
+
+i.fa-angle-double-left {
+    margin-right: 10fpx;
+    color: black;
+}
+
+i.fa-angle-double-right {
+    margin-left: 10px;
+    color: black;
+}
+
 .jr-circle-container {
     margin-top: 100px;
 }
@@ -552,7 +520,7 @@ iframe {
     border-radius: 50%;
     z-index: 3;
     margin: auto;
-    box-shadow: #131313;
+
 }
 
 .jr-circle-inner {
@@ -583,7 +551,6 @@ iframe {
     border-radius: 50%;
     z-index: 3;
     margin: auto;
-    box-shadow: #131313;
 }
 
 .ff-circle-inner {
@@ -599,23 +566,17 @@ iframe {
     margin: -90px 0px 0px -90px;
 }
 
+
 .card-container {
     overflow: auto;
 }
 
-.card {
-    width: 20px;
-    height: 30px;
-    display: inline;
-}
 
 .card-header {
     font-size: 16px;
 }
 
-.card-body {
-    border-radius: 5%;
-}
+
 
 
 
@@ -629,62 +590,47 @@ iframe {
 
     /* ----- Navbar ----- */
 
-
-
     .nav-link {
         font-size: 1rem;
         text-align: center;
     }
 
-
-
-
     .navbar-brand {
         margin: 0;
     }
-
 
     .navbar-brand img {
         display: none;
     }
 
-
     .navbar-nav li {
         padding-left: 0;
     }
-
 
     .dropdown-menu {
         background: none;
         border: none;
         color: #fafafa;
-
     }
 
     /* ----- Album Promo Section ----- */
 
     .testimonies-container {
         padding-top: 30px;
-
     }
 
     .cta-listen {
         margin-bottom: 40px;
-
     }
-
-
 
     #social-media-links li {
         display: inline-block;
         font-size: 2em;
         letter-spacing: 1em;
         padding: 0;
-
     }
 
     .testimonies-header {
-
         position: relative;
         text-align: center;
         font-size: 20px;
@@ -692,30 +638,12 @@ iframe {
         letter-spacing: 3px;
         margin-bottom: 40px;
         color: #131313;
-
     }
 
     .album-cover {
         width: 300px;
         height: 300px;
     }
-
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #flex>.responsive-1 {
-        order: 2;
-
-    }
-
-    #flex>.responsive-2 {
-        order: 1;
-    }
-
-
 
     .reviewer-header {
         display: inline-block;
@@ -726,15 +654,12 @@ iframe {
         text-align: center;
     }
 
-
-
-
     /* ----- Mailing List / Spotify Section ----- */
 
     .mailing-spotify-container {
-        height: 70vh;
-    }
+        min-height: 100%;
 
+    }
 
     .mailing-spotify-section {
         background-color: #0c0c0c;
@@ -748,7 +673,6 @@ iframe {
 
     }
 
-
     .spotify-mobile-banner {
         margin: 30px 0;
 
@@ -758,17 +682,10 @@ iframe {
         width: 100%;
     }
 
-    .mailing-cta {
-        padding-top: 0;
-        background: none;
-    }
-
     .mailing-cta h3 {
         padding: 0;
         display: inline-block;
     }
-
-
 
     .spotify-player {
         height: 80px;
@@ -776,19 +693,16 @@ iframe {
 
     /* ----- Footer ----- */
 
-    #footer-social-icons {
-        padding-left: 0;
+    .footer-social-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+
     footer #footer-social-icons li a {
-        font-size: 1.2em;
-        padding: 0 1em;
+        font-size: 1em;
         text-decoration: none;
-        display: inline-block;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
 
     }
 
@@ -797,9 +711,7 @@ iframe {
     /* ------------------------- 'About' Page (max-width 576px) --------------------------*/
 
     .about-header h1 {
-
         font-size: 3em;
-
     }
 
     .about-background {
@@ -807,9 +719,7 @@ iframe {
         background-size: cover;
         height: 100vh;
         width: 100%;
-
     }
-
 
     /* ----- History ----- */
 
@@ -823,38 +733,37 @@ iframe {
         position: relative;
     }
 
+    #ss-st-display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .st-circle-container {
         margin-top: 100px;
         position: absolute;
-
     }
 
     .st-circle-outer {
         margin-top: 100px;
-        width: 100px;
-        height: 100px;
-        left: 20%;
-        top: 20%;
+        width: 80px;
+        height: 80px;
         background-color: rgba(70, 70, 70);
         position: relative;
         border-radius: 50%;
         z-index: 3;
         margin: auto;
-        box-shadow: #131313;
     }
 
     .st-circle-inner {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
         border-radius: 50%;
         background-size: contain;
         z-index: 10;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -45px 0px 0px -45px;
+        margin: -35px 0px 0px -35px;
     }
 
     .ss-circle-container {
@@ -863,21 +772,33 @@ iframe {
 
     .ss-circle-outer {
         margin-top: 100px;
-        width: 100px;
-        height: 100px;
-        right: 20%;
-        bottom: 30%;
+        width: 80px;
+        height: 80px;
         background-color: rgba(70, 70, 70);
         position: relative;
         border-radius: 50%;
         z-index: 3;
         margin: auto;
-        box-shadow: #131313;
+    }
+
+    .st-sa-cta p {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    i.fa-angle-double-left {
+        margin-right: 10px;
+        color: black;
+    }
+
+    i.fa-angle-double-right {
+        margin-left: 10px;
+        color: black;
     }
 
     .ss-circle-inner {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
         border-radius: 50%;
         background-size: cover;
@@ -885,7 +806,17 @@ iframe {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -45px 0px 0px -45px;
+        margin: -35px 0px 0px -35px;
+    }
+
+    i.fa-angle-double-left {
+        margin-right: 0;
+        color: black;
+    }
+
+    i.fa-angle-double-right {
+        margin-left: 0;
+        color: black;
     }
 
     .jr-circle-container {
@@ -901,7 +832,6 @@ iframe {
         border-radius: 50%;
         z-index: 3;
         margin: auto;
-        box-shadow: #131313;
     }
 
     .jr-circle-inner {
@@ -918,7 +848,6 @@ iframe {
     }
 
 
-
     .ff-circle-container {
         margin-top: 100px;
     }
@@ -932,7 +861,6 @@ iframe {
         border-radius: 50%;
         z-index: 3;
         margin: auto;
-        box-shadow: #131313;
     }
 
     .ff-circle-inner {
@@ -948,23 +876,23 @@ iframe {
         margin: -90px 0px 0px -90px;
     }
 
+    .card {
+        width: 320px !important;
+        margin-top: 50px;
+    }
+
 }
-
-
-
 
 
 @media (max-width: 768px) {
 
     .navbar-nav li {
-
         font-family: 'Alata', sans-serif;
         font-weight: bold;
         font-size: .8em;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #0c0c0c;
-
     }
 
     .navbar-brand img {
@@ -972,7 +900,6 @@ iframe {
         height: 70px;
         margin-left: 20px;
     }
-
 
     /* ----- Mailing / Spotify Section ----- */
 
@@ -986,42 +913,51 @@ iframe {
         display: flex;
         align-items: center;
         justify-content: center;
-
-
     }
 
     .mailing-spotify-container {
-
-        overflow: auto;
+        min-height: 100%;
     }
-
 
     .mailing-cta {
         background: rgba(255, 255, 255, 0.192);
         margin-top: 6em;
         border-radius: 3%;
-
-
     }
 
     .spotify-player {
         height: 80px;
     }
 
-    #footer-social-icons {
-        margin-bottom: 0;
+    .footer-social-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
     }
 
+
     footer #footer-social-icons li a {
-        font-size: 1.2em;
-        padding: 0 1em;
-        text-decoration: none;
-        display: inline-block;
+        font-size: 1.5em;
+        margin: 0 10px;
         transition: all 0.35s ease-in-out;
         -moz-transition: all 0.35s ease-in-out;
         -webkit-transition: all 0.35s ease-in-out;
         -o-transition: all 0.35s ease-in-out;
+    }
 
+
+    i.fa-angle-double-left {
+        margin-right: 10px;
+        color: black;
+    }
+
+    i.fa-angle-double-right {
+        margin-left: 10px;
+        color: black;
     }
 
 }
+
+/* -------------------------------------- */
+/* -------------- About Page -------------*/
