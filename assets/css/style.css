@@ -1,35 +1,15 @@
+/* ----- Fonts ----- */
+
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-
 html,
 body {
-    height: 100%;
+    min-height: 100%;
     margin: 0;
 }
 
-/* ----- Fonts ----- */
-
-body {
-    font-family: "Alatsi", sans-serif;
-    min-height: 100%;
-
-}
-
-.content-font {
-    font-family: "Alata", sans-serif;
-}
-
-/* ----- Block Divider ----- */
-
-.block-divider {
-    width: 50px;
-    height: 6px;
-    background-color: white;
-}
-
-
-/* ----- NavBar ----- */
+/* ----- Navigation Bar ----- */
 
 
 .navbar {
@@ -38,7 +18,6 @@ body {
     padding: 0;
 }
 
-
 .navbar-brand img {
     width: 120px;
     height: 100px;
@@ -46,20 +25,25 @@ body {
 }
 
 .navbar a {
+
     color: #0c0c0c;
 }
-
 
 .navbar-nav li {
 
     font-family: 'Alata', sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #0c0c0c;
     padding: 0 2em;
     display: inline-block;
+}
+
+.navbar a:hover {
+    color: #f48826;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 li:hover {
@@ -71,15 +55,6 @@ ul li a.active {
     color: #927975;
 }
 
-.navbar a:hover {
-    color: #f48826;
-    transition: 0.1s ease-in-out;
-}
-
-.dropdown:hover {
-    cursor: pointer;
-}
-
 .dropdown-menu {
     background-color: rgb(154, 208, 192);
     color: #fafafa;
@@ -89,11 +64,9 @@ ul li a.active {
     left: auto !important;
 }
 
-
 .dropdown-item:hover {
     background: none;
 }
-
 
 .navbar-mobile-toggler {
     color: black;
@@ -141,12 +114,14 @@ ul li a.active {
 }
 
 .callout-jumbotron h2 {
+    font-family: "Alatsi", sans-serif;
     color: #f48826;
     letter-spacing: 4px;
     font-size: 4em;
 }
 
 .callout-jumbotron p {
+    font-family: "Alata", sans-serif;
     color: #fafafa;
 }
 
@@ -172,9 +147,6 @@ ul li a.active {
     color: #131313;
 }
 
-
-
-
 #social-media-links li {
     display: inline-block;
     font-size: 3em;
@@ -185,18 +157,10 @@ ul li a.active {
     color: rgb(70, 70, 70);
 }
 
-#social-media-links li a span i:hover {
-    color: black;
-    transition: 0.3s ease-in-out;
-}
-
 #cta-album {
-    display: inline-block;
-    margin: 0 auto;
+
     padding-bottom: 60px;
     width: 100%;
-
-
 }
 
 #cta-album:hover {
@@ -218,14 +182,17 @@ ul li a.active {
     color: #131313;
 }
 
-
 .testimonies-container p {
     font-size: 20px;
+    color: #252525;
 }
 
 .reviewer-header {
+    color: #dddddd;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
 
 }
 
@@ -233,16 +200,11 @@ ul li a.active {
     padding-top: 30px;
 }
 
-#album-cover-image {
 
+#album-cover-image {
     top: 50px;
     padding-bottom: 50px;
-    margin: auto;
     height: 100%;
-    width: 100%;
-}
-
-.soweto-logo {
     width: 100%;
 }
 
@@ -255,21 +217,7 @@ ul li a.active {
     color: #fafafa;
     height: 80vh;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-
-
-.mail-icon {
-    position: relative;
-    right: 20px;
-}
-
-.mailing-spotify-header {
-    color: #f48826;
-    text-transform: uppercase;
 }
 
 .mailing-cta {
@@ -278,10 +226,25 @@ ul li a.active {
     border-radius: 3%;
 }
 
-.spotify-badge {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mail-icon {
+    position: relative;
+    right: 20px;
+}
+
+.mailing-cta h3 {
+    text-transform: uppercase;
+    font-family: "Alatsi", sans-serif;
+    color: #f48826;
+}
+
+.mailing-cta p,
+button {
+    font-family: "Alata", sans-serif;
+}
+
+.mailing-spotify-container iframe {
+    border: none;
+    border-radius: 5px;
 }
 
 .spotify-desktop-image {
@@ -291,15 +254,6 @@ ul li a.active {
     border-radius: 5px;
     align-self: center;
     margin: 0 auto;
-}
-
-
-/* Spotify Player - Replaced depreciated
-   iframe properties with CSS */
-
-iframe {
-    border: none;
-    border-radius: 5px;
 }
 
 /* ----- Footer ----- */
@@ -334,9 +288,8 @@ iframe {
 }
 
 #footer-social-icons li a {
-    font-size: 2.5em;
-    padding-left: 40px;
-    padding-right: 40px;
+    font-size: 2rem;
+    padding: 0 20px;
     text-decoration: none;
     color: rgb(70, 70, 70);
 }
@@ -408,6 +361,14 @@ iframe {
     font-family: "Alata", sans-serif;
 }
 
+.profile-header {
+    font-family: "Alatsi", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
 /* ----- Images of Album catalogue styled with two circle shapes with z-index ----- */
 
 /* Displays images inline */
@@ -439,7 +400,7 @@ iframe {
     margin-top: 100px;
     width: 200px;
     height: 200px;
-    background-color: rgba(70, 70, 70);
+    background-color: rgba(102, 102, 102);
     position: relative;
     border-radius: 50%;
     z-index: 3;
@@ -470,7 +431,7 @@ iframe {
     margin-top: 100px;
     width: 200px;
     height: 200px;
-    background-color: rgba(70, 70, 70);
+    background-color: rgb(102, 102, 102);
     position: relative;
     border-radius: 50%;
     z-index: 3;
@@ -491,14 +452,15 @@ iframe {
     margin: -90px 0px 0px -90px;
 }
 
-.st-sa-cta p {
-    font-size: 1.6em;
+.st-sa-cta {
+    font-family: "Alatsi", sans-serif;
+    font-size: 2rem;
     color: #fafafa;
     letter-spacing: 1px;
 }
 
 i.fa-angle-double-left {
-    margin-right: 10fpx;
+    margin-right: 10px;
     color: black;
 }
 
@@ -515,7 +477,7 @@ i.fa-angle-double-right {
     margin-top: 100px;
     width: 200px;
     height: 200px;
-    background-color: rgba(70, 70, 70);
+    background-color: rgb(102, 102, 102);
     position: relative;
     border-radius: 50%;
     z-index: 3;
@@ -546,7 +508,7 @@ i.fa-angle-double-right {
     margin-top: 100px;
     width: 200px;
     height: 200px;
-    background-color: rgba(70, 70, 70);
+    background-color: rgba(102, 102, 102);
     position: relative;
     border-radius: 50%;
     z-index: 3;
@@ -567,26 +529,12 @@ i.fa-angle-double-right {
 }
 
 
-.card-container {
-    overflow: auto;
+.card {
+    background-color: rgb(22, 22, 22);
+    color: #DCB3AC;
 }
 
-
-.card-header {
-    font-size: 16px;
-}
-
-
-
-
-
-
-
-
-/* Media Queries */
-
-@media (max-width: 576px) {
-
+@media screen and (max-width: 943px) {
 
     /* ----- Navbar ----- */
 
@@ -601,6 +549,7 @@ i.fa-angle-double-right {
 
     .navbar-brand img {
         display: none;
+
     }
 
     .navbar-nav li {
@@ -654,6 +603,11 @@ i.fa-angle-double-right {
         text-align: center;
     }
 
+    #feature-video {
+        width: 100%;
+        height: 100%;
+    }
+
     /* ----- Mailing List / Spotify Section ----- */
 
     .mailing-spotify-container {
@@ -661,9 +615,13 @@ i.fa-angle-double-right {
 
     }
 
+    .mailing-cta {
+        margin-bottom: 20px;
+    }
+
     .mailing-spotify-section {
         background-color: #0c0c0c;
-        color: #fafafa;
+
     }
 
     .mailing-spotify-header {
@@ -673,23 +631,11 @@ i.fa-angle-double-right {
 
     }
 
-    .spotify-mobile-banner {
-        margin: 30px 0;
-
-    }
-
     .spotify-leaderboard {
         width: 100%;
+        margin-bottom: 20px;
     }
 
-    .mailing-cta h3 {
-        padding: 0;
-        display: inline-block;
-    }
-
-    .spotify-player {
-        height: 80px;
-    }
 
     /* ----- Footer ----- */
 
@@ -708,7 +654,7 @@ i.fa-angle-double-right {
 
     /*------------------------------------------------------------------*/
 
-    /* ------------------------- 'About' Page (max-width 576px) --------------------------*/
+    /* ------------------------- 'About' Page (max-width 943px) --------------------------*/
 
     .about-header h1 {
         font-size: 3em;
@@ -781,21 +727,6 @@ i.fa-angle-double-right {
         margin: auto;
     }
 
-    .st-sa-cta p {
-        font-size: 1em;
-        letter-spacing: 1px;
-    }
-
-    i.fa-angle-double-left {
-        margin-right: 10px;
-        color: black;
-    }
-
-    i.fa-angle-double-right {
-        margin-left: 10px;
-        color: black;
-    }
-
     .ss-circle-inner {
         width: 70px;
         height: 70px;
@@ -809,15 +740,11 @@ i.fa-angle-double-right {
         margin: -35px 0px 0px -35px;
     }
 
-    i.fa-angle-double-left {
-        margin-right: 0;
-        color: black;
+    .st-sa-cta p {
+        font-size: .9rem;
+        letter-spacing: 1px;
     }
 
-    i.fa-angle-double-right {
-        margin-left: 0;
-        color: black;
-    }
 
     .jr-circle-container {
         margin-top: 100px;
@@ -874,6 +801,8 @@ i.fa-angle-double-right {
         top: 50%;
         left: 50%;
         margin: -90px 0px 0px -90px;
+
+
     }
 
     .card {
@@ -884,18 +813,25 @@ i.fa-angle-double-right {
 }
 
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 1200px) {
+
+    /* -------------------------- Home Page ---------------------------- */
+
+    /* ----- Navigation Bar ----- */
+
 
     .navbar-nav li {
         font-family: 'Alata', sans-serif;
         font-weight: bold;
-        font-size: .8em;
+        font-size: 1.3em;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #0c0c0c;
     }
 
     .navbar-brand img {
+        display: inline-block;
         width: 80px;
         height: 70px;
         margin-left: 20px;
@@ -903,26 +839,12 @@ i.fa-angle-double-right {
 
     /* ----- Mailing / Spotify Section ----- */
 
-    .mailing-spotify-container {
-        background: url("../images/nt-accordion-background(3).png") no-repeat bottom fixed;
-        background-size: contain;
-        background-color: #08172c;
-        color: #fafafa;
-        height: 60vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .mailing-spotify-container {
-        min-height: 100%;
-    }
 
     .mailing-cta {
-        background: rgba(255, 255, 255, 0.192);
-        margin-top: 6em;
-        border-radius: 3%;
+        background: transparent;
+        width: 100%;
+
     }
 
     .spotify-player {
@@ -938,7 +860,7 @@ i.fa-angle-double-right {
 
 
     footer #footer-social-icons li a {
-        font-size: 1.5em;
+        font-size: 2.5em;
         margin: 0 10px;
         transition: all 0.35s ease-in-out;
         -moz-transition: all 0.35s ease-in-out;
@@ -946,6 +868,10 @@ i.fa-angle-double-right {
         -o-transition: all 0.35s ease-in-out;
     }
 
+    /* ---------------------------- About Page ------------------------------ */
+    .st-sa-cta {
+        text-transform: uppercase;
+    }
 
     i.fa-angle-double-left {
         margin-right: 10px;
@@ -957,7 +883,73 @@ i.fa-angle-double-right {
         color: black;
     }
 
-}
+    .st-circle-outer {
+        margin-top: 100px;
+        width: 175px;
+        height: 175px;
+        background-color: rgba(70, 70, 70);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+    }
 
-/* -------------------------------------- */
-/* -------------- About Page -------------*/
+    .st-circle-inner {
+        width: 160px;
+        height: 160px;
+        background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
+        border-radius: 50%;
+        background-size: contain;
+        z-index: 10;
+        position: absolute;
+        margin: -80px 0px 0px -80px;
+    }
+
+    .ss-circle-container {
+        margin-top: 100px;
+    }
+
+    .ss-circle-outer {
+        margin-top: 100px;
+        width: 175px;
+        height: 175px;
+        background-color: rgba(70, 70, 70);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+    }
+
+    .ss-circle-inner {
+        width: 160px;
+        height: 160px;
+        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -80px 0px 0px -80px;
+    }
+
+    .jr-circle-outer {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .ff-circle-outer {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* ----- The Band ----- */
+
+    .card {
+        width: 100% !important;
+
+    }
+
+
+
+}
