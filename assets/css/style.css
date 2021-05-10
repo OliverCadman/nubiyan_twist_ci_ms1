@@ -534,6 +534,24 @@ i.fa-angle-double-right {
     color: #DCB3AC;
 }
 
+#vocals-container {
+    margin-bottom: 30px;
+}
+
+#horns-container {
+    margin-bottom: 30px;
+}
+
+#rhythm-container {
+    margin-bottom: 30px;
+}
+
+/* ----- Band Modals ----- */
+
+.modal-video {
+    width: 100%;
+}
+
 @media screen and (max-width: 943px) {
 
     /* ----- Navbar ----- */
@@ -947,8 +965,19 @@ i.fa-angle-double-right {
 
     .card {
         width: 100% !important;
+        text-align: center;
 
     }
+
+    /* #vocals-container {
+        padding: 50px;
+    } */
+
+    #horns-container {
+        padding: 50px;
+    }
+
+
 
 
 
