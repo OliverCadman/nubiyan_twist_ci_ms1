@@ -340,6 +340,7 @@ button {
 }
 
 .about-header h1 {
+    font-family: "Alatsi", sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
     color: #f48826;
@@ -375,9 +376,15 @@ button {
 
 /* ------ Biography Section ------ */
 
+
 #about-band {
     background-color: #DCB3AC;
     min-height: 100vh;
+}
+
+#about-band h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .profile-body {
@@ -421,8 +428,8 @@ button {
 
 .st-circle-outer {
     margin-top: 100px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: rgba(102, 102, 102);
     position: relative;
     border-radius: 50%;
@@ -431,8 +438,8 @@ button {
 }
 
 .st-circle-inner {
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
     left: 20%;
     top: 80%;
     background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
@@ -442,7 +449,7 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -90px 0px 0px -90px;
+    margin: -45px 0px 0px -45px;
 }
 
 .ss-circle-container {
@@ -452,8 +459,8 @@ button {
 
 .ss-circle-outer {
     margin-top: 100px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: rgb(102, 102, 102);
     position: relative;
     border-radius: 50%;
@@ -462,8 +469,8 @@ button {
 }
 
 .ss-circle-inner {
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
     right: 60%;
     background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
     border-radius: 50%;
@@ -472,25 +479,25 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -90px 0px 0px -90px;
+    margin: -45px 0px 0px -45px;
 }
 
 .st-sa-cta {
     font-family: "Alatsi", sans-serif;
-    font-size: 2rem;
+    font-size: .8rem;
     color: #fafafa;
     letter-spacing: 1px;
 }
 
 i.fa-angle-double-left {
-    margin-right: 10px;
-    font-size: 35px;
+    margin-right: 0;
+    font-size: .6rem;
     color: black;
 }
 
 i.fa-angle-double-right {
-    margin-left: 10px;
-    font-size: 35px;
+    margin-left: 0;
+    font-size: .6rem;
     color: black;
 }
 
@@ -612,6 +619,11 @@ i.fa-angle-double-right {
 
 @media (min-width: 768px) {
 
+
+    /* ----------------- Home Page --------------- */
+
+    /* ----- Navigation Bar ----- */
+
     .navbar-nav li {
         font-size: 1em;
         padding: 0 1em;
@@ -622,6 +634,8 @@ i.fa-angle-double-right {
         width: 100px;
         height: 90px;
     }
+
+    /* ----- Album Promotion Section ----- */
 
     .social-media-links li {
         display: inline-block;
@@ -642,6 +656,8 @@ i.fa-angle-double-right {
         letter-spacing: 2px;
 
     }
+
+    /* ----- Mailing/Spotify Player Section ----- */
 
     .mailing-spotify-container {
         background-position: 0% 100%;
@@ -680,15 +696,26 @@ i.fa-angle-double-right {
 
 @media (min-width: 992px) {
 
-    .navbar-nav li {
+    /* --------------------- Home Page ------------------- */
 
-        font-family: 'Alata', sans-serif;
+    /* ----- Navigation Bar ----- */
+
+    .navbar-nav li {
         font-size: 1.3em;
         letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #0c0c0c;
         padding: 0 2em;
-        display: inline-block;
+    }
+
+    /* ----- Album Promotion Section ----- */
+
+    .social-media-links li a span i:hover {
+        color: black;
+        transition: 0.3s ease-in-out;
+    }
+
+    .quote-content {
+        font-size: 1.5rem;
+        margin-top: 90px;
     }
 
     .feature-video {
@@ -696,4 +723,107 @@ i.fa-angle-double-right {
         max-height: 332px;
     }
 
+    /* ----- Mailing/Spotify Player Section ----- */
+
+    .mailing-cta {
+        width: 100%;
+        background-color: rgba(154, 208, 192, 0.288)
+    }
+
+    .spotify-desktop-image {
+        margin-top: 60px;
+    }
+
+    .spotify-player {
+        margin-top: 60px;
+    }
+
+    /* ----- Footer Section ----- */
+
+    .footer-social-icons {
+        margin-top: 25px;
+    }
+
+    .footer-social-icons li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .footer-social-icons li a {
+        font-size: 2.1rem;
+    }
+
+    /* ------------------------ About Page --------------------------- */
+
+    /* ------------- Band History Section -------------- */
+
+    #about-band h2 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    /* ----- Clickable Images of Album Covers ----- */
+
+    .st-circle-outer {
+        margin-top: 80px;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(102, 102, 102);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+    }
+
+    .st-circle-inner {
+        width: 80px;
+        height: 80px;
+        left: 20%;
+        top: 80%;
+        background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
+        border-radius: 50%;
+        background-size: contain;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0px 0px -40px;
+    }
+
+    .ss-circle-container {
+        margin-top: 100px;
+        position: absolute;
+    }
+
+    .ss-circle-outer {
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(102, 102, 102);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+    }
+
+    .ss-circle-inner {
+        width: 180px;
+        height: 180px;
+        right: 60%;
+        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -90px 0px 0px -90px;
+    }
+
+    .st-sa-cta {
+        font-family: "Alatsi", sans-serif;
+        font-size: 2rem;
+        color: #fafafa;
+        letter-spacing: 1px;
+    }
 }
