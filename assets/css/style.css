@@ -593,12 +593,17 @@ i.fa-angle-double-right {
     padding: 10px;
     text-align: center;
     margin: 0 auto;
+    height: 95%
+}
+
+.band-card {
+    margin-bottom: 15px;
 }
 
 .card button {
     background-color: #DCB3AC;
     color: black;
-    border: none;
+    border: 1px solid black;
     letter-spacing: 1px;
 }
 
