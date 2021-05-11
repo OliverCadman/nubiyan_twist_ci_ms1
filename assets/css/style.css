@@ -140,7 +140,7 @@ ul li a.active {
 
 .promo-header {
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-top: 30px;
@@ -194,7 +194,7 @@ ul li a.active {
 .reviewer-header {
     color: #dddddd;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
 
@@ -213,8 +213,8 @@ ul li a.active {
 }
 
 .feature-video {
-    width: 300px;
-    height: 166px;
+    max-width: 350px;
+    max-height: 194px;
 }
 
 .feature-video-1 {
@@ -228,16 +228,16 @@ ul li a.active {
     background-size: contain;
     background-color: #08172c;
     color: #fafafa;
-    height: 80vh;
+    height: 70vh;
     width: 100vw;
 
 }
 
 .mailing-cta {
-    background: rgba(105, 158, 142, 0.596);
+    background: rgba(105, 158, 142, 0.178);
     padding: 30px;
     border-radius: 3%;
-    width: 100%;
+    margin-bottom: 25px;
 }
 
 .mail-icon {
@@ -270,6 +270,14 @@ button {
     margin: 0 auto;
 }
 
+.spotify-leaderboard {
+    margin-bottom: 15px;
+}
+
+.spotify-player {
+    max-height: 80px;
+}
+
 /* ----- Footer ----- */
 
 .footer {
@@ -294,11 +302,12 @@ button {
 }
 
 .footer-social-icons {
-    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .footer-social-icons li {
     display: inline-block;
+    margin: 0;
 }
 
 .footer-social-icons li a {
@@ -614,13 +623,57 @@ i.fa-angle-double-right {
         height: 90px;
     }
 
-    .feature-video {
-        width: 70%;
-        height: 100%;
+    .social-media-links li {
+        display: inline-block;
+        font-size: 3rem;
+        padding: 0 40px;
+    }
+
+    .quote-content {
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+
+    .reviewer-header {
+        color: #dddddd;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+    .mailing-spotify-container {
+        background-position: 0% 100%;
+    }
+
+    .mailing-cta-tablet-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mailing-cta {
+        width: 50%;
     }
 
     .spotify-leaderboard {
         width: 100%;
+    }
+
+    .footer-social-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-social-icons li {
+        display: inline-block;
+        padding: 0.3rem 2rem;
+    }
+
+    .footer-social-icons li a {
+        font-size: 2rem;
     }
 
 }
@@ -639,8 +692,8 @@ i.fa-angle-double-right {
     }
 
     .feature-video {
-        width: 560px;
-        height: 315px;
+        max-width: 600px;
+        max-height: 332px;
     }
 
 }
