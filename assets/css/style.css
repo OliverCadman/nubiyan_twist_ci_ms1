@@ -128,16 +128,15 @@ ul li a.active {
 /* ----- Album Promotion Section ----- */
 
 
-.testimonies-container {
+#album-promotion-section {
     font-family: "Alata", sans-serif;
     background-color: #DCB3AC;
-    color: #fafafa;
     text-align: center;
-    padding: 6em 0;
+    padding: 2em 0;
 
 }
 
-.testimonies-header {
+#promo-header {
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -185,6 +184,7 @@ ul li a.active {
 .testimonies-container p {
     font-size: 20px;
     color: #252525;
+
 }
 
 .reviewer-header {
@@ -197,15 +197,22 @@ ul li a.active {
 }
 
 .quote-content {
-    padding-top: 30px;
+    margin-top: 100px;
+    font-size: 1.2rem;
 }
 
 
+
 #album-cover-image {
-    top: 50px;
-    padding-bottom: 50px;
-    height: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#album-cover {
     width: 100%;
+    height: 100%;
 }
 
 /* ----- Mailing List/Spotify Section */
@@ -461,11 +468,13 @@ button {
 
 i.fa-angle-double-left {
     margin-right: 10px;
+    font-size: 35px;
     color: black;
 }
 
 i.fa-angle-double-right {
     margin-left: 10px;
+    font-size: 35px;
     color: black;
 }
 
@@ -528,10 +537,22 @@ i.fa-angle-double-right {
     margin: -90px 0px 0px -90px;
 }
 
+#band-profile {
+    background-color: #f0e7df
+}
 
 .card {
     background-color: rgb(22, 22, 22);
     color: #DCB3AC;
+    height: 100%;
+}
+
+.card-title {
+    font-family: "Alatsi", sans-serif;
+}
+
+.card-text {
+    font-family: "Alata", sans-serif;
 }
 
 #vocals-container {
@@ -539,10 +560,12 @@ i.fa-angle-double-right {
 }
 
 #horns-container {
+    text-align: center;
     margin-bottom: 30px;
 }
 
 #rhythm-container {
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -607,7 +630,7 @@ i.fa-angle-double-right {
         color: #131313;
     }
 
-    .album-cover {
+    #album-cover {
         width: 300px;
         height: 300px;
     }
@@ -621,7 +644,13 @@ i.fa-angle-double-right {
         text-align: center;
     }
 
-    #feature-video {
+    #feature-videos {
+        display: inline-block;
+        padding: 50px 0;
+    }
+
+    .feature-video {
+        margin-top: 50px;
         width: 100%;
         height: 100%;
     }
