@@ -484,21 +484,18 @@ button {
 
 .st-sa-cta {
     font-family: "Alatsi", sans-serif;
+    text-transform: uppercase;
     font-size: .8rem;
     color: #fafafa;
     letter-spacing: 1px;
 }
 
 i.fa-angle-double-left {
-    margin-right: 0;
-    font-size: .6rem;
-    color: black;
+    display: none;
 }
 
 i.fa-angle-double-right {
-    margin-left: 0;
-    font-size: .6rem;
-    color: black;
+    display: none;
 }
 
 .jr-circle-container {
@@ -690,6 +687,75 @@ i.fa-angle-double-right {
 
     .footer-social-icons li a {
         font-size: 2rem;
+    }
+
+    /* -------------------- About Page -------------------- */
+
+    /* -------------- Band History Section ------------ */
+
+    /* ----- Clickable Images of Album Cover ----- */
+
+    .st-circle-outer {
+        margin-top: 80px;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(102, 102, 102);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+    }
+
+    .st-circle-inner {
+        width: 180px;
+        height: 180px;
+        left: 20%;
+        top: 80%;
+        background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
+        border-radius: 50%;
+        background-size: contain;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -90px 0px 0px -90px;
+    }
+
+    .ss-circle-container {
+        margin-top: 100px;
+        position: absolute;
+    }
+
+    .ss-circle-outer {
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(102, 102, 102);
+        position: relative;
+        border-radius: 50%;
+        z-index: 3;
+        margin: auto;
+    }
+
+    .ss-circle-inner {
+        width: 180px;
+        height: 180px;
+        right: 60%;
+        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -90px 0px 0px -90px;
+    }
+
+    .st-sa-cta {
+        font-family: "Alatsi", sans-serif;
+        font-size: 2rem;
+        color: #fafafa;
+        letter-spacing: 1px;
     }
 
 }
