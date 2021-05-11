@@ -705,7 +705,21 @@ i.fa-angle-double-right {
 
     /* -------------------- About Page -------------------- */
 
-    /* -------------- Band History Section ------------ */
+    /* ----- Header ----- */
+
+    .bio-summary {
+        position: relative;
+        top: 15vh;
+        left: 3vw;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+
+
+
+    /* ----- Band History Section ------ */
+
+
 
     /* ----- Clickable Images of Album Cover ----- */
 
@@ -780,6 +794,13 @@ i.fa-angle-double-right {
     i.fa-angle-double-right {
         display: inline-block;
         color: rgb(102, 102, 102);
+    }
+
+    /* ----- Band Cards ---- */
+
+    .card {
+        max-width: 100%;
+        max-height: 100%;
     }
 
 
