@@ -758,6 +758,18 @@ i.fa-angle-double-right {
         letter-spacing: 1px;
     }
 
+    i.fa-angle-double-left {
+        display: inline-block;
+        color: rgb(102, 102, 102);
+    }
+
+    i.fa-angle-double-right {
+        display: inline-block;
+        color: rgb(102, 102, 102);
+    }
+
+
+
 }
 
 @media (min-width: 992px) {
