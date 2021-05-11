@@ -575,10 +575,31 @@ i.fa-angle-double-right {
     background-color: #f0e7df
 }
 
+#band-profile h2 {
+    font-family: "Alatsi", sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 40px 0;
+}
+
+.block-divider {
+    border-top: 2px solid black;
+}
+
 .card {
     background-color: rgb(22, 22, 22);
-    color: #DCB3AC;
+    color: #f0e7df;
     height: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card button {
+    background-color: #DCB3AC;
+    color: black;
+    border: none;
+    letter-spacing: 1px;
 }
 
 .card-title {
@@ -589,19 +610,7 @@ i.fa-angle-double-right {
     font-family: "Alata", sans-serif;
 }
 
-#vocals-container {
-    margin-bottom: 30px;
-}
 
-#horns-container {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#rhythm-container {
-    text-align: center;
-    margin-bottom: 30px;
-}
 
 /* ----- Band Modals ----- */
 
@@ -624,6 +633,8 @@ i.fa-angle-double-right {
     width: 100%;
     height: 100%;
 }
+
+
 
 
 
@@ -803,6 +814,18 @@ i.fa-angle-double-right {
         max-height: 100%;
     }
 
+    .card {
+        background-color: rgb(22, 22, 22);
+        color: #f0e7df;
+        height: 100%;
+    }
+
+    .card button {
+        background-color: #DCB3AC;
+        color: black;
+        border: none;
+        letter-spacing: 1px;
+    }
 
 
 }
@@ -939,4 +962,12 @@ i.fa-angle-double-right {
         color: #fafafa;
         letter-spacing: 1px;
     }
+
+    /* ----- About the Band ----- */
+
+    #band-profile {
+        background-color: #f0e7df;
+
+    }
+
 }
