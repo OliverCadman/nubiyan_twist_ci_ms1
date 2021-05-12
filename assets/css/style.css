@@ -84,7 +84,7 @@ ul li a.active {
 #hero-image {
 
     height: 100vh;
-    background: url("../images/nt-hero-bg.jpg") no-repeat bottom fixed;
+    background: url("../images/nt-hero-bg.png") no-repeat bottom fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -285,21 +285,32 @@ button {
     background-color: rgb(154, 208, 192);
 }
 
-.earth-agency-icon-flex {
+.earth-agency-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: 30%;
+    height: 30%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
-.earth-agency-icon {
-    margin-top: 10px;
+.strut-icon-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .strut-icon {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20%;
+    height: 20%;
 }
 
 .footer-social-icons {
@@ -333,7 +344,7 @@ button {
 /* Header */
 
 .about-background {
-    background: url("../images/about-background.jpg") no-repeat right fixed;
+    background: url("../images/about-background (7).jpg") no-repeat top fixed;
     background-size: cover;
     height: 100vh;
     padding-top: 110px;
@@ -468,7 +479,7 @@ button {
     height: 90px;
     left: 20%;
     top: 80%;
-    background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
+    background: url('https://f4.bcbits.com/img/a1780245514_10-500x500.jpg') no-repeat bottom;
     border-radius: 50%;
     background-size: contain;
     z-index: 10;
@@ -543,7 +554,7 @@ i.fa-angle-double-right {
 .jr-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('https://f4.bcbits.com/img/0018110379_0') no-repeat;
+    background: url('../icons/jr-albumcover.jpeg') no-repeat;
     border-radius: 50%;
     background-size: cover;
     z-index: 10;
@@ -573,7 +584,7 @@ i.fa-angle-double-right {
 .ff-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('../images/nt-background-1.jpeg') no-repeat bottom;
+    background: url('../images/nt-background-1.jpg') no-repeat bottom;
     border-radius: 50%;
     background-size: contain;
     z-index: 10;
@@ -668,6 +679,39 @@ i.fa-angle-double-right {
     color: white;
 }
 
+
+/* --------------------------------------- Live Shows ----------------------------------------- */
+
+/* ----- Header ------ */
+
+.live-header {
+    background: url("../images/live-hero.jpeg") no-repeat fixed;
+    background-position: 0% 100%;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+.live-header h1 {
+    float: right;
+    font-family: "Alatsi", sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #f48826;
+}
+
+.opaque-overlay-live {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.281);
+}
 
 
 
@@ -781,15 +825,6 @@ i.fa-angle-double-right {
     .st-circle-inner {
         width: 180px;
         height: 180px;
-        left: 20%;
-        top: 80%;
-        background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
-        border-radius: 50%;
-        background-size: contain;
-        z-index: 10;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         margin: -90px 0px 0px -90px;
     }
 
@@ -860,8 +895,6 @@ i.fa-angle-double-right {
         letter-spacing: 1p
     }
 
-    .card button:hover {}
-
 
 }
 
@@ -912,7 +945,7 @@ i.fa-angle-double-right {
     /* ----- Footer Section ----- */
 
     .footer-social-icons {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 
     .footer-social-icons li {
@@ -967,21 +1000,12 @@ i.fa-angle-double-right {
     .st-circle-inner {
         width: 180px;
         height: 180px;
-        left: 20%;
-        top: 80%;
-        background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
-        border-radius: 50%;
-        background-size: contain;
-        z-index: 10;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         margin: -90px 0px 0px -90px;
     }
 
-    .ss-circle-container {
-        margin-top: 100px;
-        position: absolute;
+    .st-circle-inner:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
     }
 
     .ss-circle-outer {
@@ -998,16 +1022,14 @@ i.fa-angle-double-right {
     .ss-circle-inner {
         width: 180px;
         height: 180px;
-        right: 60%;
-        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
-        border-radius: 50%;
-        background-size: cover;
-        z-index: 10;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         margin: -90px 0px 0px -90px;
     }
+
+    .ss-circle-inner:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+
 
     .st-sa-cta {
         font-size: 2rem;
@@ -1019,9 +1041,20 @@ i.fa-angle-double-right {
         margin: 40px 0;
     }
 
+    .jr-circle-inner:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+
     .ff-circle-outer {
         margin: 40px 0;
     }
+
+    .ff-circle-inner:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+
 
     i.fa-angle-double-left {
         margin-right: 10px;
