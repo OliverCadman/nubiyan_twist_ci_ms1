@@ -133,8 +133,6 @@ Font Colours include:
 
 ## Testing fan/potential fan stories from UX section of README.md file
 
-### Fans/Potential Fans
-
 1. As a fan, I want to be able to easily navigate to and clearly view gig listings, so I can see if they are performing near me.
     1. As each page features a navigation bar with a bright background and dark, constrasting font colour, fans will be able to access a list of the band's live shows regardless of which page of the website they are viewing.
 
