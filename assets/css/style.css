@@ -14,7 +14,7 @@ body {
 
 
 .navbar {
-    background-color: rgb(154, 208, 192);
+    background-color: #9ad0c0;
     margin-bottom: 20px;
     padding: 0;
 }
@@ -512,7 +512,7 @@ button {
     font-family: "Alatsi", sans-serif;
     text-transform: uppercase;
     font-size: .8rem;
-    color: #fafafa;
+    color: black;
     letter-spacing: 1px;
 }
 
@@ -832,12 +832,12 @@ i.fa-angle-double-right {
 
     i.fa-angle-double-left {
         display: inline-block;
-        color: rgb(102, 102, 102);
+        color: black;
     }
 
     i.fa-angle-double-right {
         display: inline-block;
-        color: rgb(102, 102, 102);
+        color: black;
     }
 
     /* ----- Band Cards ---- */
@@ -1010,10 +1010,26 @@ i.fa-angle-double-right {
     }
 
     .st-sa-cta {
-        font-family: "Alatsi", sans-serif;
         font-size: 2rem;
-        color: #fafafa;
         letter-spacing: 1px;
+        color: black;
+    }
+
+    .jr-circle-outer {
+        margin: 40px 0;
+    }
+
+    .ff-circle-outer {
+        margin: 40px 0;
+    }
+
+    i.fa-angle-double-left {
+        margin-right: 10px;
+    }
+
+    i.fa-angle-double-right {
+        margin-left: 10px;
+
     }
 
     /* ----- About the Band ----- */
@@ -1033,7 +1049,7 @@ i.fa-angle-double-right {
     .card:hover {
         transform: scale(1.1);
         transition: 0.3s ease-in-out;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+
     }
 
     .card button:hover {
