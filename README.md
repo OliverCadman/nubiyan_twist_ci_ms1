@@ -70,6 +70,8 @@ While the focus of the website should serve the needs of each of these criteria,
 
 [About](assets/wireframes/nt-about.pdf)
 
+[Live Shows](assets/wireframes/nt-liveshows.pdf)
+
 
 
 
@@ -100,7 +102,7 @@ Similarly to the Home Page, the top of the about page features another black and
 
 The next section features a comprehensive, detailed history of the band and it's catalogue of releases. Clickable circular images of their album art is featured when the relative album is mentioned through the history of the band. They are linked to bandcamp pages, which open in seperate tabs/windows. The clickable images are made from two circles layered with z-index, to draw the user's attention. Between the first two images is a call-to-action "Click to Listen", to provide visual feedback to the user. The choice was made to include this call-to-action only once, between the first two album cover images, as there was a risk of the section looking too busy otherwise.
 
-The final section features the core members of the band, in the form of bootstrap cards. Each card features an image of the band member, their name and instrument, and a clickable button which opens a modal window detailing a brief summary of their role in the band, and details of their other projects. Each modal window features an embedded video of the relative band member's work, either with the band or in one of their other projects, and a button to close the window. Users may also close the modal by clicking the outside the window.
+The final section features the core members of the band, in the form of bootstrap cards. Each card features an image of the band member, their name and instrument, and a clickable button which opens a modal window detailing a brief summary of their role in the band, and details of their other projects. Each modal window features an embedded video of the relative band member's work, either with the band or in one of their other projects, and a button to close the window. Users may also close the modal by clicking the outside the window. Basic JavaScript has been included in order to stop the embedded video playing upon closing the modal window, so the user doesn't have to stop the video before closing the window, therefore providing better UX.
 
 ## Live Shows
 
