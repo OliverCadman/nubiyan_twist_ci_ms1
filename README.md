@@ -145,7 +145,7 @@ Font Colours include:
 
 4. As a fan, I want to view a biography, so I can find out more about the history of the band.
     1. The About Page features a detailed history of the band, and the font colour for this content chosen to contrast against the light red/pink background. 
-    2. The About Page also features bootstrap cards for each member of the band, with an image, their name, role in the band, and a button opening a modal window with relative embedded videos featured.
+    2. The About Page also features bootstrap cards for each member of the band, with an image, their name, role in the band, and a button opening a modal window with relative embedded videos featured. Custom CSS is implemented to smoothly scale the cards up a small amount when the user hovers the cursor over each card.
 
 
     
