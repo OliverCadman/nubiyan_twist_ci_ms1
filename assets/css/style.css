@@ -694,7 +694,7 @@ i.fa-angle-double-right {
 }
 
 .live-header h1 {
-    float: right;
+    padding-left: 0;
     font-family: "Alatsi", sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
@@ -711,6 +711,37 @@ i.fa-angle-double-right {
     padding: 0;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.281);
+}
+
+/* ----------------------------- Music Shop Page ----------------------------- */
+
+.music-shop {
+    background: url("../images/shop-background.jpeg") no-repeat fixed;
+    background-position: 80% 10%;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.opaque-overlay-music {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.music-shop h1 {
+    font-family: "Alatsi", sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #f48826;
+    padding-top: 100px;
+
 }
 
 
