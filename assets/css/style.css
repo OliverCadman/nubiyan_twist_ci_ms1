@@ -986,6 +986,10 @@ i.fa-angle-double-right {
 
     /* ----- Clickable Images of Album Covers ----- */
 
+    .profile-body {
+        font-size: 1.2rem;
+    }
+
     .st-circle-outer {
         margin-top: 80px;
         width: 200px;
