@@ -83,7 +83,7 @@ ul li a.active {
 
 #hero-image {
 
-    height: 95vh;
+    height: 100vh;
     background: url("../images/nt-hero-bg.jpg") no-repeat bottom fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -335,7 +335,7 @@ button {
 .about-background {
     background: url("../images/about-background.jpg") no-repeat right fixed;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     padding-top: 110px;
     width: 100%;
 }
@@ -344,7 +344,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -955,8 +955,8 @@ i.fa-angle-double-right {
 
     .st-circle-outer {
         margin-top: 80px;
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         background-color: rgba(102, 102, 102);
         position: relative;
         border-radius: 50%;
@@ -965,8 +965,8 @@ i.fa-angle-double-right {
     }
 
     .st-circle-inner {
-        width: 80px;
-        height: 80px;
+        width: 180px;
+        height: 180px;
         left: 20%;
         top: 80%;
         background: url('https://f4.bcbits.com/img/a1780245514_10.jpg') no-repeat bottom;
@@ -976,7 +976,7 @@ i.fa-angle-double-right {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -40px 0px 0px -40px;
+        margin: -90px 0px 0px -90px;
     }
 
     .ss-circle-container {
@@ -1026,14 +1026,25 @@ i.fa-angle-double-right {
     /* --- Band Cards --- */
 
     .card {
+        height: 95%;
+        cursor: pointer;
+    }
 
-        height: 95%
+    .card:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     }
 
     .card button:hover {
         background-color: rgb(154, 208, 192);
         transition: 0.3s ease-in-out;
         color: white;
+
+    }
+
+    .card button:focus {
+        border-style: 10px solid white;
     }
 
 }
