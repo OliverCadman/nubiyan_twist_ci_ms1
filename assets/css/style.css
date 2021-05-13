@@ -1191,11 +1191,7 @@ i.fa-angle-double-right {
     }
 
     .live-header h1 {
-        font-family: "Alatsi", sans-serif;
-        text-decoration: underline;
-        text-transform: uppercase;
-        font-size: 3rem;
-        color: #f48826;
+        padding-top: 0;
     }
 
 }
