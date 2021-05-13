@@ -714,36 +714,79 @@ i.fa-angle-double-right {
 
 /* ----- Featured Shows ----- */
 
-.featured-shows {
-    color: white;
-}
-
-.feature-show-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.feature-show-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.feature-row {
     margin-top: 30px;
 }
 
-#feature-image-1 {
+.responsive-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#feature-container-2 {
+    margin-left: 10px;
     width: 80%;
-    position: absolute;
-    z-index: 1;
+    text-align: center;
 }
 
 #feature-image-2 {
-    width: 30%;
+    width: 100%;
+    position: static;
+}
+
+
+.fa-map-pin {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: #f48826;
+}
+
+.fa-map-pin:hover {
+    color: #fafafa;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.fa-calendar-alt {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: #f48826;
+}
+
+
+.fa-calendar-alt:hover {
+    color: #fafafa;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.fa-ticket-alt {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: #f48826;
+}
+
+.buy-tickets {
+    font-family: "Alatsi", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #f48826 !important;
 }
 
 .feature-info {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 0.7rem;
+    padding: 10px;
+    background-color: rgba(70, 70, 70, 0.74);
+
+}
+
+.feature-info p {
+    color: #fafafa;
+    text-align: center;
+
 }
 
 
@@ -974,6 +1017,51 @@ i.fa-angle-double-right {
     .live-header h1 {
         padding-top: 110px;
         font-size: 3rem;
+    }
+
+    /* ----- Featured Shows ----- */
+
+    #feature-container-1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    #feature-image-1 {
+        width: 100%;
+    }
+
+    #feature-container-2 {
+        width: 85%;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    #feature-image-2 {
+        width: 100%;
+    }
+
+    .feature-info p {
+        font-size: 0.9rem;
+    }
+
+    #ticket-link:hover {
+        text-decoration: none;
+    }
+
+    #ticket-link>p:hover {
+        color: #fafafa !important;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+    }
+
+
+
+    .buy-tickets {
+        font-size: 1.4rem !important;
+    }
+
+    #sold-out {
+        margin-left: 8px;
     }
 
 
