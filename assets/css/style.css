@@ -683,7 +683,7 @@ i.fa-angle-double-right {
 /* ----- Header ------ */
 
 .live-header {
-    background: url("../images/nt-livehero.png") no-repeat fixed;
+    background: url("../images/live-hero.jpeg") no-repeat fixed;
     background-position: 40%;
     background-size: cover;
     height: 100vh;
@@ -709,6 +709,31 @@ i.fa-angle-double-right {
     padding: 0;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.281);
+}
+
+/* ----- Featured Shows ----- */
+
+/* .feature-show-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-show-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+} */
+
+
+
+#feature-image-1 {
+    width: 20%;
+}
+
+#feature-image-2 {
+    width: 30%;
 }
 
 /* ----------------------------- Music Shop Page ----------------------------- */
@@ -1192,6 +1217,33 @@ i.fa-angle-double-right {
 
     .live-header h1 {
         padding-top: 0;
+    }
+
+    /* ----- Featured Shows ----- */
+
+    .featured-shows {
+        position: relative;
+    }
+
+    .feature-show-1 {
+        padding-left: 0;
+    }
+
+    .feature-show-1 {
+        padding-right: 0;
+    }
+
+    #feature-image-1 {
+        width: 50%;
+        position: absolute;
+        right: 7%;
+
+    }
+
+    #feature-image-2 {
+        width: 50%;
+        position: absolute;
+        margin: 0 auto;
     }
 
 }
