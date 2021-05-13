@@ -51,7 +51,7 @@ While the focus of the website should serve the needs of each of these criteria,
     4. As a fan, I want to view a biography, so I can find out more about the history of the band.
 
 2. DJs/Record Collectors:
-    1. As a DJ, I want to find testimonies from influential Radio DJs/presenters, so I can determine how much of a presence the band has.
+    1. As a DJ, I want to find testimonies from verified publications, so I can determine how much of a presence the band has.
     2. As a record collector, I want to be able to easily preview songs, so I can determine if their records are worth purchasing.
     3. As a record collector/DJ, I want to find and navigate through the merchandise section intuitively, so I can make any purchases with ease.
     4. As a record collector, I want to see images of the band's vinyls and sleeves, so I can gauge the visual aesthetics of the records.
