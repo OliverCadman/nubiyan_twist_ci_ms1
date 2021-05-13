@@ -713,7 +713,11 @@ i.fa-angle-double-right {
 
 /* ----- Featured Shows ----- */
 
-/* .feature-show-1 {
+.featured-shows {
+    color: white;
+}
+
+.feature-show-1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -724,17 +728,18 @@ i.fa-angle-double-right {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-} */
-
-
+}
 
 #feature-image-1 {
-    width: 20%;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
 }
 
 #feature-image-2 {
     width: 30%;
 }
+
 
 /* ----------------------------- Music Shop Page ----------------------------- */
 
@@ -1183,7 +1188,7 @@ i.fa-angle-double-right {
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -1221,29 +1226,47 @@ i.fa-angle-double-right {
 
     /* ----- Featured Shows ----- */
 
-    .featured-shows {
-        position: relative;
+    .feature-row {
+        margin-top: 20px;
     }
 
-    .feature-show-1 {
-        padding-left: 0;
-    }
-
-    .feature-show-1 {
-        padding-right: 0;
+    #feature-container-1 {
+        margin-left: 10px;
+        width: 80%;
+        text-align: right;
     }
 
     #feature-image-1 {
-        width: 50%;
-        position: absolute;
-        right: 7%;
+        width: 100%;
+        position: static;
+    }
 
+    #feature-container-2 {
+        margin-left: 50px;
+        width: 85%;
+        text-align: left;
     }
 
     #feature-image-2 {
-        width: 50%;
-        position: absolute;
-        margin: 0 auto;
+        width: 100%;
+
     }
+
+    .fa-map-pin {
+        margin-right: 15px;
+    }
+
+    .fa-calendar-alt {
+        margin-right: 15px;
+    }
+
+    .feature-info {
+        background-color: rgba(70, 70, 70, 0.233);
+    }
+
+    .feature-info p {
+        color: white;
+    }
+
 
 }
