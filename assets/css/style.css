@@ -935,6 +935,11 @@ i.fa-angle-double-right {
         height: 100vh;
     }
 
+    .live-header h1 {
+        padding-top: 110px;
+        font-size: 3rem;
+    }
+
 
 }
 
@@ -1161,11 +1166,11 @@ i.fa-angle-double-right {
     }
 
     .live-header h1 {
-        padding-top: 50px;
+        padding-top: 110px;
         font-family: "Alatsi", sans-serif;
         text-decoration: underline;
         text-transform: uppercase;
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: #f48826;
     }
 
