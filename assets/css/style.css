@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
 html,
 body {
@@ -740,6 +741,11 @@ i.fa-angle-double-right {
     width: 30%;
 }
 
+.feature-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
 
 /* ----------------------------- Music Shop Page ----------------------------- */
 
@@ -1179,7 +1185,7 @@ i.fa-angle-double-right {
 
     .live-header {
         background: url("../images/nt-livehero.png") no-repeat fixed;
-        background-position: 50% 20%;
+        background-position: 90%;
         background-size: cover;
         height: 100vh;
     }
@@ -1255,21 +1261,33 @@ i.fa-angle-double-right {
     .fa-map-pin {
         font-size: 1.6rem;
         margin-right: 15px;
+        color: #f48826;
+    }
+
+    .fa-map-pin:hover {
+        color: #fafafa;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
     }
 
     .fa-calendar-alt {
         font-size: 1.6rem;
         margin-right: 15px;
+        color: #f48826;
+    }
+
+    .fa-calendar-alt:hover {
+        color: #fafafa;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
     }
 
     .feature-info {
         padding: 10px;
-        background-color: rgba(70, 70, 70, 0.233);
+        background-color: rgba(70, 70, 70, 0.74);
     }
 
-    .feature-info p {
-        color: white;
-    }
+
 
 
 }
