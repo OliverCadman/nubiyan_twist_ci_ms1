@@ -1253,14 +1253,17 @@ i.fa-angle-double-right {
     }
 
     .fa-map-pin {
+        font-size: 1.6rem;
         margin-right: 15px;
     }
 
     .fa-calendar-alt {
+        font-size: 1.6rem;
         margin-right: 15px;
     }
 
     .feature-info {
+        padding: 10px;
         background-color: rgba(70, 70, 70, 0.233);
     }
 
