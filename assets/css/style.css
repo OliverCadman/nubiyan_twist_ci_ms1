@@ -20,9 +20,7 @@ body {
 }
 
 .navbar-brand img {
-    width: 120px;
-    height: 100px;
-    margin-left: 20px;
+    display: none;
 }
 
 .navbar a {
@@ -59,7 +57,7 @@ ul li a.active {
 .dropdown-menu {
     background-color: rgb(154, 208, 192);
     color: #fafafa;
-    border: 2px solid black;
+    border: none;
     border-radius: 5px;
     right: 0 !important;
     left: auto !important;
@@ -71,7 +69,7 @@ ul li a.active {
 
 .navbar-mobile-toggler {
     color: black;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .navbar-toggler {
@@ -685,8 +683,8 @@ i.fa-angle-double-right {
 /* ----- Header ------ */
 
 .live-header {
-    background: url("../images/live-hero.jpeg") no-repeat fixed;
-    background-position: 0% 100%;
+    background: url("../images/nt-livehero.png") no-repeat fixed;
+    background-position: 40%;
     background-size: cover;
     height: 100vh;
 
@@ -694,11 +692,11 @@ i.fa-angle-double-right {
 }
 
 .live-header h1 {
-    padding-left: 0;
+    padding-top: 60px;
     font-family: "Alatsi", sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: #f48826;
 }
 
@@ -740,7 +738,7 @@ i.fa-angle-double-right {
     text-transform: uppercase;
     text-decoration: underline;
     color: #f48826;
-    padding-top: 100px;
+    padding-top: 110px;
 
 }
 
@@ -924,6 +922,17 @@ i.fa-angle-double-right {
         color: black;
         border: none;
         letter-spacing: 1p
+    }
+
+    /* --------------------------------- LIVE SHOWS -------------------------------------- /*
+
+    /* ----- Header Fixed Background ----- */
+
+    .live-header {
+        background: url("../images/nt-livehero.png") no-repeat fixed;
+        background-position: 50%;
+        background-size: cover;
+        height: 100vh;
     }
 
 
@@ -1129,6 +1138,35 @@ i.fa-angle-double-right {
 
     .card button:focus {
         border-style: 10px solid white;
+    }
+
+    /* ------------------------ Live Shows Page ------------------------ */
+
+    .live-header {
+        background: url("../images/nt-livehero.png") no-repeat fixed;
+        background-position: 50% 20%;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .opaque-overlay-live {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .live-header h1 {
+        padding-top: 50px;
+        font-family: "Alatsi", sans-serif;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #f48826;
     }
 
 }
