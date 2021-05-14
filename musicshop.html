@@ -31,14 +31,14 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
-                <img src="assets/icons/nt-home-icon.png" alt="Clickable logo. Links to home page">
+                <img src="assets/icons/nt-home-icon.png" alt="Clickable icon link to home page">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
                 <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navBarResponsive">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -46,21 +46,21 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="liveshows.html">Live Shows</a>
+                        <a class="nav-link active" href="liveshows.html">Live Shows</a>
                     </li>
-                    <li class="nav-item" role="button" tabindex="0">
-                        <a class="nav-link active dropdown-toggle" id="navItemDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-labelledby="navItemDropdownButton"
-                            aria-expanded="false">Shop</a>
-                        <ul class="dropdown-menu" aria-labelledby="navItemDropdown" role="menu" tabindex="-1">
-                            <li><a class="dropdown-item" href="musicshop.html">Records</a></li>
-                            <li><a class="dropdown-item" href="clothingshop.html">Clothing/Prints</a></li>
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navItemDropdown" role="button" tabindex="0"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                        <div class="dropdown-menu" aria-labelledby="navItemDropdown">
+                            <a class="dropdown-item" href="musicshop.html">Records</a>
+                            <a class="dropdown-item" href="clothingshop.html">Clothing/Prints</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </nav>

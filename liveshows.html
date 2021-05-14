@@ -68,7 +68,7 @@
     <!-- Page Header with Alert -->
 
     <section class="live-header">
-        <div class="opaque-overlay"></div>
+        <div class="opaque-overlay-live"></div>
         <div class="container-fluid p-0 navalert-container">
             <div class="row no-gutters d-none d-md-block">
                 <div class="col-12">
@@ -81,7 +81,6 @@
         </div>
         </div>
         <div class="container-fluid">
-
             <div class="row">
                 <div class="col-12">
                     <h1>Live Shows</h1>
@@ -94,14 +93,17 @@
         <article>
             <div class="container-fluid">
                 <div class="row no-gutters justify-content-between feature-row">
-                    <div class="col-md-4 col-lg-4 d-none d-sm-block">
+                    <div class="col-sm-12 col-md-4 col-lg-4 responsive-wrapper">
                         <div class="featured-shows" id="feature-container-1">
                             <img id="feature-image-1" src="assets/images/featured-liveshows/nt-womad.png">
                             <div class="feature-info">
-                                <p><span><a href="https://goo.gl/maps/3Xe2JpMqrz3BQFLA8" target="_blank"><i
-                                                class="fas fa-map-pin"></i></a>Charlton Park, Malmesbury</span></p>
-                                <p><span><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%57%4F%4D%41%44%20%46%65%73%74%69%76%61%6C&dates=20210722/20210726&location=%43%68%61%72%6C%74%6F%6E%20%50%61%72%6B%20%45%73%74%61%74%65%2C%20%4D%61%6C%6d%65%73%62%75%72%79"
-                                            target="_blank"><i class="fas fa-calendar-alt"></i></a></span>22nd - 25th
+                                <p><a href="https://goo.gl/maps/3Xe2JpMqrz3BQFLA8" target="_blank" data-toggle="popover"
+                                        trigger="hover" data-placement="bottom" data-content="Find on Google Maps!"><i
+                                            class="fas fa-map-pin"></i></a>Charlton Park, Malmesbury</p>
+                                <p><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%57%4F%4D%41%44%20%46%65%73%74%69%76%61%6C&dates=20210722/20210726&location=%43%68%61%72%6C%74%6F%6E%20%50%61%72%6B%20%45%73%74%61%74%65%2C%20%4D%61%6C%6d%65%73%62%75%72%79"
+                                        data-toggle="popover" trigger="hover" data-placement="bottom"
+                                        data-content="Add to your Calendar!" target="_blank"><i
+                                            class="fas fa-calendar-alt"></i></a>22nd - 25th
                                     July 2021</p>
                                 <a id="ticket-link" href="https://womad.co.uk/tickets/" target="_blank">
                                     <p class="buy-tickets"><span><i class="fas fa-ticket-alt"></i></span>Buy Tickets</p>
@@ -109,14 +111,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 responsive-wrapper">
+                    <div class="col-md-4 col-lg-4 d-none d-md-block">
                         <div class="featured-shows" id="feature-container-2">
+
                             <img id="feature-image-2" src="assets/images/featured-liveshows/nt-crossthetracks.jpeg">
                             <div class="feature-info">
-                                <p><span><a href="https://goo.gl/maps/dCHAyog29ntyJEq99" target="_blank"><i
-                                                class="fas fa-map-pin"></i></a>Crystal Palace, London</span></p>
-                                <p><span><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%43%72%6F%73%73%20%54%68%65%20%54%72%61%63%6B%73&dates=20210804/20210805&location=%43%72%79%73%74%61%6C%20%50%61%6C%61%63%65%20%42%6F%77%6C%2C%20%4C%6F%6E%64%6F%6E"
-                                            target="_blank"><i class="fas fa-calendar-alt"></i></a></span>Friday 6th
+                                <p><a href="https://goo.gl/maps/dCHAyog29ntyJEq99" target="_blank" data-toggle="popover"
+                                        trigger="hover" data-placement="bottom" data-content="Find on Google Maps!"><i
+                                            class="fas fa-map-pin"></i></a>Crystal Palace, London</p>
+                                <p><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%43%72%6F%73%73%20%54%68%65%20%54%72%61%63%6B%73&dates=20210804/20210805&location=%43%72%79%73%74%61%6C%20%50%61%6C%61%63%65%20%42%6F%77%6C%2C%20%4C%6F%6E%64%6F%6E"
+                                        data-toggle="popover" trigger="hover" data-placement="bottom"
+                                        data-content="Add to your Calendar!" target="_blank"><i
+                                            class="fas fa-calendar-alt"></i></a>Friday 6th
                                     August 2021</p>
                                 <p class="buy-tickets"><span><i class="fas fa-ticket-alt"></i></span><s>Buy
                                         Tickets</s><span id="sold-out">Sold Out!</span></p>
@@ -127,8 +133,34 @@
             </div>
         </article>
     </section>
-    <section class="gig-listings">
+    <section id="gig-listings">
+        <div class="container-fluid">
+            <div class="row text-center listings-header">
+                <div class="col-12">
+                    <h2>Upcoming Shows</h2>
+                    <hr class="block-divider">
+                </div>
+            </div>
+        </div>
+        <div class="container listings-container">
+            <div class="row">
+                <div class="col-sm-12 listings-outer">
+                    <div id="listings-inner">
+                        <div class="col-3">
+                            <p>27th May</p>
+                            <p>6pm</p>
+                        </div>
+                        <div class="col-12">
+                            <p>Album Launch (Early Show)</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-secondary">£16.50</button>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -178,6 +210,18 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        var popOverSettings = {
+            trigger: 'hover',
+            container: 'body',
+
+            html: true,
+            selector: '[data-toggle="popover"]',
+
+        }
+
+        $('body').popover(popOverSettings);
+    </script>
 
 </body>
 

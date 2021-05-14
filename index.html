@@ -25,14 +25,14 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
-                <img src="assets/icons/nt-home-icon.png" alt="Clickable logo. Links to home page">
+                <img src="assets/icons/nt-home-icon.png" alt="Clickable icon link to home page">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
                 <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navBarResponsive">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -42,13 +42,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="liveshows.html">Live Shows</a>
                     </li>
-                    <li class="nav-item" role="button" tabindex="0">
-                        <a class="nav-link dropdown-toggle" id="navItemDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-labelledby="navItemDropdownButton" aria-expanded="false">Shop</a>
-                        <ul class="dropdown-menu" aria-labelledby="navItemDropdown" role="menu" tabindex="-1">
-                            <li><a class="dropdown-item" href="musicshop.html">Records</a></li>
-                            <li><a class="dropdown-item" href="clothingshop.html">Clothing/Prints</a></li>
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navItemDropdown" role="button" tabindex="0"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                        <div class="dropdown-menu" aria-labelledby="navItemDropdown">
+                            <a class="dropdown-item" href="musicshop.html">Records</a>
+                            <a class="dropdown-item" href="clothingshop.html">Clothing/Prints</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -62,157 +62,165 @@
 
 
     <!-- Hero Image/Jumbotron -->
-    <section>
-        <div id="hero-image">
-            <div class="container-fluid p-0">
-                <div class="opaque-overlay"></div>
-                <div class="row no-gutters">
-                    <div class="col-12">
-                        <div class="jumbotron callout-jumbotron">
-                            <h2 class="text-center text-uppercase"> Nubiyan Twist</h2>
-                            <p class="lead content-font text-center">"One of the UK's leading
-                                soulful collectives of the current generation"</p>
+    <main>
+        <section>
+            <div id="hero-image">
+                <div class="container-fluid p-0">
+                    <div class="opaque-overlay"></div>
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="jumbotron callout-jumbotron">
+                                <h2 class="text-center text-uppercase"> Nubiyan Twist</h2>
+                                <p class="lead content-font text-center">"One of the UK's leading
+                                    soulful collectives of the current generation"</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Album Promo Section -->
-    <section id="album-promotion-section">
-        <div class="container-fluid">
-            <div class="social-media-links">
-                <div class="row no-gutters d-inline">
-                    <div class="col-sm-12">
-                        <ul>
-                            <li><a href="https://music.apple.com/us/artist/nubiyan-twist/932010388"
-                                    target="_blank"><span><i class="fab fa-itunes-note"></i></span></li></a>
-                            <li><a href="https://open.spotify.com/artist/5HNkGissAKlCv88sus7rVO?si=vvxTg8BMSMqobjlIAK5eQg"
-                                    target="_blank"><span><i class="fab fa-spotify"></i></span></li></a>
-                            <li><a href="https://soundcloud.com/nubiyantwist" target="_blank"><span><i
-                                            class="fab fa-soundcloud"></i></span></li></a>
-                            <li class=><a href="https://www.youtube.com/user/NubiyanTwist" target="_blank"><span><i
-                                            class="fab fa-youtube"></i></span></li></a>
-                            <li class="d-none d-md-none d-lg-inline-block"><a
-                                    href="https://www.instagram.com/nubiyantwist/?hl=en" target="_blank"><span><i
-                                            class="fab fa-instagram"></i></span></li></a>
-                            <li class="d-none d-md-none d-lg-inline-block"><a href="https://twitter.com/Nubiyantwist"
-                                    target="_blank"><span><i class="fab fa-twitter"></i></span></li></a>
-                        </ul>
+        <!-- Album Promo Section -->
+        <section id="album-promotion-section">
+            <div class="container-fluid">
+                <div class="social-media-links">
+                    <div class="row no-gutters d-inline">
+                        <div class="col-sm-12">
+                            <ul>
+                                <li><a href="https://music.apple.com/us/artist/nubiyan-twist/932010388"
+                                        target="_blank"><span><i class="fab fa-itunes-note"></i></span></li></a>
+                                <li><a href="https://open.spotify.com/artist/5HNkGissAKlCv88sus7rVO?si=vvxTg8BMSMqobjlIAK5eQg"
+                                        target="_blank"><span><i class="fab fa-spotify"></i></span></li></a>
+                                <li><a href="https://soundcloud.com/nubiyantwist" target="_blank"><span><i
+                                                class="fab fa-soundcloud"></i></span></li></a>
+                                <li class=><a href="https://www.youtube.com/user/NubiyanTwist" target="_blank"><span><i
+                                                class="fab fa-youtube"></i></span></li></a>
+                                <li class="d-none d-md-none d-lg-inline-block"><a
+                                        href="https://www.instagram.com/nubiyantwist/?hl=en" target="_blank"><span><i
+                                                class="fab fa-instagram"></i></span></li></a>
+                                <li class="d-none d-md-none d-lg-inline-block"><a
+                                        href="https://twitter.com/Nubiyantwist" target="_blank"><span><i
+                                                class="fab fa-twitter"></i></span></li></a>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h4 class="promo-header"><strong>New Album "Freedom Fables" Available Now!</strong>
-            </h4>
-            <div class="col-12 cta-album">
-                <a href="https://nubiyantwist.bandcamp.com/" target="_blank"><button
-                        class="btn cta-listen">Download/Listen</button></a>
-            </div>
-        </div>
-        <div class="container-fluid leader-quote">
-            <div class="row">
-                <div class="col-12 text-center d-none d-lg-block quote-content">
-                    <p class="content-font">“Nubiyan Twist take a leap out of the densely packed crowd of UK jazz with
-                        Freedom Fables, a summation of the group’s talent that sees them elevated into the highest tier
-                        of their cohort”
-                    </p>
-                    <hr class="block-divider">
-                    <h6 class="reviewer-header">Line of Best Fit</h6>
+                <h4 class="promo-header"><strong>New Album "Freedom Fables" Available Now!</strong>
+                </h4>
+                <div class="col-12 cta-album">
+                    <a href="https://nubiyantwist.bandcamp.com/" target="_blank"><button
+                            class="btn cta-listen">Download/Listen</button></a>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid d-flex flex-nowrap">
-            <div class="row">
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="quote-content">
-                        <p class="content-font">"A joyful escape into head-swinging afro-funk"</p>
-                        <hr class="block-divider">
-                        <h6 class="reviewer-header">Clash Magazine</h6>
-                    </div>
-                    <div class="quote-content">
-                        <p class="content-font">“A free-flowing assemblage of jazz, soul, hip hop and diasporic styles.”
+            <div class="container-fluid leader-quote">
+                <div class="row">
+                    <div class="col-12 text-center d-none d-lg-block quote-content">
+                        <p class="content-font">“Nubiyan Twist take a leap out of the densely packed crowd of UK jazz
+                            with
+                            Freedom Fables, a summation of the group’s talent that sees them elevated into the highest
+                            tier
+                            of their cohort”
                         </p>
                         <hr class="block-divider">
-                        <h6 class="reviewer-header">Mojo</h6>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 album-cover-image">
-                    <figure><img src="https://f4.bcbits.com/img/a2461085139_10.jpg"
-                            alt="Nubiyan Twist Freedom Fables Out Now" height="600" id="album-cover">
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-3 col-lg-3 d-none d-md-block">
-                    <div class="quote-content">
-                        <p class="content-font">"An explosive blend of cultural differences and styles"</p>
-                        <hr class="block-divider">
-                        <h6 class="reviewer-header">Gigwise</h6>
-                    </div>
-                    <div class="quote-content">
-                        <p class="content-font">“A beautiful blend of groove music with uplifting horns and soulful
-                            vocals” </p>
-                        <hr class="block-divider">
-                        <h6 class="reviewer-header">The Guardian</h6>
+                        <h6 class="reviewer-header">Line of Best Fit</h6>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid feature-videos">
-            <div class="row padding">
-                <div class="col-sm-12 col-md-6 col-lg-6 feature-video-1">
-                    <iframe class="feature-video" width="560" height="315"
-                        src="https://www.youtube.com/embed/c_VfMrUbQhY" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 feature-video-2">
-                    <iframe class="feature-video" width="560" height="315"
-                        src="https://www.youtube.com/embed/0d_JfNtGXSI" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Mailing List/Spotify Player -->
-
-    <aside class="mailing-spotify-section">
-        <div
-            class="container-fluid mailing-spotify-container text-center d-flex justify-content-center align-items-center">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="mailing-cta-tablet-flex">
-                        <div class="mailing-cta">
-                            <h3><span class="mail-icon"><i class="fas fa-envelope-open-text"></i></span>Join Us</h3>
-                            <p class="content-font">Win a signed copy of our album, and 2 Access-All-Area tickets to one
-                                of
-                                our
-                                shows!</p>
-                            <button class="btn btn-lg content-font" data-toggle="modal" data-target="#signUpModal">Sign
-                                Up
-                                To
-                                Our Mailing List</button>
+            <div class="container-fluid d-flex flex-nowrap">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="quote-content">
+                            <p class="content-font">"A joyful escape into head-swinging afro-funk"</p>
+                            <hr class="block-divider">
+                            <h6 class="reviewer-header">Clash Magazine</h6>
+                        </div>
+                        <div class="quote-content">
+                            <p class="content-font">“A free-flowing assemblage of jazz, soul, hip hop and diasporic
+                                styles.”
+                            </p>
+                            <hr class="block-divider">
+                            <h6 class="reviewer-header">Mojo</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 album-cover-image">
+                        <figure><img src="https://f4.bcbits.com/img/a2461085139_10.jpg"
+                                alt="Nubiyan Twist Freedom Fables Out Now" height="600" id="album-cover">
+                        </figure>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 d-none d-md-block">
+                        <div class="quote-content">
+                            <p class="content-font">"An explosive blend of cultural differences and styles"</p>
+                            <hr class="block-divider">
+                            <h6 class="reviewer-header">Gigwise</h6>
+                        </div>
+                        <div class="quote-content">
+                            <p class="content-font">“A beautiful blend of groove music with uplifting horns and soulful
+                                vocals” </p>
+                            <hr class="block-divider">
+                            <h6 class="reviewer-header">The Guardian</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 d-none d-md-block spotify-badge">
-                    <figure><img src="assets/images/listen-on-spotify.png" alt="Spotify Badge"
-                            class="spotify-desktop-image"></figure>
-                </div>
-                <div class="col-sm-12 spotify-mobile-banner d-md-none d-sm-block p-0">
-                    <figure><img src="assets/images/spotify-leaderboard.jpg" alt="Nubiyan Twist Spotify Promo Banner"
-                            class="spotify-leaderboard" style="width: 100%"></figure>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-12 p-0 mailing-spotify-content">
-                    <iframe src=" https://open.spotify.com/embed/album/7dGOyxCI4QXNFxHEpgD4jt" width="300" height="185"
-                        class="spotify-player" allow="encrypted-media"></iframe>
+            </div>
+            <div class="container-fluid feature-videos">
+                <div class="row padding">
+                    <div class="col-sm-12 col-md-6 col-lg-6 feature-video-1">
+                        <iframe class="feature-video" width="560" height="315"
+                            src="https://www.youtube.com/embed/c_VfMrUbQhY" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 feature-video-2">
+                        <iframe class="feature-video" width="560" height="315"
+                            src="https://www.youtube.com/embed/0d_JfNtGXSI" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </aside>
+        </section>
 
+
+        <!-- Mailing List/Spotify Player -->
+
+        <section class="mailing-spotify-section">
+            <div
+                class="container-fluid mailing-spotify-container text-center d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mailing-cta-tablet-flex">
+                            <div class="mailing-cta">
+                                <h3><span class="mail-icon"><i class="fas fa-envelope-open-text"></i></span>Join Us</h3>
+                                <p class="content-font">Win a signed copy of our album, and 2 Access-All-Area tickets to
+                                    one
+                                    of
+                                    our
+                                    shows!</p>
+                                <button class="btn btn-lg content-font" data-toggle="modal"
+                                    data-target="#signUpModal">Sign
+                                    Up
+                                    To
+                                    Our Mailing List</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 d-none d-md-block spotify-badge">
+                        <figure><img src="assets/images/listen-on-spotify.png" alt="Spotify Badge"
+                                class="spotify-desktop-image"></figure>
+                    </div>
+                    <div class="col-sm-12 spotify-mobile-banner d-md-none d-sm-block p-0">
+                        <figure><img src="assets/images/spotify-leaderboard.jpg"
+                                alt="Nubiyan Twist Spotify Promo Banner" class="spotify-leaderboard"
+                                style="width: 100%"></figure>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-md-12 p-0 mailing-spotify-content">
+                        <iframe src=" https://open.spotify.com/embed/album/7dGOyxCI4QXNFxHEpgD4jt" width="300"
+                            height="185" class="spotify-player" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- Mailing List Modal Pop-up -->
 
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">

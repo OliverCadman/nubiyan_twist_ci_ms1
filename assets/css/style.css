@@ -92,7 +92,7 @@ ul li a.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+
 }
 
 .opaque-overlay {
@@ -684,10 +684,14 @@ i.fa-angle-double-right {
 /* ----- Header ------ */
 
 .live-header {
-    background: url("../images/live-hero.jpeg") no-repeat fixed;
-    background-position: 40%;
-    background-size: cover;
     height: 100vh;
+    background: url("../images/nt-hero-bg.png") no-repeat bottom fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 
 
 }
@@ -709,7 +713,7 @@ i.fa-angle-double-right {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.281);
+    background-color: rgba(0, 0, 0, 0.171);
 }
 
 /* ----- Featured Shows ----- */
@@ -724,17 +728,19 @@ i.fa-angle-double-right {
     justify-content: center;
 }
 
-#feature-container-2 {
+#feature-container-1 {
     margin-left: 10px;
     width: 80%;
     text-align: center;
 }
 
-#feature-image-2 {
+#feature-image-1 {
     width: 100%;
-    position: static;
+
 }
 
+
+/* Change size of FontAwesome pin for mobile screen size */
 
 .fa-map-pin {
     font-size: 1.5rem;
@@ -774,6 +780,10 @@ i.fa-angle-double-right {
     color: #f48826 !important;
 }
 
+#sold-out {
+    margin-left: 15px;
+}
+
 .feature-info {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -787,6 +797,27 @@ i.fa-angle-double-right {
     color: #fafafa;
     text-align: center;
 
+}
+
+/* ----- Gig Listings ----- */
+
+#gig-listings {
+    background-color: #DCB3AC;
+    height: 100vh;
+    /* To be changed at a later date */
+
+
+}
+
+.listings-header {
+    font-family: "Alatsi", sans-serif;
+    text-transform: uppercase;
+
+}
+
+.listings-header h2 {
+    font-size: 2rem;
+    margin-top: 20px;
 }
 
 
@@ -910,12 +941,6 @@ i.fa-angle-double-right {
         text-align: left;
         font-size: 1.3rem;
     }
-
-
-
-    /* ----- Band History Section ------ */
-
-
 
     /* ----- Clickable Images of Album Cover ----- */
 
@@ -1053,8 +1078,6 @@ i.fa-angle-double-right {
         transition: 0.3s ease-in-out;
         transform: scale(1.1);
     }
-
-
 
     .buy-tickets {
         font-size: 1.4rem !important;
@@ -1286,7 +1309,7 @@ i.fa-angle-double-right {
         width: 100%;
         padding: 0;
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.555);
     }
 
     .alert {
@@ -1315,13 +1338,14 @@ i.fa-angle-double-right {
     }
 
     .live-header h1 {
+        font-size: 3rem;
         padding-top: 0;
     }
 
     /* ----- Featured Shows ----- */
 
     .feature-row {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     #feature-container-1 {
