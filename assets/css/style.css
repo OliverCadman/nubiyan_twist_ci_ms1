@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700');
 
 html,
 body {
@@ -822,13 +822,26 @@ i.fa-angle-double-right {
 
 /* Listings Table */
 
+.listings-inner {
+    background-color: rgb(22, 22, 22);
+    color: #fafafa;
+}
+
 .borderless td,
 .borderless.th {
     border: none
 }
 
 .table td {
-    padding: 10px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 15px;
+    text-align: center;
+}
+
+tr:first-child {
+    font-weight: bold;
 }
 
 
@@ -1418,6 +1431,7 @@ i.fa-angle-double-right {
 
 
     .listings-header h2 {
+        font-size: 3rem;
         margin-top: 0;
     }
 
@@ -1427,14 +1441,28 @@ i.fa-angle-double-right {
     }
 
     .listings-wrapper {
+        margin: 30px;
         border: 3px solid black;
         overflow: scroll;
     }
 
     .listings-inner {
+        height: 100%;
+        padding: 30px;
+    }
 
-        height: 500px;
-        padding: 20px;
+    .listings-ticket-icon {
+        font-size: 2.2rem;
+    }
+
+    .listings-ticket-icon:hover {
+        color: #fafafa;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+    }
+
+    tr:first-child {
+        font-weight: bold;
     }
 
 
