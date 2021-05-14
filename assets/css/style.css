@@ -803,7 +803,7 @@ i.fa-angle-double-right {
 
 #gig-listings {
     background-color: #DCB3AC;
-    height: 100vh;
+    height: 100%;
     /* To be changed at a later date */
 
 
@@ -818,6 +818,17 @@ i.fa-angle-double-right {
 .listings-header h2 {
     font-size: 2rem;
     margin-top: 20px;
+}
+
+/* Listings Table */
+
+.borderless td,
+.borderless.th {
+    border: none
+}
+
+.table td {
+    padding: 10px;
 }
 
 
@@ -1397,6 +1408,33 @@ i.fa-angle-double-right {
     .feature-info {
         padding: 10px;
         background-color: rgba(70, 70, 70, 0.74);
+    }
+
+
+    /* ----- Gig Listings ----- */
+    #gig-listings {
+        height: 100%;
+    }
+
+
+    .listings-header h2 {
+        margin-top: 0;
+    }
+
+    .liveshows-spotify-player {
+        border: none;
+        border-radius: 5%;
+    }
+
+    .listings-wrapper {
+        border: 3px solid black;
+        overflow: scroll;
+    }
+
+    .listings-inner {
+
+        height: 500px;
+        padding: 20px;
     }
 
 
