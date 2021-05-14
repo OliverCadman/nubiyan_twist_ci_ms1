@@ -824,7 +824,7 @@ i.fa-angle-double-right {
 
 .listings-inner {
     background-color: rgb(22, 22, 22);
-    color: #fafafa;
+    color: #f48826;
 }
 
 .borderless td,
@@ -1461,8 +1461,12 @@ tr:first-child {
         transform: scale(1.1);
     }
 
-    tr:first-child {
-        font-weight: bold;
+    td:first-of-type {
+        font-weight: 300;
+    }
+
+    td:nth-child(2) {
+        color: #fafafa;
     }
 
 
