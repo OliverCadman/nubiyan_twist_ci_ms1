@@ -41,7 +41,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #f48826;
+    color: #36454f69;
     transition: 0.1s ease-in-out;
     cursor: pointer;
 }
