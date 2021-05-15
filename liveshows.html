@@ -74,8 +74,8 @@
                 <div class="col-12">
                     <div class="alert alert-light"><small>Sign Up to our mailing list to keep up-to-date on our
                         latest gig
-                        listings!</small><span class="alert-link-float"><a class="alert-link" href="#">Join
-                                Us</a></span></div>
+                        listings!</small><span class="alert-link-float"><button class="btn" data-toggle="modal" data-target="#signUpModal">Join
+                                Us</button></span></div>
                 </div>
             </div>
         </div>
@@ -517,9 +517,9 @@
                 </div>
                 
                 <!-- Call-to-action for mailing list -->
-                <div class="col-lg-4 col-md-12 col-sm-12 order-lg-first">
-                    <div class="d-md-flex flex-md-row flex-lg-column text-center">
-                        <div class="mailing-cta">
+                <div class="col-lg-4 col-md-12 col-sm-12 order-md-last order-lg-first">
+                    <div class="mailing-spotify-liveshows d-md-flex flex-md-row flex-lg-column text-center">
+                        <div class="mailing-cta-live">
                             <h3><span class="mail-icon"><i class="fas fa-envelope-open-text"></i></span>Join Us</h3>
                             <p class="content-font">Win a signed copy of our album, and 2 Access-All-Area tickets to
                                 one of our shows!</p>
@@ -538,6 +538,31 @@
     </section>
 
 
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up to our Mailing List!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone else.</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Sign Up to Enter Prize Draw</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -584,6 +609,7 @@
             </div>
         </div>
     </footer>
+    <!-- Hover popover for map and calendar FontAwesome icons -->
     <script type="text/javascript">
         var popOverSettings = {
             trigger: 'hover',
