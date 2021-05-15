@@ -61,8 +61,8 @@ While the focus of the website should serve the needs of each of these criteria,
     1. As a promoter/venue owner, I want to easily navigate to a contact form, so I can get in touch with the band/band manager efficiently.
     2. As a venue owner, I want to see footage/photos of the band's live shows, so I can see how many people they will bring into my venue.
     3. As a promoter, I want to be able to easily find which promoters/labels the band are affiliated with, so I can determine the band's presence in the music industry.
-    4. As a venue owner, I want to easily navigate to the band's gig history, so I can see which venues they have played at in the past.
-    5. As a venue owner, I want to see how many of their past shows have sold out, so I can be confident that my venue will be filled to capacity.
+    4. As a venue owner, I want to easily navigate to the band's gig listings, so I can gauge how active the band are in the live music scene.
+    5. As a venue owner, I want to see how many of their shows have sold out, so I can be confident that my venue will be filled to capacity.
 
 ## Wireframes
 
