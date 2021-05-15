@@ -72,7 +72,7 @@
         <div class="container-fluid p-0 navalert-container">
             <div class="row no-gutters d-none d-md-block">
                 <div class="col-12">
-                    <div class="alert alert-light"><small></small>Sign Up to our mailing list to keep up-to-date on our
+                    <div class="alert alert-light"><small>Sign Up to our mailing list to keep up-to-date on our
                         latest gig
                         listings!</small><span class="alert-link-float"><a class="alert-link" href="#">Join
                                 Us</a></span></div>
@@ -91,8 +91,9 @@
         <!-- Featured Shows -->
 
         <article>
-            <div class="container-fluid">
-                <div class="row no-gutters justify-content-between feature-row">
+            <!-- Feature Show 1 -->
+            <div class="container-fluid p-0 feature-shows">
+                <div class="row no-gutters justify-content-md-center align-items-md-center justify-content-md-between feature-row">
                     <div class="col-sm-12 col-md-4 col-lg-4 responsive-wrapper">
                         <div class="featured-shows" id="feature-container-1">
                             <img id="feature-image-1" src="assets/images/featured-liveshows/nt-womad.png">
@@ -100,6 +101,8 @@
                                 <p><a href="https://goo.gl/maps/3Xe2JpMqrz3BQFLA8" target="_blank" data-toggle="popover"
                                         trigger="hover" data-placement="bottom" data-content="Find on Google Maps!"><i
                                             class="fas fa-map-pin"></i></a>Charlton Park, Malmesbury</p>
+
+                                            <!-- Anchor Tag to enable user to add event to their Google Calendar -->
                                 <p><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%57%4F%4D%41%44%20%46%65%73%74%69%76%61%6C&dates=20210722/20210726&location=%43%68%61%72%6C%74%6F%6E%20%50%61%72%6B%20%45%73%74%61%74%65%2C%20%4D%61%6C%6d%65%73%62%75%72%79"
                                         data-toggle="popover" trigger="hover" data-placement="bottom"
                                         data-content="Add to your Calendar!" target="_blank"><i
@@ -111,21 +114,23 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Feature Show 2 -->
                     <div class="col-md-4 col-lg-4 d-none d-md-block">
                         <div class="featured-shows" id="feature-container-2">
-
                             <img id="feature-image-2" src="assets/images/featured-liveshows/nt-crossthetracks.jpeg">
                             <div class="feature-info">
                                 <p><a href="https://goo.gl/maps/dCHAyog29ntyJEq99" target="_blank" data-toggle="popover"
                                         trigger="hover" data-placement="bottom" data-content="Find on Google Maps!"><i
                                             class="fas fa-map-pin"></i></a>Crystal Palace, London</p>
+
+                                            <!-- Anchor Tag to enable user to add event to their Google Calendar -->
                                 <p><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%43%72%6F%73%73%20%54%68%65%20%54%72%61%63%6B%73&dates=20210804/20210805&location=%43%72%79%73%74%61%6C%20%50%61%6C%61%63%65%20%42%6F%77%6C%2C%20%4C%6F%6E%64%6F%6E"
                                         data-toggle="popover" trigger="hover" data-placement="bottom"
                                         data-content="Add to your Calendar!" target="_blank"><i
                                             class="fas fa-calendar-alt"></i></a>Friday 6th
                                     August 2021</p>
                                 <p class="buy-tickets"><span><i class="fas fa-ticket-alt"></i></span><s>Buy
-                                        Tickets</s><span id="sold-out">Sold Out!</span></p>
+                                        Tickets</s><span class="feature-soldout">Sold Out!</span>
                             </div>
                         </div>
                     </div>
@@ -133,6 +138,8 @@
             </div>
         </article>
     </section>
+
+    <!-- Gig Listings Header -->
     <section id="gig-listings">
         <div class="container-fluid">
             <div class="row section-header">
@@ -141,20 +148,22 @@
                 </div>
             </div>
         </div>
-        <div class="container p-0 spotify-container">
+        
+        <!-- Gig Listings Bootstrap Table -->
+        <div class="container p-0">
             <div class="row no-gutters">
-                <div class="col-lg-8 col-sm-12 order-md-last">
+                <div class="col-lg-8 col-sm-12 col-md-12 order-lg-last">
                     <div class="listings-wrapper">
                         <table class="table borderless">
                             <tbody>
                                 <tr>
                                     <td>27th May 18:00</td>
-                                    <td>Islington Assembly Hall (Early Show)</td>
-                                    <td><span><i class="fas fa-ticket-alt listings-ticket-icon"></i></span></td>
+                                    <td>Islington Assembly Hall, London (Early Show)</td>
+                                    <td class="soldout-bold">Sold Out</td>
                                 </tr>
                                 <tr>
                                     <td>27th May 20:00</td>
-                                    <td>Islington Assembly Hall (Late Show)</td>
+                                    <td>Islington Assembly Hall, London (Late Show)</td>
                                     <td><span><a href="https://dice.fm/event/qk3op-nubiyan-twist-ft-cherise-ria-moran-kog-socially-distanced-late-show-27th-may-islington-assembly-hall-london-tickets?pid=0bb3b020&_branch_match_id=897293386831161633"
                                                 target="_blank"><i
                                                     class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
@@ -170,8 +179,7 @@
                                 <tr>
                                     <td>6th Aug 14:00</td>
                                     <td>Cross The Tracks, London</td>
-                                    <td><span><i class="fas fa-ticket-alt listings-ticket-icon"></i></span>
-                                    </td>
+                                    <td class="soldout-bold">Sold Out</td>
                                 </tr>
                                 <tr>
                                     <td>14th Sept 19:00</td>
@@ -507,15 +515,18 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 order-md-first">
-                    <div class="d-lg-flex flex-lg-column text-center">
-                        <div class="liveshows-mailing">
+                
+                <!-- Call-to-action for mailing list -->
+                <div class="col-lg-4 col-md-12 col-sm-12 order-lg-first">
+                    <div class="d-md-flex flex-md-row flex-lg-column text-center">
+                        <div class="mailing-cta">
                             <h3><span class="mail-icon"><i class="fas fa-envelope-open-text"></i></span>Join Us</h3>
                             <p class="content-font">Win a signed copy of our album, and 2 Access-All-Area tickets to
                                 one of our shows!</p>
                             <button class="btn btn-lg content-font" data-toggle="modal" data-target="#signUpModal">Sign
                                 Up To Our Mailing List</button>
                         </div>
+                        <hr class="block-divider">
                         <div class="mailing-spotify-content">
                             <iframe src=" https://open.spotify.com/embed/album/7dGOyxCI4QXNFxHEpgD4jt" width="300"
                                 height="185" class="liveshows-spotify-player" allow="encrypted-media"></iframe>
