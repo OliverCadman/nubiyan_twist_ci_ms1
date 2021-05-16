@@ -914,18 +914,18 @@ td:nth-child(2) {
 
 /* ----------------------------- Video Page ---------------------------------- */
 
-#video-section {
+#feature-video {
     background: url("../images/home-video-background.png") no-repeat bottom fixed;
     background-size: cover;
-    background-position: 60%;
+    background-position: 35%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     height: 100vh;
     }
 
-#video-section h1 {
-    padding-top: 110px;
+#feature-video h1 {
+    padding-top: 50px;
     font-family: "Alatsi", sans-serif;
     color: #f48826;
     font-size: 4rem;
@@ -944,23 +944,48 @@ td:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.363);
 }
 
-#video-row-one {
-    margin-top: 20px;
-}
-
-.video-container {
+.feature-video-wrapper {
     background-color:#DCB3AC;
+    margin-top: 20px;
     padding: 20px;
 }
 
-.video-container h5 {
+.feature-video-wrapper {
     font-family: "Alatsi", sans-serif;
     text-transform: uppercase;
     color: rgb(70, 70, 70);
 }
 
+.feature-video-header {
+    color:rgb(22, 22, 22);
+}
+
 .video {
     width: 100%;
+}
+
+#video-collection {
+    background-color: #DCB3AC;
+}
+
+#video-collection h2 {
+    font-size: 1.5rem;
+}
+
+.video-wrapper {
+    background-color: rgb(22, 22, 22);
+    padding: 30px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.video-divider {
+    border-top: 3px solid #fafafa;
+}
+
+.video-wrapper h5 {
+    font-family: "Alatsi", sans-serif;
+    color: #fafafa;
 }
 
 
@@ -1293,6 +1318,22 @@ td:nth-child(2) {
         height: 100%;
     
     }
+
+    /* ---------------------------- Video Page (min-width 768px) ----------------------------- */
+
+    #feature-video {
+        background-position: 50%;
+        }
+
+    #feature-video h1 {
+        padding-top: 110px;
+    }
+
+    .feature-video-container {
+        margin-top: 100px;
+    }
+
+
 
 }
 
@@ -1663,6 +1704,16 @@ td:nth-child(2) {
 
     .liveshows-spotify-player {
         height: 300px;
+    }
+
+    /* --------------------- Video Page ----------------------- */
+
+    #feature-video {
+        background-position: 60%;
+         }
+
+    .feature-video-container {
+        margin-top: 30px;
     }
 
 
