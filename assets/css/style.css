@@ -213,12 +213,7 @@ ul li a.active {
     height: 100%;
 }
 
-.feature-video {
-    max-width: 350px;
-    max-height: 194px;
-}
-
-.feature-video-1 {
+.home-feature-video {
     margin-bottom: 20px;
 }
 
@@ -235,7 +230,7 @@ ul li a.active {
 }
 
 .mailing-cta {
-    background: rgba(105, 158, 142, 0.178);
+    background-color: rgba(22, 22, 22, 0.5);
     padding: 30px;
     border-radius: 3%;
     margin-bottom: 25px;
@@ -1378,6 +1373,11 @@ td:nth-child(2) {
         display: block;
     }
 
+    .home-feature-video {
+        background:rgb(22, 22, 22);
+        padding: 10px;
+    }
+
     .feature-video {
         max-width: 600px;
         max-height: 332px;
@@ -1385,9 +1385,17 @@ td:nth-child(2) {
 
     /* ----- Mailing/Spotify Player Section ----- */
 
+    .mailing-spotify-container {
+        height: 70vh;
+    }
+
     .mailing-cta {
         width: 100%;
-        background-color: rgba(154, 208, 192, 0.288)
+        background-color: rgba(22, 22, 22, 0.658)
+    }
+
+    .mailing-cta h3 {
+        color:#f48826 !important;
     }
 
     .spotify-desktop-image {
