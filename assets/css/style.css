@@ -1327,11 +1327,16 @@ td:nth-child(2) {
         }
 
     #feature-video h1 {
+        font-size: 5rem;
         padding-top: 110px;
     }
 
     .feature-video-container {
         margin-top: 100px;
+    }
+
+    #video-collection h2 {
+        font-size: 3rem;
     }
 
 
