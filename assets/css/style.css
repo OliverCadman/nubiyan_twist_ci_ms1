@@ -1277,8 +1277,6 @@ td:nth-child(2) {
 
     .listings-wrapper {
         margin: 50px 0;
-        height: 700px;
-        overflow: scroll;
     }
 
     tr {
@@ -1621,6 +1619,10 @@ td:nth-child(2) {
 
     .listings-ticket-icon {
         font-size: 2.2rem;
+    }
+
+    .listings-wrapper {
+        overflow: scroll;
     }
 
     .listings-ticket-icon:hover {
