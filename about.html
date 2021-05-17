@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nubiyan Twist. Band history and band members">
     <meta name="keywords" content="music, nubiyan twist, biography, band members, band history, live music">
-    <title>Nubiyan Twist</title>
+    <title>Nubiyan Twist | About</title>
     <!-- Bootstrap CSS & jQuery CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -59,44 +59,44 @@
 
     <!-- Header -->
     <header class="about-header about-background">
-        <div class="container-fluid ">
-            <div class="opaque-overlay"></div>
+        <div class="opaque-overlay"></div>
+        <div class="container-fluid">
             <div class="row no-gutters">
                 <div class="col-12">
                     <h1>About</h1>
                 </div>
             </div>
         </div>
+        <!-- Leading Quote -->
         <div class="container-fluid about-quote-container">
-            <div class="row no-gutters">
-                <div class="col-sm-6 col-lg-3 col-md-4 about-quote">
+            <div class="row no-gutters d-none d-md-block">
+                <div class="col-sm-6 col-lg-4 col-md-6 about-quote">
                     <p><span class="quotation-mark">“</span>Versatility with deep soul… an elegant yet earthy
                         hybrid of <span class="highlights">jazz</span>, <span class="highlights">UK soul</span>
                         and
                         <span class="highlights">highlife</span><span class="quotation-mark">”</span>
                         (Uncut)</p>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row bio-summary">
-                <div class="col-sm-6 offset-sm-2 col-lg-4 col-md-5">
+        <!-- Two Paragraph Summary of the Band -->
+            <div class="col-lg-4 col-md-6 float-md-right">
+                <div class="summary" id="bio-summary-1">
                     <p>Nubiyan Twist are a Leeds-conceived, London-based, genre-fluid musical collective
                         orchestrated by guitarist/producer Tom Excell.</p>
                 </div>
             </div>
-            <div class="row no-gutters bio-summary">
-                <div class="col-sm-12 col-lg-4 col-md-5 ml-auto my-1 p-0">
+            <div class="col-lg-4 col-md-6">
+                <div class="summary" id="bio-summary-2">
                     <p>Their expansive, eclectic music is a seamless meld of soul, funk, jazz, hip-hop,
                         reggae,
                         Indian classical music, gnawa, soukous, and electronic dance music. 
                     </p>
                 </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- About Band -->
+    <!-- Band History -->
 
     <section id="about-band">
         <div class="container-fluid p-0">
@@ -119,7 +119,6 @@
                 </div>
             </div>
         </div>
-        </div>
         <div class="row no-gutters text-center profile-body">
             <div class="col-12">
                 <p>
@@ -135,10 +134,9 @@
                 <div id="ss-st-display">
                     <div class="st-circle-container">
                     </div>
-
-                    <div class="st-circle-outer">
-                        <a href="https://nubiyantwist.bandcamp.com/album/nubiyan-twist-wf103" target="_blank" role="img"
-                            aria-label="Nubiyan Twist album, Self Titled. Clickable image of album cover">
+                    <!-- Added title to outer divs as an alternative to having no 'alt' attribute for image -->
+                    <div class="st-circle-outer" title="Nubiyan Twist Album, Self Titled">
+                        <a href="https://nubiyantwist.bandcamp.com/album/nubiyan-twist-wf103" target="_blank">
                             <div class="st-circle-inner">
                             </div>
                         </a>
@@ -150,9 +148,8 @@
 
                     <div class="ss-circle-container">
                     </div>
-                    <div class="ss-circle-outer">
-                        <a href="https://nubiyantwist.bandcamp.com/album/nubiyan-twist-siren-song" target="_blank"
-                            role="img" aria-label="Nubiyan Twist album, Siren Song. Clickable image of album cover">
+                    <div class="ss-circle-outer" title="Nubiyan Twist Siren Song EP">
+                        <a href="https://nubiyantwist.bandcamp.com/album/nubiyan-twist-siren-song" target="_blank">
                             <div class="ss-circle-inner">
                             </div>
                         </a>
@@ -172,11 +169,10 @@
                 </p>
                 <div id="jr-display">
 
-                    <div class="jr-circle-container">
+                    <div class="jr-circle-container" title="Nubiyan Twist Album, Jungle Run">
                     </div>
                     <div class="jr-circle-outer">
-                        <a href="https://nubiyantwist.bandcamp.com/album/jungle-run" target="_blank" role="img"
-                            aria-label="Nubiyan Twist album, Jungle Run. Clickable image of album cover">
+                        <a href="https://nubiyantwist.bandcamp.com/album/jungle-run" target="_blank">
                             <div class="jr-circle-inner">
                             </div>
                         </a>
@@ -206,9 +202,8 @@
                 <div id="ff-display">
                     <div class="ff-circle-container">
                     </div>
-                    <div class="ff-circle-outer">
-                        <a href="https://nubiyantwist.bandcamp.com/album/freedom-fables" target="_blank" role="img"
-                            aria-label="Nubiyan Twist album, Freedom Fables. Clickable image of album cover">
+                    <div class="ff-circle-outer" title="Nubiyan Twist's Latest Album, Freedom Fables">
+                        <a href="https://nubiyantwist.bandcamp.com/album/freedom-fables" target="_blank">
                             <div class="ff-circle-inner">
                             </div>
                         </a>
@@ -221,8 +216,9 @@
                 <p>Titled Freedom Fables, the album was issued in March of 2021.</p>
             </div>
         </div>
-        </div>
     </section>
+
+    <!-- Band Cards -->
     <section id="band-profile">
         <div class="container-fluid">
             <div class="row text-center section-header">
@@ -290,8 +286,8 @@
                         <img class="card/img/top" src="assets/images/about-headshots/about-denis.jpg"
                             alt="Denis Scully. Tenor Saxophone.">
                         <div class="card-body">
-                            <h3 class="card-title">Denis</h3 class="card-title">
-                            <p class="card-text">Tenor Sax</p class="card-text">
+                            <h3 class="card-title">Denis</h3>
+                            <p class="card-text">Tenor Sax</p>
                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#denis-modal">More Info</button>
                         </div>
@@ -355,8 +351,7 @@
 
     <!-- Band Member Modal Windows -->
 
-    <div class="modal band-modal" id="nick-modal" tabindex="-1" role="dialog"
-        aria-labelledby="Nick Richards Modal Window">
+    <div class="modal band-modal" id="nick-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -367,19 +362,18 @@
                         realized how beautiful a voice he also had. Check him out on our tune "Tell It To Me Slowly"
                         below.</p>
                     <iframe class="modal-video" id="#nick-modal-video" width="560" height="315"
-                        src="https://www.youtube.com/embed/YtvcTQ5CGWo" title="YouTube video player" frameborder="0"
+                        src="https://www.youtube.com/embed/YtvcTQ5CGWo" title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success modal-close" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
 
-    <div class="modal band-modal" id="pilo-modal" tabindex="-1" role="dialog" aria-labelledby="Pilo Adami Modal Window">
+    <div class="modal band-modal" id="pilo-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -388,22 +382,18 @@
                 <div class="modal-body">
                     <p>Pilo is many things; a Percussionist, Guitarist, Drummer, and Producer in his own right.
                         Check him out in his studio.</p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
-                            src="https://www.youtube.com/embed/W9px-1Pz930" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/W9px-1Pz930" title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success modal-close" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-    <div class="modal band-modal" id="jonny-modal" tabindex="-1" role="dialog"
-        aria-labelledby="Jonny Enser Modal Window">
+    <div class="modal band-modal" id="jonny-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -412,21 +402,18 @@
                 <div class="modal-body">
                     <p>A versatile Trumpet player, composer and teacher, Jonny also composes music in his own right.
                         Check out one of his tracks from 'Isolation Tapes' here.</p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
-                            src="https://www.youtube.com/embed/8MahBYGpmdo" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/8MahBYGpmdo" title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-    <div class="modal band-modal" id="joe-modal" tabindex="-1" role="dialog" aria-labelledby="Joe Henwood Modal Window">
+    <div class="modal band-modal" id="joe-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -440,22 +427,18 @@
                         work and ingenuity, we would have had a much harder time developing our sound. Thanks Joe.</p>
                     <p>Check out his studio in action here, with a video featuring our good friends, Me and My Friends!
                     </p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
-                            src="https://www.youtube.com/embed/QJU6fQXrNAE" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/QJU6fQXrNAE" title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-    <div class="modal band-modal" id="denis-modal" tabindex="-1" role="dialog"
-        aria-labelledby="Denis Scully Modal Window">
+    <div class="modal band-modal" id="denis-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -465,24 +448,19 @@
                     <p>Denis is our secret weapon, our whip hand, our ace up our sleeve. We call him "the bull". Heavily
                         influenced by Michael Brecker, his sound his undeniably fierce indeed. Check his solo on our
                         track "24-7" here. </p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
                             src="https://www.youtube.com/embed/K26KlWucg30?start=109" title="YouTube video player"
-                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                     <script async src="//www.instagram.com/embed.js"></script>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-    <div class="modal band-modal" id="luke-modal" tabindex="-1" role="dialog"
-        aria-labelledby="Luke Wynter Modal Window">
+    <div class="modal band-modal" id="luke-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -491,21 +469,18 @@
                 <div class="modal-body">
                     <p>Virtuous on both Bass Guitar and Guitar, Luke fronts his own project "Golden Mean". Check
                         it out below.</p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
-                            src="https://www.youtube.com/embed/TwixraQ3dGY" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/TwixraQ3dGY" title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-    <div class="modal band-modal" id="finn-modal" tabindex="-1" role="dialog" aria-labelledby="Finn Booth Modal Window">
+    <div class="modal band-modal" id="finn-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -515,22 +490,18 @@
                     <p>Finn is the band's traction engine. Our driving force. Our kind-hearted daredevil who can
                         kickflip a triple stack, while playing slap bass. Well, maybe not, but he comes close. Check out
                         his music below.</p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
-                            src="https://www.youtube.com/embed/snMWGv0L53c" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/snMWGv0L53c" title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-    <div class="modal band-modal" id="oli-modal" tabindex="-1" role="dialog"
-        aria-labelledby="Oliver Cadman Modal Window">
+    <div class="modal band-modal" id="oli-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -542,21 +513,18 @@
                         interpretation of Duke Ellington's "Single Petal of a Rose" with our good friend (and occasional
                         band-mate) Arran Kent.
                     </p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
-                            src="https://www.youtube.com/embed/EWknrq_In9w" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/EWknrq_In9w" title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-    <div class="modal band-modal" id="tom-modal" tabindex="-1" role="dialog" aria-labelledby="Tom Excell Modal Window">
+    <div class="modal band-modal" id="tom-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -568,32 +536,17 @@
                         Without him and his vision, we wouldn't be here. As well as working tirelessly with
                         Nubiyan Twist, he produces all sorts of music. Check out one of his other bands 'ONIPA',
                         featuring our good friends, below.</p>
-                    <article>
                         <iframe class="modal-video" width="560" height="315"
-                            src="https://www.youtube.com/embed/GF7o8CPTCCw" title="YouTube video player" frameborder="0"
+                            src="https://www.youtube.com/embed/GF7o8CPTCCw" title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
-                </button>
             </div>
         </div>
     </div>
-
-    <!-- Featured Artists -->
-    <section>
-
-    </section>
-    <!-- Image and Video Gallery -->
-    <section>
-
-    </section>
-
-
-
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">

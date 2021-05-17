@@ -359,7 +359,7 @@ button {
 }
 
 .about-header {
-    padding: 30px;
+    padding-top: 45px;
 }
 
 .about-header h1 {
@@ -398,15 +398,6 @@ button {
     font-size: 2em;
 }
 
-.bio-summary {
-    position: relative;
-    top: 10vh;
-    left: 8vw;
-    text-align: right;
-}
-
-
-
 /* ------ Biography Section ------ */
 
 
@@ -421,6 +412,7 @@ button {
     text-align: right;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 3rem;
 }
 
 .profile-header {
@@ -553,7 +545,7 @@ i.fa-angle-double-right {
 .jr-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('../icons/jr-albumcover.jpeg') no-repeat;
+    background: url('../images/jr-albumcover.jpeg') no-repeat;
     border-radius: 50%;
     background-size: cover;
     z-index: 10;
@@ -896,7 +888,7 @@ td:nth-child(2) {
 }
 
 .mailing-cta-live button {
-    background-color:rgb(70, 70, 70);
+    background-color: rgb(70, 70, 70);
     color: #fafafa;
 }
 
@@ -917,7 +909,7 @@ td:nth-child(2) {
     -moz-background-size: cover;
     -o-background-size: cover;
     height: 100vh;
-    }
+}
 
 #feature-video h1 {
     padding-top: 50px;
@@ -940,7 +932,7 @@ td:nth-child(2) {
 }
 
 .feature-video-wrapper {
-    background-color:#DCB3AC;
+    background-color: #DCB3AC;
     margin-top: 20px;
     padding: 20px;
 }
@@ -952,7 +944,7 @@ td:nth-child(2) {
 }
 
 .feature-video-header {
-    color:rgb(22, 22, 22);
+    color: rgb(22, 22, 22);
 }
 
 .video {
@@ -1100,15 +1092,40 @@ td:nth-child(2) {
 
     /* ----- Header ----- */
 
-    .bio-summary {
-        position: relative;
-        top: 15vh;
-        left: 3vw;
-        text-align: left;
-        font-size: 1.3rem;
+    .about-background {
+        background-position: 55%;
     }
 
-    /* ----- Clickable Images of Album Cover ----- */
+    .about-header {
+        padding-top: 110px;
+    }
+
+    .about-quote {
+        line-height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .summary {
+        font-size: 1rem;
+    }
+
+    #bio-summary-2 {
+        position: relative;
+        top: 200px;
+    }
+
+    /* ----- History Header ----- */
+
+
+    /* 
+    .section-header h2 {
+        font-size: 3rem !important;
+    }
+
+
+
+
+    /*  Clickable Images of Album Cover  */
 
     .st-circle-outer {
         margin-top: 80px;
@@ -1203,7 +1220,7 @@ td:nth-child(2) {
         background-position: 50% 70%;
         background-size: cover;
         height: 70vh
-        }
+    }
 
     .opaque-overlay-live {
         position: absolute;
@@ -1308,18 +1325,18 @@ td:nth-child(2) {
         margin-bottom: 50px;
     }
 
-    
+
 
     .liveshows-spotify-player {
         height: 100%;
-    
+
     }
 
     /* ---------------------------- Video Page (min-width 768px) ----------------------------- */
 
     #feature-video {
         background-position: 50%;
-        }
+    }
 
     #feature-video h1 {
         font-size: 5rem;
@@ -1374,7 +1391,7 @@ td:nth-child(2) {
     }
 
     .home-feature-video {
-        background:rgb(22, 22, 22);
+        background: rgb(22, 22, 22);
         padding: 10px;
     }
 
@@ -1395,7 +1412,7 @@ td:nth-child(2) {
     }
 
     .mailing-cta h3 {
-        color:#f48826 !important;
+        color: #f48826 !important;
     }
 
     .spotify-desktop-image {
@@ -1425,20 +1442,29 @@ td:nth-child(2) {
 
     /* --- Header Quote --- */
 
+    .about-background {
+        background: url("../images/about-background (7).jpg") no-repeat top fixed;
+        background-size: cover;
+        padding-top: 110px;
+        height: 100vh;
+
+    }
+
     .about-header {
         padding-top: 110px;
     }
 
-    .about-quote {
-        font-size: 1.3rem;
-        border-radius: 5%;
-        margin-top: 30px;
-        float: right;
+    .about-quote p {
+        font-size: 1.5rem;
     }
 
-    .bio-summary {
-        position: static;
-        font-size: 1em;
+    .summary {
+        font-size: 1rem;
+    }
+
+    #bio-summary-2 {
+        position: relative;
+        top: 0px;
     }
 
     /* ------------- Band History Section -------------- */
@@ -1452,14 +1478,14 @@ td:nth-child(2) {
         margin-top: 40px;
         padding: 0 50px;
     }
-   
+
 
     .profile-body {
         font-size: 1.2rem;
     }
 
 
-     /* ----- Clickable Images of Album Covers ----- */
+    /* ----- Clickable Images of Album Covers ----- */
 
     .st-circle-outer {
         margin-top: 80px;
@@ -1598,7 +1624,7 @@ td:nth-child(2) {
     }
 
     .navalert-container button:hover {
-        background-color:rgb(22, 22, 22);
+        background-color: rgb(22, 22, 22);
         color: #fafafa;
     }
 
@@ -1621,7 +1647,7 @@ td:nth-child(2) {
         width: 80%;
         height: 100%;
         text-align: right;
-        
+
     }
 
     .feature-soldout {
@@ -1726,7 +1752,7 @@ td:nth-child(2) {
     }
 
     .mailing-cta-live button:hover {
-        background-color:rgb(22, 22, 22);
+        background-color: rgb(22, 22, 22);
     }
 
     .mailing-cta h3 {
@@ -1741,7 +1767,7 @@ td:nth-child(2) {
 
     #feature-video {
         background-position: 60%;
-         }
+    }
 
     .feature-video-container {
         margin-top: 0;
