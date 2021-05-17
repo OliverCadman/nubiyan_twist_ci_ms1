@@ -10,6 +10,17 @@ body {
     margin: 0;
 }
 
+/* ---------- Block Dividers -------- */
+
+.block-divider {
+    border-top: 2px solid black;
+}
+
+.history-block-divider {
+    border-top: 3px solid black;
+    width: 80%;
+}
+
 
 /* ----- Navigation Bar ----- */
 
@@ -367,7 +378,7 @@ button {
     text-decoration: underline;
     text-transform: uppercase;
     color: #f48826;
-    font-size: 4em;
+    font-size: 3rem;
 
 }
 
@@ -378,13 +389,20 @@ button {
     color: #fafafa;
 }
 
-
 .about-quote {
-    position: relative;
-    left: 30px;
-    font-size: 1em;
-    border-radius: 5%;
-    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+#bio-summary-1 {
+    margin-top: 50px;
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+
+#bio-summary-2 {
+    width: 80%;
+    margin-top: 50px;
 }
 
 .highlights {
@@ -406,25 +424,22 @@ button {
     min-height: 100vh;
 }
 
-.profile-header h2 {
-    font-family: "Alatsi", sans-serif;
-    color: #d8d8d8;
-    text-align: right;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-size: 3rem;
+.profile-container p {
+    padding: 0 20px;
 }
 
-.profile-header {
-    background: url("../images/nt-livelistings-header.png") no-repeat;
-    background-size: contain;
-    background-color: #08172c;
-
-
+.section-header h2 {
+    font-size: 2rem !important;;
 }
 
 .profile-body {
+    padding: 0 20px;
     font-family: "Alata", sans-serif;
+    text-align: center;
+}
+
+.profile-body p:first-child {
+    margin-top: 20px;
 }
 
 /* ----- Images of Album catalogue styled with two circle shapes with z-index ----- */
@@ -585,6 +600,8 @@ i.fa-angle-double-right {
     margin: -90px 0px 0px -90px;
 }
 
+/* ----- Band Cards ----- */
+
 #band-profile {
     background-color: #f0e7df
 }
@@ -596,8 +613,8 @@ i.fa-angle-double-right {
     margin: 40px 0;
 }
 
-.block-divider {
-    border-top: 2px solid black;
+#vocals-container {
+    margin-top: 30px;
 }
 
 .card {
@@ -820,7 +837,7 @@ i.fa-angle-double-right {
     padding-right: 15px;
     text-align: right;
     color: #d8d8d8;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 20px;
 }
 
@@ -1106,18 +1123,25 @@ td:nth-child(2) {
     }
 
     .summary {
-        font-size: 1rem;
+        font-size: 1.4rem;
+    }
+
+    #bio-summary-1 {
+        margin-top: 0;
+        width: 100%;
+        float: none;
+        text-align: left;
     }
 
     #bio-summary-2 {
-        position: relative;
-        top: 200px;
+        margin-top: 100px !important;
+        width: 100%;
     }
 
     /* ----- History Header ----- */
 
 
-    /* 
+    
     .section-header h2 {
         font-size: 3rem !important;
     }
@@ -1462,10 +1486,6 @@ td:nth-child(2) {
         font-size: 1rem;
     }
 
-    #bio-summary-2 {
-        position: relative;
-        top: 0px;
-    }
 
     /* ------------- Band History Section -------------- */
 
@@ -1474,14 +1494,18 @@ td:nth-child(2) {
         margin-bottom: 20px;
     }
 
-    .profile-container {
-        margin-top: 40px;
-        padding: 0 50px;
-    }
-
 
     .profile-body {
+        padding: 0 50px;
         font-size: 1.2rem;
+    }
+
+    .profile-body p:first-child {
+        margin-top: 40px;
+    }
+
+    .profile-body p:last-child {
+        margin-bottom: 40px;
     }
 
 
@@ -1539,7 +1563,7 @@ td:nth-child(2) {
     }
 
     .jr-circle-outer {
-        margin: 40px 0;
+        margin: 10px 0;
     }
 
     .jr-circle-inner:hover {
@@ -1548,7 +1572,7 @@ td:nth-child(2) {
     }
 
     .ff-circle-outer {
-        margin: 40px 0;
+        margin: 10px 0;
     }
 
     .ff-circle-inner:hover {
