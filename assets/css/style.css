@@ -10,9 +10,11 @@ body {
     margin: 0;
 }
 
-/* ---------- Block Dividers -------- */
+/* ---------- Block Dividers (to be used on multiple pages) -------- */
 
-
+.block-divider {
+    border-top: 3px solid black !important;
+}
 
 .history-block-divider {
     border-top: 3px solid black;
@@ -31,6 +33,19 @@ body {
 
 .navbar-brand img {
     display: none;
+}
+
+.collapse-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:flex-end;
+}
+
+.collapse-brand>img {
+    width: 50%;
+    
+
 }
 
 .navbar a {
@@ -211,10 +226,6 @@ ul li a.active {
     border-top: 3px solid black !important;
 }
 
-.block-divieder {
-    border-top: 1px solid black;
-}
-
 
 #album-cover {
     margin: 30px 0;
@@ -223,6 +234,7 @@ ul li a.active {
 }
 
 .home-feature-video {
+    /* background-color: rgb(22, 22, 22); */
     margin-bottom: 20px;
 }
 
@@ -427,7 +439,8 @@ button {
 }
 
 .section-header h2 {
-    font-size: 2rem !important;;
+    font-size: 2rem !important;
+    ;
 }
 
 .profile-body {
@@ -994,9 +1007,9 @@ td:nth-child(2) {
 
 /* ----------------------------- Shop Page ----------------------------- */
 
-.music-shop {
+.shop-hero {
     background: url("../images/shop-background.jpeg") no-repeat fixed;
-    background-position: 80% 10%;
+    background-position: 50%;
     background-size: cover;
     height: 100vh;
 
@@ -1013,13 +1026,13 @@ td:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.664);
 }
 
-.music-shop h1 {
+.shop-hero h1 {
     font-family: "Alatsi", sans-serif;
     font-size: 4rem;
     text-transform: uppercase;
     text-decoration: underline;
     color: #f48826;
-    padding-top: 110px;
+    padding-top: 45px;
 
 }
 
@@ -1408,7 +1421,6 @@ td:nth-child(2) {
     }
 
     .home-feature-video {
-        background: rgb(22, 22, 22);
         padding: 10px;
     }
 
