@@ -74,6 +74,8 @@ While the focus of the website should serve the needs of each of these criteria,
 
 [Video](assets/wireframes/nt-video.pdf)
 
+[Shop](assets/wireframes/nt-shop.pdf)
+
 
 
 
