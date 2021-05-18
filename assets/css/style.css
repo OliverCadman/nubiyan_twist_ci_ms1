@@ -1061,6 +1061,14 @@ td:nth-child(2) {
     background-color:#DCB3AC;
 }
 
+.shopping-cart {
+    margin-top: 10px;
+}
+
+.viewcart-btn {
+    float: right;
+}
+
 .item-row {
     margin-top: 20px;
 }
