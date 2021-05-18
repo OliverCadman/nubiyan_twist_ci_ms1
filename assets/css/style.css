@@ -1037,8 +1037,8 @@ td:nth-child(2) {
     display: flex;
     align-items: center;
     height: 60%;
-    }
-    
+}
+
 .anchor-wrapper {
     display: flex;
     flex-direction: column;
@@ -1058,7 +1058,11 @@ td:nth-child(2) {
 /* ----- Music Shop Section ----- */
 
 #music-shop {
-    background-color:#DCB3AC;
+    background-color: #DCB3AC;
+}
+
+#music-shop-body {
+    position: relative; /* To contain Cart inside section */
 }
 
 .shopping-cart {
@@ -1067,11 +1071,13 @@ td:nth-child(2) {
 
 .viewcart-btn {
     float: right;
+
 }
 
 .item-row {
     margin-top: 20px;
 }
+
 .item-image {
     width: 100%;
 }
@@ -1091,7 +1097,7 @@ td:nth-child(2) {
 }
 
 .item-info p {
-   
+
     clear: both;
     text-align: left;
 }
@@ -1100,6 +1106,54 @@ td:nth-child(2) {
     float: left;
 }
 
+
+/* ----- Cart Info and Cart Styling ----- */
+/* Referenced from John Smilga (freecodecamp.org) 
+   Git Username: john-smilga
+   Repository handle: js-cart-setup */
+
+   
+.cart-info {
+    border: 0.1rem solid black;
+    color: var(--mainBlack);
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+  }
+
+.cart {
+    position: absolute;
+    min-height: 10rem;
+    top: 0;
+    right: 0;
+    z-index:2;
+    transition: all 0.3s ease-in-out;
+    background: rgb(255, 255, 255);
+    width: 0;
+    overflow: hidden;
+}
+.show-cart {
+    width: 100%; /* Fills shopping cart the full width of column between item cards */
+    padding: 2rem 1.5rem;
+    transform: scale(1)
+}
+
+.cart-item {
+transition: all 2s ease-in-out;
+}
+
+.cart-item-remove {
+    transition: all 0.5s ease-in-out;
+}
+
+.cart-item-remove:hover {
+    transform: scale(1.1);
+ 
+}
+
+#cart-item-price {
+    font-size: 2rem;
+}
 
 
 
@@ -1899,18 +1953,20 @@ td:nth-child(2) {
 
     .anchor-wrapper button {
         font-size: 2rem;
-        background: linear-gradient(#f48826, rgb(22,22,22));
+        background: linear-gradient(#f48826, rgb(22, 22, 22));
         color: #fafafa;
         border: none;
     }
 
     .anchor-wrapper button:active {
-        border:none;
+        border: none;
     }
 
-    /* ----- Music Shop Section ----- /*
+    /* ----- Music Shop Section ----- */
 
-    
+    #music-shop-body {
+        position: relative;
+    }
 
 
 }

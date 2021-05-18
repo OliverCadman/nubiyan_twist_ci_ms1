@@ -65,6 +65,9 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- Shop Page Hero Image -->
     <section class="shop-hero">
         <div class="opaque-overlay-music"></div>
         <div class="container-fluid">
@@ -82,8 +85,11 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Music Shop Section -->
     <section id="music-shop">
-        <div class="container-fluid section-header" ">
+        <div class="container-fluid section-header">
             <div class=" row">
             <div class="col-12">
                 <h2 id="music-shop-header">Music</h2>
@@ -91,11 +97,39 @@
         </div>
         </div>
         <div class="container" id="music-shop-body">
-            <div class="row shopping-cart">
-                <div class="col-12">
-                    <button class="btn viewcart-btn"><span>View Shopping Cart<i class="fas fa-shopping-cart"></i></span></button>
+            <div class="row d-flex justify-content-sm-start justify-content-md-center shopping-cart">
+                <div class="col-8">
+                    <div id="cart-info" class="align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                        <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                        <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span class="item-total">10.49</span></p>
+                      </div>
+                      <div id="cart" class="cart d-md-none d-sm-block">
+                        <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                            <img src="assets/images/ff-albumcover.jpg" width="100" class="img-fluid rounded-circle" id="item-img" alt="">
+                            <div class="item-text">
+                                <p id="cart-item-title" class="font-weight-bold mb-0">Cart Item</p>
+                                <span>£</span>
+                                <span id="cart-item-price" class="cart-item-price mb-0">11.99</span>
+                            </div>
+                                <a href="#" id="cart-item-remove" class="cart-item-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                        </div>
+                        <div class="cart-item d-flex justify-content-between text-capitalize my-3 p-0">
+                            <img src="assets/images/jr-albumcover.jpeg" width="100" class="img-fluid rounded-circle" id="item-img" alt="">
+                            <div class="item-text">
+                                <p id="cart-item-title" class="font-weight-bold mb-0">Cart Item</p>
+                                <span>£</span>
+                                <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+                            </div>
+                                <a href="#" id="cart-item-remove" class="cart-item-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <div class="row justify-content-lg-between item-row">
                 <div class="col-6 col-md-4">
                     <div class="card item-card">
@@ -104,13 +138,54 @@
                         <div class="card-header">
                             <h6>Jungle Run (CD)</h6>
                             <p>£10.99</p>
-                            <button class="btn btn-primary d-md-none d-sm-block" type="button" data-toggle="modal"
+                            <button class="btn btn-primary" type="button" data-toggle="modal"
                                 data-target="#jr-cd-modal" aria-expanded="false" aria-controls="itemAccordion">More
                                 Info</button>
                         </div>
                     </div>
                 </div>
-                
+                <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
+                Git Username: john-smilga
+                Repository handle: js-cart-setup -->
+                <div class="col-12 col-md-4">
+                    <div id="cart" class="cart d-sm-none d-md-block">
+                        <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                            <img src="assets/images/ff-albumcover.jpg" width="100" class="img-fluid rounded-circle" id="item-img" alt="">
+                            <div class="item-text">
+                                <p id="cart-item-title" class="font-weight-bold mb-0">Cart Item</p>
+                                <span>£</span>
+                                <span id="cart-item-price" class="cart-item-price mb-0">11.99</span>
+                            </div>
+                                <a href="#" id="cart-item-remove" class="cart-item-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                        </div>
+                        <div class="cart-item d-flex justify-content-between text-capitalize my-3 p-0">
+                            <img src="assets/images/jr-albumcover.jpeg" width="100" class="img-fluid rounded-circle" id="item-img" alt="">
+                            <div class="item-text">
+                                <p id="cart-item-title" class="font-weight-bold mb-0">Cart Item</p>
+                                <span>£</span>
+                                <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+                            </div>
+                                <a href="#" id="cart-item-remove" class="cart-item-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card item-card">
+                        <img class="card-img-top item-image" src="assets/images/ff-albumcover.jpg"
+                            alt="Buy Freedom Fables, the latest album by Nubiyan Twist">
+                        <div class="card-header">
+                            <h6>Freedom Fables (CD)</h6>
+                            <p>£11.99</p>
+                            <button class="btn btn-primary" type="button" data-toggle="modal"
+                                data-target="#ff-cd-modal" aria-expanded="false" aria-controls="itemAccordion">More
+                                Info</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -131,11 +206,13 @@
                     <span>£10.99</span>
                     <div class="item-info">
                         <p>Weaving together elements of jazz, soul, hip hop, African styles, Latin, dub, hip
-                            hop and electronics, Nubiyan Twist flow through a collection of thought-provoking and life-affirming music. Recorded at the
-                            band’s own self-built Henwood Studio in rural Oxfordshire, the album effortlessly moves through
+                            hop and electronics, Nubiyan Twist flow through a collection of thought-provoking and
+                            life-affirming music. Recorded at the
+                            band’s own self-built Henwood Studio in rural Oxfordshire, the album effortlessly moves
+                            through
                             different voices from the band’s circle.</p>
                     </div>
-                    </div>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success addbasket-button">Add to Basket</button>
                     <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
@@ -143,6 +220,38 @@
             </div>
         </div>
     </div>
+    <div class="modal item-modal" id="ff-cd-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Freedom Fables (CD)</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img-wrapper">
+                        <img src="assets/images/ff-albumcover.jpg" id="modal-img"
+                            alt="Information about Freedom Fables, the latest album by Nubiyan Twist">
+                    </div>
+                    <span>£11.99</span>
+                    <div class="item-info">
+                        <p>Woven around soul searching, cautionary tales and parables for modern life, the new album is
+                            the most accomplished yet by the Leeds / London collective, effortlessly fusing different
+                            soul, jazz and global styles with great musicianship and lyrics.</p>
+                        <p>Championed by BBC's own Mary-Anne-Hobbs, Gilles Peterson and Jamie Cullum, Freedom Fables is
+                            shaping up to be a modern classic and a priority for Strut in 2021,
+                            catapulting Nubiyan Twist even further into the limelight and cementing their position as "one
+                            of the UK’s leading soulful collectives of the current generation."</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success addbasket-button">Add to Basket</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Window -->
+   
 
 
 
@@ -185,6 +294,7 @@
             </div>
         </div>
     </footer>
+    <script src="shop.js"></script>
 
 </body>
 
