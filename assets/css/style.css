@@ -1055,6 +1055,30 @@ td:nth-child(2) {
     font-size: 1.5rem;
 }
 
+/* ----- Music Shop Section ----- */
+
+#music-shop {
+    background-color:#DCB3AC;
+}
+
+.item-row {
+    margin-top: 20px;
+}
+.item-image {
+    width: 100%;
+}
+
+.item-body {
+    background-color: white;
+}
+
+#modal-img {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+
 
 
 
@@ -1409,10 +1433,15 @@ td:nth-child(2) {
         padding-top: 110px;
     }
 
+    /* ---- Music Shop Section ---- */
+
     .anchor-wrapper button {
         font-size: 2rem;
     }
 
+    .item-card {
+        margin: 20px 0 !important;
+    }
 
 
 }
@@ -1641,7 +1670,7 @@ td:nth-child(2) {
         cursor: pointer;
     }
 
-    .card:hover {
+    .band-card:hover {
         transform: scale(1.1);
         transition: 0.3s ease-in-out;
 
@@ -1836,6 +1865,8 @@ td:nth-child(2) {
 
     /* ---------------------- Shop Page ------------------------ */
 
+    /* ----- Hero Image Header Section ----- */
+
     .shop-hero {
         background-position: top;
     }
@@ -1846,7 +1877,18 @@ td:nth-child(2) {
 
     .anchor-wrapper button {
         font-size: 2rem;
+        background: linear-gradient(#f48826, rgb(22,22,22));
+        color: #fafafa;
+        border: none;
     }
+
+    .anchor-wrapper button:active {
+        border:none;
+    }
+
+    /* ----- Music Shop Section ----- /*
+
+    
 
 
 }

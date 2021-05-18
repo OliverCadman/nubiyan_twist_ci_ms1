@@ -75,16 +75,55 @@
         </div>
         <div class="anchor-container">
             <div class="anchor-wrapper">
-                    <button class="btn shop-anchor">Music</button>
+                    <a href="#music-shop-header"><button class="btn shop-anchor">Music</button></a>
                     <br>
                     <button class="btn shop-anchor">Clothing/Prints</button>
             </div>
         </div>
     </section>
+    <section id="music-shop">
+        <div class="container-fluid section-header" ">
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="music-shop-header">Music</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="music-shop-body">
+            <div class="row justify-content-lg-between item-row">
+                <div class="col-6 col-md-4">
+                    <div class="card item-card">
+                        <img class="card-img-top item-image" src="assets/images/jr-albumcover.jpeg" alt="Buy Jungle Run, an album by Nubiyan Twist">
+                            <div class="card-header">
+                                <h6>Jungle Run (CD)</h6>
+                                <p>£12.99</p>
+                                <button class="btn btn-primary d-md-none d-sm-block" type="button" data-toggle="modal" data-target="#jr-cd-modal" aria-expanded="false" aria-controls="itemAccordion">More Info</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
+    <!-- Item Modals -->
+    
+    <div class="modal item-modal" id="jr-cd-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jungle Run</h5>
+                </div>
+                <div class="modal-body">
+                   <div class="modal-img-wrapper">
+                       <img src="assets/images/jr-albumcover.jpeg" id="modal-img" alt="Information about Jungle Run, an album by Nubiyan Twist">
+                   </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
