@@ -1069,11 +1069,6 @@ td:nth-child(2) {
     margin-top: 10px;
 }
 
-.viewcart-btn {
-    float: right;
-
-}
-
 .item-row {
     margin-top: 20px;
 }
@@ -1097,7 +1092,6 @@ td:nth-child(2) {
 }
 
 .item-info p {
-
     clear: both;
     text-align: left;
 }
