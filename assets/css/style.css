@@ -967,7 +967,7 @@ td:nth-child(2) {
     color: rgb(22, 22, 22);
 }
 
-.video-title-block {
+.title-block {
     display: block;
 }
 
@@ -1057,12 +1057,10 @@ td:nth-child(2) {
 
 /* ----- Music Shop Section ----- */
 
-#music-shop {
-    background-color: #DCB3AC;
-}
 
-#music-shop-body {
+.shop-section {
     position: relative; /* To contain Cart inside section */
+    background-color: #DCB3AC;
 }
 
 .shopping-cart {
@@ -1070,7 +1068,7 @@ td:nth-child(2) {
 }
 
 .item-row {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .item-image {
@@ -1081,10 +1079,24 @@ td:nth-child(2) {
     background-color: white;
 }
 
-#modal-img {
+.modal-img {
     height: 200px;
     width: 200px;
     float: left;
+}
+
+.modal-img-wide {
+    width: 100%;
+    float:
+}
+
+#print-modal-img {
+    max-height: 400px;
+    float: left;
+}
+
+#shirt-options-wrapper {
+    margin-top: 30px;
 }
 
 .item-info {
@@ -1141,7 +1153,7 @@ transition: all 2s ease-in-out;
 }
 
 .cart-item-remove:hover {
-    transform: scale(1.1);
+    transform: scaleX(1);
  
 }
 
@@ -1509,9 +1521,6 @@ transition: all 2s ease-in-out;
         font-size: 2rem;
     }
 
-    .item-card {
-        margin: 20px 0 !important;
-    }
 
 
 }
