@@ -236,7 +236,9 @@ ul li a.active {
 }
 
 .home-feature-video {
-    margin: 20px 0;
+    background-color: rgb(22, 22, 22);
+    margin: 30px 0;
+    color: #fafafa;
 }
 
 /* ----- Mailing List/Spotify Section */
@@ -632,7 +634,7 @@ i.fa-angle-double-right {
 /* ----- Band Cards ----- */
 
 #band-profile {
-    background-color: #f0e7df
+    background-color: #DCB3AC;
 }
 
 #band-profile h2 {
@@ -658,6 +660,8 @@ i.fa-angle-double-right {
 
 
 .card button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     background-color: #DCB3AC;
     color: black;
     border: 1px solid black;
@@ -705,16 +709,12 @@ i.fa-angle-double-right {
 }
 
 .modal button {
+    font-family: "Lato", sans-serif;
     background-color: #DCB3AC;
     color: rgb(22, 22, 22);
     border: none;
 }
 
-.modal button:hover {
-    background-color: rgb(154, 208, 192);
-    transition: 0.3s ease-in-out;
-    color: white;
-}
 
 
 /* --------------------------------------- Live Shows ----------------------------------------- */
@@ -753,7 +753,18 @@ i.fa-angle-double-right {
     background-color: rgba(0, 0, 0, 0.171);
 }
 
+/* NavAlert Button Font */
+
+.navalert-container {
+    font-family: "Alata", sans-serif;
+}
+
+.alert-btn {
+    font-family: "Lato" sans-serif;
+}
+
 /* ----- Featured Shows ----- */
+
 .feature-shows.div {
     margin: auto;
 }
@@ -1019,7 +1030,9 @@ td:nth-child(2) {
 }
 
 .video-wrapper h5 {
-    font-family: "Alatsi", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 1.3rem;
     color: #fafafa;
 }
 
@@ -1227,7 +1240,7 @@ td:nth-child(2) {
     /* ----- Navigation Bar ----- */
 
     #hero-image {
-        background-position: 50% 40%;
+        background-position: bottom;
     }
 
     .navbar-nav li {
@@ -1261,6 +1274,12 @@ td:nth-child(2) {
         font-weight: bold;
         letter-spacing: 2px;
 
+    }
+    
+    /* Featured videos */
+
+    .home-feature-video {
+        margin: 30px 0;
     }
 
     /* ----- Mailing/Spotify Player Section ----- */
@@ -1459,7 +1478,6 @@ td:nth-child(2) {
     /* Site-wide alert (displayed on tablet screen size up) */
 
     .alert {
-        font-family: 'Alata', sans-serif;
         margin-top: 100px;
         background-color: rgba(22, 22, 22, 0.5);
         color: #fafafa;
@@ -1566,6 +1584,14 @@ td:nth-child(2) {
 
     #video-collection h2 {
         font-size: 3rem;
+    }
+
+    .video-wrapper h5 {
+        font-size: 1.7rem;
+    }
+
+    .desktop-span {
+        display: inline;
     }
 
     /* -------------------- Shop Page -------------------- */
@@ -1806,13 +1832,6 @@ td:nth-child(2) {
 
     }
 
-    /* ----- About the Band ----- */
-
-    #band-profile {
-        background-color: #f0e7df;
-    }
-
-    .about-header
     /* --- Band Cards --- */
 
     .card {
@@ -1827,14 +1846,24 @@ td:nth-child(2) {
     }
 
     .card button:hover {
-        background-color: rgb(154, 208, 192);
+        background-color: rgb(22,22,22);
+        border: 1px solid #fafafa;
         transition: 0.3s ease-in-out;
-        color: white;
+        color: #f48826;
 
     }
 
     .card button:focus {
         border-style: 10px solid white;
+    }
+
+    /* Band Member Modal Window Close Button */
+
+    .modal button:hover {
+        background-color: rgb(22,22,22);
+        border: 1px solid #fafafa;
+        transition: 0.3s ease-in-out;
+        color: #f48826;
     }
 
     /* ------------------------ Live Shows Page ------------------------ */
@@ -1862,9 +1891,14 @@ td:nth-child(2) {
         padding-top: 0;
     }
 
+    .alert-button {
+        font-family: "Lato", sans-serif;
+    }
+
     .navalert-container button:hover {
         background-color: rgb(22, 22, 22);
-        color: #fafafa;
+        color: #f48826;
+        border: 1px solid #fafafa;
     }
 
     /* ----- Featured Shows ----- */
