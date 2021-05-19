@@ -43,7 +43,7 @@
                         <a class="nav-link" href="liveshows.html">Live Shows</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="videos.html">Videos</a>
+                        <a class="nav-link" href="videos.html">Video</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="shop.html">Shop</a>
@@ -77,6 +77,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="anchor-wrapper">
+                            <a href="#feature-videos"><button class="btn"
+                                    id="hero-cta">Listen/Watch</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -108,7 +114,7 @@
                 </div>
                 <h4 class="promo-header"><strong>New Album "Freedom Fables" Available Now!</strong>
                 </h4>
-                <div class="col-12 cta-album">
+                <div class="col-12 cta-album p-0">
                     <a href="https://nubiyantwist.bandcamp.com/" target="_blank"><button
                             class="btn cta-listen">Download/Listen</button></a>
                 </div>
@@ -148,7 +154,7 @@
                                 alt="Nubiyan Twist Freedom Fables Out Now" height="600" id="album-cover">
                         </figure>
                     </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3 d-none d-md-block">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
                         <div class="quote-content">
                             <p class="content-font">"An explosive blend of cultural differences and styles"</p>
                             <hr class="block-divider">
@@ -157,14 +163,19 @@
                         <div class="quote-content">
                             <p class="content-font">“A beautiful blend of groove music with uplifting horns and soulful
                                 vocals” </p>
+
+                            <!-- Anchor element hyperlinked to hero image section, 
+                              placed at this point in DOM due to lack of accuracy when placed in relevant section -->
+                            <a name="feature-videos"></a> 
                             <hr class="block-divider">
                             <h6 class="reviewer-header">The Guardian</h6>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid feature-videos">
-                <div class="row justify-content-lg-center padding">
+            <div class="container-fluid">
+                              
+                 <div class="row justify-content-lg-center padding">
                     <div class="col-sm-12 col-md-6 col-lg-6 home-feature-video">
                         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/c_VfMrUbQhY"
                             title="YouTube video player" frameborder="0"
@@ -184,7 +195,7 @@
 
         <!-- Mailing List/Spotify Player -->
 
-        <section class="mailing-spotify-section">
+        <section class="mailing-spotify-section" id="mailing-spotify-section">
             <div
                 class="container-fluid mailing-spotify-container text-center d-flex justify-content-center align-items-center">
                 <div class="row">

@@ -10,6 +10,12 @@ body {
     margin: 0;
 }
 
+/* Page Header (h1) - applies to all pages except home page */
+
+.page-header {
+    font-size: 3rem;
+}
+
 /* ---------- Block Dividers (to be used on multiple pages) -------- */
 
 .block-divider {
@@ -46,7 +52,7 @@ body {
 
 .navbar-nav li {
     font-family: 'Alata', sans-serif;
-    font-size: 2rem;
+    font-size: 1.4rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #0c0c0c;
@@ -93,12 +99,11 @@ ul li a.active {
 #hero-image {
 
     height: 100vh;
-    background: url("../images/nt-hero-bg.png") no-repeat bottom fixed;
+    background: url("../images/nt-hero-bg.png") no-repeat top fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,18 +121,23 @@ ul li a.active {
     background-color: rgba(0, 0, 0, 0.747);
 }
 
+#hero-cta {
+    letter-spacing: 2px;
+}
+
 /* ----- Jumbotron ----- */
 
 .callout-jumbotron {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(133, 58, 58, 0);
     position: relative;
+    padding: 0;
 }
 
 .callout-jumbotron h2 {
     font-family: "Alatsi", sans-serif;
     color: #f48826;
-    letter-spacing: 4px;
-    font-size: 4em;
+    letter-spacing: 2px;
+    font-size: 3em;
 }
 
 .callout-jumbotron p {
@@ -226,8 +236,7 @@ ul li a.active {
 }
 
 .home-feature-video {
-    /* background-color: rgb(22, 22, 22); */
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 /* ----- Mailing List/Spotify Section */
@@ -353,8 +362,9 @@ button {
 /* Header */
 
 .about-background {
-    background: url("../images/about-background (7).jpg") no-repeat top fixed;
+    background: url("../images/about-background (7).jpg") no-repeat fixed;
     background-size: cover;
+    background-position: 65%;
     height: 100vh;
     padding-top: 110px;
     width: 100%;
@@ -380,31 +390,47 @@ button {
     text-decoration: underline;
     text-transform: uppercase;
     color: #f48826;
-    font-size: 3rem;
+
 
 }
 
 .about-header p {
     font-family: 'Alata', sans-serif;
     float: right;
-    clear: both;
     color: #fafafa;
+    font-size: 1rem;
 }
 
 .about-quote {
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 
+.summary-wrapper-1 {
+    position: relative;
+}
+
+.summary-row-1 {
+    margin-top: 30px;
+}
+
+.summary-row-2 {
+    margin-top: 100px;
+}
+
+
 #bio-summary-1 {
-    margin-top: 50px;
-    width: 80%;
+    width: 100%;
     float: right;
     text-align: right;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    padding-right: 10px;
 }
 
 #bio-summary-2 {
-    width: 80%;
     margin-top: 50px;
+
 }
 
 .highlights {
@@ -563,7 +589,7 @@ i.fa-angle-double-right {
 .jr-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('../images/jr-albumcover.jpeg') no-repeat;
+    background: url('../images/album-covers/jr-cd.jpeg') no-repeat;
     border-radius: 50%;
     background-size: cover;
     z-index: 10;
@@ -593,7 +619,7 @@ i.fa-angle-double-right {
 .ff-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('../images/nt-background-1.jpg') no-repeat bottom;
+    background: url('../images/album-covers/ff-cd.jpg') no-repeat bottom;
     border-radius: 50%;
     background-size: contain;
     z-index: 10;
@@ -713,7 +739,6 @@ i.fa-angle-double-right {
     font-family: "Alatsi", sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
-    font-size: 2.5rem;
     color: #f48826;
 }
 
@@ -828,7 +853,7 @@ i.fa-angle-double-right {
 .section-header {
     background: url("../images/nt-livelistings-header.png") no-repeat;
     background-color: #141414;
-    background-position: 5%;
+    background-position: 0%;
     background-size: contain;
     font-family: "Alatsi", sans-serif;
     text-transform: uppercase;
@@ -837,7 +862,7 @@ i.fa-angle-double-right {
 
 
 .section-header h2 {
-    padding-right: 15px;
+    padding-right: 5px;
     text-align: right;
     color: #d8d8d8;
     font-size: 1rem;
@@ -935,7 +960,6 @@ td:nth-child(2) {
     padding-top: 50px;
     font-family: "Alatsi", sans-serif;
     color: #f48826;
-    font-size: 4rem;
     text-transform: uppercase;
     text-decoration: underline;
 }
@@ -1052,7 +1076,7 @@ td:nth-child(2) {
     font-weight: 300;
     font-size: 2rem;
     color: #fafafa;
-    border: none;
+    border: 1px solid #d8d8d8;
 }
 
 .anchor-music {
@@ -1068,7 +1092,8 @@ td:nth-child(2) {
 
 
 .shop-section {
-    position: relative; /* To contain Cart inside section */
+    position: relative;
+    /* To contain Cart inside section */
     background-color: #DCB3AC;
 }
 
@@ -1134,34 +1159,36 @@ td:nth-child(2) {
    Git Username: john-smilga
    Repository handle: js-cart-setup */
 
-   
+
 .cart-info {
     border: 0.1rem solid black;
     color: var(--mainBlack);
     border-radius: 0.25rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
-  }
+}
 
 .cart {
     position: absolute;
     min-height: 10rem;
     top: 0;
     right: 0;
-    z-index:2;
+    z-index: 2;
     transition: all 0.3s ease-in-out;
     background: rgb(255, 255, 255);
     width: 0;
     overflow: hidden;
 }
+
 .show-cart {
-    width: 100%; /* Fills shopping cart the full width of column between item cards */
+    width: 100%;
+    /* Fills shopping cart the full width of column between item cards */
     padding: 2rem 1.5rem;
     transform: scale(1)
 }
 
 .cart-item {
-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .cart-item-remove {
@@ -1170,7 +1197,7 @@ transition: all 2s ease-in-out;
 
 .cart-item-remove:hover {
     transform: scaleX(1);
- 
+
 }
 
 #cart-item-price {
@@ -1186,10 +1213,22 @@ transition: all 2s ease-in-out;
 
 @media (min-width: 768px) {
 
+    /* Page header (h1) - Applies to all pages */
+
+    .page-header {
+        font-size: 5rem !important;
+    }
+
 
     /* ----------------- Home Page --------------- */
 
+
+
     /* ----- Navigation Bar ----- */
+
+    #hero-image {
+        background-position: 50% 40%;
+    }
 
     .navbar-nav li {
         font-size: 1em;
@@ -1272,13 +1311,18 @@ transition: all 2s ease-in-out;
         padding-top: 110px;
     }
 
-    .about-quote {
+    .about-quote p {
         line-height: 50px;
         font-size: 1.5rem;
     }
 
-    .summary {
-        font-size: 1.4rem;
+    .summary p {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    .summary-row-2 {
+        margin-top: 20px;
     }
 
     #bio-summary-1 {
@@ -1410,7 +1454,6 @@ transition: all 2s ease-in-out;
 
     .live-header h1 {
         padding: 0;
-        font-size: 3rem;
     }
 
     /* Site-wide alert (displayed on tablet screen size up) */
@@ -1421,6 +1464,7 @@ transition: all 2s ease-in-out;
         background-color: rgba(22, 22, 22, 0.5);
         color: #fafafa;
         border: none;
+        padding: 5px 0 5px;
     }
 
     .alert-link-float {
@@ -1513,7 +1557,6 @@ transition: all 2s ease-in-out;
     }
 
     #feature-video h1 {
-        font-size: 5rem;
         padding-top: 110px;
     }
 
@@ -1542,6 +1585,10 @@ transition: all 2s ease-in-out;
 }
 
 @media (min-width: 992px) {
+
+    /* Page Header (h1) font size - Applies to all pages */
+
+
 
     /* --------------------- Home Page ------------------- */
 
@@ -1643,8 +1690,16 @@ transition: all 2s ease-in-out;
         font-size: 1.5rem;
     }
 
-    .summary {
+    .summary p {
         font-size: 1rem;
+    }
+
+    .summary-row-1 {
+        margin-top: 0;
+    }
+
+    .summary-row-2 {
+        margin-top: 0;
     }
 
 
@@ -1804,7 +1859,6 @@ transition: all 2s ease-in-out;
     }
 
     .live-header h1 {
-        font-size: 4rem;
         padding-top: 0;
     }
 
@@ -1971,7 +2025,7 @@ transition: all 2s ease-in-out;
     }
 
     .anchor-wrapper button:hover {
-        color:#f48826;
+        color: #f48826;
     }
 
     .anchor-wrapper button:active {
