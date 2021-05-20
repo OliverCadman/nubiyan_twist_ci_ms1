@@ -131,9 +131,10 @@ ul li a.active {
     background-color: rgba(133, 58, 58, 0);
     position: relative;
     padding: 0;
+    margin-bottom: 250px;
 }
 
-.callout-jumbotron h2 {
+.callout-jumbotron h1 {
     font-family: "Alatsi", sans-serif;
     color: #f48826;
     letter-spacing: 2px;
@@ -236,9 +237,18 @@ ul li a.active {
 }
 
 .home-feature-video {
+    font-family: "Lato", sans-serif;
     background-color: rgb(22, 22, 22);
     margin: 30px 0;
     color: #fafafa;
+}
+
+.home-feature-video h5  {
+    font-weight: 300;
+}
+
+.home-feature-video h5 .title-block {
+    font-style: italic;
 }
 
 /* ----- Mailing List/Spotify Section */
@@ -1273,16 +1283,7 @@ Included to provide accuracy for hyperlink to section of page */
         font-size: 3rem !important;
     }
 
-
-    /* ----------------- Home Page --------------- */
-
-
-
     /* ----- Navigation Bar ----- */
-
-    #hero-image {
-        background-position: bottom;
-    }
 
     .navbar-nav li {
         font-size: 1em;
@@ -1293,6 +1294,20 @@ Included to provide accuracy for hyperlink to section of page */
         display: inline-block;
         width: 100px;
         height: 90px;
+    }
+
+    /* ----------------- Home Page --------------- */
+
+    #hero-image {
+        background-position: bottom;
+    }
+
+    .callout-jumbotron {
+        margin-bottom: 300px;
+    }
+
+    .callout-jumbotron h1 {
+        font-size: 4rem;
     }
 
     /* ----- Album Promotion Section ----- */
@@ -1693,9 +1708,6 @@ included to provide accuracy for hyperlink to section of page */
     /* Page Header (h1) font size - Applies to all pages */
 
 
-
-    /* --------------------- Home Page ------------------- */
-
     /* ----- Navigation Bar ----- */
 
     .navbar-nav li {
@@ -1708,6 +1720,12 @@ included to provide accuracy for hyperlink to section of page */
         display: inline-block;
         width: 100px;
         height: 90px;
+    }
+
+    /* --------------------- Home Page ------------------- */
+
+    .callout-jumbotron {
+        margin: 0;
     }
 
     /* ----- Album Promotion Section ----- */
