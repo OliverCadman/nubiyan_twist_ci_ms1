@@ -467,13 +467,36 @@ button {
 }
 
 .profile-body {
-    padding: 0 20px;
+    padding: 0 5px;
     font-family: "Alata", sans-serif;
     text-align: center;
 }
 
 .profile-body p:first-child {
     margin-top: 20px;
+}
+
+.history-image-wrapper {
+    font-family: "Lato", sans-serif;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-image-inner {
+    background: rgb(22, 22, 22);
+    color: #fafafa;
+    padding-top: 24px;
+}
+
+.history-image {
+    width: 90%;
+}
+
+figcaption small{
+    font-weight: 200 !important;
+    font-style: italic;
 }
 
 /* ----- Images of Album catalogue styled with two circle shapes with z-index ----- */
@@ -1498,7 +1521,7 @@ Included to provide accuracy for hyperlink to section of page */
         background: url("../images/nt-livehero.png") no-repeat fixed;
         background-position: 50% 70%;
         background-size: cover;
-        height: 70vh
+        height: 70vh;
     }
 
     .opaque-overlay-live {
@@ -1928,8 +1951,7 @@ included to provide accuracy for hyperlink to section of page */
         background: url("../images/nt-livehero.png") no-repeat fixed;
         background-position: 90%;
         background-size: cover;
-        height: 100vh;
-        min-height: 100%;
+        height: inherit;
     }
 
     .opaque-overlay-live {
