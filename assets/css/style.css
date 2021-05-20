@@ -622,7 +622,7 @@ i.fa-angle-double-right {
 .jr-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('../images/album-covers/jr-cd.jpeg') no-repeat;
+    background: url('../images/album-covers/jr-cd.jpg') no-repeat;
     background-size: cover;
     z-index: 10;
     position: absolute;
@@ -1228,30 +1228,46 @@ Included to provide accuracy for hyperlink to section of page */
     cursor: pointer;
 }
 
+
 .cart {
     position: absolute;
-    min-height: 10rem;
+    height: 40vh;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 2;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
     background: rgb(255, 255, 255);
     width: 0;
-    overflow: hidden;
+    overflow: scroll;
+    border-radius: 0.3rem;
+}
+
+#item-img {
+    width: 25%;
+    height: 25%;
 }
 
 .show-cart {
-    width: 100%;
+    
+    width: 500px;
     /* Fills shopping cart the full width of column between item cards */
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem;
     transform: scale(1)
+    border-radius: 0.3rem;
 }
 
 .cart-item {
     transition: all 2s ease-in-out;
 }
 
+.item-text {
+    text-align: left;
+    margin-right: 50px;
+}
+
 .cart-item-remove {
+    text-align: right;
+    float: right;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1261,7 +1277,7 @@ Included to provide accuracy for hyperlink to section of page */
 }
 
 #cart-item-price {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -2170,6 +2186,12 @@ Included to provide accuracy for hyperlink to section of page */
     }
 
     /* ----- Music Shop Section ----- */
+
+    /* Cart Info Clickable Div */
+
+    .cart-info__icon {
+        font-size: 2rem;
+    }
 
     #music-shop-body {
         position: relative;

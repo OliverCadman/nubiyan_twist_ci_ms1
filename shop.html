@@ -97,18 +97,37 @@
     <main>
         <section class="shop-section">
             <div class="container-fluid section-header">
-                <div class=" row">
+                <div class="row">
                     <div class="col-12 p-0">
                         <h2 class="my-5">Music</h2>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4 d-none d-md-block">
+                <!-- Shopping Cart Window -->
+                <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
+                Git Username: john-smilga
+                Repository Handle: js-cart-setup -->
+                        <div id="cart" class="cart">
+                            <div class="cart-total-container d-flex justify-content-around mt-5">
+                                <h5>Total</h5>
+                                <h5> £ <strong id="cart-total" class="font-weight-bold"></strong> </h5>
+                            </div>
+                            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                                <a href="#" id="clear-cart"
+                                    class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+                                <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="container" id="music-shop-body">
-                <div class="row d-flex justify-content-center shopping-cart">
-                    <div class="col-8">
+                <div class="row d-flex justify-content-end shopping-cart">
+                    <div class="col-4">
                         <div id="cart-info" class="cart-info text-center d-flex justify-content-between mx-lg-5">
-                            <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span
-                                    class="item-total">10.49</span></p>
+                            <p class="mb-0 text-capitalize"><span id="item-count">Your Cart </span> items - <span
+                                    class="item-total"></span></p>
                             <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
                         </div>
                     </div>
@@ -117,7 +136,7 @@
                 <div class="row justify-content-lg-between item-row">
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
-                            <img class="card-img-top item-image" src="assets/images/album-covers/ff-vinyl.png"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/ff-vinyl.jpg"
                                 alt="Buy Freedom Fables, the latest album by Nubiyan Twist">
                             <div class="card-header">
                                 <h6>Freedom Fables <span class="title-block desktop-span">(Double Vinyl)</span></h6>
@@ -131,7 +150,7 @@
                     </div>
                     <div class="col-6 col-md-4 item-card ">
                         <div class="card">
-                            <img class="card-img-top item-image" src="assets/images/album-covers/ff-green-vinyl.png"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/ff-green-vinyl.jpg"
                                 alt="Buy Freedom Fables, limited edition green vinyl, from Nubiyan Twist">
                             <div class="card-header">
                                 <h6>Freedom Fables <span class="title-block desktop-span">(Ltd. Edition Green
@@ -146,7 +165,7 @@
                     </div>
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
-                            <img class="card-img-top item-image" src="assets/images/album-covers/ff-cd.jpg"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/ff-cd.jpg"
                                 alt="Buy Freedom Fables, the latest album by Nubiyan Twist">
                             <div class="card-header">
                                 <h6>Freedom Fables (CD)</h6>
@@ -159,7 +178,7 @@
                     </div>
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
-                            <img class="card-img-top item-image" src="assets/images/album-covers/jr-vinyl.jpeg"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/jr-vinyl.jpg"
                                 alt="Buy Jungle Run (Vinyl), an album by Nubiyan Twist">
                             <div class="card-header">
                                 <h6>Jungle Run <span class="title-block desktop-span">(Vinyl)</span></h6>
@@ -173,7 +192,7 @@
                     </div>
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
-                            <img class="card-img-top item-image" src="assets/images/album-covers/jr-cd.jpeg"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/jr-cd.jpg"
                                 alt="Buy Jungle Run, an album by Nubiyan Twist">
                             <div class="card-body">
                                 <h6>Jungle Run (CD)</h6>
@@ -186,19 +205,20 @@
                     </div>
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
-                            <img class="card-img-top item-image" src="assets/images/album-covers/titms-vinyl.jpeg"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/titms-vinyl.jpeg"
                                 alt="Buy 'Tell It To Me Slowly', 7 inch vinyl single, from Nubiyan Twist">
                             <div class="card-header">
-                                <h6 class="mobile-card-header">Tell It To Me Slowly <span class="title-block desktop-span">(7" Vinyl)</span>
+                                <h6 class="mobile-card-header">Tell It To Me Slowly <span
+                                        class="title-block desktop-span">(7" Vinyl)</span>
                                 </h6>
                                 <p>£10.99</p>
                                 <button class="btn btn-primary" type="button" data-toggle="modal"
                                     data-target="#titms-vinyl-modal" aria-expanded="false"
                                     aria-controls="itemAccordion">More
                                     Info</button>
-                                    <div class="clothing-shop-anchor-target">
-                                        <a name="clothing-shop"></a>
-                                    </div>
+                                <div class="clothing-shop-anchor-target">
+                                    <a name="clothing-shop"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -227,7 +247,7 @@
                 <div class="row justify-content-center justify-content-md-between item-row">
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
-                            <img class="card-img-top item-image" src="assets/images/clothing-prints/ff-tshirt.jpeg"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/ff-shirt.jpg"
                                 alt="Buy the Freedom Fables T-Shirt">
                             <div class="card-header">
                                 <h6>Freedom Fables<span class="title-block">T-Shirt</span></h6>
@@ -244,8 +264,7 @@
                 Repository handle: js-cart-setup -->
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
-                            <img class="card-img-top item-image"
-                                src="assets/images/clothing-prints/tt-square-print.jpeg"
+                            <img class="card-img-top item-image" src="assets/images/shop-images/tt-print.jpg"
                                 alt="Buy Tittle Tattle, Square Screen Print, from Nubiyan Twist">
                             <div class="card-header">
                                 <h6>Tittle Tattle - Square Screen Print</h6>
@@ -260,7 +279,7 @@
                     <div class="col-8 col-md-4 item-card">
                         <div class="card">
                             <img class="card-img-top item-image"
-                                src="assets/images/clothing-prints/ff-screenprint-square.jpeg"
+                                src="assets/images/shop-images/ff-screenprint-square.jpeg"
                                 alt="Buy Freedom Fables, the latest album by Nubiyan Twist">
                             <div class="card-header">
                                 <h6>Freedom Fables - A2 Screen Print</h6>
@@ -285,7 +304,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/album-covers/ff-vinyl.png" class="modal-img-wide"
+                        <img src="assets/images/shop-images/ff-vinyl.jpg" class="modal-img-wide"
                             alt="Information about Freedom Fables (Vinyl), the latest album by Nubiyan Twist">
                     </div>
                     <span>£22.99</span>
@@ -315,7 +334,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/album-covers/ff-green-vinyl.png" class="modal-img-wide"
+                        <img src="assets/images/shop-images/ff-green-vinyl.jpg" class="modal-img-wide"
                             alt="Information about Freedom Fables (Ltd. Edition Green Vinyl), from Nubiyan Twist">
                     </div>
                     <span>£25.00</span>
@@ -345,7 +364,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/album-covers/ff-cd.jpg" class="modal-img"
+                        <img src="assets/images/shop-images/ff-cd.jpg" class="modal-img"
                             alt="Information about Freedom Fables, the latest album by Nubiyan Twist">
                     </div>
                     <span>£11.99</span>
@@ -375,7 +394,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/album-covers/jr-vinyl.jpeg" class="modal-img-wide"
+                        <img src="assets/images/shop-images/jr-vinyl.jpg" class="modal-img-wide"
                             alt="Information about Freedom Fables (CD), the latest album by Nubiyan Twist">
                     </div>
                     <span>£19.99</span>
@@ -402,7 +421,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/album-covers/jr-cd.jpeg" class="modal-img"
+                        <img src="assets/images/shop-images/jr-cd.jpg" class="modal-img"
                             alt="Information about Jungle Run (CD), the latest album by Nubiyan Twist">
                     </div>
                     <span>£10.99</span>
@@ -429,7 +448,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/album-covers/titms-vinyl-sleeve.jpeg" class="modal-img-wide"
+                        <img src="assets/images/shop-images/titms-vinyl-sleeve.jpg" class="modal-img-wide"
                             alt="Information about 'Tell It To Me Slowly', 7'n vinyl from Nubiyan Twist">
                     </div>
                     <span>£10.99</span>
@@ -462,8 +481,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/clothing-prints/ff-tshirt.jpeg" class="modal-img"
-                            alt="Information about Freedom Fables, the latest album by Nubiyan Twist">
+                        <img src="assets/images/shop-images/ff-shirt.jpg" class="modal-img"
+                            alt="Freedom Fables T-shirt, by Nubiyan Twist">
                     </div>
                     <span>£22.00</span>
                     <div id="shirt-options-wrapper">
@@ -501,7 +520,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/clothing-prints/ff-a2-screenprint.png" id="print-modal-img"
+                        <img src="assets/images/shop-images/ff-print.jpg" id="print-modal-img"
                             alt="Information about Freedom Fables, the latest album by Nubiyan Twist">
                     </div>
                     <span>£25.00</span>
@@ -525,7 +544,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
-                        <img src="assets/images/clothing-prints/tt-square-print.jpeg" class="modal-img"
+                        <img src="assets/images/shop-images/tt-print.jpg" class="modal-img"
                             alt="Information about Tittle Tattle, Square Screen Print, by Nubiyan Twist">
                     </div>
                     <span>£25.00</span>
@@ -573,40 +592,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Shopping Cart Window -->
-    <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
-                Git Username: john-smilga
-                Repository handle: js-cart-setup -->
-    <div class="col-md-4 d-none d-md-block">
-        <div id="cart" class="cart">
-            <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-                <img src="assets/images/ff-cd.jpg" width="100" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                    <p id="cart-item-title" class="font-weight-bold mb-0">Cart Item</p>
-                    <span>£</span>
-                    <span id="cart-item-price" class="cart-item-price mb-0">11.99</span>
-                </div>
-                <a href="#" id="cart-item-remove" class="cart-item-remove">
-                    <i class="fa fa-trash" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="cart-item d-flex justify-content-between text-capitalize my-3 p-0">
-                <img src="assets/images/jr-cd.jpeg" width="100" class="img-fluid rounded-circle" id="item-img" alt="">
-                <div class="item-text">
-                    <p id="cart-item-title" class="font-weight-bold mb-0">Cart Item</p>
-                    <span>£</span>
-                    <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
-                </div>
-                <a href="#" id="cart-item-remove" class="cart-item-remove">
-                    <i class="fa fa-trash" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
