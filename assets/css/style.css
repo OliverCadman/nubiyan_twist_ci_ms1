@@ -1101,6 +1101,16 @@ td:nth-child(2) {
     font-size: 1.5rem;
 }
 
+/* Creates a margin for empty div containing receiving anchor for "Music" link button.
+Included to provide accuracy for hyperlink to section of page */
+.music-shop-anchor-target {
+    margin-top: 95px;
+}
+
+.clothing-shop-anchor-target {
+    margin-top: -40px;
+}
+
 /* ----- Music Shop Section ----- */
 
 
@@ -1109,6 +1119,8 @@ td:nth-child(2) {
     /* To contain Cart inside section */
     background-color: #DCB3AC;
 }
+
+
 
 .shopping-cart {
     margin-top: 10px;
@@ -1438,14 +1450,14 @@ td:nth-child(2) {
     .card {
         background-color: rgb(22, 22, 22);
         color: #f0e7df;
-        height: 97%;
+        height: 100%;
     }
 
     .card button {
         background-color: #DCB3AC;
         color: black;
         border: none;
-        letter-spacing: 1p
+    
     }
 
     /* --------------------------------- LIVE SHOWS -------------------------------------- /*
@@ -1599,6 +1611,18 @@ td:nth-child(2) {
     .shop-hero h1 {
         padding-top: 110px;
     }
+
+    /* Item Cards */
+
+    .item-card {
+        margin: 20px 0;
+    }
+
+    /* Creates a margin for empty div containing receiving anchor for "Music" link button
+included to provide accuracy for hyperlink to section of page */
+.music-shop-anchor-target {
+    margin-top: 95px;
+}
 
     /* ---- Music Shop Section ---- */
 
@@ -1835,7 +1859,6 @@ td:nth-child(2) {
     /* --- Band Cards --- */
 
     .card {
-        height: 95%;
         cursor: pointer;
     }
 
@@ -2065,6 +2088,16 @@ td:nth-child(2) {
     .anchor-wrapper button:active {
         border: none;
     }
+
+    /* Creates a margin for empty div containing receiving anchor for "Music" link button.
+Included to provide accuracy for hyperlink to section of page */
+.music-shop-anchor-target {
+    margin-top: -30px;
+}
+
+.clothing-shop-anchor-target {
+    margin-top: -40px;
+}
 
     /* ----- Music Shop Section ----- */
 
