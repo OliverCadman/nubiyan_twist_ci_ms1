@@ -65,28 +65,16 @@ body {
 }
 
 .navbar a:hover {
-    color: #36454f69;
-    transition: 0.1s ease-in-out;
+    color:#e26f03;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 
 
 ul li a.active {
-    color: #36454f69;
+    color: #c7772b;
 }
 
-.dropdown-menu {
-    background-color: rgb(154, 208, 192);
-    color: #fafafa;
-    border: none;
-    border-radius: 5px;
-    right: 0 !important;
-    left: auto !important;
-}
-
-.dropdown-item:hover {
-    background: none;
-}
 
 .navbar-mobile-toggler {
     color: black;
