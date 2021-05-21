@@ -13,7 +13,11 @@ body {
 /* Page Header (h1) - applies to all pages except home page */
 
 .page-header {
+    font-family: "Alatsi", sans-serif;
     font-size: 3rem;
+    color:#f48826;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 /* ---------- Block Dividers (to be used on multiple pages) -------- */
@@ -1231,7 +1235,7 @@ Included to provide accuracy for hyperlink to section of page */
 
 .cart {
     position: absolute;
-    height: 40vh;
+    height: auto;
     top: 0;
     left: 0;
     z-index: 2;
@@ -1252,7 +1256,7 @@ Included to provide accuracy for hyperlink to section of page */
     width: 500px;
     /* Fills shopping cart the full width of column between item cards */
     padding: 0 1.5rem;
-    transform: scale(1)
+    transform: scale(1);
     border-radius: 0.3rem;
 }
 
@@ -1281,7 +1285,30 @@ Included to provide accuracy for hyperlink to section of page */
 }
 
 
+/* ----------------- Contact Page ------------------ */
 
+#contact-hero {
+    background: url("../images/jr-background.jpeg") no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 80%;
+    height: 100vh;
+    padding-top: 110px;
+
+}
+
+.opaque-overlay-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+}
 
 
 
@@ -1291,8 +1318,12 @@ Included to provide accuracy for hyperlink to section of page */
 
     /* Page header (h1) - Applies to all pages */
 
-    .page-header {
-        font-size: 5rem !important;
+    .page-header h1 {
+        font-family: "Alatsi", sans-serif;
+        font-size: 3rem;
+        color:#f48826;
+        text-transform: uppercase;
+        text-decoration: underline;
     }
 
     .section-header h2 {
@@ -1723,6 +1754,13 @@ included to provide accuracy for hyperlink to section of page */
 
     /* Page Header (h1) font size - Applies to all pages */
 
+    .page-header {
+        font-family: "Alatsi", sans-serif;
+        font-size: 4rem;
+        color:#f48826;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
 
     /* ----- Navigation Bar ----- */
 
