@@ -243,7 +243,7 @@ ul li a.active {
     font-weight: 300;
 }
 
-.home-feature-video h5 .title-block {
+.home-feature-video h5 . {
     font-style: italic;
 }
 
@@ -605,7 +605,7 @@ i.fa-angle-double-right {
 .jr-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('../images/album-covers/jr-cd.jpg') no-repeat;
+    background: url('../images/shop-images/jr-cd.jpg') no-repeat;
     background-size: cover;
     z-index: 10;
     position: absolute;
@@ -633,7 +633,7 @@ i.fa-angle-double-right {
 .ff-circle-inner {
     width: 180px;
     height: 180px;
-    background: url('../images/album-covers/ff-cd.jpg') no-repeat bottom;
+    background: url('../images/shop-images/ff-cd.jpg') no-repeat bottom;
     background-size: contain;
     z-index: 10;
     position: absolute;
@@ -1011,7 +1011,7 @@ td:nth-child(2) {
     color: rgb(22, 22, 22);
 }
 
-.title-block {
+. {
     display: block;
 }
 
@@ -1267,7 +1267,7 @@ Included to provide accuracy for hyperlink to section of page */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: 80%;
+    background-position: 48%;
     height: 100vh;
 
 } 
@@ -1280,9 +1280,62 @@ Included to provide accuracy for hyperlink to section of page */
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.678);
 }
 
+/* Contact Form Background, Border and Font Color */
+
+.form-wrapper {
+    background-color: rgba(22, 22, 22, 0.233);
+    padding: 10px;
+    border-radius: 0.3rem;
+    color: #fafafa;
+    margin-right: 20px;
+
+}
+
+legend {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    border-bottom: 1px solid #fafafa;
+    
+}
+
+/* Wrapper for Label and Booking Agent contact details */
+
+.representative-wrapper {
+    font-family: "Lato", sans-serif;
+    font-size: .7rem;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.representative-wrapper {
+    margin-top: 25px;
+}
+
+.representative-wrapper span {
+    font-style: italic;
+    color:#f48826;
+}
+
+/* Icons for label and booking agents */
+
+#strut-contact-img {
+    width: 35%
+}
+
+#earthagency-contact-img {
+    width: 40%
+}
+
+.rep-image {
+    margin-bottom: 10px;
+}
 
 
 
@@ -1707,6 +1760,43 @@ included to provide accuracy for hyperlink to section of page */
     .anchor-wrapper button {
         font-size: 2rem;
     }
+
+    /* ------------- Contact Page --------------- */
+
+    /* Background Image Positioning */
+
+    #contact-hero {
+        background-position: 50%;
+       } 
+    
+    /* Label Icon Images to accompany contact information */
+
+    #strut-contact-img {
+        width: 50%;
+    }
+    
+    #earthagency-contact-img {
+        width: 75%;
+    }
+    
+    .rep-image {
+        margin-bottom: 20px;
+    }
+
+    .representative-wrapper {
+        margin: 0;
+        font-size: 1rem;
+       }
+
+       .tablet-container {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+       }
+    
+
+
 
 
 
@@ -2183,5 +2273,24 @@ Included to provide accuracy for hyperlink to section of page */
         position: relative;
     }
 
+    /* ------------------ Contact Page ------------------- */
+
+    #contact-hero {
+        background-position: 100% 15%;
+       } 
+    
+
+    button[type="submit"] {
+        background-color: #DCB3AC;
+        color: rgb(22, 22, 22);
+        border: none;
+    }
+
+    button[type="submit"]:hover {
+        background-color: rgb(22, 22, 22);
+        border: 1px solid #fafafa;
+        transition: 0.3s ease-in-out;
+        color: #f48826;
+    }
 
 }
