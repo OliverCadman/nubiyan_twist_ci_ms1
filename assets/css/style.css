@@ -20,6 +20,10 @@ body {
     text-decoration: underline;
 }
 
+.header-padding {
+    padding-top: 45px;
+}
+
 /* ---------- Block Dividers (to be used on multiple pages) -------- */
 
 .block-divider {
@@ -373,7 +377,6 @@ button {
     -o-background-size: cover;
     background-position: 65%;
     height: 100vh;
-    padding-top: 110px;
     width: 100%;
 }
 
@@ -388,18 +391,6 @@ button {
     background-color: rgba(0, 0, 0, 0.747);
 }
 
-.about-header {
-    padding-top: 45px;
-}
-
-.about-header h1 {
-    font-family: "Alatsi", sans-serif;
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: #f48826;
-
-
-}
 
 .about-header p {
     font-family: 'Alata', sans-serif;
@@ -755,7 +746,6 @@ i.fa-angle-double-right {
 }
 
 .live-header h1 {
-    padding-top: 60px;
     font-family: "Alatsi", sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
@@ -988,7 +978,6 @@ td:nth-child(2) {
 }
 
 #feature-video h1 {
-    padding-top: 50px;
     font-family: "Alatsi", sans-serif;
     color: #f48826;
     text-transform: uppercase;
@@ -1084,12 +1073,9 @@ td:nth-child(2) {
 
 .shop-hero h1 {
     font-family: "Alatsi", sans-serif;
-    font-size: 4rem;
     text-transform: uppercase;
     text-decoration: underline;
     color: #f48826;
-    padding-top: 45px;
-
 }
 
 .anchor-container {
@@ -1283,9 +1269,8 @@ Included to provide accuracy for hyperlink to section of page */
     -o-background-size: cover;
     background-position: 80%;
     height: 100vh;
-    padding-top: 110px;
 
-}
+} 
 
 .opaque-overlay-contact {
     position: absolute;
@@ -1312,6 +1297,10 @@ Included to provide accuracy for hyperlink to section of page */
         color:#f48826;
         text-transform: uppercase;
         text-decoration: underline;
+    }
+
+    .header-padding {
+        padding-top: 100px;
     }
 
     .section-header h2 {
@@ -1415,10 +1404,6 @@ Included to provide accuracy for hyperlink to section of page */
 
     .about-background {
         background-position: 55%;
-    }
-
-    .about-header {
-        padding-top: 110px;
     }
 
     .about-quote p {
@@ -1593,7 +1578,6 @@ Included to provide accuracy for hyperlink to section of page */
     /* Site-wide alert (displayed on tablet screen size up) */
 
     .alert {
-        margin-top: 100px;
         background-color: rgba(22, 22, 22, 0.5);
         color: #fafafa;
         border: none;
@@ -1689,10 +1673,6 @@ Included to provide accuracy for hyperlink to section of page */
         background-position: 50%;
     }
 
-    #feature-video h1 {
-        padding-top: 110px;
-    }
-
     .feature-video-container {
         margin-top: 100px;
     }
@@ -1705,13 +1685,7 @@ Included to provide accuracy for hyperlink to section of page */
         display: inline;
     }
 
-    /* -------------------- Shop Page -------------------- */
-
-    .shop-hero h1 {
-        padding-top: 110px;
-    }
-
-    /* Item Cards */
+      /* Item Cards */
 
 
     .item-card {
@@ -1841,13 +1815,8 @@ included to provide accuracy for hyperlink to section of page */
     .about-background {
         background: url("../images/about-background (7).jpg") no-repeat top fixed;
         background-size: cover;
-        padding-top: 110px;
         height: 100vh;
 
-    }
-
-    .about-header {
-        padding-top: 110px;
     }
 
     .about-quote p {
@@ -2025,11 +1994,6 @@ included to provide accuracy for hyperlink to section of page */
         background-color: rgba(0, 0, 0, 0.555);
     }
 
-    .live-header h1 {
-        padding-top: 0;
-    }
-
-
     .navalert-container button:hover {
         background-color: rgb(22, 22, 22);
         color: #f48826;
@@ -2187,10 +2151,6 @@ included to provide accuracy for hyperlink to section of page */
 
     .shop-hero {
         background-position: top;
-    }
-
-    .shop-hero h1 {
-        padding-top: 110px;
     }
 
     .anchor-wrapper button:hover {
