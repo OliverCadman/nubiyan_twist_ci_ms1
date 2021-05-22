@@ -12,6 +12,7 @@
     hideCart.addEventListener('click', function(){
         cart.classList.toggle('show-cart');
     })
+
     })();
  // Add Items to Cart
     
@@ -69,14 +70,26 @@
                         </div>
                     </div>
                 </div>`;
-    
-                // Select Cart
+
+                   // Select Cart
     
                 const cart = document.getElementById('cart');
                 const total = document.querySelector('.cart-total-container');
     
                 cart.insertBefore(cartItem, total);
                 showTotals();
+
+                var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+                for (var i = 0; i < removeCartItemButtons.length; i++) {
+                    var button = removeCartItemButtons[i]
+                    button.addEventListener('click', removeCartItem)
+                    console.log('click')
+                        
+                }
+    function removeCartItem(event) {
+        var buttonClicked = event.target
+                buttonClicked.parentElement.parentElement.parentElement.remove();
+    }
                 
     
     

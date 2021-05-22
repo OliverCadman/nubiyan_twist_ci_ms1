@@ -1195,7 +1195,7 @@ Included to provide accuracy for hyperlink to section of page */
     border: 2px solid black;
     background-color: #fafafa;
     border-radius: 0.25rem;
-    padding: 0.1rem 0.rem;
+    padding: 0.1rem 0.5rem;
     cursor: pointer;
     color: rgb(22, 22, 22);
 }
@@ -1211,7 +1211,7 @@ Included to provide accuracy for hyperlink to section of page */
     top: 0;
     left: 0;
     z-index: 3;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background: rgba(0, 0, 0, 0.89);
     color: #fafafa;
     width: 0;
@@ -1232,18 +1232,12 @@ Included to provide accuracy for hyperlink to section of page */
 }
 
 .show-cart {
-    
     width: 100%;
     /* Fills shopping cart the full width of column between item cards */
     padding: 0 1.5rem;
     transform: scale(1);
 
 }
-
-.hide-cart {
-    width: 0;
-    transform: scale(0);}
-
 
 .item-wrapper {
     transition: all 2s ease-in-out;
