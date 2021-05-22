@@ -86,10 +86,11 @@
                     console.log('click')
                         
                 }
-    function removeCartItem(event) {
-        var buttonClicked = event.target
+                function removeCartItem(event) {
+                 var buttonClicked = event.target
                 buttonClicked.parentElement.parentElement.parentElement.remove();
-    }
+                showTotals();
+                }
                 
     
     
