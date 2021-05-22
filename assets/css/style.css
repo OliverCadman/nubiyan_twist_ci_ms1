@@ -69,14 +69,14 @@ body {
 }
 
 .navbar a:hover {
-    color:#e26f03;
+    color:rgb(105, 76, 48);
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 
 
 ul li a.active {
-    color: #c7772b;
+    color: rgb(105, 76, 48)
 }
 
 
@@ -95,7 +95,7 @@ ul li a.active {
 #hero-image {
 
     height: 100vh;
-    background: url("../images/nt-hero-bg.png") no-repeat bottom fixed;
+    background: url("../images/hero-images/home-hero.png") no-repeat bottom fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -250,7 +250,7 @@ ul li a.active {
 /* ----- Mailing List/Spotify Section */
 
 .mailing-spotify-container {
-    background: url("../images/home-video-background.png") no-repeat bottom fixed;
+    background: url("../images/hero-images/video-hero.png") no-repeat bottom fixed;
     background-size: contain;
     background-color: #08172c;
     color: #fafafa;
@@ -370,7 +370,7 @@ button {
 /* Header */
 
 .about-background {
-    background: url("../images/about-background (7).jpg") no-repeat fixed;
+    background: url("../images/hero-images/about-hero.jpg") no-repeat fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -734,7 +734,7 @@ i.fa-angle-double-right {
 
 .live-header {
     height: 95vh;
-    background: url("../images/nt-hero-bg.png") no-repeat fixed;
+    background: url("../images/hero-images/live-hero.png") no-repeat fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -968,7 +968,7 @@ td:nth-child(2) {
 /* ----------------------------- Video Page ---------------------------------- */
 
 #feature-video {
-    background: url("../images/home-video-background.png") no-repeat bottom fixed;
+    background: url("../images/hero-images/video-hero.png") no-repeat bottom fixed;
     background-size: cover;
     background-position: 35%;
     -webkit-background-size: cover;
@@ -1011,9 +1011,6 @@ td:nth-child(2) {
     color: rgb(22, 22, 22);
 }
 
-. {
-    display: block;
-}
 
 .video {
     width: 100%;
@@ -1050,7 +1047,7 @@ td:nth-child(2) {
 /* ----------------------------- Shop Page ----------------------------- */
 
 .shop-hero {
-    background: url("../images/shop-background.jpeg") no-repeat fixed;
+    background: url("../images/hero-images/shop-hero.jpeg") no-repeat fixed;
     background-position: 55%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -1199,25 +1196,45 @@ Included to provide accuracy for hyperlink to section of page */
 
 
 .cart-info {
-    border: 0.1rem solid black;
-    color: var(--mainBlack);
+    font-family: "Alata", sans-serif;
+    border: 2px solid black;
+    background-color: #fafafa;
     border-radius: 0.25rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
+    color: rgb(22, 22, 22);
 }
 
+.cart-info:hover {
+    background: url("../images/spotify-leaderboard.jpg") cover no-repeat static;
+    background-color: rgb(22, 22, 22);
+    color: #f48826;
+    transition: 0.5s ease-in-out;
+    
+}
 
 .cart {
+    font-family: "Alata", sans-serif;
     position: absolute;
     height: auto;
     top: 0;
     left: 0;
     z-index: 2;
     transition: all 0.7s ease-in-out;
-    background: rgb(255, 255, 255);
+    background: rgb(22,22,22);
+    color: #fafafa;
     width: 0;
     overflow: scroll;
-    border-radius: 0.3rem;
+    border-top: 1rem solid #DCB3AC;
+    
+}
+
+.cart h4 {
+    text-decoration: underline;
+}
+
+.cart-basket-icon {
+    margin-right: 20px;
 }
 
 #item-img {
@@ -1231,11 +1248,12 @@ Included to provide accuracy for hyperlink to section of page */
     /* Fills shopping cart the full width of column between item cards */
     padding: 0 1.5rem;
     transform: scale(1);
-    border-radius: 0.3rem;
+
 }
 
-.cart-item {
+.item-wrapper {
     transition: all 2s ease-in-out;
+    border: 2px solid #fafafa;
 }
 
 .item-text {
@@ -1262,7 +1280,7 @@ Included to provide accuracy for hyperlink to section of page */
 /* ----------------- Contact Page ------------------ */
 
 #contact-hero {
-    background: url("../images/jr-background.jpeg") no-repeat fixed;
+    background: url("../images/hero-images/contact-hero.jpeg") no-repeat fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1286,6 +1304,7 @@ Included to provide accuracy for hyperlink to section of page */
 /* Contact Form Background, Border and Font Color */
 
 .form-wrapper {
+    font-family: "Alata", sans-serif;
     background-color: rgba(22, 22, 22, 0.233);
     border-radius: 0.3rem;
     color: #fafafa;
@@ -1294,7 +1313,6 @@ Included to provide accuracy for hyperlink to section of page */
 }
 
 legend {
-    font-family: "Lato", sans-serif;
     font-weight: 200;
     border-bottom: 1px solid #fafafa;
     
@@ -1612,9 +1630,7 @@ button[type="submit"] {
     /* ----- Header Fixed Background ----- */
 
     .live-header {
-        background: url("../images/nt-livehero.png") no-repeat fixed;
         background-position: 50% 70%;
-        background-size: cover;
         height: 70vh;
     }
 
@@ -1902,13 +1918,6 @@ included to provide accuracy for hyperlink to section of page */
 
     /* --- Header Quote --- */
 
-    .about-background {
-        background: url("../images/about-background (7).jpg") no-repeat top fixed;
-        background-size: cover;
-        height: 100vh;
-
-    }
-
     .about-quote p {
         font-size: 1.5rem;
     }
@@ -2067,9 +2076,7 @@ included to provide accuracy for hyperlink to section of page */
     /* ------------------------ Live Shows Page ------------------------ */
 
     .live-header {
-        background: url("../images/nt-livehero.png") no-repeat fixed;
         background-position: 90%;
-        background-size: cover;
         height: inherit;
     }
 
