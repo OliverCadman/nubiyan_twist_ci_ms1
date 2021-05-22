@@ -744,19 +744,21 @@ i.fa-angle-double-right {
 /* ----- Header ------ */
 
 .live-header {
-    height: 95vh;
+    height: 100vh;
     background: url("../images/hero-images/live-hero.png") no-repeat fixed;
+    background-position: 40%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: relative;
+    
 
 
 }
 
 .live-header h1 {
+    padding-top: 45px;
     font-family: "Alatsi", sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
@@ -771,7 +773,7 @@ i.fa-angle-double-right {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(0, 0, 0, 0.466);
 }
 
 /* NavAlert Button Font */
@@ -790,10 +792,6 @@ i.fa-angle-double-right {
     margin: auto;
 }
 
-
-.feature-row {
-    margin-top: 30px;
-}
 
 .responsive-wrapper {
     display: flex;
@@ -1624,7 +1622,7 @@ button[type="submit"] {
 
     .live-header {
         background-position: 50% 70%;
-        height: 70vh;
+        
     }
 
     .opaque-overlay-live {
@@ -1641,6 +1639,12 @@ button[type="submit"] {
 
     .live-header h1 {
         padding: 0;
+    }
+
+    .feature-row {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
     }
 
     /* Site-wide alert (displayed on tablet screen size up) */
@@ -2107,7 +2111,7 @@ included to provide accuracy for hyperlink to section of page */
 
     .live-header {
         background-position: 90%;
-        height: inherit;
+        height: 100vh;
     }
 
     .opaque-overlay-live {
@@ -2143,14 +2147,14 @@ included to provide accuracy for hyperlink to section of page */
 
     #feature-container-1 {
         margin-left: 15px !important;
-        width: 80%;
+        width: 60%;
         height: 100%;
         text-align: right;
 
     }
 
     .feature-soldout {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     #feature-image-1 {
@@ -2159,8 +2163,9 @@ included to provide accuracy for hyperlink to section of page */
     }
 
     #feature-container-2 {
-        margin-right: 40px !important;
-        width: 85%;
+        float: right;
+        margin-right: 10px;
+        width: 70%;
         text-align: left;
     }
 
