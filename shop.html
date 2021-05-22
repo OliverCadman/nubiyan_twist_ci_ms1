@@ -238,40 +238,8 @@
                         <h2 class="my-5">Clothing/Prints</h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <!-- Shopping Cart Window -->
-                        <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
-                Git Username: john-smilga
-                Repository Handle: js-cart-setup -->
-                        <div id="cart" class="cart">
-                            <div class="cart-header text-center my-4">
-                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon"
-                                            aria-hidden="true"></i></span>Your Basket</h4>
-                            </div>
-                            <div class="cart-total-container d-flex justify-content-around mt-5">
-                                <h5>Total</h5>
-                                <h5>£<strong id="cart-total" class="font-weight-bold"></strong> </h5>
-                            </div>
-                            <div class="cart-buttons-container mb-3 d-flex justify-content-between">
-                                <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
             <div class="container">
-                <div class="row d-flex justify-content-end shopping-cart">
-                    <div class="col-3">
-                        <div id="cart-info" class="cart-info text-center d-flex justify-content-between">
-                            <p style="text-decoration: underline;">View Your Basket</p>
-                            <p id="item-count">
-                                <p>
-                                    <span class="cart-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
-                        </div>
-                    </div>
-                </div>
                 <div class="row justify-content-center justify-content-md-between item-row">
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
@@ -587,10 +555,22 @@
     <div class="modal cart-item" id="checkout-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content text-center">
-                <div class="modal-header">
-                    <h5 class="modal-title">Checkout</h5>
+                <div class="modal-header checkout-header">
+                    <h5 class="modal-title justify-content-end">Checkout</h5>
                 </div>
                 <div class="modal-body">
+                    <div class="container">
+                        <div id="checkout" class="cart">
+                            <div class="cart-header text-center my-4">
+                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon"
+                                            aria-hidden="true"></i></span>Your Basket</h4>
+                            </div>
+                            <div class="cart-total-container d-flex justify-content-around mt-md-5">
+                                <h5>Total</h5>
+                                <h5>£<strong id="cart-total" class="font-weight-bold"></strong> </h5>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -600,11 +580,11 @@
                                             <legend>Delivery Details</legend>
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="fname" name="fname"
+                                                    <input type="text" class="form-control" id="fname_delivery" name="fname_delivery"
                                                         placeholder="First Name">
                                                 </div>
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="lname" name="lname"
+                                                    <input type="text" class="form-control" id="lname_delivery" name="lname_delivery"
                                                         placeholder="Last Name">
                                                 </div>
                                             </div>
@@ -612,35 +592,34 @@
                                                 <input type="email" class="form-control" id="email" name="email"
                                                     placeholder="Email">
                                             </div>
+                                            <div id="delivery-address">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="address" name="address"
+                                                <input type="text" class="form-control" id="addr_delivery" name="addr_delivery"
                                                     placeholder="Address Line 1">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="address-two"
-                                                    name="address-two" placeholder="Address Line 2 (Optional)">
+                                                <input type="text" class="form-control" id="addr_delivery_2"
+                                                    name="addr_delivery_2" placeholder="Address Line 2 (Optional)">
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="city" name="city"
+                                                    <input type="text" class="form-control" id="city_delivery" name="city_delivery"
                                                         placeholder="City">
                                                 </div>
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="country" name="country"
+                                                    <input type="text" class="form-control" id="country_delivery" name="country_delivery"
                                                         placeholder="Country">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="zipcode" name="zipcode"
+                                                    <input type="text" class="form-control" id="zip_delivery" name="zip_delivery"
                                                         placeholder="Zip Code">
                                                 </div>
+                                            </div>
                                                 <div class="col-6 form-group">
-                                                    <h6>Same as Billing Address?</h6>
-                                                    <label for="yes">Yes</label>
-                                                    <input type="radio" name="use-for-billing" value="yes">
-                                                    <label for="no">No</label>
-                                                    <input type="radio" name="use-for-billing" value="no">
+                                                    <label for="sameAddr">Same as Billing Address</label>
+                                                    <input type="checkbox" id="sameAddr" name="sameAddr">
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -670,37 +649,39 @@
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="fname" name="fname"
+                                                    <input type="text" class="form-control" id="fname_billing" name="fname_billing"
                                                         placeholder="First Name">
                                                 </div>
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="lname" name="lname"
+                                                    <input type="text" class="form-control" id="lname_billing" name="lname_billing"
                                                         placeholder="Last Name">
                                                 </div>
                                             </div>
+                                            <div id="billing-address">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="address" name="address"
+                                                <input type="text" class="form-control" id="addr_billing" name="address_billing"
                                                     placeholder="Address Line 1">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="address-two"
-                                                    name="address-two" placeholder="Address Line 2 (Optional)">
+                                                <input type="text" class="form-control" id="addr_billing_2"
+                                                    name="address_billing_2" placeholder="Address Line 2 (Optional)">
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="city" name="city"
+                                                    <input type="text" class="form-control" id="city_billing" name="city_billing"
                                                         placeholder="City">
                                                 </div>
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="country" name="country"
+                                                    <input type="text" class="form-control" id="country_billing" name="country_billing"
                                                         placeholder="Country">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="zipcode" name="zipcode"
+                                                    <input type="text" class="form-control" id="zip_billing" name="zip_billing"
                                                         placeholder="Zip Code">
                                                 </div>
+                                            </div>
                                         </fieldset>
                                     </form>
                                 </div>

@@ -5,6 +5,8 @@
     const cart = document.getElementById('cart');
     const hideCart = document.getElementById('close-basket');
     const checkout = document.getElementById('checkout-button');
+  
+
     
     cartInfo.addEventListener('click', function(){
         cart.classList.toggle('show-cart');
@@ -76,10 +78,13 @@
                     </div>
                 </div>`;
 
+                
+
                    // Select Cart
     
                 const cart = document.getElementById('cart');
                 const total = document.querySelector('.cart-total-container');
+             
     
                 cart.insertBefore(cartItem, total);
                 showTotals();
@@ -125,6 +130,34 @@
         }
     
     })();
+    
+    
+    
+    
+    // Checkout Modal Window - "Same as Billing Address" checkbox
+   $(document).ready(function(){
+       $('#sameAddr').click(function(){
+           if ($('#sameAddr').is(':checked')) {
+               $('#fname_billing').val($('#fname_delivery').val());
+               $('#lname_billing').val($('#lname_delivery').val());
+               $('#addr_billing').val($('#addr_delivery').val());
+               $('#addr_billing_2').val($('#addr_delivery_2').val());
+               $('#city_billing').val($('#city_delivery').val());
+               $('#country_billing').val($('#country_delivery').val());
+               $('#zip_billing').val($('#zip_delivery').val());
+           } else {
+            $('#fname_billing').val('');
+            $('#lname_billing').val('');
+            $('#addr_billing').val('');
+            $('#addr_billing_2').val('');
+            $('#city_billing').val('');
+            $('#country_billing').val('');
+            $('#zip_billing').val('');
+           }
+       })
+   })
+
+        
 
 
     

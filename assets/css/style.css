@@ -24,6 +24,27 @@ body {
     padding-top: 45px;
 }
 
+/*  Global Styling for sections of all pages that aren't at Hero level */
+
+.section-header {
+    background: url("../images/nt-livelistings-header.png") no-repeat;
+    background-color: #141414;
+    background-position: 0%;
+    background-size: contain;
+    font-family: "Alatsi", sans-serif;
+    text-transform: uppercase;
+
+}
+
+
+.section-header h2 {
+    padding-right: 5px;
+    text-align: right;
+    color: #d8d8d8;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
 
 /* ---------- Block Dividers (to be used on multiple pages) -------- */
 
@@ -455,10 +476,6 @@ button {
     padding: 0 20px;
 }
 
-.section-header h2 {
-    font-size: 2rem !important;
-    ;
-}
 
 .profile-body {
     padding: 0 5px;
@@ -647,13 +664,6 @@ i.fa-angle-double-right {
 
 #band-profile {
     background-color: #DCB3AC;
-}
-
-#band-profile h2 {
-    font-family: "Alatsi", sans-serif;
-    text-transform: uppercase;
-    font-size: 3rem;
-    margin: 40px 0;
 }
 
 #vocals-container {
@@ -872,25 +882,6 @@ i.fa-angle-double-right {
 
 }
 
-.section-header {
-    background: url("../images/nt-livelistings-header.png") no-repeat;
-    background-color: #141414;
-    background-position: 0%;
-    background-size: contain;
-    font-family: "Alatsi", sans-serif;
-    text-transform: uppercase;
-
-}
-
-
-.section-header h2 {
-    padding-right: 5px;
-    text-align: right;
-    color: #d8d8d8;
-    font-size: 1rem;
-    margin-top: 20px;
-}
-
 /* Listings Table */
 
 .listings-wrapper {
@@ -1019,10 +1010,6 @@ td:nth-child(2) {
 
 #video-collection {
     background-color: #DCB3AC;
-}
-
-.section-header h2 {
-    font-size: 1.5rem !important;
 }
 
 .video-wrapper {
@@ -1269,6 +1256,18 @@ Included to provide accuracy for hyperlink to section of page */
     font-size: 0.8rem;
 }
 
+.checkout-header {
+    background:url("../images/nt-livelistings-header.png") no-repeat right;
+    background-size: contain;
+    background-color:rgb(22, 22, 22);
+}
+
+.checkout-header h5 {
+    font-family: "Alata", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+
 
 /* ----------------- Contact Page ------------------ */
 
@@ -1352,6 +1351,7 @@ button[type="submit"] {
 .rep-image {
     margin-bottom: 10px;
 }
+
 
 /*-------------------- End of Mobile Screen CSS Styling --------------------- */
 
