@@ -3,13 +3,18 @@
 (function(){
     const cartInfo = document.getElementById('cart-info');
     const cart = document.getElementById('cart');
-    const hideCart = document.getElementById('close-basket')
+    const hideCart = document.getElementById('close-basket');
+    const checkout = document.getElementById('checkout-button');
     
     cartInfo.addEventListener('click', function(){
         cart.classList.toggle('show-cart');
     })
 
     hideCart.addEventListener('click', function(){
+        cart.classList.toggle('show-cart');
+    })
+
+    checkout.addEventListener('click', function(){
         cart.classList.toggle('show-cart');
     })
 

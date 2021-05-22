@@ -11,20 +11,20 @@
     <title>Nubiyan Twist | Shop</title>
     <!-- Bootstrap CSS & jQuery CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-<link rel="stylesheet" href="assets/css/style.css">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -110,15 +110,18 @@
                 Repository Handle: js-cart-setup -->
                         <div id="cart" class="cart">
                             <div class="cart-header text-center my-4">
-                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon" aria-hidden="true"></i></span>Your Basket</h4>
-                                </div>
+                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon"
+                                            aria-hidden="true"></i></span>Your Basket</h4>
+                            </div>
                             <div class="cart-total-container d-flex justify-content-around mt-md-5">
                                 <h5>Total</h5>
                                 <h5>£<strong id="cart-total" class="font-weight-bold"></strong> </h5>
                             </div>
                             <div class="cart-buttons-container mb-3 d-flex justify-content-between">
-                                <button type="button" id="close-basket" class="btn basket-btn btn-outline-secondary">Close</button>
-                                <button type="button" class="btn basket-btn btn-outline-secondary" data-toggle="modal" data-target="#checkout-modal">Checkout</button>
+                                <button type="button" id="close-basket"
+                                    class="btn basket-btn btn-outline-secondary">Close</button>
+                                <button type="button" id="checkout-button" class="btn basket-btn btn-outline-secondary"
+                                    data-toggle="modal" data-target="#checkout-modal">Checkout</button>
                             </div>
                         </div>
                     </div>
@@ -126,11 +129,12 @@
             </div>
             <div class="container" id="music-shop-body">
                 <div class="row d-flex justify-content-end shopping-cart">
-                    <div class="col-7 col-md-3">
+                    <div class="col-7 col-md-4">
                         <div id="cart-info" class="cart-info text-center d-flex justify-content-between">
                             <p style="text-decoration: underline;">View Your Basket</p>
-                             <p id="item-count"><p>
-                            <span class="cart-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
+                            <p id="item-count">
+                                <p>
+                                    <span class="cart-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
                         </div>
                     </div>
                 </div>
@@ -210,8 +214,8 @@
                             <img class="card-img-top item-image" src="assets/images/shop-images/titms-vinyl.jpeg"
                                 alt="Buy 'Tell It To Me Slowly', 7 inch vinyl single, from Nubiyan Twist">
                             <div class="card-header">
-                                <h6 class="mobile-card-header">Tell It To Me Slowly <span
-                                        class="block desktop-span">(7" Vinyl)</span>
+                                <h6 class="mobile-card-header">Tell It To Me Slowly <span class="block desktop-span">(7"
+                                        Vinyl)</span>
                                 </h6>
                                 <p>£10.99</p>
                                 <button class="btn btn-primary" type="button" data-toggle="modal"
@@ -242,8 +246,9 @@
                 Repository Handle: js-cart-setup -->
                         <div id="cart" class="cart">
                             <div class="cart-header text-center my-4">
-                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon" aria-hidden="true"></i></span>Your Basket</h4>
-                                </div>
+                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon"
+                                            aria-hidden="true"></i></span>Your Basket</h4>
+                            </div>
                             <div class="cart-total-container d-flex justify-content-around mt-5">
                                 <h5>Total</h5>
                                 <h5>£<strong id="cart-total" class="font-weight-bold"></strong> </h5>
@@ -255,14 +260,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
             <div class="container">
                 <div class="row d-flex justify-content-end shopping-cart">
                     <div class="col-3">
                         <div id="cart-info" class="cart-info text-center d-flex justify-content-between">
                             <p style="text-decoration: underline;">View Your Basket</p>
-                             <p id="item-count"><p>
-                            <span class="cart-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
+                            <p id="item-count">
+                                <p>
+                                    <span class="cart-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
                         </div>
                     </div>
                 </div>
@@ -489,9 +495,6 @@
             </div>
         </div>
     </div>
-
-
-
     <div class="modal item-modal" id="ff-shirt-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -579,40 +582,141 @@
             </div>
         </div>
     </div>
-    <div class="modal item-modal" id="ff-vinyl-green-modal" tabindex="-1" role="dialog">
+
+    <!-- Checkout Modal -->
+    <div class="modal cart-item" id="checkout-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content text-center">
                 <div class="modal-header">
-                    <h5 class="modal-title">Freedom Fables - Ltd. Edition Green Vinyl</h5>
+                    <h5 class="modal-title">Checkout</h5>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-img-wrapper">
-                        <img src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image500/.fBFzSDgX/SharedImage-116105.png?t=8c12fa1c5968cccf9663"
-                            class="modal-img-wide"
-                            alt="Buy Freedom Fables, Ltd. Edition Green Vinyl, from Nubiyan Twist">
-                    </div>
-                    <span>£25.00</span>
-                    <div class="item-info">
-                        <p>Woven around soul searching, cautionary tales and parables for modern life, the new album is
-                            the most accomplished yet by the Leeds / London collective, effortlessly fusing different
-                            soul, jazz and global styles with great musicianship and lyrics.</p>
-                        <p>Championed by BBC's own Mary-Anne-Hobbs, Gilles Peterson and Jamie Cullum, Freedom Fables is
-                            shaping up to be a modern classic and a priority for Strut in 2021,
-                            catapulting Nubiyan Twist even further into the limelight and cementing their position as
-                            "one
-                            of the UK’s leading soulful collectives of the current generation."</p>
-                        <p>Limited Edition Green Double Vinyl- Only 500 pressings!</p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="checkoutform-wrapper">
+                                    <form action="#">
+                                        <fieldset>
+                                            <legend>Delivery Details</legend>
+                                            <div class="form-group row">
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="fname" name="fname"
+                                                        placeholder="First Name">
+                                                </div>
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="lname" name="lname"
+                                                        placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email" name="email"
+                                                    placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="address" name="address"
+                                                    placeholder="Address Line 1">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="address-two"
+                                                    name="address-two" placeholder="Address Line 2 (Optional)">
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="city" name="city"
+                                                        placeholder="City">
+                                                </div>
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="country" name="country"
+                                                        placeholder="Country">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="zipcode" name="zipcode"
+                                                        placeholder="Zip Code">
+                                                </div>
+                                                <div class="col-6 form-group">
+                                                    <h6>Same as Billing Address?</h6>
+                                                    <label for="yes">Yes</label>
+                                                    <input type="radio" name="use-for-billing" value="yes">
+                                                    <label for="no">No</label>
+                                                    <input type="radio" name="use-for-billing" value="no">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <legend>Billing Details</legend>
+                                            <div class="form-group row">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="cardholder"
+                                                        name="cardholder" placeholder="Cardholder's Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12">
+                                                    <input type="number" class="form-control" id="cardnumber"
+                                                        name="cardnumber" placeholder="Card Number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-6">
+                                                    <input type="text" maxlength="5" class="form-control"
+                                                        id="expirydate" name="expirydate" placeholder="Expiry (MM/YY)">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" maxlength="3" class="form-control" id="ccv"
+                                                        name="ccv" placeholder="CCV">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="fname" name="fname"
+                                                        placeholder="First Name">
+                                                </div>
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="lname" name="lname"
+                                                        placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="address" name="address"
+                                                    placeholder="Address Line 1">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="address-two"
+                                                    name="address-two" placeholder="Address Line 2 (Optional)">
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="city" name="city"
+                                                        placeholder="City">
+                                                </div>
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="country" name="country"
+                                                        placeholder="Country">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-6 form-group">
+                                                    <input type="text" class="form-control" id="zipcode" name="zipcode"
+                                                        placeholder="Zip Code">
+                                                </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success addbasket-button">Add to Basket</button>
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success addbasket-button">Purchase</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
-     <!-- Footer -->
-     <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 d-none d-md-none d-lg-block">

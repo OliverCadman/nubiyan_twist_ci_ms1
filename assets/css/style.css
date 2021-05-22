@@ -1775,13 +1775,12 @@ button[type="submit"] {
         transition: all 0.7s ease-in-out;
         background: rgba(22, 22, 22, 0.89);
         color: #fafafa;
-        height: 0;
+        height: auto;
         overflow: scroll;
      }
 
     .show-cart {
-        width: 400px;
-        height: 400px;
+        width: 500px;
         padding: 0 1.5rem;
         transform: scale(1);
     
@@ -1843,6 +1842,7 @@ included to provide accuracy for hyperlink to section of page */
        }
 
 }
+
 
 /* ------------------------- End of Tablet Screen CSS Styling ---------------------- */
 
