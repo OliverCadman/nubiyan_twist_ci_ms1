@@ -24,6 +24,7 @@ body {
     padding-top: 45px;
 }
 
+
 /* ---------- Block Dividers (to be used on multiple pages) -------- */
 
 .block-divider {
@@ -363,11 +364,11 @@ button {
     -o-transition: all 0.35s ease-in-out;
 }
 
-/*------------------------------------------------------------------*/
+/*-------------------------- End of Home Page ---------------------*/
 
 /* ------------------------- 'About' Page --------------------------*/
 
-/* Header */
+/* ----- Header ----- */
 
 .about-background {
     background: url("../images/hero-images/about-hero.jpg") no-repeat fixed;
@@ -492,7 +493,7 @@ figcaption small{
     font-style: italic;
 }
 
-/* ----- Images of Album catalogue styled with two circle shapes with z-index ----- */
+/* ----- Images of Album catalogue styled with two squares layered with z-index ----- */
 
 /* Displays images inline */
 
@@ -514,12 +515,12 @@ figcaption small{
     justify-content: center;
 }
 
-.st-circle-container {
+.st-square-container {
     margin-top: 100px;
     position: absolute;
 }
 
-.st-circle-outer {
+.st-square-outer {
     margin-top: 100px;
     width: 100px;
     height: 100px;
@@ -529,7 +530,7 @@ figcaption small{
     margin: auto;
 }
 
-.st-circle-inner {
+.st-square-inner {
     width: 90px;
     height: 90px;
     left: 20%;
@@ -543,12 +544,12 @@ figcaption small{
     margin: -45px 0px 0px -45px;
 }
 
-.ss-circle-container {
+.ss-square-container {
     margin-top: 100px;
     position: absolute;
 }
 
-.ss-circle-outer {
+.ss-square-outer {
     margin-top: 100px;
     width: 100px;
     height: 100px;
@@ -558,7 +559,7 @@ figcaption small{
     margin: auto;
 }
 
-.ss-circle-inner {
+.ss-square-inner {
     width: 90px;
     height: 90px;
     right: 60%;
@@ -587,11 +588,11 @@ i.fa-angle-double-right {
     display: none;
 }
 
-.jr-circle-container {
+.jr-square-container {
     margin-top: 100px;
 }
 
-.jr-circle-outer {
+.jr-square-outer {
     margin-top: 100px;
     width: 200px;
     height: 200px;
@@ -602,7 +603,7 @@ i.fa-angle-double-right {
 
 }
 
-.jr-circle-inner {
+.jr-square-inner {
     width: 180px;
     height: 180px;
     background: url('../images/shop-images/jr-cd.jpg') no-repeat;
@@ -616,11 +617,11 @@ i.fa-angle-double-right {
 
 
 
-.ff-circle-container {
+.ff-square-container {
     margin-top: 100px;
 }
 
-.ff-circle-outer {
+.ff-square-outer {
     margin-top: 100px;
     width: 200px;
     height: 200px;
@@ -630,7 +631,7 @@ i.fa-angle-double-right {
     margin: auto;
 }
 
-.ff-circle-inner {
+.ff-square-inner {
     width: 180px;
     height: 180px;
     background: url('../images/shop-images/ff-cd.jpg') no-repeat bottom;
@@ -1119,14 +1120,9 @@ Included to provide accuracy for hyperlink to section of page */
 
 /* ----- Music Shop Section ----- */
 
-
 .shop-section {
-    position: relative;
-    /* To contain Cart inside section */
     background-color: #DCB3AC;
 }
-
-
 
 .shopping-cart {
     margin-top: 10px;
@@ -1194,23 +1190,18 @@ Included to provide accuracy for hyperlink to section of page */
    Git Username: john-smilga
    Repository handle: js-cart-setup */
 
-
-.cart-info {
+   .cart-info {
     font-family: "Alata", sans-serif;
     border: 2px solid black;
     background-color: #fafafa;
     border-radius: 0.25rem;
-    padding: 0.4rem 0.6rem;
+    padding: 0.1rem 0.rem;
     cursor: pointer;
     color: rgb(22, 22, 22);
 }
 
-.cart-info:hover {
-    background: url("../images/spotify-leaderboard.jpg") cover no-repeat static;
-    background-color: rgb(22, 22, 22);
-    color: #f48826;
-    transition: 0.5s ease-in-out;
-    
+#item-count {
+    display: block;
 }
 
 .cart {
@@ -1219,15 +1210,13 @@ Included to provide accuracy for hyperlink to section of page */
     height: auto;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     transition: all 0.7s ease-in-out;
-    background: rgb(22,22,22);
+    background: rgba(0, 0, 0, 0.89);
     color: #fafafa;
     width: 0;
     overflow: scroll;
-    border-top: 1rem solid #DCB3AC;
-    
-}
+ }
 
 .cart h4 {
     text-decoration: underline;
@@ -1244,12 +1233,17 @@ Included to provide accuracy for hyperlink to section of page */
 
 .show-cart {
     
-    width: 500px;
+    width: 100%;
     /* Fills shopping cart the full width of column between item cards */
     padding: 0 1.5rem;
     transform: scale(1);
 
 }
+
+.hide-cart {
+    width: 0;
+    transform: scale(0);}
+
 
 .item-wrapper {
     transition: all 2s ease-in-out;
@@ -1258,22 +1252,27 @@ Included to provide accuracy for hyperlink to section of page */
 
 .item-text {
     text-align: left;
-    margin-right: 50px;
+    margin-right: 5px;
 }
 
-.cart-item-remove {
-    text-align: right;
+
+.basket-btn {
+    color: #fafafa;
     float: right;
-    transition: all 0.5s ease-in-out;
+    border: 2px solid #fafafa;
 }
 
-.cart-item-remove:hover {
-    transform: scaleX(1);
-
+.checkout-btn:hover {
+    background-color: rgb(22, 22, 22);
+    color: #f48826;
+    transition: 0.5s ease-in-out;
+    border: 2px solid #fafafa;
 }
+
+
 
 #cart-item-price {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
 
@@ -1360,9 +1359,9 @@ button[type="submit"] {
     margin-bottom: 10px;
 }
 
+/*-------------------- End of Mobile Screen CSS Styling --------------------- */
 
-
-
+/* ------------------- Media Query for Tablet Screen Size ------------------- */
 
 @media (min-width: 768px) {
 
@@ -1540,7 +1539,7 @@ button[type="submit"] {
 
     /*  Clickable Images of Album Cover  */
 
-    .st-circle-outer {
+    .st-square-outer {
         margin-top: 80px;
         width: 200px;
         height: 200px;
@@ -1550,18 +1549,18 @@ button[type="submit"] {
         margin: auto;
     }
 
-    .st-circle-inner {
+    .st-square-inner {
         width: 180px;
         height: 180px;
         margin: -90px 0px 0px -90px;
     }
 
-    .ss-circle-container {
+    .ss-square-container {
         margin-top: 100px;
         position: absolute;
     }
 
-    .ss-circle-outer {
+    .ss-square-outer {
         margin-top: 100px;
         width: 200px;
         height: 200px;
@@ -1571,7 +1570,7 @@ button[type="submit"] {
         margin: auto;
     }
 
-    .ss-circle-inner {
+    .ss-square-inner {
         width: 180px;
         height: 180px;
         right: 60%;
@@ -1760,6 +1759,45 @@ button[type="submit"] {
         display: inline;
     }
 
+    /* ------------------------- End of Video Page ---------------------- */
+
+    /* ------------------------- Shop Page ------------------------------ */
+
+    .cart-info {
+        font-family: "Alata", sans-serif;
+        border: 2px solid black;
+        background-color: #fafafa;
+        border-radius: 0.25rem;
+        padding: 0.4rem 0.6rem;
+        cursor: pointer;
+        color: rgb(22, 22, 22);
+    }
+    
+
+    .cart {
+        font-family: "Alata", sans-serif;
+        position: absolute;
+        z-index: 3;
+        transition: all 0.7s ease-in-out;
+        background: rgba(22, 22, 22, 0.89);
+        color: #fafafa;
+        height: 0;
+        overflow: scroll;
+     }
+
+    .show-cart {
+        width: 400px;
+        height: 400px;
+        padding: 0 1.5rem;
+        transform: scale(1);
+    
+    }
+
+    .item-text {
+        text-align: left;
+        margin-right: 50px;
+    }
+
       /* Item Cards */
 
 
@@ -1810,13 +1848,11 @@ included to provide accuracy for hyperlink to section of page */
         font-size: 1rem;
        }
 
-    
-
-
-
-
-
 }
+
+/* ------------------------- End of Tablet Screen CSS Styling ---------------------- */
+
+/* ------------------------- Laptop/Desktop Screen CSS Styling --------------------- */
 
 @media (min-width: 992px) {
 
@@ -1914,7 +1950,7 @@ included to provide accuracy for hyperlink to section of page */
         font-size: 2.1rem;
     }
 
-    /* ------------------------ About Page --------------------------- */
+    /* ------------------------ About Page ---------------------- */
 
     /* --- Header Quote --- */
 
@@ -1958,7 +1994,7 @@ included to provide accuracy for hyperlink to section of page */
 
     /* ----- Clickable Images of Album Covers ----- */
 
-    .st-circle-outer {
+    .st-square-outer {
         margin-top: 80px;
         width: 200px;
         height: 200px;
@@ -1968,18 +2004,18 @@ included to provide accuracy for hyperlink to section of page */
         margin: auto;
     }
 
-    .st-circle-inner {
+    .st-square-inner {
         width: 180px;
         height: 180px;
         margin: -90px 0px 0px -90px;
     }
 
-    .st-circle-inner:hover {
+    .st-square-inner:hover {
         transform: scale(1.05);
         transition: 0.3s ease-in-out;
     }
 
-    .ss-circle-outer {
+    .ss-square-outer {
         margin-top: 100px;
         width: 200px;
         height: 200px;
@@ -1989,13 +2025,13 @@ included to provide accuracy for hyperlink to section of page */
         margin: auto;
     }
 
-    .ss-circle-inner {
+    .ss-square-inner {
         width: 180px;
         height: 180px;
         margin: -90px 0px 0px -90px;
     }
 
-    .ss-circle-inner:hover {
+    .ss-square-inner:hover {
         transform: scale(1.05);
         transition: 0.3s ease-in-out;
     }
@@ -2007,24 +2043,24 @@ included to provide accuracy for hyperlink to section of page */
         color: black;
     }
 
-    .jr-circle-inner {
+    .jr-square-inner {
         float: left;
     }
 
-    .jr-circle-outer {
+    .jr-square-outer {
         margin: 10px 0;
     }
 
-    .jr-circle-inner:hover {
+    .jr-square-inner:hover {
         transform: scale(1.05);
         transition: 0.3s ease-in-out;
     }
 
-    .ff-circle-outer {
+    .ff-square-outer {
         margin: 10px 0;
     }
 
-    .ff-circle-inner:hover {
+    .ff-square-inner:hover {
         transform: scale(1.05);
         transition: 0.3s ease-in-out;
     }
@@ -2272,7 +2308,14 @@ Included to provide accuracy for hyperlink to section of page */
 
     /* Cart Info Clickable Div */
 
-    .cart-info__icon {
+    .cart-info:hover {
+        background-color: rgb(22, 22, 22);
+        color: #f48826;
+        transition: 0.5s ease-in-out;
+        
+    }
+
+    .cart-info-icon {
         font-size: 2rem;
     }
 
@@ -2305,3 +2348,5 @@ Included to provide accuracy for hyperlink to section of page */
      }
 
 }
+
+/* ----------------------- End of Laptop/Desktop Screen CSS Styling ------------------------ */

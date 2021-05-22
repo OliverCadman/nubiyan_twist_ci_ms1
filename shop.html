@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 d-none d-md-block">
+                    <div class="col-md-4">
                         <!-- Shopping Cart Window -->
                         <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
                 Git Username: john-smilga
@@ -112,12 +112,13 @@
                             <div class="cart-header text-center my-4">
                                 <h4><span><i class="fa fa-shopping-basket cart-basket-icon" aria-hidden="true"></i></span>Your Basket</h4>
                                 </div>
-                            <div class="cart-total-container d-flex justify-content-around mt-5">
+                            <div class="cart-total-container d-flex justify-content-around mt-md-5">
                                 <h5>Total</h5>
                                 <h5>£<strong id="cart-total" class="font-weight-bold"></strong> </h5>
                             </div>
                             <div class="cart-buttons-container mb-3 d-flex justify-content-between">
-                                <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+                                <button type="button" id="close-basket" class="btn basket-btn btn-outline-secondary">Close</button>
+                                <button type="button" class="btn basket-btn btn-outline-secondary" data-toggle="modal" data-target="#checkout-modal">Checkout</button>
                             </div>
                         </div>
                     </div>
@@ -125,10 +126,11 @@
             </div>
             <div class="container" id="music-shop-body">
                 <div class="row d-flex justify-content-end shopping-cart">
-                    <div class="col-3">
+                    <div class="col-7 col-md-3">
                         <div id="cart-info" class="cart-info text-center d-flex justify-content-between">
-                            <p>View Your Basket</p>
-                            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
+                            <p style="text-decoration: underline;">View Your Basket</p>
+                             <p id="item-count"><p>
+                            <span class="cart-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
                         </div>
                     </div>
                 </div>
@@ -227,29 +229,50 @@
         </section>
         <section class="shop-section">
             <div class="container-fluid section-header">
-                <div class=" row">
+                <div class="row">
                     <div class="col-12 p-0">
                         <h2 class="my-5">Clothing/Prints</h2>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Shopping Cart Window -->
+                        <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
+                Git Username: john-smilga
+                Repository Handle: js-cart-setup -->
+                        <div id="cart" class="cart">
+                            <div class="cart-header text-center my-4">
+                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon" aria-hidden="true"></i></span>Your Basket</h4>
+                                </div>
+                            <div class="cart-total-container d-flex justify-content-around mt-5">
+                                <h5>Total</h5>
+                                <h5>£<strong id="cart-total" class="font-weight-bold"></strong> </h5>
+                            </div>
+                            <div class="cart-buttons-container mb-3 d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
             <div class="container">
                 <div class="row d-flex justify-content-end shopping-cart">
                     <div class="col-3">
                         <div id="cart-info" class="cart-info text-center d-flex justify-content-between">
-                            <p>View Your Basket</p>
-                            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                            <p style="text-decoration: underline;">View Your Basket</p>
+                             <p id="item-count"><p>
+                            <span class="cart-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
                         </div>
                     </div>
                 </div>
-
                 <div class="row justify-content-center justify-content-md-between item-row">
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
                             <img class="card-img-top item-image" src="assets/images/shop-images/ff-shirt.jpg"
                                 alt="Buy the Freedom Fables T-Shirt">
                             <div class="card-header">
-                                <h6>Freedom Fables<span class="block">T-Shirt</span></h6>
+                                <h6>Freedom Fables T-Shirt</span></h6>
                                 <p>£22.00</p>
                                 <button class="btn btn-primary" type="button" data-toggle="modal"
                                     data-target="#ff-shirt-modal" aria-expanded="false"
@@ -258,9 +281,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
-                Git Username: john-smilga
-                Repository handle: js-cart-setup -->
                     <div class="col-6 col-md-4 item-card">
                         <div class="card">
                             <img class="card-img-top item-image" src="assets/images/shop-images/tt-print.jpg"
@@ -389,7 +409,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Jungle Run (Double Vinyl)</h5>
+                    <h5 class="modal-title">Jungle Run <span class="block">(Double Vinyl)</span></h5>
                 </div>
                 <div class="modal-body">
                     <div class="modal-img-wrapper">
