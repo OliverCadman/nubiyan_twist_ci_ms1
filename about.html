@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
     <!--Navigation Bar-->
@@ -251,7 +249,7 @@
         </div>
     </section>
 
-    <!-- Band Cards -->
+    <!-- Band Cards with buttons opening modal windows, featuring further content relating to each band member -->
     <section id="band-profile">
         <div class="container-fluid">
             <div class="row text-center section-header">
@@ -580,6 +578,7 @@
             </div>
         </div>
     </div>
+
      <!-- Footer -->
      <footer class="footer">
         <div class="container-fluid">
@@ -632,7 +631,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
-    <!-- JavaScript to stop embedded videos when user closes the modal window -->
+    <!-- JavaScript to stop embedded videos when user closes band modal windows -->
     <script>
         $("#nick-modal").on('hidden.bs.modal', function (e) {
             $("#nick-modal iframe").attr("src", $("#nick-modal iframe").attr("src"));
