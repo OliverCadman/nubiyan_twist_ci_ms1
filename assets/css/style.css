@@ -1902,6 +1902,7 @@ included to provide accuracy for hyperlink to section of page */
         margin-top: 40px;
     }
 
+    /* Targets the quotes on either side of album cover image in album promotion section */
     .quote-content:nth-child(2) {
         margin-top: 90px;
     }
@@ -2209,8 +2210,9 @@ included to provide accuracy for hyperlink to section of page */
     }
 
     .feature-info {
-        padding: 10px;
+        padding: 5px;
         background-color: rgba(70, 70, 70, 0.74);
+       
     }
 
 
@@ -2350,6 +2352,10 @@ Included to provide accuracy for hyperlink to section of page */
         margin: 0;
         max-width: 300px;
         font-size: 1rem;
+    }
+
+    .rep-image {
+        width: 75%;
     }
 
     .mail-rep:hover {
