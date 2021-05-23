@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700');
 
+
+
 html,
 body {
     min-height: 100%;
@@ -66,6 +68,7 @@ body {
     margin-bottom: 20px;
     padding: 0;
 }
+
 
 .navbar-brand img {
     display: none;
@@ -333,6 +336,12 @@ button {
     background-color: rgb(154, 208, 192);
 }
 
+.label-icon-wrapper {
+  width: 100%;
+  --aspect-ratio-w: 4;
+  --aspect-ratio-h: 5;
+}
+
 .earth-agency-icon {
     display: flex;
     justify-content: center;
@@ -344,12 +353,6 @@ button {
     margin-right: auto;
 
 
-}
-
-.strut-icon-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .strut-icon {
@@ -1329,6 +1332,7 @@ button[type="submit"] {
 
 .representative-wrapper {
     margin-top: 0;
+    max-width: 150px;
 }
 
 .representative-wrapper span {
@@ -1337,17 +1341,10 @@ button[type="submit"] {
 }
 
 /* Icons for label and booking agents */
-
-#strut-contact-img {
-    width: 45%
-}
-
-#earthagency-contact-img {
-    width: 45%
-}
-
 .rep-image {
-    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -1382,10 +1379,14 @@ button[type="submit"] {
         padding: 1.5em .5em;
     }
 
-    .navbar img {
-        display: inline-block;
+    .navbar-logo {
         width: 100px;
-        height: 90px;
+     }
+
+    .navbar img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 
     /* ----------------- Home Page --------------- */
@@ -1566,7 +1567,7 @@ button[type="submit"] {
         width: 180px;
         height: 180px;
         right: 60%;
-        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
+        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no--eat;
         background-size: cover;
         z-index: 10;
         position: absolute;
@@ -1828,22 +1829,17 @@ included to provide accuracy for hyperlink to section of page */
     
     /* Label Icon Images to accompany contact information */
 
-    #strut-contact-img {
-        width: 50%;
-    }
-    
-    #earthagency-contact-img {
-        width: 75%;
-    }
     
     .rep-image {
         margin-bottom: 20px;
+     
     }
 
     .representative-wrapper {
         margin: 0;
+        max-width: 180px;
         font-size: 1rem;
-       }
+    }
 
 }
 
@@ -2334,6 +2330,12 @@ Included to provide accuracy for hyperlink to section of page */
         border: 1px solid #fafafa;
         transition: 0.3s ease-in-out;
         color: #f48826;
+    }
+
+    .representative-wrapper {
+        margin: 0;
+        max-width: 300px;
+        font-size: 1rem;
     }
 
     .mail-rep:hover {

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nubiyan Twist or the band's management agencies">
+    <meta name="keywords" content="Nubiyan Twist, contact, earth agency, strut records, contact form">
+    <meta name="author" content="Nubiyan Twist">
     <title>Nubiyan Twist</title>
     <!-- Bootstrap CSS & jQuery CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -30,9 +33,11 @@
 
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
+            <div class="navbar-logo">
             <a href="index.html" class="navbar-brand">
-                <img src="assets/icons/nt-home-icon.png" alt="Clickable icon link to home page">
+                <img src="assets/icons/nt-home-icon.png" width="604" height="504" alt="Clickable Nubiyan Twist brand logo, links to home page">
             </a>
+        </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
                 <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
             </button>
@@ -79,8 +84,8 @@
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-6 col-md-3 order-2 representative-wrapper text-center">
-                            <img id="strut-contact-img" class="rep-image" src="assets/icons/strut-contact.png" alt="Contact Strut Records">
-                            <p>For Label Enquiries, contact: <a href="mailto:info@strutrecords.com" class="mail-rep"><span class="block">info@strutrecords.com</span></a></p>
+                            <img id="strut-contact-img" class="rep-image" src="assets/icons/strut-contact.png" width="500" height="218" alt="Contact Strut Records">
+                            <p>For Label Enquiries, contact: <a href="mailto:info@strutrecords.com" rel="noopener" class="mail-rep"><span class="block">info@strutrecords.com</span></a></p>
                     </div>
                     <div class="order-1 order-md-2 col-12 col-md-6">
                         <div class="form-wrapper">
@@ -89,22 +94,22 @@
                                     <legend>Get in Touch</legend>
                                     <div class="form-row">
                                         <div class="form-group col-12">
-                                            <label for="name" id="name">Name:</label>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name" required>
+                                            <label for="fullname-input" id="fullname">Name:</label>
+                                            <input type="text" id="fullname-input" name="name" class="form-control" placeholder="Enter Your Name" required>
                                             <div class="valid-feedback">Looks Good</div>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-12">
-                                            <label for="email" id="email">Email:</label>
-                                            <input type="email" id="email" class="form-control" placeholder="Enter Your Email Address">
+                                            <label for="email-address" id="email">Email:</label>
+                                            <input type="email" id="email-address" name="email-address" class="form-control" placeholder="Enter Your Email Address">
                                             <small id="email-guarantee">We won't share your email with anyone else</small>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-12">
-                                            <label for="questions" id="questions">Questions/Comments:</label>
-                                            <textarea class="form-control" id="questions" class="form-control" rows="3" colplaceholder="Ask Us Anything">
+                                            <label for="textarea-questions" id="questions">Questions/Comments:</label>
+                                            <textarea class="form-control" id="textarea-questions" name="textarea-questions" class="form-control" rows="3" colplaceholder="Ask Us Anything">
                                             </textarea>
                                         </div>
                                     </div>
@@ -118,8 +123,8 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-3 order-2 order-md-3 mx-md-auto text-center representative-wrapper">
-                        <img id="earthagency-contact-img" class="rep-image" src="assets/icons/earthagency-contact.png" alt="Contact Earth Agency">
-                        <p>For Booking Enquiries, contact: <a href="mailto:andre@earthagency.com" class="mail-rep"><span class="block">andre@earth-agency.com</span></a></p>
+                        <img id="earthagency-contact-img" class="rep-image" src="assets/icons/earthagency-contact.png" width="500" height="218" alt="Contact Earth Agency">
+                        <p>For Booking Enquiries, contact: <a href="mailto:andre@earthagency.com" rel="noopener" class="mail-rep"><span class="block">andre@earth-agency.com</span></a></p>
                 </div>
             </div>
         </section>
@@ -130,15 +135,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 d-none d-md-none d-lg-block">
-                    <div class="earth-agency-icon-flex">
+                    <div class="label-icon-wrapper">
                         <a href="https://earth-agency.com/"><img src="assets/icons/earth-agency-icon.png"
-                                alt="Booking Agents Link" width="500" height="500" class="earth-agency-icon"></a>
+                                alt="Booking Agents Link" width="500" height="218" class="earth-agency-icon"></a>
                     </div>
                 </div>
                 <div class="col-lg-4 d-none d-md-none d-lg-block">
-                    <div class="strut-icon-flex">
+                    <div class="label-icon-wrapper">
                         <a href="https://strut.k7store.com/"><img src="assets/icons/strut-icon.png"
-                                alt="Music Label Link" class="strut-icon" width="500" height="218"></a>
+                                alt="Music Label Link" class="strut-icon" width="500" height="500"></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-12">
@@ -146,16 +151,16 @@
 
                         <ul class="footer-social-icons">
 
-                            <li><a href="https://www.facebook.com/NubiyanTwist/" target="_blank"><i
-                                        class="fab fa-facebook-square"></i></a>
+                            <li><a href="https://www.facebook.com/NubiyanTwist/" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Facebook Page"><i
+                                     class="fab fa-facebook-square"></i></a>
                             </li>
-                            <li><a href="https://www.twitter.com/NubiyanTwist/" target="_blank"><i
-                                        class="fab fa-twitter-square"></i></a>
+                            <li><a href="https://www.twitter.com/NubiyanTwist/" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Twitter Page"><i
+                                     class="fab fa-twitter-square"></i></a>
                             </li>
-                            <li><a href="https://www.instagram.com/nubiyantwist" target="_blank"><i
+                            <li><a href="https://www.instagram.com/nubiyantwist" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Instagram Page"><i
                                         class="fab fa-instagram-square"></i></a>
                             </li>
-                            <li><a href="https://www.youtube.com/nubiyantwist" target="_blank"><i
+                            <li><a href="https://www.youtube.com/nubiyantwist" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Youtube Channel"><i
                                         class="fab fa-youtube"></i></a>
                             </li>
 
