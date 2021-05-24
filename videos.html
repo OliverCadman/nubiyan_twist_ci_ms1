@@ -34,10 +34,11 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <div class="navbar-logo">
-            <a href="index.html" class="navbar-brand">
-                <img src="assets/icons/nt-home-icon.png" width="604" height="504" alt="Clickable Nubiyan Twist brand logo, links to home page">
-            </a>
-        </div>
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/icons/nt-home-icon.png" width="604" height="504"
+                        alt="Clickable Nubiyan Twist brand logo, links to home page">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
                 <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
             </button>
@@ -79,30 +80,12 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid feature-video-container">
-            <div class="row justify-content-md-center" id="video-row-one">
-                <div class="col-sm-12 col-md-8 col-lg-4">
-                    <div class="feature-video-wrapper">
-                        <div class="feature-video-header">
-                            <h3>Feature Video</h3>
-                        </div>
-                        <h5>24-7 Feat. Ego Ella May</h5>
-                        <hr class="block-divider">
-                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/K26KlWucg30"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </section>
-    <section id="video-collection">
+    <section class="video-collection">
         <div class="container-fluid p-0">
             <div class="row no-gutters section-header">
                 <div class="col-12">
-                    <h2 class="my-5">Video Collection</h2>
+                    <h2 class="my-5">Music Videos</h2>
                 </div>
             </div>
         </div>
@@ -129,7 +112,16 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
-                <hr class="block-divider">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="video-wrapper">
+                        <h5>24-7 Feat. Ego Ella May</h5>
+                        <hr class="video-divider">
+                        <iframe class="video" width="560" height="315" loading="lazy"
+                            src="https://www.youtube.com/embed/K26KlWucg30" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
                 <div class="col-sm-12 col-lg-6">
                     <div class="video-wrapper">
                         <h5>Tell It To Me Slowly <span class="block desktop-span">feat. Nick Richards</span></h5>
@@ -140,6 +132,20 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="video-collection">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters section-header">
+                <div class="col-12">
+                    <h2 class="my-5">Live Videos</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center justify-content-lg-start">
                 <div class="col-sm-12 col-lg-6">
                     <div class="video-wrapper">
                         <h5>If I Know feat. K.O.G <span class="block">(Live on Jools Holland)</span></h5>
@@ -171,8 +177,6 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-md-center">
                 <div class="col-sm-12 col-lg-6">
                     <div class="video-wrapper">
                         <h5>Portaits feat. Cherise<span class="block">(Live at Henwood Studios)</span></h5>
@@ -183,11 +187,30 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="video-wrapper">
+                        <h5>Keeper Feat. Cherise<span class="block">(Live at Fasching, Stockholm)</span></h5>
+                        <hr class="video-divider">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/uFLsK8srKDU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="video-wrapper">
+                        <h5>Tittle Tattle Feat. Cherise<span class="block">(Live in Istanbul, 2019)</span></h5>
+                        <hr class="video-divider">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/d8AkRbAaegg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid">
@@ -209,16 +232,20 @@
 
                         <ul class="footer-social-icons">
 
-                            <li><a href="https://www.facebook.com/NubiyanTwist/" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Facebook Page"><i
-                                     class="fab fa-facebook-square"></i></a>
+                            <li><a href="https://www.facebook.com/NubiyanTwist/" target="_blank" rel="noopener"
+                                    aria-label="Link to Nubiyan Twist's Facebook Page"><i
+                                        class="fab fa-facebook-square"></i></a>
                             </li>
-                            <li><a href="https://www.twitter.com/NubiyanTwist/" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Twitter Page"><i
-                                     class="fab fa-twitter-square"></i></a>
+                            <li><a href="https://www.twitter.com/NubiyanTwist/" target="_blank" rel="noopener"
+                                    aria-label="Link to Nubiyan Twist's Twitter Page"><i
+                                        class="fab fa-twitter-square"></i></a>
                             </li>
-                            <li><a href="https://www.instagram.com/nubiyantwist" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Instagram Page"><i
+                            <li><a href="https://www.instagram.com/nubiyantwist" target="_blank" rel="noopener"
+                                    aria-label="Link to Nubiyan Twist's Instagram Page"><i
                                         class="fab fa-instagram-square"></i></a>
                             </li>
-                            <li><a href="https://www.youtube.com/nubiyantwist" target="_blank" rel="noopener" aria-label="Link to Nubiyan Twist's Youtube Channel"><i
+                            <li><a href="https://www.youtube.com/nubiyantwist" target="_blank" rel="noopener"
+                                    aria-label="Link to Nubiyan Twist's Youtube Channel"><i
                                         class="fab fa-youtube"></i></a>
                             </li>
 
