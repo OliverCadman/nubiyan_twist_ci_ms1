@@ -1191,13 +1191,6 @@ td:nth-child(2) {
     border: 2px solid #fafafa;
 }
 
-.checkout-btn:hover {
-    background-color: rgb(22, 22, 22);
-    color: #f48826;
-    transition: 0.5s ease-in-out;
-    border: 2px solid #fafafa;
-}
-
 
 
 #cart-item-price {
@@ -1214,6 +1207,18 @@ td:nth-child(2) {
     font-family: "Alata", sans-serif;
     text-transform: uppercase;
     font-size: 2.3rem;
+}
+
+.blockdivider-checkout {
+    border-top: 2px solid #fafafa;
+}
+
+.checkout-modal-button {
+    font-family: "Alata", sans-serif !important;
+}
+
+.checkout-modal-button:hover {
+    cursor: pointer !important;
 }
 
 
@@ -1296,6 +1301,7 @@ button[type="submit"] {
     height: auto;
 }
 
+/* Screen Size - 320px (iPhone 5) */
 @media (min-width: 320px) {
     
     /* Targetting Clothing/Prints section header in Shop Page */
@@ -1728,6 +1734,11 @@ button[type="submit"] {
     /* ------------------------- End of Video Page ---------------------- */
 
     /* ------------------------- Shop Page ------------------------------ */
+
+    .shop-section {
+        padding-top: 85px;
+
+    }
 
     .cart-info {
         font-family: "Alata", sans-serif;
@@ -2250,6 +2261,10 @@ included to provide accuracy for hyperlink to section of page */
 
     /* ----- Music Shop Section ----- */
 
+    .shop-section {
+        padding-top: 100px;
+    }
+
     #music-shop-body {
         position: relative;
     }
@@ -2266,6 +2281,21 @@ included to provide accuracy for hyperlink to section of page */
     .cart-info-icon {
         font-size: 2rem;
     }
+
+    .basket-btn:hover {
+        background-color: rgb(22, 22, 22);
+        border: 2px solid #fafafa;
+        transition: 0.3s ease-in-out;
+        color: #f48826;
+    }
+
+    .checkout-modal-button:hover {
+        background-color: rgb(22, 22, 22);
+        border: 2px solid #fafafa;
+        transition: 0.3s ease-in-out;
+        color: #f48826;
+    }
+
 
     /* ------------------ Contact Page ------------------- */
 

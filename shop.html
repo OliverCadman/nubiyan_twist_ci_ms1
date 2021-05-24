@@ -519,25 +519,13 @@
     </div>
 
     <!-- Checkout Modal -->
-    <div class="modal cart-item" id="checkout-modal" tabindex="-1" role="dialog">
+    <div class="modal" id="checkout-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content text-center">
                 <div class="modal-header checkout-header">
                     <h5 class="modal-title justify-content-end">Checkout</h5>
                 </div>
                 <div class="modal-body">
-                    <div class="container">
-                        <div id="checkout" class="cart">
-                            <div class="cart-header text-center my-4">
-                                <h4><span><i class="fa fa-shopping-basket cart-basket-icon"
-                                            aria-hidden="true"></i></span>Your Basket</h4>
-                            </div>
-                            <div class="cart-total-container d-flex justify-content-around mt-md-5">
-                                <h5>Total</h5>
-                                <h5>£<strong id="cart-total" class="font-weight-bold"></strong> </h5>
-                            </div>
-                        </div>
-                    </div>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -545,6 +533,7 @@
                                     <form action="#">
                                         <fieldset>
                                             <legend>Delivery Details</legend>
+                                            <hr class="blockdivider-checkout">
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
                                                     <input type="text" class="form-control" id="fname_delivery" name="fname_delivery"
@@ -578,13 +567,12 @@
                                                         placeholder="Country">
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
+                                            <div class="form-group row d-sm-flex justify-content-center">
                                                 <div class="col-6 form-group">
                                                     <input type="text" class="form-control" id="zip_delivery" name="zip_delivery"
                                                         placeholder="Zip Code">
                                                 </div>
-                                            </div>
-                                                <div class="col-6 form-group">
+                                                <div class="col-12 col-md-6 form-group">
                                                     <label for="sameAddr">Same as Billing Address</label>
                                                     <input type="checkbox" id="sameAddr" name="sameAddr">
                                                 </div>
@@ -592,6 +580,7 @@
                                         </fieldset>
                                         <fieldset>
                                             <legend>Billing Details</legend>
+                                            <hr class="blockdivider-checkout">
                                             <div class="form-group row">
                                                 <div class="col-12">
                                                     <input type="text" class="form-control" id="cardholder"
@@ -658,8 +647,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success addbasket-button">Purchase</button>
-                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success checkout-modal-button">Purchase</button>
+                <button type="button" class="btn btn-success checkout-modal-button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
