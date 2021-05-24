@@ -214,7 +214,7 @@ ul li a.active {
     text-decoration: none;
 }
 
-.cta-listen-shop {
+.cta-promo-section {
 
     background-color: #131313;
     color: #dddddd;
@@ -223,7 +223,7 @@ ul li a.active {
     border-radius: 0 !important;
 }
 
-.cta-listen-shop:last-child {
+.cta-promo-section:last-child {
     margin-top: 10px;
 }
 
@@ -246,6 +246,10 @@ ul li a.active {
     font-weight: bold;
     letter-spacing: 2px;
 
+}
+
+.reviewer-header:last-child {
+    margin-bottom: 30px;
 }
 
 .quote-content {
@@ -997,7 +1001,7 @@ td:nth-child(2) {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Video Sections */
@@ -1437,7 +1441,7 @@ button[type="submit"] {
 
     }
 
-    .cta-listen-shop:last-child {
+    .cta-promo-section:last-child {
         margin-top: 0; /* Cancels out margin on mobile phone, since the call-to-action 
                         buttons on tablet screen size and up are displayed inline */
     }
@@ -1672,11 +1676,12 @@ button[type="submit"] {
         background-color: rgba(22, 22, 22, 0.5);
         color: #fafafa;
         border: none;
-        padding: 5px 0 5px;
+        padding: 5px 10px;
     }
 
     .alert-link-float {
         float: right;
+        padding-right: 20px;
     }
 
     .alert-link {
@@ -1901,7 +1906,7 @@ included to provide accuracy for hyperlink to section of page */
     /* ----- Album Promotion Section ----- */
 
     /* Download/Buy & Shop Buttons - Inverts font and background colours upon hovering */
-    .cta-listen-shop:hover {
+    .cta-promo-section:hover {
         background-color: #dadada;
         color: #131313;
     }
