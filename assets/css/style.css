@@ -709,7 +709,7 @@ i.fa-angle-double-right {
     font-weight: 400;
     background-color: #DCB3AC;
     color: black;
-    border: 1px solid black;
+    border: 3px solid #fafafa !important;
     letter-spacing: 1px;
 }
 
@@ -757,7 +757,7 @@ i.fa-angle-double-right {
     font-family: "Lato", sans-serif;
     background-color: #DCB3AC;
     color: rgb(22, 22, 22);
-    border: none;
+    border: 3px solid #fafafa;
 }
 
 
@@ -1048,77 +1048,6 @@ td:nth-child(2) {
 
 /* ----------------------------- Shop Page ----------------------------- */
 
-.shop-hero {
-    background: url("../images/hero-images/shop-hero.jpeg") no-repeat fixed;
-    background-position: 55%;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: 100vh;
-
-}
-
-.opaque-overlay-music {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.664);
-}
-
-.shop-hero h1 {
-    font-family: "Alatsi", sans-serif;
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: #f48826;
-}
-
-.anchor-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 60%;
-}
-
-.anchor-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.anchor-wrapper button {
-    background: rgba(22, 22, 22, 0.541);
-    font-weight: 300;
-    font-size: 2rem;
-    color: #fafafa;
-    border: 1px solid #d8d8d8;
-}
-
-.anchor-music {
-    margin: 0 auto;
-}
-
-.anchor-wrapper button {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-}
-
-/* Creates a margin for empty div containing receiving anchor for "Music" and "Clothing link buttons.
-Included to provide accuracy for hyperlink to section of page */
-.music-shop-anchor-target {
-    margin-top: 95px;
-}
-
-.clothing-shop-anchor-target {
-    margin-top: -40px;
-}
-
 /* ----- Music Shop Section ----- */
 
 .shop-section {
@@ -1145,6 +1074,10 @@ Included to provide accuracy for hyperlink to section of page */
 .item-card h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+}
+
+.item-card button {
+    border: 1px solid #fafafa;
 }
 
 .modal-img {
@@ -1647,7 +1580,6 @@ button[type="submit"] {
     .card button {
         background-color: #DCB3AC;
         color: black;
-        border: none;
 
     }
 
@@ -2130,21 +2062,17 @@ included to provide accuracy for hyperlink to section of page */
 
     .card button:hover {
         background-color: rgb(22, 22, 22);
-        border: 1px solid #fafafa;
+        border: 3px solid #fafafa;
         transition: 0.3s ease-in-out;
         color: #f48826;
 
-    }
-
-    .card button:focus {
-        border-style: 10px solid white;
     }
 
     /* Band Member Modal Window Close Button */
 
     .modal button:hover {
         background-color: rgb(22, 22, 22);
-        border: 1px solid #fafafa;
+        border: 3px solid #fafafa;
         transition: 0.3s ease-in-out;
         color: #f48826;
     }
@@ -2320,31 +2248,11 @@ included to provide accuracy for hyperlink to section of page */
 
     /* ---------------------- Shop Page ------------------------ */
 
-    /* ----- Hero Image Header Section ----- */
-
-    .shop-hero {
-        background-position: top;
-    }
-
-    .anchor-wrapper button:hover {
-        color: #f48826;
-    }
-
-    .anchor-wrapper button:active {
-        border: none;
-    }
-
-    /* Creates a margin for empty div containing receiving anchor for "Music" and "Clothing" link buttons.
-Included to provide accuracy for hyperlink to section of page */
-    .music-shop-anchor-target {
-        margin-top: -30px;
-    }
-
-    .clothing-shop-anchor-target {
-        margin-top: -40px;
-    }
-
     /* ----- Music Shop Section ----- */
+
+    #music-shop-body {
+        position: relative;
+    }
 
     /* Cart Info Clickable Div */
 
@@ -2357,10 +2265,6 @@ Included to provide accuracy for hyperlink to section of page */
 
     .cart-info-icon {
         font-size: 2rem;
-    }
-
-    #music-shop-body {
-        position: relative;
     }
 
     /* ------------------ Contact Page ------------------- */
