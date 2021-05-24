@@ -117,7 +117,8 @@ ul li a.active {
 
 /* ----- Fixed Background Image ----- */
 
-#hero-image {
+
+.callout-container {
 
     height: 100vh;
     background: url("../images/hero-images/home-hero.jpg") no-repeat bottom fixed;
@@ -135,10 +136,8 @@ ul li a.active {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    padding: 0;
-    margin: 0;
     background-color: rgba(0, 0, 0, 0.747);
 }
 
@@ -148,8 +147,9 @@ ul li a.active {
 
 /* ----- Jumbotron ----- */
 
+
 .callout-jumbotron {
-    background-color: rgba(133, 58, 58, 0);
+    background-color: rgba(0, 0, 0, 0); /* Providing a transparent background */
     position: relative;
     padding: 0;
     margin-bottom: 250px;
@@ -211,13 +211,17 @@ ul li a.active {
     text-decoration: none;
 }
 
-.cta-listen {
+.cta-listen-shop {
 
     background-color: #131313;
     color: #dddddd;
     text-decoration: none;
     font-size: 40px;
     border-radius: 0 !important;
+}
+
+.cta-listen-shop:last-child {
+    margin-top: 10px;
 }
 
 .cta-listen:hover {
@@ -399,7 +403,7 @@ button {
 
 /* ----- Header ----- */
 
-.about-background {
+.about-hero {
     background: url("../images/hero-images/about-hero.jpg") no-repeat fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -422,7 +426,7 @@ button {
 }
 
 
-.about-header p {
+.about-hero p {
     font-family: 'Alata', sans-serif;
     float: right;
     color: #fafafa;
@@ -751,7 +755,7 @@ i.fa-angle-double-right {
 
 /* ----- Header ------ */
 
-.live-header {
+.live-hero {
     height: 100vh;
     background: url("../images/hero-images/live-hero.png") no-repeat fixed;
     background-position: 40%;
@@ -965,7 +969,7 @@ td:nth-child(2) {
 
 /* ----------------------------- Video Page ---------------------------------- */
 
-#feature-video {
+.video-hero {
     background: url("../images/hero-images/video-hero.png") no-repeat bottom fixed;
     background-size: cover;
     background-position: 35%;
@@ -975,7 +979,7 @@ td:nth-child(2) {
     height: 100vh;
 }
 
-#feature-video h1 {
+.video-hero h1 {
     font-family: "Alatsi", sans-serif;
     color: #f48826;
     text-transform: uppercase;
@@ -1435,6 +1439,12 @@ button[type="submit"] {
 
     }
 
+    .cta-listen-shop:last-child {
+        margin-top: 0; /* Cancels out margin on mobile phone, since the call-to-action 
+                        buttons on tablet screen size and up are displayed inline */
+    }
+    
+
     /* Featured videos */
 
     .home-feature-video {
@@ -1752,7 +1762,7 @@ button[type="submit"] {
 
     /* ---------------------------- Video Page (min-width 768px) ----------------------------- */
 
-    #feature-video {
+    .video-hero {
         background-position: 50%;
     }
 

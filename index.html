@@ -25,10 +25,11 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <div class="navbar-logo">
-            <a href="index.html" class="navbar-brand">
-                <img src="assets/icons/nt-home-icon.png" width="604" height="504" alt="Clickable Nubiyan Twist brand logo, links to home page">
-            </a>
-        </div>
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/icons/nt-home-icon.png" width="604" height="504"
+                        alt="Clickable Nubiyan Twist brand logo, links to home page">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
                 <span><i class="fas fa-bars navbar-mobile-toggler"></i></span>
             </button>
@@ -54,6 +55,7 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <!-- Navbar Brand Logo displayed on collapsed Navbar, on mobile phones only -->
                 <div class="collapse-brand d-md-none d-sm-block">
                     <a href="index.html"><img src="assets/icons/nt-home-icon.png"
                             alt="Clickable icon link to home page"></a>
@@ -63,26 +65,22 @@
     </nav>
 
 
-
     <!-- Hero Image/Jumbotron -->
     <main>
         <section>
-            <div id="hero-image">
-                <div class="container-fluid p-0">
-                    <div class="opaque-overlay"></div>
-                    <div class="row no-gutters">
-                        <div class="col-12">
-                            <div class="jumbotron callout-jumbotron">
-                                <h1 class="text-center text-uppercase"> Nubiyan Twist</h1>
-                                <p class="lead content-font text-center">"One of the UK's leading
-                                    soulful collectives of the current generation"</p>
-                            </div>
+            <div class="container-fluid callout-container p-0">
+                <div class="opaque-overlay">&nbsp</div>
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <div class="jumbotron callout-jumbotron">
+                            <h1 class="text-center text-uppercase">Nubiyan Twist</h1>
+                            <p class="lead text-center">"One of the UK's leading
+                                soulful collectives of the current generation"</p>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="anchor-wrapper">
-                            <a href="#feature-videos"><button class="btn"
-                                    id="hero-cta">Listen/Watch</button></a>
+                            <a href="#feature-videos"><button class="btn" id="hero-cta">Listen/Watch</button></a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +116,9 @@
                 </h4>
                 <div class="col-12 cta-album p-0">
                     <a href="https://nubiyantwist.bandcamp.com/" target="_blank"><button
-                            class="btn cta-listen">Download/Listen</button></a>
+                            class="btn cta-listen-shop">Download/Listen</button></a>
+                    <a href="shop.html"><button
+                            class="btn cta-listen-shop">Visit Our Shop</button></a>
                 </div>
             </div>
             <div class="container-fluid leader-quote">
@@ -152,8 +152,8 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 album-cover-image">
-                        <figure><img src="assets/images/ffcoverimage-home-promo.jpg"
-                                loading="lazy" alt="Nubiyan Twist Freedom Fables Out Now" width="600" height="600" id="album-cover">
+                        <figure><img src="assets/images/ffcoverimage-home-promo.jpg" loading="lazy"
+                                alt="Nubiyan Twist Freedom Fables Out Now" width="600" height="600" id="album-cover">
                         </figure>
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3">
@@ -168,7 +168,7 @@
 
                             <!-- Anchor element hyperlinked to hero image section, 
                               placed at this point in DOM due to lack of accuracy when placed in relevant section -->
-                            <a name="feature-videos"></a> 
+                            <a name="feature-videos"></a>
                             <hr class="block-divider-home">
                             <h6 class="reviewer-header">The Guardian</h6>
                         </div>
@@ -176,7 +176,7 @@
                 </div>
             </div>
             <div class="container-fluid">
-                    <div class="row justify-content-lg-center padding">
+                <div class="row justify-content-lg-center padding">
                     <div class="col-sm-12 col-md-6 col-lg-6 home-feature-video">
                         <h5>If I Know feat. K.O.G <span class="block">(Live on Jools Holland)</span></h5>
                         <hr class="video-divider">
@@ -216,8 +216,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 d-none d-md-block spotify-badge">
-                        <figure><img src="assets/images/listen-on-spotify.png" alt="Spotify Badge"
-                               width="182" height="70" class="spotify-desktop-image"></figure>
+                        <figure><img src="assets/images/listen-on-spotify.png" alt="Spotify Badge" width="182"
+                                height="70" class="spotify-desktop-image"></figure>
                     </div>
                     <div class="col-sm-12 spotify-mobile-banner d-md-none d-sm-block p-0">
                         <figure><img src="assets/images/spotify-leaderboard.jpg"
