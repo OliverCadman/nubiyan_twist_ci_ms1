@@ -1118,6 +1118,7 @@ Included to provide accuracy for hyperlink to section of page */
 /* ----- Music Shop Section ----- */
 
 .shop-section {
+    padding-top: 48px;
     background-color: #DCB3AC;
 }
 
@@ -1358,6 +1359,13 @@ button[type="submit"] {
     height: auto;
 }
 
+@media (min-width: 320px) {
+    
+    /* Targetting Clothing/Prints section header in Shop Page */
+    .shop-section:last-child h2:last-child {
+        font-size: 1.6rem;
+    }
+}
 
 /*-------------------- End of Mobile Screen CSS Styling --------------------- */
 
