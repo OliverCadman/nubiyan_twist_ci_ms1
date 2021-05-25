@@ -1248,7 +1248,7 @@ td:nth-child(2) {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: 48%;
-    height: 100vh;
+    position: relative;
 
 } 
 
@@ -1264,6 +1264,10 @@ td:nth-child(2) {
 }
 
 /* Contact Form - Border and Font Styling */
+
+.contact-form-container {
+    padding-top: 50px;
+}
 
 .form-wrapper {
     font-family: "Alata", sans-serif;
@@ -1494,9 +1498,9 @@ button[type="submit"] {
     /* -------------------- About Page -------------------- */
 
     /* ----- Header ----- */
-
-    .about-background {
-        background-position: 55%;
+    
+    .about-quote-container {
+        padding-top: 110px;
     }
 
     .about-quote p {
@@ -1600,15 +1604,10 @@ button[type="submit"] {
         margin: -90px 0px 0px -90px;
     }
 
-    .st-sa-cta {
-        background-color: rgb(22, 22, 22);
-        color: #fafafa;
-        font-size: 2rem;
-        letter-spacing: 1px;
-    }
 
     .st-sa-cta p {
-        color: #fafafa;
+        color: rgb(22, 22, 22);
+        font-size: 2rem;
     }
 
     i.fa-angle-double-left {
@@ -1892,9 +1891,9 @@ included to provide accuracy for hyperlink to section of page */
     /* ----- Navigation Bar ----- */
 
     .navbar-nav li {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         letter-spacing: 1px;
-        padding: 0 1.5rem;
+        padding: 0 1.6rem;
     }
 
     .navbar img {
