@@ -123,7 +123,7 @@ ul li a.active {
 
 .callout-container {
 
-    height: 100vh;
+    height: 90vh;
     background: url("../images/hero-images/home-hero.jpg") no-repeat bottom fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -132,6 +132,7 @@ ul li a.active {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
 }
 
@@ -139,14 +140,30 @@ ul li a.active {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.747);
 }
 
-#hero-cta {
+/* Centering first call-to-action button on hero image */
+.anchor-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Call-to-action styling */
+.anchor-wrapper button {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    background: none;
+    border: 1px solid #fafafa;
     letter-spacing: 2px;
 }
+
+
+
 
 /* ----- Jumbotron ----- */
 
@@ -424,18 +441,6 @@ button {
     height: 100vh;
     width: 100%;
 }
-
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.747);
-}
-
 
 .about-hero p {
     font-family: 'Alata', sans-serif;
@@ -907,8 +912,10 @@ i.fa-angle-double-right {
 
 .listings-wrapper {
     margin: 15px;
-    background-color: rgb(22, 22, 22);
+    background-color: rgba(22, 22, 22, 0.705);
     border-radius: 10px;
+    overflow: scroll;
+    height: 300px;
 }
 
 .borderless td,
@@ -921,7 +928,7 @@ i.fa-angle-double-right {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     font-weight: 100;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -953,8 +960,8 @@ td:nth-child(2) {
     background: none;
     border: 5px solid rgb(70, 70, 70);
     border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
+    padding: 5px;
+    margin: 10px;
 }
 
 .mailing-cta-live h3 {
@@ -973,7 +980,7 @@ td:nth-child(2) {
 
 .liveshows-spotify-player {
     border: none;
-    margin: 20px;
+    margin: 10px;
     height: 80px;
 }
 
@@ -1317,6 +1324,12 @@ button[type="submit"] {
 @media (min-width: 768px) {
 
     /* Page header (h1) - Applies to all pages */
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .page-header h1 {
         font-family: "Alatsi", sans-serif;
@@ -1694,10 +1707,6 @@ button[type="submit"] {
         width: 100%;
     }
 
-    .listings-wrapper {
-        margin: 50px 0;
-    }
-
     tr {
         display: inherit;
     }
@@ -1841,9 +1850,9 @@ included to provide accuracy for hyperlink to section of page */
     /* ----- Navigation Bar ----- */
 
     .navbar-nav li {
-        font-size: 1.3em;
+        font-size: 1.6rem;
         letter-spacing: 1px;
-        padding: 0 2em;
+        padding: 0 1.5rem;
     }
 
     .navbar img {
@@ -1857,6 +1866,11 @@ included to provide accuracy for hyperlink to section of page */
     .callout-jumbotron {
         margin: 0;
     }
+
+    .anchor-wrapper button:hover {
+        color: #f48826;
+    }
+    
 
     /* ----- Album Promotion Section ----- */
 
@@ -2114,14 +2128,6 @@ included to provide accuracy for hyperlink to section of page */
 
     /* ----- Featured Shows ----- */
 
-    .alert {
-        margin-bottom: 0;
-    }
-
-    .feature-row {
-        margin-top: 0px;
-    }
-
     .responsive-wrapper {
         display: initial;
     }
@@ -2207,7 +2213,8 @@ included to provide accuracy for hyperlink to section of page */
     }
 
     .listings-wrapper {
-        height: 700px;
+        max-height: 500px;
+        height: 500px;
         overflow: scroll;
     }
 

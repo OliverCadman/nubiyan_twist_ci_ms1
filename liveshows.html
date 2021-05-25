@@ -12,15 +12,6 @@
     <!-- Bootstrap CSS & jQuery CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -87,59 +78,371 @@
         </div>
         </div>
         <div class="container-fluid p-1">
-            <div class="row no-gutters">
-                <div class="col-12">
-                    <h1 class="page-header">Live Shows</h1>
-                </div>
-            </div>
-        </div>
-
-        <!-- Featured Shows -->
-
-        <article>
-            <!-- Feature Show 1 -->
-            <div class="container-fluid p-0 feature-shows">
-                <div
-                    class="row no-gutters justify-content-md-center align-items-md-center justify-content-md-between feature-row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 responsive-wrapper">
-                        <div class="featured-shows" id="feature-container-1">
-                            <img id="feature-image-1" src="assets/images/featured-liveshows/nt-womad.png" alt="WOMAD Festival Festival Poster">
-                            <div class="feature-info">
-                                <p><a href="https://goo.gl/maps/3Xe2JpMqrz3BQFLA8" target="_blank" data-toggle="popover"
-                                        trigger="hover" data-placement="bottom" data-content="Find on Google Maps!" rel="noopener" aria-label="Link to Location of Festival on Google Maps"><i
-                                            class="fas fa-map-pin"></i></a>Charlton Park, Malmesbury</p>
-
-                                <!-- Anchor Tag to enable user to add event to their Google Calendar -->
-                                <p><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%57%4F%4D%41%44%20%46%65%73%74%69%76%61%6C&dates=20210722/20210726&location=%43%68%61%72%6C%74%6F%6E%20%50%61%72%6B%20%45%73%74%61%74%65%2C%20%4D%61%6C%6d%65%73%62%75%72%79"
-                                        data-toggle="popover" trigger="hover" data-placement="bottom"
-                                        data-content="Add to your Calendar!" target="_blank" rel="noopener" aria-label="Link to add event to Google Calendar"><i
-                                            class="fas fa-calendar-alt"></i></a>22nd - 25th
-                                    July 2021</p>
-                                <a id="ticket-link" href="https://womad.co.uk/tickets/" target="_blank" rel="noopener" aria-label="Buy Tickets for WOMAD Festival">
-                                    <p class="buy-tickets"><span><i class="fas fa-ticket-alt"></i></span>Buy Tickets</p>
-                                </a>
-                            </div>
+                <div class="row no-gutters justify-content-md-center align-items-md-center justify-content-md-between feature-row">
+                    <div class="col-lg-5 col-sm-12 col-md-12 order-lg-last">
+                        <div class="listings-wrapper">
+                            <table class="table borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>27th May 18:00</td>
+                                        <td>Islington Assembly Hall, London (Early Show)</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27th May 20:00</td>
+                                        <td>Islington Assembly Hall, London (Late Show)</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>24th July 19:00</td>
+                                        <td>WOMAD Festival, Charlton Park</td>
+                                        <td><span><a href="https://womad.co.uk/tickets/" target="_blank" rel="noopener" aria-label="Buy Tickets for WOMAD Festival">
+                                            <i class="fas fa-ticket-alt listings-ticket-icon"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th Aug 14:00</td>
+                                        <td>Cross The Tracks, London</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th Sept 19:00</td>
+                                        <td>Chalk, Brighton</td>
+                                        <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-chalk-tickets/10718575?REFERRAL_ID=twmktgvenue"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Brighton Chalk, 14th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16th Sept 19:30</td>
+                                        <td>The Bullingdon, Oxford</td>
+                                        <td><span><a href="https://songkick.seetickets.com/event/nubiyan-twist/the-bullingdon/1627886?aff=id1songkick"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Bullingdon Oxford, 16th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th Sept 19:00</td>
+                                        <td>SWX, Bristol</td>
+                                        <td><span><a href="https://songkick.seetickets.com/event/nubiyan-twist/swx/1534814?aff=id1songkick"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, SWX Bristol, 18th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th Sept 19:00</td>
+                                        <td>The Globe, Cardiff</td>
+                                        <td><span><a href="https://premier.ticketek.co.uk/shows/show.aspx?sh=NUBITWIS21"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Globe Cardiff, 19th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>21st Sept 19:30</td>
+                                        <td>Hare & Hounds, Birmingham</td>
+                                        <td><span><a href="https://www.seetickets.com/event/nubiyan-twist/the-hare-and-hounds/1841774?aff=aw&awc=7816_1620664414_d62306cda55b1131dcb17f5cf7c62c88&AFF=aw"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Hare and Hounds Birmingham, 21st September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>22nd Sept 18:30</td>
+                                        <td>Rescue Rooms, Nottingham</td>
+                                        <td><span><a href="https://www.seetickets.com/event/nubiyan-twist/rescue-rooms/1628917"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Rescue Rooms Nottingham, 22nd September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>23rd Sept 19:30</td>
+                                        <td>Gorilla, Manchester</td>
+                                        <td><span><a href="https://www.alttickets.com/nubiyan-twist-tickets/manchester-gorilla/2021-02-17-19-30"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Gorilla Manchester, 23rd September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24th Sept 19:30</td>
+                                        <td>Oval Space, London</td>
+                                        <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-oval-space-tickets/10718555?REFERRAL_ID=tmfeed"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Oval Space London, 24th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>25th Sept 19:30</td>
+                                        <td>Norwich Arts Center</td>
+                                        <td><span><a href="https://norwichartscentre.co.uk/book/?event_id=266657"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Norwich Arts Center, 25th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>26th Sept 19:30</td>
+                                        <td>The Cluny, Newcastle</td>
+                                        <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-the-cluny-tickets/10889895"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Cluny Newcastle, 26th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>27th Sept 19:30</td>
+                                        <td>CCA, Glasgow</td>
+                                        <td><span><a href="https://432p.seetickets.com/event/nubiyan-twist/cca/1810628?aff=id1bandsintown&aff=id1bandsintown"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, CCA Glasgow, 27th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>28th Sept 19:00</td>
+                                        <td>The Social, Hull</td>
+                                        <td><span><a href="https://www.ticketline.co.uk/order/tickets/13356911/nubiyan-twist-at-the-social-hull-hull-the-social-2021-09-28-19-00-00"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Social Hull, 28th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>29th Sept 19:30</td>
+                                        <td>The Wardrobe, Leeds</td>
+                                        <td><span><a href="https://www.crashrecords.co.uk/products/nubiyan-twist-13-02-21-the-wardrobe"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Wardrobe Leeds, 29th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30th Sept, 19:30</td>
+                                        <td>The Crescent, York</td>
+                                        <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-the-crescent-tickets/10525955?REFERRAL_ID=tmfeed"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Crescent York, 30th September 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1st Oct 19:00</td>
+                                        <td>The Foundry, Sheffield</td>
+                                        <td><span><a href="https://foundry.seetickets.com/event/nubiyan-twist-live-/the-foundry/1656443"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Foundry Sheffield, 1st October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd Oct 19:00</td>
+                                        <td>Future Yard, Birkenhead</td>
+                                        <td><span><a href="https://futureyard.seetickets.com/event/nubiyan-twist/future-yard/1628965"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Future Yard Birkenhead, 2nd October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>3rd Oct 19:00</td>
+                                        <td>The Grand, Clitheroe</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6th Oct 19:00</td>
+                                        <td>Le Vapeur Dijon FR</td>
+                                        <td><span><a href="https://billetterie.lavapeur.com/evenement/06-10-2021-20-30-nubiyan-twist"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Le Vapeur Dijon France, 6th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>7th Oct 19:00</td>
+                                        <td>Nancy Jazz Pulsations FR</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>8th Oct 19:00</td>
+                                        <td>Paul B, Massy FR</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th Oct 19:00</td>
+                                        <td>Le Lieu Unique, Nantes FR</td>
+                                        <td><span><a href="https://www.lelieuunique.com/evenement/nubiyan-twist/"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Le Lieu Unique, Nantes France, 9th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14th Oct 19:00</td>
+                                        <td>Junkyard, Dortmund DE</td>
+                                        <td><span><a href="https://www.eventim.de/event/nubiyan-twist-junkyard-13624451/?affiliate=SNK"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Junkyard Dortmund, Germany, 14th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>15th Oct 19:00</td>
+                                        <td>YAAM, Berlin DE</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>16th Oct 19:00</td>
+                                        <td>Franz Mehlhose, Erfurt DE</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>17th Oct 19:00</td>
+                                        <td>Paradiso, Amsterdam NL</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18th Oct 19:00</td>
+                                        <td>Oosterport, Groningen NL</td>
+                                        <td><span><a href="https://tickets.spotgroningen.nl/mtTicket/performance?id=104226&lang=nl&_ga=2.257932361.335225224.1621008050-362331685.1621008050"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Oosterport, Groningen Netherlands, 18th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19th Oct 19:00</td>
+                                        <td>Tivoli Vredenburg, Utrecht NL</td>
+                                        <td><span><a href="https://tickets.tivolivredenburg.nl/webshop/webticket/bestseatselect?eventId=3739&language=nl"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Tivoli Vredenburg, Utrecht Netherlands, 19th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>20th Oct 19:00</td>
+                                        <td>Atelier 20, Brussels BE</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22nd Oct 19:00</td>
+                                        <td>Fasching, Stockholm SE</td>
+                                        <td><span><a href="https://secure.tickster.com/sv/zf9fv38m2pxwrp9/products"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Fasching Stockholm, Sweden, 22nd October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>23rd Oct 19:00</td>
+                                        <td>Oceanen, Gothenburg SE</td>
+                                        <td><span><a href="https://billetto.se/e/nubiyan-twist-biljetter-486131/select"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Oceanen Gothenburg, Sweden, 23rd October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24th Oct 19:00</td>
+                                        <td>Vega, Copenhagen DK</td>
+                                        <td><span><a href="https://www.ticketmaster.dk/event/490663?language=da-dk&camefrom=vegadk&brand=dk_vega"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Vega Copenhagen, Denmark, 24th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>26th Oct 19:00</td>
+                                        <td>La Coopérative de Mai, Clermont Ferrand FR</td>
+                                        <td><span><a href="https://www.ticketmaster.fr/fr/manifestation/nubiyan-twist-billet/idmanif/497057/idtier/18864121?clickId=UUyT%3AVT0LxyLTxPwUx0Mo3EoUkB2mNTDzVgGSo0&irgwc=1&utm_source=Songkick&utm_medium=affiliate&utm_campaign=1234554&utm_content=1107977_7516"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, La Coopérative de Mai, Clermont Ferrand, France, 26th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>27th Oct 19:00</td>
+                                        <td>La Belle Electrique, Grenoble FR</td>
+                                        <td><span><a href="https://www.la-belle-electrique.com/en/events/nubiyan-twist"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, La Belle Electrique, Grenoble, France, 27th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>28th Oct 19:00</td>
+                                        <td>Le Rocher De Palmer, Bordeaux FR</td>
+                                        <td><span><a href="https://lerocherdepalmer.fr/artistes/nubiyan.twist/10.2021.php"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Le Rocher De Palmer, Bordeaux, France, 28th October 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>29th Oct 19:00</td>
+                                        <td>La Nef, Angouleme FR</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>30th Oct 19:00</td>
+                                        <td>L'Ubu, Rennes FR</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>3rd Nov 19:00</td>
+                                        <td>Si Ca Me Chante, Hazebrouck FR</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- Sold Out -->
+                                        <td>4th Nov 19:00</td>
+                                        <td>Le Moloco, Audincourt FR</td>
+                                        <td class="soldout-bold">Sold Out</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5th Nov 19:00</td>
+                                        <td>L'Usine, Geneva CH</td>
+                                        <td><span><a href="https://www.petzi.ch/fr/events/46190-ptr-usine-nubiyan-twist-guest-ptr-usine-geneve/tickets/"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, L'Usine, Geneva Switzerland, 5th November 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7th Nov 19:00</td>
+                                        <td>Porgy & Bess, Vienna AT</td>
+                                        <td><span><a href="https://www.porgy.at/events/10395/" target="_blank" rel="noopener"
+                                            aria-label="Buy Tickets for Nubiyan Twist, Porgy & Bess, Vienna Austria, 7th November 2021">
+                                            <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9th Nov 19:00</td>
+                                        <td>UT Connewitz, Leipzig DE</td>
+                                        <td><span><a href="https://www.eventim.de/event/nubiyan-twist-utconnewitz-e-v-13615791/?affiliate=SNK"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, UT Connewitz, Leipzig Germany, 9th November 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11th Nov 19:00</td>
+                                        <td>Hipnoza Jazz Club, Katowice PL</td>
+                                        <td><span><a href="https://goingapp.pl/wydarzenie/more-nubiyan-twist-uk-hipnoza-katowice/listopad-2021"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Hipnoza Jazz Club, Katowice Poland, 11th November 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th Nov 19:00</td>
+                                        <td>Jassmine, Warsaw PL</td>
+                                        <td><span><a href="https://goingapp.pl/wydarzenie/more-nubiyan-twist-uk-hipnoza-katowice/listopad-2021"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Jassmine, Warsaw Poland, 12th November 2021"> 
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13th Nov 19:00</td>
+                                        <td>Jazzclub Tonne, Dresden DE</td>
+                                        <td><span><a href="https://www.reservix.de/tickets-nubiyan-twist-uk-in-dresden-jazzclub-tonne-am-13-11-2021/e1632451"
+                                                    target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Jazzclub Tonne, Dresden Germany, 13th November 2021">
+                                                    <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
+                                        </td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+    
                     <!-- Feature Show 2 -->
-                    <div class="col-md-4 col-lg-4 d-none d-md-block">
-                        <div class="featured-shows" id="feature-container-2">
-                            <img id="feature-image-2" src="assets/images/featured-liveshows/nt-crossthetracks.jpeg" alt="'Cross The Tracks' Festival Poster">
-                            <div class="feature-info">
-                                <p><a href="https://goo.gl/maps/dCHAyog29ntyJEq99" target="_blank" rel="noopener" data-toggle="popover"
-                                        trigger="hover" data-placement="bottom" data-content="Find on Google Maps!"><i
-                                            class="fas fa-map-pin"></i></a>Crystal Palace, London</p>
-
-                                <!-- Anchor Tag to enable user to add event to their Google Calendar -->
-                                <p><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%43%72%6F%73%73%20%54%68%65%20%54%72%61%63%6B%73&dates=20210804/20210805&location=%43%72%79%73%74%61%6C%20%50%61%6C%61%63%65%20%42%6F%77%6C%2C%20%4C%6F%6E%64%6F%6E"
-                                        data-toggle="popover" trigger="hover" data-placement="bottom"
-                                        data-content="Add to your Calendar!" target="_blank" rel="noopener"><i
-                                            class="fas fa-calendar-alt"></i></a>Friday 6th
-                                    August 2021</p>
-                                <p class="buy-tickets"><span><i class="fas fa-ticket-alt"></i></span><s>Buy
-                                        Tickets</s><span class="feature-soldout">Sold Out!</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -159,371 +462,9 @@
         <!-- Gig Listings Bootstrap Table -->
         <div class="container p-0">
             <div class="row no-gutters">
-                <div class="col-lg-8 col-sm-12 col-md-12 order-lg-last">
-                    <div class="listings-wrapper">
-                        <table class="table borderless">
-                            <tbody>
-                                <tr>
-                                    <td>27th May 18:00</td>
-                                    <td>Islington Assembly Hall, London (Early Show)</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <td>27th May 20:00</td>
-                                    <td>Islington Assembly Hall, London (Late Show)</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>24th July 19:00</td>
-                                    <td>WOMAD Festival, Charlton Park</td>
-                                    <td><span><a href="https://womad.co.uk/tickets/" target="_blank" rel="noopener" aria-label="Buy Tickets for WOMAD Festival">
-                                        <i class="fas fa-ticket-alt listings-ticket-icon"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6th Aug 14:00</td>
-                                    <td>Cross The Tracks, London</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <td>14th Sept 19:00</td>
-                                    <td>Chalk, Brighton</td>
-                                    <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-chalk-tickets/10718575?REFERRAL_ID=twmktgvenue"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Brighton Chalk, 14th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>16th Sept 19:30</td>
-                                    <td>The Bullingdon, Oxford</td>
-                                    <td><span><a href="https://songkick.seetickets.com/event/nubiyan-twist/the-bullingdon/1627886?aff=id1songkick"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Bullingdon Oxford, 16th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>18th Sept 19:00</td>
-                                    <td>SWX, Bristol</td>
-                                    <td><span><a href="https://songkick.seetickets.com/event/nubiyan-twist/swx/1534814?aff=id1songkick"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, SWX Bristol, 18th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>19th Sept 19:00</td>
-                                    <td>The Globe, Cardiff</td>
-                                    <td><span><a href="https://premier.ticketek.co.uk/shows/show.aspx?sh=NUBITWIS21"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Globe Cardiff, 19th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>21st Sept 19:30</td>
-                                    <td>Hare & Hounds, Birmingham</td>
-                                    <td><span><a href="https://www.seetickets.com/event/nubiyan-twist/the-hare-and-hounds/1841774?aff=aw&awc=7816_1620664414_d62306cda55b1131dcb17f5cf7c62c88&AFF=aw"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Hare and Hounds Birmingham, 21st September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>22nd Sept 18:30</td>
-                                    <td>Rescue Rooms, Nottingham</td>
-                                    <td><span><a href="https://www.seetickets.com/event/nubiyan-twist/rescue-rooms/1628917"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Rescue Rooms Nottingham, 22nd September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>23rd Sept 19:30</td>
-                                    <td>Gorilla, Manchester</td>
-                                    <td><span><a href="https://www.alttickets.com/nubiyan-twist-tickets/manchester-gorilla/2021-02-17-19-30"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Gorilla Manchester, 23rd September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>24th Sept 19:30</td>
-                                    <td>Oval Space, London</td>
-                                    <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-oval-space-tickets/10718555?REFERRAL_ID=tmfeed"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Oval Space London, 24th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>25th Sept 19:30</td>
-                                    <td>Norwich Arts Center</td>
-                                    <td><span><a href="https://norwichartscentre.co.uk/book/?event_id=266657"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Norwich Arts Center, 25th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>26th Sept 19:30</td>
-                                    <td>The Cluny, Newcastle</td>
-                                    <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-the-cluny-tickets/10889895"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Cluny Newcastle, 26th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>27th Sept 19:30</td>
-                                    <td>CCA, Glasgow</td>
-                                    <td><span><a href="https://432p.seetickets.com/event/nubiyan-twist/cca/1810628?aff=id1bandsintown&aff=id1bandsintown"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, CCA Glasgow, 27th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>28th Sept 19:00</td>
-                                    <td>The Social, Hull</td>
-                                    <td><span><a href="https://www.ticketline.co.uk/order/tickets/13356911/nubiyan-twist-at-the-social-hull-hull-the-social-2021-09-28-19-00-00"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Social Hull, 28th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></span></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>29th Sept 19:30</td>
-                                    <td>The Wardrobe, Leeds</td>
-                                    <td><span><a href="https://www.crashrecords.co.uk/products/nubiyan-twist-13-02-21-the-wardrobe"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Wardrobe Leeds, 29th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>30th Sept, 19:30</td>
-                                    <td>The Crescent, York</td>
-                                    <td><span><a href="https://www.ticketweb.uk/event/nubiyan-twist-the-crescent-tickets/10525955?REFERRAL_ID=tmfeed"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Crescent York, 30th September 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1st Oct 19:00</td>
-                                    <td>The Foundry, Sheffield</td>
-                                    <td><span><a href="https://foundry.seetickets.com/event/nubiyan-twist-live-/the-foundry/1656443"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, The Foundry Sheffield, 1st October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2nd Oct 19:00</td>
-                                    <td>Future Yard, Birkenhead</td>
-                                    <td><span><a href="https://futureyard.seetickets.com/event/nubiyan-twist/future-yard/1628965"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Future Yard Birkenhead, 2nd October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>3rd Oct 19:00</td>
-                                    <td>The Grand, Clitheroe</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <td>6th Oct 19:00</td>
-                                    <td>Le Vapeur Dijon FR</td>
-                                    <td><span><a href="https://billetterie.lavapeur.com/evenement/06-10-2021-20-30-nubiyan-twist"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Le Vapeur Dijon France, 6th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>7th Oct 19:00</td>
-                                    <td>Nancy Jazz Pulsations FR</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>8th Oct 19:00</td>
-                                    <td>Paul B, Massy FR</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <td>9th Oct 19:00</td>
-                                    <td>Le Lieu Unique, Nantes FR</td>
-                                    <td><span><a href="https://www.lelieuunique.com/evenement/nubiyan-twist/"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Le Lieu Unique, Nantes France, 9th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>14th Oct 19:00</td>
-                                    <td>Junkyard, Dortmund DE</td>
-                                    <td><span><a href="https://www.eventim.de/event/nubiyan-twist-junkyard-13624451/?affiliate=SNK"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Junkyard Dortmund, Germany, 14th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></span></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>15th Oct 19:00</td>
-                                    <td>YAAM, Berlin DE</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>16th Oct 19:00</td>
-                                    <td>Franz Mehlhose, Erfurt DE</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>17th Oct 19:00</td>
-                                    <td>Paradiso, Amsterdam NL</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <td>18th Oct 19:00</td>
-                                    <td>Oosterport, Groningen NL</td>
-                                    <td><span><a href="https://tickets.spotgroningen.nl/mtTicket/performance?id=104226&lang=nl&_ga=2.257932361.335225224.1621008050-362331685.1621008050"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Oosterport, Groningen Netherlands, 18th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>19th Oct 19:00</td>
-                                    <td>Tivoli Vredenburg, Utrecht NL</td>
-                                    <td><span><a href="https://tickets.tivolivredenburg.nl/webshop/webticket/bestseatselect?eventId=3739&language=nl"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Tivoli Vredenburg, Utrecht Netherlands, 19th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>20th Oct 19:00</td>
-                                    <td>Atelier 20, Brussels BE</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <td>22nd Oct 19:00</td>
-                                    <td>Fasching, Stockholm SE</td>
-                                    <td><span><a href="https://secure.tickster.com/sv/zf9fv38m2pxwrp9/products"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Fasching Stockholm, Sweden, 22nd October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>23rd Oct 19:00</td>
-                                    <td>Oceanen, Gothenburg SE</td>
-                                    <td><span><a href="https://billetto.se/e/nubiyan-twist-biljetter-486131/select"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Oceanen Gothenburg, Sweden, 23rd October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>24th Oct 19:00</td>
-                                    <td>Vega, Copenhagen DK</td>
-                                    <td><span><a href="https://www.ticketmaster.dk/event/490663?language=da-dk&camefrom=vegadk&brand=dk_vega"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Vega Copenhagen, Denmark, 24th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>26th Oct 19:00</td>
-                                    <td>La Coopérative de Mai, Clermont Ferrand FR</td>
-                                    <td><span><a href="https://www.ticketmaster.fr/fr/manifestation/nubiyan-twist-billet/idmanif/497057/idtier/18864121?clickId=UUyT%3AVT0LxyLTxPwUx0Mo3EoUkB2mNTDzVgGSo0&irgwc=1&utm_source=Songkick&utm_medium=affiliate&utm_campaign=1234554&utm_content=1107977_7516"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, La Coopérative de Mai, Clermont Ferrand, France, 26th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>27th Oct 19:00</td>
-                                    <td>La Belle Electrique, Grenoble FR</td>
-                                    <td><span><a href="https://www.la-belle-electrique.com/en/events/nubiyan-twist"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, La Belle Electrique, Grenoble, France, 27th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>28th Oct 19:00</td>
-                                    <td>Le Rocher De Palmer, Bordeaux FR</td>
-                                    <td><span><a href="https://lerocherdepalmer.fr/artistes/nubiyan.twist/10.2021.php"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Le Rocher De Palmer, Bordeaux, France, 28th October 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>29th Oct 19:00</td>
-                                    <td>La Nef, Angouleme FR</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>30th Oct 19:00</td>
-                                    <td>L'Ubu, Rennes FR</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>3rd Nov 19:00</td>
-                                    <td>Si Ca Me Chante, Hazebrouck FR</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <!-- Sold Out -->
-                                    <td>4th Nov 19:00</td>
-                                    <td>Le Moloco, Audincourt FR</td>
-                                    <td class="soldout-bold">Sold Out</td>
-                                </tr>
-                                <tr>
-                                    <td>5th Nov 19:00</td>
-                                    <td>L'Usine, Geneva CH</td>
-                                    <td><span><a href="https://www.petzi.ch/fr/events/46190-ptr-usine-nubiyan-twist-guest-ptr-usine-geneve/tickets/"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, L'Usine, Geneva Switzerland, 5th November 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7th Nov 19:00</td>
-                                    <td>Porgy & Bess, Vienna AT</td>
-                                    <td><span><a href="https://www.porgy.at/events/10395/" target="_blank" rel="noopener"
-                                        aria-label="Buy Tickets for Nubiyan Twist, Porgy & Bess, Vienna Austria, 7th November 2021">
-                                        <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>9th Nov 19:00</td>
-                                    <td>UT Connewitz, Leipzig DE</td>
-                                    <td><span><a href="https://www.eventim.de/event/nubiyan-twist-utconnewitz-e-v-13615791/?affiliate=SNK"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, UT Connewitz, Leipzig Germany, 9th November 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>11th Nov 19:00</td>
-                                    <td>Hipnoza Jazz Club, Katowice PL</td>
-                                    <td><span><a href="https://goingapp.pl/wydarzenie/more-nubiyan-twist-uk-hipnoza-katowice/listopad-2021"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Hipnoza Jazz Club, Katowice Poland, 11th November 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>12th Nov 19:00</td>
-                                    <td>Jassmine, Warsaw PL</td>
-                                    <td><span><a href="https://goingapp.pl/wydarzenie/more-nubiyan-twist-uk-hipnoza-katowice/listopad-2021"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Jassmine, Warsaw Poland, 12th November 2021"> 
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13th Nov 19:00</td>
-                                    <td>Jazzclub Tonne, Dresden DE</td>
-                                    <td><span><a href="https://www.reservix.de/tickets-nubiyan-twist-uk-in-dresden-jazzclub-tonne-am-13-11-2021/e1632451"
-                                                target="_blank" rel="noopener" aria-label="Buy Tickets for Nubiyan Twist, Jazzclub Tonne, Dresden Germany, 13th November 2021">
-                                                <i class="fas fa-ticket-alt listings-ticket-icon"></i></a></span>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
 
                 <!-- Call-to-action for mailing list -->
-                <div class="col-lg-4 col-md-12 col-sm-12 order-md-last order-lg-first">
+ <div class="col-lg-4 col-md-12 col-sm-12 order-md-last order-lg-first">
                     <div class="mailing-spotify-liveshows d-md-flex flex-md-row flex-lg-column text-center">
                         <div class="mailing-cta-live">
                             <h3><span class="mail-icon"><i class="fas fa-envelope-open-text"></i></span>Join Us</h3>
@@ -628,6 +569,15 @@
 
         $('body').popover(popOverSettings);
     </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+ </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+ </script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+ </script>
 
 </body>
 
