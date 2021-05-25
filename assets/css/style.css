@@ -194,7 +194,7 @@ ul li a.active {
     font-family: "Alata", sans-serif;
     background-color: #DCB3AC;
     text-align: center;
-    padding: 2em 0;
+    padding: 1.2em 0;
     height: 100%;
 
 }
@@ -236,7 +236,7 @@ ul li a.active {
     background-color: #131313;
     color: #dddddd;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     border-radius: 0 !important;
 }
 
