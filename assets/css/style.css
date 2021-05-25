@@ -1874,6 +1874,10 @@ included to provide accuracy for hyperlink to section of page */
 
     /* ----- Album Promotion Section ----- */
 
+    .promo-header {
+        font-size: 2.8rem;
+      }
+
     /* Download/Buy & Shop Buttons - Inverts font and background colours upon hovering */
     .cta-promo-section:hover {
         background-color: #dadada;
