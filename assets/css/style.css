@@ -437,8 +437,9 @@ button {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: 65%;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
+    position: relative;
 }
 
 .about-hero p {
