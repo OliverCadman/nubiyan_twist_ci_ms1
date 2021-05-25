@@ -285,23 +285,22 @@ ul li a.active {
 
 
 #album-cover {
-    margin-top: 30px;
     width: 100%;
     height: 100%;
 }
 
-.home-feature-video {
+.home-video-wrapper {
     font-family: "Lato", sans-serif;
     background-color: rgb(22, 22, 22);
     margin: 30px 0;
     color: #fafafa;
 }
 
-.home-feature-video h5  {
+.home-video-wrapper h5  {
     font-weight: 300;
 }
 
-.home-feature-video h5 . {
+.home-video-wrapper h5 . {
     font-style: italic;
 }
 
@@ -1413,7 +1412,7 @@ button[type="submit"] {
 
     /* Featured videos */
 
-    .home-feature-video {
+    .home-video-wrapper {
         margin: 30px 0;
     }
 
@@ -1904,8 +1903,8 @@ included to provide accuracy for hyperlink to section of page */
         display: block;
     }
 
-    .home-feature-video {
-        padding: 10px;
+    .home-video-wrapper {
+        padding: 30px;
     }
 
     .feature-video {
@@ -1916,7 +1915,7 @@ included to provide accuracy for hyperlink to section of page */
     /* ----- Mailing/Spotify Player Section ----- */
 
     .mailing-spotify-container {
-        height: 70vh;
+        height: 60vh;
     }
 
     .mailing-cta {
