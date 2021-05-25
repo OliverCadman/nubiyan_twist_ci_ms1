@@ -437,7 +437,6 @@ button {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: 65%;
-    height: 70vh;
     width: 100%;
     position: relative;
 }
@@ -448,6 +447,8 @@ button {
     color: #fafafa;
     font-size: 1rem;
 }
+
+.about-quote-container
 
 .about-quote {
     font-size: .9rem;
