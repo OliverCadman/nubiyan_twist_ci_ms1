@@ -504,7 +504,7 @@ button {
     margin-top: 20px;
 }
 
-.history-image-wrapper {
+.band-image-wrapper {
     font-family: "Lato", sans-serif;
     display: flex !important;
     flex-direction: column;
@@ -512,13 +512,13 @@ button {
     justify-content: center;
 }
 
-.history-image-inner {
+.band-inner {
     background: rgb(22, 22, 22);
     color: #fafafa;
     padding-top: 24px;
 }
 
-.history-image {
+.band-image {
     width: 90%;
 }
 
@@ -768,21 +768,9 @@ i.fa-angle-double-right {
     background-color: #DCB3AC;
 }
 
-.liveshows-image-wrapper {
-    background-color: rgb(22, 22, 22);
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-#liveshows-image {
-    width: 100%;
-}
-
-
-
 /* Listings Table */
 
-.gig-listings {
+.table-container {
     padding-top: 60px;
 }
 
@@ -864,6 +852,7 @@ td:nth-child(2) {
 .liveshows-spotify-player {
     border: none;
     height: 80px;
+    width: 100%;
 }
 
 
@@ -1517,31 +1506,13 @@ button[type="submit"] {
 
     }
 
-    /* --------------------------------- LIVE SHOWS -------------------------------------- /*
+    /* --------------------------------- LIVE SHOWS -------------------------------------- */
 
-    /* ----- Header Fixed Background ----- */
-
-    .live-header {
-        background-position: 50% 70%;
-        
+    #gig-listings {
+        height: 100vh;
     }
 
-    .opaque-overlay-live {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: rgba(0, 0, 0, 0.555);
-    }
-
-
-    .live-header h1 {
-        padding: 0;
-    }
-
+    
 
     /* Site-wide alert (displayed on tablet screen size up) */
 
@@ -1569,39 +1540,43 @@ button[type="submit"] {
 
     }
 
-    .gig-listings {
+    .table-container {
         padding-top: 0;
     }
 
+
+    .listings-wrapper {
+        overflow: scroll;
+        max-height: 850px;
+    }
+
+     tr {
+       display: inherit;
+   }
+
     .liveshows-image-wrapper {
         background-color: rgb(22, 22, 22);
-        padding: 30px;
-        margin-left: 30px;
+        color: #d8d8d8;
+        font-family: "Lato", sans-serif;
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    
+    #liveshows-image {
+        width: 100%;
     }
 
     #liveshows-image {
         width: 100%;
     }
 
-
-    .listings-wrapper {
-        max-height: 400px;
-         overflow: scroll;
-     }
-
-
-    tr {
-        display: inherit;
-    }
-
-    .mailing-spotify-liveshows {
-        margin-bottom: 50px;
-    }
-
-
-
     .liveshows-spotify-player {
-        height: 100%;
+        height: 300px;
+        margin-left: 20px;
+        margin-bottom: 20px;
 
     }
 
@@ -1990,6 +1965,10 @@ included to provide accuracy for hyperlink to section of page */
     }
 
     /* ------------------------ Live Shows Page ------------------------ */
+
+    #gig-listings {
+        height: inherit;
+    }
 
 
     .alert-button:hover {
