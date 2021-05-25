@@ -1309,8 +1309,8 @@ button[type="submit"] {
 
 /*-------------------- End of Mobile Screen CSS Styling --------------------- */
 
-/* ------------------- Media Query for Tablet Screen Size ------------------- */
 
+/* ------ Media query targetting iphone 5 screen-size only ------ */
 @media (min-width: 320px) and (max-width: 370px) {
 
     .callout-jumbotron h1 {
@@ -1326,6 +1326,7 @@ button[type="submit"] {
 
 }
 
+/* ------------------- Media Query for Tablet Screen Size ------------------- */
 @media (min-width: 768px) {
 
     /* Page header (h1) - Applies to all pages */
@@ -1360,8 +1361,8 @@ button[type="submit"] {
     /* ----- Navigation Bar ----- */
 
     .navbar-nav li {
-        font-size: 1em;
-        padding: 1.5em .5em;
+        font-size: 1.1em;
+        padding: 1.2em 0.5rem;
     }
 
     .navbar-logo {
@@ -1380,6 +1381,10 @@ button[type="submit"] {
         background-position: bottom;
     }
 
+    .callout-container {
+        height: 80vh;
+    }
+
     .callout-jumbotron {
         margin-bottom: 300px;
     }
@@ -1394,6 +1399,18 @@ button[type="submit"] {
         display: inline-block;
         font-size: 3rem;
         padding: 0 40px;
+    }
+
+    .promo-header {
+        font-size: 2rem;
+    }
+
+    .cta-album {
+        margin-bottom: 20px;
+    }
+
+    .album-cover-image {
+        margin-top: 40px;
     }
 
     .quote-content {
@@ -1425,7 +1442,6 @@ button[type="submit"] {
     /* ----- Mailing/Spotify Player Section ----- */
 
     .mailing-spotify-container {
-        height: 50vh;
         background-position: 0% 100%;
     }
 
@@ -1867,6 +1883,10 @@ included to provide accuracy for hyperlink to section of page */
     }
 
     /* --------------------- Home Page ------------------- */
+
+    .callout-container {
+        height: 90vh;
+    }
 
     .callout-jumbotron {
         margin: 0;
