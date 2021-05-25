@@ -448,7 +448,9 @@ button {
     font-size: 1rem;
 }
 
-.about-quote-container
+.about-quote-container {
+    padding-top: 45px;
+}
 
 .about-quote {
     font-size: .9rem;
