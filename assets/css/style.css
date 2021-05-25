@@ -621,12 +621,17 @@ figcaption small{
 }
 
 .st-sa-cta {
-    font-family: "Alatsi", sans-serif;
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: .8rem;
     color: black;
-    letter-spacing: 1px;
+    letter-spacing: 0.3px;
 }
+
+.st-sa-cta p {
+    font-size: 1rem;
+}
+
 
 i.fa-angle-double-left {
     display: none;
@@ -1328,7 +1333,15 @@ button[type="submit"] {
         font-size: 1rem;
     }
 
+    /* ------------ About Page ------------- */
+
+.st-sa-cta p {
+    font-size: 0.6rem;
 }
+
+
+}
+
 
 /* ------------------- Media Query for Tablet Screen Size ------------------- */
 @media (min-width: 768px) {
@@ -1588,20 +1601,24 @@ button[type="submit"] {
     }
 
     .st-sa-cta {
-        font-family: "Alatsi", sans-serif;
-        font-size: 2rem;
+        background-color: rgb(22, 22, 22);
         color: #fafafa;
+        font-size: 2rem;
         letter-spacing: 1px;
+    }
+
+    .st-sa-cta p {
+        color: #fafafa;
     }
 
     i.fa-angle-double-left {
         display: inline-block;
-        color: black;
+        color: #fafafa;
     }
 
     i.fa-angle-double-right {
         display: inline-block;
-        color: black;
+        color: #fafafa;
     }
 
     /* ----- Band Cards ---- */
