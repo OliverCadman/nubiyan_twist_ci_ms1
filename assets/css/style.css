@@ -12,31 +12,17 @@ body {
     margin: 0;
 }
 
-/* Page Header (h1) - applies to all pages except home page */
-
-.page-header {
-    font-family: "Alatsi", sans-serif;
-    font-size: 3rem;
-    color:#f48826;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-.header-padding {
-    padding-top: 45px;
-}
 /*  Global Styling for sections of all pages that aren't at Hero level */
 
 .section-header {
     background: url("../images/nt-livelistings-header.png") no-repeat;
-    background-color: #141414;
+    background-color: rgb(22, 22, 22);
     background-position: 0%;
     background-size: contain;
     font-family: "Alatsi", sans-serif;
     text-transform: uppercase;
 
 }
-
 
 .section-header h2 {
     padding-right: 5px;
@@ -777,158 +763,40 @@ i.fa-angle-double-right {
 
 /* --------------------------------------- Live Shows ----------------------------------------- */
 
-/* ----- Header ------ */
-
-.live-hero {
-    height: 100vh;
-    background: url("../images/hero-images/live-hero.png") no-repeat fixed;
-    background-position: 40%;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-
-
-}
-
-.live-header h1 {
-    padding-top: 45px;
-    font-family: "Alatsi", sans-serif;
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: #f48826;
-}
-
-.opaque-overlay-live {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.466);
-}
-
-/* NavAlert Button Font */
-
-.navalert-container {
-    font-family: "Alata", sans-serif;
-}
-
-.alert-button {
-    font-family: "Lato", sans-serif;
-}
-
-/* ----- Featured Shows ----- */
-
-.feature-shows.div {
-    margin: auto;
-}
-
-
-.responsive-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#feature-container-1 {
-    margin-left: 10px;
-    width: 70%;
-    text-align: center;
-}
-
-#feature-image-1 {
-    width: 100%;
-
-}
-
-
-/* Change size of FontAwesome pin for mobile screen size */
-
-.fa-map-pin {
-    font-size: 1.5rem;
-    margin-right: 5px;
-    color: #f48826;
-}
-
-.fa-map-pin:hover {
-    color: #fafafa;
-    transition: 0.3s ease-in-out;
-    transform: scale(1.1);
-}
-
-.fa-calendar-alt {
-    font-size: 1.5rem;
-    margin-right: 5px;
-    color: #f48826;
-}
-
-
-.fa-calendar-alt:hover {
-    color: #fafafa;
-    transition: 0.3s ease-in-out;
-    transform: scale(1.1);
-}
-
-.fa-ticket-alt {
-    font-size: 1.5rem;
-    margin-right: 5px;
-    color: #f48826;
-}
-
-.buy-tickets {
-    font-family: "Alatsi", sans-serif;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: #f48826 !important;
-}
-
-#sold-out {
-    margin-left: 15px;
-}
-
-.feature-info {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 0.7rem;
-    padding: 10px;
-    background-color: rgba(70, 70, 70, 0.74);
-
-}
-
-.feature-info p {
-    color: #fafafa;
-    text-align: center;
-
-}
-
-/* ----- Gig Listings ----- */
 
 #gig-listings {
     background-color: #DCB3AC;
-    height: 100%;
-    /* To be changed at a later date */
-
-
 }
+
+.liveshows-image-wrapper {
+    background-color: rgb(22, 22, 22);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#liveshows-image {
+    width: 100%;
+}
+
+
 
 /* Listings Table */
 
-.listings-wrapper {
-    margin: 15px;
-    background-color: rgba(22, 22, 22, 0.705);
-    border-radius: 10px;
-    overflow: scroll;
-    height: 300px;
+.gig-listings {
+    padding-top: 60px;
 }
+
+.listings-wrapper {
+    padding: 10px;
+    background-color: rgb(22, 22, 22);
+    overflow: scroll;
+    
+}
+
 
 .borderless td,
 .borderless.th {
-    border: none
+    border: none;
 }
 
 
@@ -951,25 +819,30 @@ td:nth-child(2) {
 
 .listings-ticket-icon {
     font-size: 2.5rem;
+    color: #f48826;
 }
 
 .soldout-bold {
     color: #fafafa;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
 }
 
-.liveshows-mailing {
-    margin: 25px;
-}
 
 .mailing-cta-live {
     font-family: "Alatsi", sans-serif;
-    color: rgb(70, 70, 70);
+    text-align: center;
+    color: rgb(22, 22, 22);
     background: none;
-    border: 5px solid rgb(70, 70, 70);
+    border: 3px solid rgb(22, 22, 22);
     border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.mailing-cta-live .btn {
+    font-size: 1rem;
+    padding: 10px !important;
+    border: 2px solid rgb(22, 22, 22);
 }
 
 .mailing-cta-live h3 {
@@ -981,14 +854,15 @@ td:nth-child(2) {
     font-family: "Alata", sans-serif;
 }
 
-.mailing-cta-live button {
-    background-color: rgb(70, 70, 70);
-    color: #fafafa;
+.live-spotify-wrapper {
+    margin-top: 30px;
+    display: flex;    /* Centering the spotify player on mobile screen sizes */
+    align-items: center;
+    justify-content: center;
 }
 
 .liveshows-spotify-player {
     border: none;
-    margin: 10px;
     height: 80px;
 }
 
@@ -1365,17 +1239,9 @@ button[type="submit"] {
         justify-content: center;
         align-items: center;
     }
-
-    .page-header h1 {
-        font-family: "Alatsi", sans-serif;
-        font-size: 3rem;
-        color:#f48826;
-        text-transform: uppercase;
-        text-decoration: underline;
-    }
-
-    .header-padding {
-        padding-top: 100px;
+   
+    .navalert-padding {
+        padding-top: 80px;
     }
 
     .section-header {
@@ -1676,85 +1542,53 @@ button[type="submit"] {
         padding: 0;
     }
 
-    .feature-row {
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-    }
 
     /* Site-wide alert (displayed on tablet screen size up) */
 
     .alert {
-        background-color: rgba(22, 22, 22, 0.5);
+        font-family: "Alata", sans-serif;
+        background-color: rgba(22, 22, 22, 0.699);
         color: #fafafa;
         border: none;
-        padding: 5px 10px;
+        border-radius: 0;
     }
 
-    .alert-link-float {
+    #alert-link {
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 1.2rem;
         float: right;
         padding-right: 20px;
     }
 
-    .alert-link {
-        text-transform: uppercase;
-        color: #f48826 !important;
-        font-size: 1.3rem;
-    }
-
-    .alert-link:hover {
-        text-decoration: none;
-        color: #fafafa !important;
-        transition: 0.3s ease-in-out;
-
-    }
-
-    /* ----- Featured Shows ----- */
-
-    #feature-container-1 {
-        width: 90%;
-        text-align: left;
-    }
-
-    #feature-image-1 {
-        width: 100%;
-    }
-
-    #feature-container-2 {
-        width: 80%;
-        text-align: left;
-        margin-left: 40px;
-    }
-
-    #feature-image-2 {
-        width: 100%;
-    }
-
-    .feature-info p {
-        font-size: 0.9rem;
-    }
-
-    #ticket-link:hover {
-        text-decoration: none;
-    }
-
-    #ticket-link>p:hover {
-        color: #fafafa !important;
+    #alert-link:hover {
+        cursor: pointer;
+        color: #f48826;
         transition: 0.3s ease-in-out;
         transform: scale(1.1);
+
     }
 
-    .buy-tickets {
-        font-size: 1.4rem !important;
+    .gig-listings {
+        padding-top: 0;
     }
 
-    #sold-out {
-        margin-left: 8px;
+    .liveshows-image-wrapper {
+        background-color: rgb(22, 22, 22);
+        padding: 30px;
+        margin-left: 30px;
     }
 
-    #livelistings-image {
+    #liveshows-image {
         width: 100%;
     }
+
+
+    .listings-wrapper {
+        max-height: 400px;
+         overflow: scroll;
+     }
+
 
     tr {
         display: inherit;
@@ -1886,15 +1720,11 @@ included to provide accuracy for hyperlink to section of page */
 
 @media (min-width: 992px) {
 
-    /* Page Header (h1) font size - Applies to all pages */
-
-    .page-header {
-        font-family: "Alatsi", sans-serif;
-        font-size: 4rem;
-        color:#f48826;
-        text-transform: uppercase;
-        text-decoration: underline;
+   .navalert-padding {
+        padding-top: 100px;
     }
+
+
 
     /* ----- Navigation Bar ----- */
 
@@ -2161,99 +1991,18 @@ included to provide accuracy for hyperlink to section of page */
 
     /* ------------------------ Live Shows Page ------------------------ */
 
-    .live-header {
-        background-position: 90%;
-        height: 100vh;
-    }
 
-    .opaque-overlay-live {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: rgba(0, 0, 0, 0.555);
-    }
-
-    .navalert-container button:hover {
+    .alert-button:hover {
         background-color: rgb(22, 22, 22);
         color: #f48826;
         border: 1px solid #fafafa;
     }
 
-    /* ----- Featured Shows ----- */
-
-    .responsive-wrapper {
-        display: initial;
-    }
-
-    #feature-container-1 {
-        margin-left: 15px !important;
-        width: 60%;
-        height: 100%;
-        text-align: right;
-
-    }
-
-    .feature-soldout {
-        margin-left: 10px;
-    }
-
-    #feature-image-1 {
-        width: 100%;
-        position: static;
-    }
-
-    #feature-container-2 {
-        float: right;
-        margin-right: 10px;
-        width: 70%;
-        text-align: left;
-    }
-
-    #feature-image-2 {
-        width: 100%;
-
-    }
-
-    .fa-map-pin {
-        font-size: 1.6rem;
-        margin-right: 15px;
-        color: #f48826;
-    }
-
-    .fa-map-pin:hover {
-        color: #fafafa;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.1);
-    }
-
-    .fa-calendar-alt {
-        font-size: 1.6rem;
-        margin-right: 15px;
-        color: #f48826;
-    }
-
-    .fa-calendar-alt:hover {
-        color: #fafafa;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.1);
-    }
-
-    .feature-info {
-        padding: 5px;
-        background-color: rgba(70, 70, 70, 0.74);
-       
-    }
-
-
     /* ----- Gig Listings ----- */
 
-    .section-header h2 {
+    /* .section-header h2 {
         margin-top: 40px !important;
-    }
+    } */
 
 
     .block-divider {
@@ -2265,14 +2014,13 @@ included to provide accuracy for hyperlink to section of page */
         margin-top: 0;
     }
 
+    .listings-wrapper {
+        max-height: 700px;
+         overflow: scroll;
+     }
+
     .listings-ticket-icon {
         font-size: 2.2rem;
-    }
-
-    .listings-wrapper {
-        max-height: 500px;
-        height: 500px;
-        overflow: scroll;
     }
 
     .listings-ticket-icon:hover {
