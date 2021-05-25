@@ -1,4 +1,16 @@
-// Show Cart
+/* Shopping Cart JavaScript - Referenced from YouTube video tutorials:
+    YouTube Channel - freecodecamp.org
+    Video Name - JavaScript Project Tutorial: Shopping Cart 
+    
+    &
+    
+    Youtube Channel - Web Dev Simplified 
+    Video Name - JavaScript Shopping Cart Tutorial For Beginners */
+
+    
+
+
+// Show Cart - Referenced from YouTube channel "freecodecamp.org"
 
 (function(){
     const cartInfo = document.getElementById('cart-info');
@@ -21,14 +33,15 @@
     })
 
     })();
- // Add Items to Cart
+
+
+ // Add Items to Cart - Referenced from YouTube Channel "freecodecamp.org"
     
     (function (){
     const cartBtn = document.querySelectorAll('.addbasket-button');
     
     cartBtn.forEach(function(btn) {
         btn.addEventListener('click', function(event) {
-            //console.log(event.target);
     
             if(event.target.classList.contains('addbasket-button')) {
                 let fullPath = 
@@ -36,9 +49,7 @@
     
                 console.log(fullPath)
             
-                let pos = fullPath.indexOf('shop-images') + 11;
-    
-                // console.log(pos)
+                let pos = fullPath.indexOf('shop-images') + 11 
     
     
                 let partPath = fullPath.slice(pos);
@@ -55,8 +66,7 @@
                 let finalPrice = price.slice(1).trim();
     
                 item.price = finalPrice;
-    
-                // console.log(item);
+
     
                 const cartItem = document.createElement('div');
                 cartItem.classList.add('cart-item', 
@@ -80,7 +90,7 @@
 
                 
 
-                   // Select Cart
+                   // Select Cart - Referenced from YouTube Channel "freecodecamp.org"
     
                 const cart = document.getElementById('cart');
                 const total = document.querySelector('.cart-total-container');
@@ -88,6 +98,12 @@
     
                 cart.insertBefore(cartItem, total);
                 showTotals();
+
+                
+                
+                /* Remove Cart Item Button JavaScript referenced from YouTube tutorial:
+                YouTube Channel - Web Dev Simplified
+                Video Name - JavaScript Shopping Cart Tutorial for Beginners */
 
                 var removeCartItemButtons = document.getElementsByClassName('btn-danger')
                 for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -108,7 +124,7 @@
         });
     });
     
-        // Show Total Price
+        // Show Total Price - Referenced from YouTube Channel "freecodecamp.org"
         function showTotals(){
            
             const total =[];
@@ -134,7 +150,11 @@
     
     
     
-    // Checkout Modal Window - "Same as Billing Address" checkbox
+    /* Checkout Modal Window - "Same as Billing Address" checkbox.
+        Code referenced from Youtube Video Tutorial:
+        Youtube Channel - Cairocoders
+        Video Name - "Billing Address Same as Shipping Address jQuery" */
+
    $(document).ready(function(){
        $('#sameAddr').click(function(){
            if ($('#sameAddr').is(':checked')) {
@@ -155,7 +175,7 @@
             $('#zip_billing').val('');
            }
        })
-   })
+   });
 
         
 
