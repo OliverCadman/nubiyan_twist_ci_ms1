@@ -311,15 +311,14 @@ ul li a.active {
     background-size: contain;
     background-color: #08172c;
     color: #fafafa;
-    height: 70vh;
     width: 100vw;
 
 }
 
 .mailing-cta {
     background-color: rgba(22, 22, 22, 0.5);
-    padding: 30px;
     border-radius: 3%;
+    padding: 2rem 0;
     margin-bottom: 25px;
 }
 
