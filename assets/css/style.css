@@ -1249,6 +1249,7 @@ td:nth-child(2) {
     -o-background-size: cover;
     background-position: 48%;
     position: relative;
+    height: 100vh;
 
 } 
 
@@ -1304,8 +1305,8 @@ button[type="submit"] {
 }
 
 .representative-wrapper {
-    margin-top: 0;
-    max-width: 150px;
+    margin-top: 20px;
+    max-width: 200px;
 }
 
 .representative-wrapper span {
@@ -1316,8 +1317,9 @@ button[type="submit"] {
 /* Icons for label and booking agents */
 .rep-image {
     display: block;
-    width: 100%;
+    width: 75%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 /*-------------------- End of Mobile Screen CSS Styling --------------------- */
@@ -1342,6 +1344,12 @@ button[type="submit"] {
 .st-sa-cta p {
     font-size: 0.6rem;
 }
+
+    /* ----------- Contact Page ----------- */
+
+    #contact-hero {
+        height: inherit;
+    }
 
 
 }
