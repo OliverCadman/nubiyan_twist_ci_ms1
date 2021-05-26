@@ -504,7 +504,7 @@ button {
     margin-top: 20px;
 }
 
-.band-image-wrapper {
+.history-image-wrapper {
     font-family: "Lato", sans-serif;
     display: flex !important;
     flex-direction: column;
@@ -512,7 +512,7 @@ button {
     justify-content: center;
 }
 
-.band-inner {
+.history-image-inner {
     background: rgb(22, 22, 22);
     color: #fafafa;
     padding-top: 24px;
@@ -914,23 +914,17 @@ td:nth-child(2) {
     color: #fafafa;
 }
 
-/* Music Video Sub-section */
-
- /* Receiving anchor element for 'Music Videos' button */
-
- .music-videos-anchor-target {
-    margin-top: 100px;
-}
-
-
-
 /* ----------------------------- Shop Page ----------------------------- */
 
-/* ----- Music Shop Section ----- */
-
+/* Padding-top clears section from navbar */
 .shop-section {
     padding-top: 48px;
     background-color: #DCB3AC;
+}
+
+/* Targets the header "Clothing/Prints" and decreases font-size to prevent spilling over logo */
+.shop-section:last-of-type h2 {
+    font-size: 1.5rem;
 }
 
 .shopping-cart {
@@ -943,10 +937,6 @@ td:nth-child(2) {
 
 .item-image {
     width: 100%;
-}
-
-.item-body {
-    background-color: white;
 }
 
 .item-card h6 {
