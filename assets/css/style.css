@@ -1491,10 +1491,8 @@ button[type="submit"] {
     /* --------------------------------- LIVE SHOWS -------------------------------------- */
 
     #gig-listings {
-        height: 100vh;
+        padding-top: 0;
     }
-
-    
 
     /* Site-wide alert (displayed on tablet screen size up) */
 
@@ -1504,6 +1502,7 @@ button[type="submit"] {
         color: #fafafa;
         border: none;
         border-radius: 0;
+        margin-bottom: 0;
     }
 
     #alert-link {
@@ -1523,7 +1522,7 @@ button[type="submit"] {
     }
 
     .table-container {
-        padding-top: 0;
+        margin-top: 20px;
     }
 
 
