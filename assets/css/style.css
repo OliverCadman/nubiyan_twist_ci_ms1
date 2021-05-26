@@ -32,6 +32,9 @@ body {
     margin-top: 20px;
 }
 
+/* Class added to span elements in header elements for modals and videos, 
+where header content would result in word-breaking */
+
 .block {
     display: block;
 }
@@ -80,17 +83,6 @@ body {
     color: #0c0c0c;
     padding-left: 10px;
     display: inline-block;
-}
-
-.navbar a:hover {
-    color:rgb(105, 76, 48);
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-
-ul li a.active {
-    color: rgb(105, 76, 48)
 }
 
 
@@ -1697,6 +1689,15 @@ included to provide accuracy for hyperlink to section of page */
         font-size: 1.5rem;
         letter-spacing: 1px;
         padding: 0 1.6rem;
+    }
+ 
+
+    ul li a.active {
+        text-decoration: underline;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
     }
 
     .navbar img {

@@ -84,7 +84,9 @@ While the focus of the website should serve the needs of each of these criteria,
 # Features
 
 
-Each page features a responsive navigation bar, with a clickable logo icon positioned on the left (featured on desktop and tablet screen sizes, and hidden on mobile screen size). The font chosen for the navigation links is "Alatsi" from Google Fonts, and the color "Sinbad" (#9ad0c0) was chosen for the navbar's background. These choices were made as they represent the styling used on the album cover for Nubiyan Twist's latest release 'Freedom Fables', and so reinforces brand recognition, and promotion of the band's latest album.
+Each page features a responsive navigation bar, with a clickable logo icon positioned on the left (featured on desktop and tablet screen sizes, and displayed in collapsible dropdown on mobile screen size). The font chosen for the navigation links is "Alatsi" from Google Fonts, and the color "Sinbad" (#9ad0c0) was chosen for the navbar's background. These design choices were made as they represent the styling used on the album cover for Nubiyan Twist's latest release 'Freedom Fables', and so reinforces brand recognition, and promotion of the band's latest album.
+
+
 
 Each page features a footer, with clickable links to the band's social media platforms (styled with FontAwesome icons). Icons of the band's label and booking agents are featured on large screen sizes, and are hidden on tablet and mobile screen sizes.
 

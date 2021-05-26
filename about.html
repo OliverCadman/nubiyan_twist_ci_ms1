@@ -8,7 +8,7 @@
     <meta name="keywords" content="music, nubiyan twist, biography, band members, band history, live music">
     <meta name="author" content="Nubiyan Twist">
     <title>Nubiyan Twist | About</title>
-    <!-- Bootstrap CSS & jQuery CDN -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -611,7 +611,7 @@
         </div>
     </footer>
 
-
+    <!-- Bootstrap jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -622,7 +622,10 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
-    <!-- JavaScript to stop embedded videos when user closes band modal windows -->
+    <!-- JavaScript to stop embedded videos when user closes band modal windows.
+    Code referenced from Stack Overflow. URL :
+     https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed -->
+    
     <script>
         $("#nick-modal").on('hidden.bs.modal', function (e) {
             $("#nick-modal iframe").attr("src", $("#nick-modal iframe").attr("src"));
