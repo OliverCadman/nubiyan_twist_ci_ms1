@@ -24,7 +24,7 @@ body {
 
 }
 
-.section-header h2 {
+.section-header h1,h2 {
     padding-right: 5px;
     text-align: right;
     color: #d8d8d8;
@@ -1112,7 +1112,7 @@ td:nth-child(2) {
 /* Contact Form - Border and Font Styling */
 
 .contact-form-container {
-    padding-top: 50px;
+    padding-top: 55px;
 }
 
 .form-wrapper {
@@ -1653,6 +1653,11 @@ included to provide accuracy for hyperlink to section of page */
     #contact-hero {
         background-position: 50%;
        } 
+
+       .contact-form-container {
+        padding-top: 100px;
+    }
+
     
     /* Label Icon Images to accompany contact information */
 
@@ -1690,7 +1695,7 @@ included to provide accuracy for hyperlink to section of page */
         letter-spacing: 1px;
         padding: 0 1.6rem;
     }
- 
+
 
     ul li a.active {
         text-decoration: underline;
