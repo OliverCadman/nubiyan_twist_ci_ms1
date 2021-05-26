@@ -783,7 +783,7 @@ i.fa-angle-double-right {
 .table td {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 200;
     padding: 5px;
     text-align: center;
 }
@@ -1989,7 +1989,7 @@ included to provide accuracy for hyperlink to section of page */
     }
 
     .listings-wrapper {
-        max-height: 700px;
+        max-height: 800px;
          overflow: scroll;
      }
 
