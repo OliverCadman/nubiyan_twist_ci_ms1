@@ -320,11 +320,6 @@ button {
     font-family: "Alata", sans-serif;
 }
 
-.mailing-spotify-container iframe {
-    border: none;
-    border-radius: 5px;
-    margin: 20px 0;
-}
 
 .spotify-desktop-image {
 
@@ -342,6 +337,9 @@ button {
 
 .spotify-player {
     max-height: 80px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
 /* ----- Footer ----- */
@@ -1799,6 +1797,7 @@ included to provide accuracy for hyperlink to section of page */
 
     .spotify-player {
         margin-top: 60px;
+        max-height: 200px;
     }
 
     /* ----- Footer Section ----- */
