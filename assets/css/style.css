@@ -1149,7 +1149,9 @@ button[type="submit"] {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    max-width: 200px;
+    max-width: 500px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
@@ -1656,7 +1658,6 @@ included to provide accuracy for hyperlink to section of page */
        } 
 
     .contact-form-container {
-        padding-top: 100px;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -1672,9 +1673,9 @@ included to provide accuracy for hyperlink to section of page */
 
     .representative-wrapper {
         margin: 0;
-        max-width: 180px;
         font-size: 1rem;
         margin-bottom: 20px;
+       
     }
 
 }
