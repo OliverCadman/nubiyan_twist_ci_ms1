@@ -1148,13 +1148,10 @@ button[type="submit"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-}
-
-.representative-wrapper {
     margin-top: 20px;
     max-width: 200px;
 }
+
 
 .representative-wrapper span {
     font-style: italic;
@@ -1658,23 +1655,26 @@ included to provide accuracy for hyperlink to section of page */
         background-position: 50%;
        } 
 
-       .contact-form-container {
+    .contact-form-container {
         padding-top: 100px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
+
+    
 
     
     /* Label Icon Images to accompany contact information */
 
-    
-    .rep-image {
-        margin-bottom: 20px;
-     
-    }
 
     .representative-wrapper {
         margin: 0;
         max-width: 180px;
         font-size: 1rem;
+        margin-bottom: 20px;
     }
 
 }
