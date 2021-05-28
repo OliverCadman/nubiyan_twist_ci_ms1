@@ -101,8 +101,9 @@ where header content would result in word-breaking */
 
 .callout-container {
 
-    height: 90vh;
-    background: url("../images/hero-images/home-hero.jpg") no-repeat bottom fixed;
+    height: 80vh;
+    background: url("../images/hero-images/home-hero.jpg") no-repeat fixed;
+    background-position: bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -123,6 +124,28 @@ where header content would result in word-breaking */
     background-color: rgba(0, 0, 0, 0.747);
 }
 
+/* ----- Jumbotron ----- */
+
+
+.callout-jumbotron {
+    background-color: rgba(0, 0, 0, 0); /* Providing a transparent background */
+    position: relative;
+    padding: 0;
+}
+
+.callout-jumbotron h1 {
+    font-family: "Alatsi", sans-serif;
+    color: #f48826;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+.callout-jumbotron p {
+    font-family: "Alata", sans-serif;
+    color: #fafafa;
+    font-size: 1.1rem;
+}
+
 /* Centering first call-to-action button on hero image */
 .anchor-wrapper {
     display: flex;
@@ -139,33 +162,10 @@ where header content would result in word-breaking */
     background: none;
     border: 1px solid #fafafa;
     letter-spacing: 2px;
-}
-
-
-
-
-/* ----- Jumbotron ----- */
-
-
-.callout-jumbotron {
-    background-color: rgba(0, 0, 0, 0); /* Providing a transparent background */
     position: relative;
-    padding: 0;
-    margin-bottom: 100px;
+    top: 100px;
 }
 
-.callout-jumbotron h1 {
-    font-family: "Alatsi", sans-serif;
-    color: #f48826;
-    letter-spacing: 2px;
-    font-size: 3rem;
-}
-
-.callout-jumbotron p {
-    font-family: "Alata", sans-serif;
-    color: #fafafa;
-    font-size: 1.1rem;
-}
 
 /* ----- Album Promotion Section ----- */
 
@@ -1244,16 +1244,10 @@ button[type="submit"] {
 
     /* ----------------- Home Page --------------- */
 
-    #hero-image {
-        background-position: bottom;
-    }
-
     .callout-container {
         height: 80vh;
-    }
+        background-position: 85% 20%;
 
-    .callout-jumbotron {
-        margin-bottom: 300px;
     }
 
     .callout-jumbotron h1 {
@@ -1720,10 +1714,16 @@ included to provide accuracy for hyperlink to section of page */
 
     .callout-container {
         height: 90vh;
+        background-position: 90% 0%;
     }
 
     .callout-jumbotron {
         margin: 0;
+    }
+
+    .anchor-wrapper button {
+        position: relative;
+        top: 100px;
     }
 
     .anchor-wrapper button:hover {
