@@ -193,38 +193,41 @@ where header content would result in word-breaking */
 
 .social-media-links li {
     display: inline-block;
-    font-size: 1.9em;
     padding: 0 18px;
+    font-size: 1.9em;
 }
 
 .social-media-links li a span i {
     color: rgb(70, 70, 70);
+
 }
 
-.cta-album {
+.download-shop-cta {
     margin-top: 30px;
     width: 100%;
-}
-
-#cta-album:hover {
-    text-decoration: none;
 }
 
 .cta-promo-section {
 
     background-color: #131313;
-    color: #dddddd;
+    color: #d8d8d8;
     text-decoration: none;
     font-size: 35px;
     border-radius: 0 !important;
     margin-bottom: 10px;
 }
 
+/* Targets final call-to-action button 'Watch More Videos', 
+    decreasing font size relative to first two call-to-action buttons in section */
+.feature-video-container button {
+    font-size: 1.8rem;
+}
+
 
 .cta-listen-shop:hover {
 
     background-color: #dadada;
-    color: #131313;
+    color: #252525;
 }
 
 .testimonies-container p {
@@ -1306,6 +1309,12 @@ button[type="submit"] {
         margin: 20px 0;
     }
 
+    /* Restores font-size for final call-to-action button in promo section,
+    which was decreased for mobile screen size */
+    .feature-video-container button {
+        font-size: 35px;
+    }
+
     /* ----- Mailing/Spotify Player Section ----- */
 
     .mailing-spotify-container {
@@ -1568,9 +1577,6 @@ button[type="submit"] {
         background-position: 50%;
     }
 
-    .feature-video-container {
-        margin-top: 100px;
-    }
 
     .video-wrapper h5 {
         font-size: 1.7rem;
