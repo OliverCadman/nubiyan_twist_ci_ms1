@@ -60,13 +60,13 @@ where header content would result in word-breaking */
 
 #mailing-modal-header {
     background: url('../images/section-header/nt-header-logo.png') no-repeat;
-    background-size: contain;
-    background-position: 75%;
-    position: relative;
+    background-size: 70px;
+    background-position: 78%;
 }
 
 #mailing-modal-header h5 {
     font-family: 'Alata', sans-serif;
+    font-size: 1rem;
 }
 
 #mailing-modal-close {
@@ -1221,6 +1221,12 @@ button[type="submit"] {
         font-size: 1rem;
     }
 
+    /*  Mailing Modal Header */
+    #mailing-modal-header h5 {
+        font-family: 'Alata', sans-serif;
+        font-size: .8rem;
+    }
+
     /* ------------ About Page ------------- */
 
     .st-sa-cta p {
@@ -1240,18 +1246,10 @@ button[type="submit"] {
 /* ------------------- Media Query for Tablet Screen Size ------------------- */
 @media (min-width: 768px) {
 
+
+
     /* Page header (h1) - Applies to all pages */
-
-    .navbar-collapse {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .navalert-padding {
-        padding-top: 80px;
-    }
-
+    
     .section-header {
         background-position: 6%;
     }
@@ -1267,6 +1265,7 @@ button[type="submit"] {
 
     /* ----- Navigation Bar ----- */
 
+
     .navbar-nav li {
         font-size: 1.1em;
         padding: 1.2em 0.5rem;
@@ -1280,6 +1279,27 @@ button[type="submit"] {
         display: block;
         width: 100%;
         height: auto;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navalert-padding {
+        padding-top: 80px;
+    }
+
+    /* Mailing Modal Header Background Icon Image */
+
+    #mailing-modal-header {
+        background-size: contain;
+        background-position: 75%;
+    }
+
+    #mailing-modal-header h5 {
+        font-size: 1.3rem;
     }
 
     /* ----------------- Home Page --------------- */
