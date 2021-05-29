@@ -55,7 +55,7 @@ where header content would result in word-breaking */
 /* ----- Mailing List Modal ----- */
 
 .mailing-modal {
-    background-color: rgb(22,22,22);
+    background-color: rgb(22, 22, 22);
 }
 
 #mailing-modal-header {
@@ -188,7 +188,7 @@ where header content would result in word-breaking */
     font-weight: 300;
     font-size: 2rem;
     color: #fafafa;
-    background: none;
+    background-color: rgba(22, 22, 22, 0.801);
     border: 1px solid #fafafa;
     letter-spacing: 2px;
     position: relative;
@@ -231,11 +231,11 @@ where header content would result in word-breaking */
 
 }
 
-.download-shop-cta {
+.download-shop-cta-wrapper {
     margin-top: 30px;
-    width: 100%;
 }
 
+/* Album Promotion Call-To-Action Buttons */
 .cta-promo-section {
 
     background-color: #131313;
@@ -265,7 +265,7 @@ where header content would result in word-breaking */
 
 }
 
-.reviewer-header {
+.testimony-header {
     color: #252525;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -274,7 +274,7 @@ where header content would result in word-breaking */
 
 }
 
-.reviewer-header:last-child {
+.testimony-header:last-child {
     margin-bottom: 30px;
 }
 
@@ -1020,7 +1020,9 @@ td:nth-child(2) {
 
 
 /* ----- Cart Info and Cart Styling ----- */
-/* Referenced from John Smilga (freecodecamp.org) 
+/* Referenced from Youtube Tutorial:
+   John Smilga (freeCodeCamp.org) 
+   YouTube Video Title: JavaScript Project Tutorial: Shopping Cart
    Git Username: john-smilga
    Repository handle: js-cart-setup */
 
@@ -1065,6 +1067,10 @@ td:nth-child(2) {
     height: 25%;
 }
 
+#cart-item-price {
+    font-size: 0.8rem;
+}
+
 .show-cart {
     width: 100%;
     /* Fills shopping cart the full width of column between item cards */
@@ -1072,6 +1078,8 @@ td:nth-child(2) {
     transform: scale(1);
 
 }
+
+/* ----------- End of CSS Referenced from YouTube Tutorial ----------- */
 
 .item-wrapper {
     transition: all 2s ease-in-out;
@@ -1090,11 +1098,6 @@ td:nth-child(2) {
     border: 2px solid #fafafa;
 }
 
-
-
-#cart-item-price {
-    font-size: 0.8rem;
-}
 
 .checkout-header {
     background: url("../images/section-header/nt-header-logo.png") no-repeat right;
@@ -1250,12 +1253,13 @@ button[type="submit"] {
 
 
     /* Page header (h1) - Applies to all pages */
-    
+
     .section-header {
         background-position: 6%;
     }
 
-    .section-header h1,h2 {
+    .section-header h1,
+    h2 {
         font-size: 3rem;
         margin-right: 40px;
     }
@@ -1332,21 +1336,16 @@ button[type="submit"] {
     }
 
     .album-cover-image {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .quote-content {
-        /* margin-top: 30px; */
         font-size: 1rem;
     }
 
-    .reviewer-header {
-
-        text-transform: uppercase;
-        font-size: 1.6rem;
-        font-weight: bold;
-        letter-spacing: 2px;
-
+    /* Increases font-size of headers in promo section (CLASH, MOJO, GIGWISE etc.) */
+    .testimony-header {
+        font-size: 2rem;
     }
 
     .cta-promo-section:last-child {
@@ -1632,7 +1631,7 @@ button[type="submit"] {
 
     .video-wrapper {
         padding: 30px;
-      }
+    }
 
 
     .video-wrapper h5 {
@@ -1791,6 +1790,7 @@ included to provide accuracy for hyperlink to section of page */
         margin: 0;
     }
 
+    /* (Watch/Listen call-to-action button) */
     .anchor-wrapper button {
         position: relative;
         top: 100px;
@@ -1804,7 +1804,7 @@ included to provide accuracy for hyperlink to section of page */
     /* ----- Album Promotion Section ----- */
 
     .promo-header {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 
     /* Download/Buy & Shop Buttons - Inverts font and background colours upon hovering */
