@@ -52,6 +52,31 @@ where header content would result in word-breaking */
     width: 80%;
 }
 
+/* ----- Mailing List Modal ----- */
+
+.mailing-modal {
+    background-color: rgb(22,22,22);
+}
+
+#mailing-modal-header {
+    background: url('../images/section-header/nt-header-logo.png') no-repeat;
+    background-size: contain;
+    background-position: 75%;
+    position: relative;
+}
+
+#mailing-modal-header h5 {
+    font-family: 'Alata', sans-serif;
+}
+
+#mailing-modal-close {
+    background-color: #DCB3AC;
+    border: none;
+}
+
+#mailing-modal-close:hover {
+    color: rgb(22, 22, 22);
+}
 
 /* ----- Navigation Bar ----- */
 
@@ -96,6 +121,8 @@ where header content would result in word-breaking */
     border: none;
     outline: none;
 }
+
+/* -------------------------- Home Page ------------------------- */
 
 /* ----- Fixed Background Image ----- */
 
@@ -752,8 +779,9 @@ i.fa-angle-double-right {
     font-family: "Lato", sans-serif;
     background-color: #DCB3AC;
     color: rgb(22, 22, 22);
-    border: 3px solid #fafafa;
+    border: 1px solid #fafafa;
 }
+
 
 
 
@@ -1063,7 +1091,7 @@ td:nth-child(2) {
 }
 
 .checkout-header {
-    background: url("../images/nt-livelistings-header.png") no-repeat right;
+    background: url("../images/section-header/nt-header-logo.png") no-repeat right;
     background-size: contain;
     background-color: rgb(22, 22, 22);
 }
