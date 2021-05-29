@@ -15,7 +15,7 @@ body {
 /*  Global Styling for sections of all pages that aren't at Hero level */
 
 .section-header {
-    background: url("../images/nt-livelistings-header.png") no-repeat;
+    background: url("../images/section-header/nt-header-logo.png") no-repeat;
     background-color: rgb(22, 22, 22);
     background-position: 0%;
     background-size: contain;
@@ -24,7 +24,8 @@ body {
 
 }
 
-.section-header h1,h2 {
+.section-header h1,
+h2 {
     padding-right: 5px;
     text-align: right;
     color: #d8d8d8;
@@ -128,7 +129,8 @@ where header content would result in word-breaking */
 
 
 .callout-jumbotron {
-    background-color: rgba(0, 0, 0, 0); /* Providing a transparent background */
+    background-color: rgba(0, 0, 0, 0);
+    /* Providing a transparent background */
     position: relative;
     padding: 0;
 }
@@ -276,7 +278,7 @@ where header content would result in word-breaking */
     color: #fafafa;
 }
 
-.home-video-wrapper h5  {
+.home-video-wrapper h5 {
     font-weight: 400;
     padding-top: 10px;
 }
@@ -290,7 +292,7 @@ where header content would result in word-breaking */
 /* ----- Mailing List/Spotify Section */
 
 .mailing-spotify-container {
-    background: url("../images/hero-images/video-hero.png") no-repeat bottom fixed;
+    background: url("../images/home-page/mailing-spotify-background.png") no-repeat bottom fixed;
     background-size: contain;
     background-color: #08172c;
     color: #fafafa;
@@ -349,9 +351,9 @@ button {
 }
 
 .label-icon-wrapper {
-  width: 100%;
-  --aspect-ratio-w: 4;
-  --aspect-ratio-h: 5;
+    width: 100%;
+    --aspect-ratio-w: 4;
+    --aspect-ratio-h: 5;
 }
 
 .earth-agency-icon {
@@ -516,7 +518,7 @@ button {
     width: 90%;
 }
 
-figcaption small{
+figcaption small {
     font-weight: 200 !important;
     font-style: italic;
 }
@@ -591,7 +593,7 @@ figcaption small{
     width: 90px;
     height: 90px;
     right: 60%;
-    background: url('../images/nt-sirensong-albumcover.jpg') no-repeat;
+    background: url('../images/about-page/nt-sirensong-albumcover.jpg') no-repeat;
     background-size: cover;
     z-index: 10;
     position: absolute;
@@ -773,7 +775,7 @@ i.fa-angle-double-right {
     padding: 10px;
     background-color: rgb(22, 22, 22);
     overflow: scroll;
-    
+
 }
 
 .borderless td,
@@ -838,7 +840,8 @@ td:nth-child(2) {
 
 .live-spotify-wrapper {
     margin-top: 30px;
-    display: flex;    /* Centering the spotify player on mobile screen sizes */
+    display: flex;
+    /* Centering the spotify player on mobile screen sizes */
     align-items: center;
     justify-content: center;
 }
@@ -987,7 +990,7 @@ td:nth-child(2) {
    Git Username: john-smilga
    Repository handle: js-cart-setup */
 
-   .cart-info {
+.cart-info {
     font-family: "Alata", sans-serif;
     border: 2px solid black;
     background-color: #fafafa;
@@ -1013,7 +1016,7 @@ td:nth-child(2) {
     color: #fafafa;
     width: 0;
     overflow: scroll;
- }
+}
 
 .cart h4 {
     text-decoration: underline;
@@ -1060,9 +1063,9 @@ td:nth-child(2) {
 }
 
 .checkout-header {
-    background:url("../images/nt-livelistings-header.png") no-repeat right;
+    background: url("../images/nt-livelistings-header.png") no-repeat right;
     background-size: contain;
-    background-color:rgb(22, 22, 22);
+    background-color: rgb(22, 22, 22);
 }
 
 .checkout-header h5 {
@@ -1098,7 +1101,7 @@ td:nth-child(2) {
     position: relative;
     height: 100vh;
 
-} 
+}
 
 .opaque-overlay-contact {
     position: absolute;
@@ -1129,7 +1132,7 @@ td:nth-child(2) {
 .contactform-legend {
     font-weight: 200;
     border-bottom: 1px solid #fafafa;
-    
+
 }
 
 button[type="submit"] {
@@ -1157,7 +1160,7 @@ button[type="submit"] {
 
 .representative-wrapper span {
     font-style: italic;
-    color:#f48826;
+    color: #f48826;
 }
 
 /* Icons for label and booking agents */
@@ -1178,7 +1181,7 @@ button[type="submit"] {
         letter-spacing: 2px;
         font-size: 2.5rem;
     }
-    
+
     .callout-jumbotron p {
         font-family: "Alata", sans-serif;
         color: #fafafa;
@@ -1187,9 +1190,9 @@ button[type="submit"] {
 
     /* ------------ About Page ------------- */
 
-.st-sa-cta p {
-    font-size: 0.6rem;
-}
+    .st-sa-cta p {
+        font-size: 0.6rem;
+    }
 
     /* ----------- Contact Page ----------- */
 
@@ -1211,7 +1214,7 @@ button[type="submit"] {
         justify-content: center;
         align-items: center;
     }
-   
+
     .navalert-padding {
         padding-top: 80px;
     }
@@ -1234,7 +1237,7 @@ button[type="submit"] {
 
     .navbar-logo {
         width: 100px;
-     }
+    }
 
     .navbar img {
         display: block;
@@ -1280,7 +1283,7 @@ button[type="submit"] {
     }
 
     .reviewer-header {
-        
+
         text-transform: uppercase;
         font-size: 1.6rem;
         font-weight: bold;
@@ -1289,10 +1292,11 @@ button[type="submit"] {
     }
 
     .cta-promo-section:last-child {
-        margin-top: 0; /* Cancels out margin on mobile phone, since the call-to-action 
+        margin-top: 0;
+        /* Cancels out margin on mobile phone, since the call-to-action 
                         buttons on tablet screen size and up are displayed inline */
     }
-    
+
 
     /* Featured videos */
 
@@ -1344,7 +1348,7 @@ button[type="submit"] {
     /* -------------------- About Page -------------------- */
 
     /* ----- Header ----- */
-    
+
     .about-quote-container {
         padding-top: 110px;
     }
@@ -1532,9 +1536,9 @@ button[type="submit"] {
         max-height: 850px;
     }
 
-     tr {
-       display: inherit;
-   }
+    tr {
+        display: inherit;
+    }
 
     .liveshows-image-wrapper {
         background-color: rgb(22, 22, 22);
@@ -1546,7 +1550,7 @@ button[type="submit"] {
         margin-bottom: 20px;
         margin-left: 20px;
     }
-    
+
     #liveshows-image {
         width: 100%;
     }
@@ -1595,7 +1599,7 @@ button[type="submit"] {
         cursor: pointer;
         color: rgb(22, 22, 22);
     }
-    
+
 
     .cart {
         font-family: "Alata", sans-serif;
@@ -1606,13 +1610,13 @@ button[type="submit"] {
         color: #fafafa;
         height: auto;
         overflow: scroll;
-     }
+    }
 
     .show-cart {
         width: 500px;
         padding: 0 1.5rem;
         transform: scale(1);
-    
+
     }
 
     .item-text {
@@ -1620,7 +1624,7 @@ button[type="submit"] {
         margin-right: 50px;
     }
 
-      /* Item Cards */
+    /* Item Cards */
 
 
     .item-card {
@@ -1649,7 +1653,7 @@ included to provide accuracy for hyperlink to section of page */
 
     #contact-hero {
         background-position: 50%;
-       } 
+    }
 
     .contact-form-container {
         height: 100vh;
@@ -1659,9 +1663,9 @@ included to provide accuracy for hyperlink to section of page */
 
     }
 
-    
 
-    
+
+
     /* Label Icon Images to accompany contact information */
 
 
@@ -1669,7 +1673,7 @@ included to provide accuracy for hyperlink to section of page */
         margin: 0;
         font-size: 1rem;
         margin-bottom: 20px;
-       
+
     }
 
 }
@@ -1681,7 +1685,7 @@ included to provide accuracy for hyperlink to section of page */
 
 @media (min-width: 992px) {
 
-   .navalert-padding {
+    .navalert-padding {
         padding-top: 100px;
     }
 
@@ -1729,13 +1733,13 @@ included to provide accuracy for hyperlink to section of page */
     .anchor-wrapper button:hover {
         color: #f48826;
     }
-    
+
 
     /* ----- Album Promotion Section ----- */
 
     .promo-header {
         font-size: 2.8rem;
-      }
+    }
 
     /* Download/Buy & Shop Buttons - Inverts font and background colours upon hovering */
     .cta-promo-section:hover {
@@ -1768,7 +1772,7 @@ included to provide accuracy for hyperlink to section of page */
     }
 
     /* Cancels out top padding added on mobile and tablet screen size */
-    .home-video-wrapper h5  {
+    .home-video-wrapper h5 {
         padding-top: 0;
     }
 
@@ -2002,8 +2006,8 @@ included to provide accuracy for hyperlink to section of page */
 
     .listings-wrapper {
         max-height: 800px;
-         overflow: scroll;
-     }
+        overflow: scroll;
+    }
 
     .listings-ticket-icon {
         font-size: 2.2rem;
@@ -2073,7 +2077,7 @@ included to provide accuracy for hyperlink to section of page */
         background-color: rgb(22, 22, 22);
         color: #f48826;
         transition: 0.5s ease-in-out;
-        
+
     }
 
     .cart-info-icon {
@@ -2099,8 +2103,8 @@ included to provide accuracy for hyperlink to section of page */
 
     #contact-hero {
         background-position: 100% 15%;
-       } 
-    
+    }
+
 
     button[type="submit"]:hover {
         background-color: rgb(22, 22, 22);
@@ -2121,13 +2125,13 @@ included to provide accuracy for hyperlink to section of page */
 
     .mail-rep:hover {
         text-decoration: none;
-        
+
     }
 
     .mail-rep span:hover {
         color: #fafafa;
         transition: 0.3s ease-in-out;
-     }
+    }
 
 }
 
