@@ -923,7 +923,7 @@ td:nth-child(2) {
 
 .video-wrapper {
     background-color: rgb(22, 22, 22);
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
     margin: 30px 0;
 }
@@ -935,13 +935,14 @@ td:nth-child(2) {
 .video-wrapper h5 {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fafafa;
 }
 
 .video-wrapper>h5>span {
     font-weight: 200;
     font-style: italic;
+    font-size: 1rem;
 }
 
 /* ----------------------------- Shop Page ----------------------------- */
@@ -1629,9 +1630,17 @@ button[type="submit"] {
         background-position: 50%;
     }
 
+    .video-wrapper {
+        padding: 30px;
+      }
+
 
     .video-wrapper h5 {
         font-size: 1.7rem;
+    }
+
+    .video-wrapper>h5>span {
+        font-size: 1.3rem;
     }
 
     .desktop-span {
