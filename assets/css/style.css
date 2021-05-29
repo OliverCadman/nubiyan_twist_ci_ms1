@@ -934,9 +934,14 @@ td:nth-child(2) {
 
 .video-wrapper h5 {
     font-family: "Lato", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.3rem;
     color: #fafafa;
+}
+
+.video-wrapper>h5>span {
+    font-weight: 200;
+    font-style: italic;
 }
 
 /* ----------------------------- Shop Page ----------------------------- */
@@ -1251,9 +1256,13 @@ button[type="submit"] {
         background-position: 6%;
     }
 
-    .section-header h1 {
+    .section-header h1,h2 {
         font-size: 3rem;
         margin-right: 40px;
+    }
+
+    .shop-section:last-of-type h2 {
+        font-size: 3rem;
     }
 
     /* ----- Navigation Bar ----- */
