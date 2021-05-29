@@ -1833,6 +1833,16 @@ included to provide accuracy for hyperlink to section of page */
         color: #f48826 !important;
     }
 
+    .mailing-cta button {
+        border: 2px solid #fafafa;
+    }
+
+    .mailing-cta button:hover {
+        background-color: rgb(22, 22, 22);
+        color: #f48826;
+        transition: 0.3s ease-in-out;
+    }
+
     .spotify-desktop-image {
         margin-top: 60px;
     }
