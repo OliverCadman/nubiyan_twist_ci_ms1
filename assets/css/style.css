@@ -518,7 +518,7 @@ button {
 
 
 .profile-body {
-    padding: 0 5px;
+    padding: 0 10px;
     font-family: "Alata", sans-serif;
     text-align: center;
 }
@@ -1447,6 +1447,11 @@ button[type="submit"] {
         justify-content: center;
     }
 
+    .history-image-wrapper:first-of-type {
+        height: 100%;
+        margin: 0 10px;
+    }
+
     .history-image-inner {
         background: rgb(22, 22, 22);
         color: #fafafa;
@@ -1818,6 +1823,10 @@ included to provide accuracy for hyperlink to section of page */
         transition: 0.3s ease-in-out;
     }
 
+    .quote-content:first-child {
+        margin-top: 20px;
+    }
+
     .quote-content {
         font-size: 1.5rem;
         margin-top: 40px;
@@ -1927,11 +1936,6 @@ included to provide accuracy for hyperlink to section of page */
     .profile-body {
         padding: 0 50px;
         font-size: 1.2rem;
-    }
-
-    /* - Provides margin to start and end of section */
-    .profile-body p:first-child {
-        margin-top: 40px;
     }
 
     .profile-body:last-child {
