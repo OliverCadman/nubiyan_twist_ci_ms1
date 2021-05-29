@@ -124,6 +124,10 @@ where header content would result in word-breaking */
     outline: none;
 }
 
+ul li a.active {
+    text-decoration: underline;
+}
+
 /* -------------------------- Home Page ------------------------- */
 
 /* ----- Fixed Background Image ----- */
@@ -1784,10 +1788,6 @@ included to provide accuracy for hyperlink to section of page */
         padding: 0 1.6rem;
     }
 
-
-    ul li a.active {
-        text-decoration: underline;
-    }
 
     .nav-link:hover {
         text-decoration: underline;
