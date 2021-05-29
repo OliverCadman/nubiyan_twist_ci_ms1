@@ -333,7 +333,8 @@ where header content would result in word-breaking */
     background-color: rgba(22, 22, 22, 0.5);
     border-radius: 3%;
     padding: 2rem 0;
-    margin: 20px 0;
+    margin: 30px 0;
+    
 }
 
 .mail-icon {
@@ -423,7 +424,7 @@ button {
 }
 
 .footer-social-icons li a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0 20px;
     text-decoration: none;
     color: rgb(22, 22, 22)
@@ -1347,9 +1348,15 @@ button[type="submit"] {
         margin-bottom: 20px;
     }
 
+
+    .testimony-tablet-padding {
+        padding: 0;
+    }
+
     .album-cover-image {
         margin-top: 20px;
     }
+
 
     .quote-content {
         font-size: 1rem;
@@ -1389,10 +1396,6 @@ button[type="submit"] {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .mailing-cta {
-        width: 50%;
     }
 
     .spotify-leaderboard {
@@ -1872,6 +1875,9 @@ included to provide accuracy for hyperlink to section of page */
 
     .mailing-spotify-container {
         height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mailing-cta {
