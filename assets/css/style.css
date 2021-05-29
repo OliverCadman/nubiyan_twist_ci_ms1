@@ -87,11 +87,13 @@ where header content would result in word-breaking */
     padding: 0;
 }
 
-
+/* Hides brand logo on mobile screen sizes */
 .navbar-brand img {
     display: none;
 }
 
+/* Displays brand logo in collapsible dropdown nav item list
+   on mobile screen sizes */ 
 .collapse-brand img {
     width: 50%;
     float: right;
@@ -159,6 +161,7 @@ where header content would result in word-breaking */
     background-color: rgba(0, 0, 0, 0);
     /* Providing a transparent background */
     position: relative;
+    bottom: 30px;
     padding: 0;
 }
 
@@ -342,6 +345,7 @@ where header content would result in word-breaking */
     text-transform: uppercase;
     font-family: "Alatsi", sans-serif;
     color: #f48826;
+    text-decoration: underline;
 }
 
 .mailing-cta p,
@@ -911,11 +915,7 @@ td:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Video Sections */
-
-.video {
-    width: 100%;
-}
+/* Video Section (Music Videos/Live Videos) */
 
 .video-collection {
     background-color: #DCB3AC;
@@ -943,6 +943,10 @@ td:nth-child(2) {
     font-weight: 200;
     font-style: italic;
     font-size: 1rem;
+}
+
+.video {
+    width: 100%;
 }
 
 /* ----------------------------- Shop Page ----------------------------- */
@@ -1036,6 +1040,11 @@ td:nth-child(2) {
     color: rgb(22, 22, 22);
 }
 
+/* FontAwesome Shopping Basket Icon */
+.cart-info-icon {
+    font-size: 1.5rem;
+}
+
 #item-count {
     display: block;
 }
@@ -1071,9 +1080,12 @@ td:nth-child(2) {
     font-size: 0.8rem;
 }
 
+/* Cart assigned to JavaScript classList toggle function:
+   Referenced from YouTube tutorial by John Smilga (freeCodeCamp.org)
+   YouTube Video Title: JavaScript Project Tutorial - Shopping Cart */
 .show-cart {
     width: 100%;
-    /* Fills shopping cart the full width of column between item cards */
+    /* Fills shopping cart the full width of screen */
     padding: 0 1.5rem;
     transform: scale(1);
 
@@ -1809,7 +1821,7 @@ included to provide accuracy for hyperlink to section of page */
     /* ----- Album Promotion Section ----- */
 
     .promo-header {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     /* Download/Buy & Shop Buttons - Inverts font and background colours upon hovering */
