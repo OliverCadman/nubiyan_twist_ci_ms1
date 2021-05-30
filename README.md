@@ -16,7 +16,7 @@ The business goals of this website are:
 * Establish Nubiyan Twist as a trusted brand to promoters and venue owners.
 * Compell fans/potential fans to purchase tickets for the group's live shows.
 * Grow the group's fanbase.
-* Encourage the sale of records and EPs to collectors, DJs and fans.
+* Encourage the sale of records to all users of the website.
 * Reinforce brand awareness to all users of the website.
 * Provide excellent UX to keep users on the site long enough to make a purchase.
 
@@ -44,25 +44,17 @@ While the focus of the website should serve the needs of each of these criteria,
 
 ## User Stories
 
-1. Fans/potential fans:
-    1. As a fan, I want to be able to easily navigate to and clearly view gig listings, so I can see if they are performing near me.
-    2. As a new fan, I want to be able to sign up to a mailing list, so I can keep updated about new releases and upcoming shows/tours.
-    3. As a potential fan, I want to see footage of their live shows, so I can determine if it's worth spending money to see them live.
-    4. As a fan, I want to view a biography, so I can find out more about the history of the band.
 
-2. DJs/Record Collectors:
-    1. As a DJ, I want to find testimonies from verified publications, so I can determine how much of a presence the band has.
-    2. As a record collector, I want to be able to easily preview songs, so I can determine if their records are worth purchasing.
-    3. As a record collector/DJ, I want to find and navigate through the merchandise section intuitively, so I can make any purchases with ease.
-    4. As a record collector, I want to see images of the band's vinyls and sleeves, so I can gauge the visual aesthetics of the records.
-    5. As a DJ, I want to know who the band have collaborated with, so I can better curate my setlists that I will feature the band on.
-
-3. Promoters/Venue Owners:
-    1. As a promoter/venue owner, I want to easily navigate to a contact form, so I can get in touch with the band/band manager efficiently.
-    2. As a venue owner, I want to see footage/photos of the band's live shows, so I can see how many people they will bring into my venue.
-    3. As a promoter, I want to be able to easily find which promoters/labels the band are affiliated with, so I can determine the band's presence in the music industry.
-    4. As a venue owner, I want to easily navigate to the band's gig listings, so I can gauge how active the band are in the live music scene.
-    5. As a venue owner, I want to see how many of their shows have sold out, so I can be confident that my venue will be filled to capacity.
+1. As a new visitor, I want to navigate through the website easily, so I can find what I need with efficiency.
+2. As a new visitor, I want to find and navigate through the merchandise section intuitively, so I can make any purchases with ease.
+3. As a visitor interested in buying a record, I want to be able to preview the band's songs easily, so I can better determine if I want to make a final purchase.
+4. As a fan, I want to be able to sign up to a mailing list, so I can keep updated about new releases and upcoming shows/tours.
+5. As a potential fan, I want to see footage of the band's live shows, so I can determine if it's worth spending money to see them live.
+6. As a potential fan, I want to find testimonies from verified publications, so I can determine how much of a presence the band has.
+7. As a fan, I want to view a biography, so I can find out more about the history of the band and its members.
+8. As a fan, I want to be able to easily navigate to and clearly view gig listings, so I can see if they are performing near me.
+9. As a promoter/venue owner, I want to easily navigate to a contact form, so I can get in touch with the band/band manager efficiently.
+10. As a venue owner, I want to see how many of their shows have sold out, so I can be confident that my venue will be filled to capacity.
 
 ## Wireframes
 
@@ -140,18 +132,18 @@ Upon clicking the checkout button, a modal window is opened, featuring a bootstr
 
 A number of the features on this page rely on JavaScript in order to work smoothly as a complete entity; namely the small clickable basket information window, the collapsible 'Your Basket' window which opens when the Basket info button is clicked, and the 'Same as Billing Address' checkbox in the 'Checkout' form. Again I am aware of course that JavaScript code isn't a requirement of this assessment and is not expected by the assessors. However after deliberate consideration, I deemed it important to include, exclusively to fulfill the criteria for a smooth, intuitive user experience, as one of the chief business goals of the website is to of course, sell the band's products. The JavaScript I used is not my own; it was referenced from three sources:
 
-##### Clickable Basket Info Window & Expanding Basket Window
+#### Clickable Basket Info Window & Expanding Basket Window
 This code was referenced from a YouTube Tutorial by John Smilga (freeCodeCamp.org)
 1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
 2. YouTube Video - [JavaScript Project Tutorial: Shopping Cart](https://www.youtube.com/watch?v=q_TZhCWbS3I)
 
-##### Button to Remove Item from Basket 
+#### Button to Remove Item from Basket 
 
 This code was referenced from a YouTube Tutorial by 'Web Dev Simplified'
 1. YouTube Channel - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
 2. YouTube Video - [JavaScript Shopping Cart Tutorial for Beginners](https://www.youtube.com/watch?v=YeFzkC2awTM&t=907s)
 
-##### 'Same as Billing Address' Checkbox
+#### 'Same as Billing Address' Checkbox
 
 This code was referenced from a YouTube Tutorial by 'Cairocoders'
 1. YouTube Channel - [Cairocoders](https://www.youtube.com/channel/UCHyfpikAAfqmUTCDdLAp5OA)
