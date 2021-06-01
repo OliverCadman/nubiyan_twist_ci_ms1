@@ -89,9 +89,9 @@ With this, the home page acts as the central hub of the website, from where the 
 10. As a venue owner, I want to see how many of their shows have sold out, so I can be confident that my venue will be filled to capacity.
     1. Sold out shows are clearly indicated in the gig listings table, with strong lettering and white font contrasting the dark background of the table.
 
-### Manual Testing of features on all pages 
+## Manual Testing of features on all pages 
 
-#### Home Page:
+### Home Page:
 1. Navigation Bar
    1. Go to home page on desktop, tablet and mobile.
    2. Change screen size from laptop to mobile to check if responsive navbar collapses to burger icon as intented.
@@ -121,7 +121,7 @@ With this, the home page acts as the central hub of the website, from where the 
 
 6. Confirm that all contents of page are responsive, and maintain functionality on all screen sizes.
 
-#### About Page:
+### About Page:
 1. Navigation Bar
    1. Repeat verification steps taken in home page testing.
    2. Confirm the 'active' class is correctly assigned to relevant link in navbar.
@@ -153,7 +153,7 @@ With this, the home page acts as the central hub of the website, from where the 
 
 6. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes.
 
-#### Live Shows Page:
+### Live Shows Page:
 
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.
@@ -181,22 +181,101 @@ With this, the home page acts as the central hub of the website, from where the 
 
 5. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes. 
 
-#### Video Page
+### Video Page
 
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.
    2. Confirm the 'active' class is correctly assigned to relevant link in navbar.
 
 2. Music Videos/Live Videos sections
-   1. Ensure that heading font and background size matches the headers on previous pages.
+   1. Ensure that heading font and background size matches the headers on previous pages, on all device sizes.
    2. Confirm that controls in all videos in sections are keyboard focusable.
    3. Confirm that all videos play correctly and smoothly.
-   4. Confirm that all headings to videos have sufficient contrast against background and are readable.
+   4. Confirm that all headings to videos have sufficient contrast against background and are readable on all device sizes.
 
 3. Footer
    1. Testing already verified since HTML code is identical across all pages.
 
 4. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes. 
+
+### Shop Page 
+
+1. Navigation Bar
+   1. Testing already verified since HTML code is identical across all pages.
+   2. Confirm the 'active' class is correctly assigned to relevant link in navbar.
+
+2. Music Shop Section
+   1. Ensure that heading font and background size matches the headers on previous pages, on all device sizes.
+   2. Confirm spotify player is clearly displayed, and functions correctly on all devices.
+   3. Hover over 'View Your Basket' window to confirm that colours change as expected.
+   4. Confirm that basket quantity is displayed when items are selected.
+   5. Click 'View Your Basket' window to confirm that basket opens as expected.
+   6. Confirm that basket window expands on all devices (full-width on mobile devices), and that it's content is sufficiently contrasted against background.
+   7. Click remove button to confirm items are removed from basket successfully and basket total updates as expected.
+   8. Click Basket's 'Close' and 'Checkout' buttons to confirm that both buttons close the basket window successfully.
+   9. Confirm that all images in item cards are displayed successfully.
+   10. Hover over item images in cards to confirm alt text appears on hovering - *similarly to the images in the 'About' page and 'Live Shows' page, titles were added to the divs containing images, in order for the alt text to appear when hovered over.*
+   11. Hover over card's 'More Info' buttons on laptop to confirm that colours change as expected.
+   12. Click on all cards' 'More Info' buttons to confirm they open the relevant modal windows.
+
+3. Clothing Shop Section 
+   1. Ensure that heading font and background size matches the headers on previous pages, on all device sizes - *the font size for the header to 'Clothing/Prints' section had to be reduced as retaining the same font size resulted in the text spilling into background logo image*.
+   2. All testing undertaken on 'Music Shop' item cards was also taken on 'Clothing/Prints' item cards.
+
+4. Item Modal Windows
+   1. Confirm that images are displayed in all modal windows, and all images relate to the images shown in their relative bootstrap cards.
+   2. Confirm that all text content is contrasted sufficiently againt background.
+   3. Hover over images to confirm alt text displays successfully - *again, titles were added to the each image's containing div in order to display alt text on hovering*
+   4. Click Add-to-Basket button to ensure this adds product to basket. 
+   5. Click Close button and on main page (anywhere but the modal window) to confirm the modal window closes as expected.
+   6. Hover over 'Add-to-Basket' and 'Close' buttons to confirm they respond as expected - *the difference in border thickness resulted in the modal window expanding slightly when the buttons were hovered over. Border thickness was changed to match the thickness of button's borders before hovering*
+   7. Select all options in Colour and Sizes dropdown list, in T-Shirt Modal to confirm they function correctly.
+
+
+5. Checkout Window
+   1. Reduce device size to confirm that header font and background size decrease as expected.
+   2. Confirm that all input's placeholder text is displayed correctly.
+   3. Click purchase button before filling any input fields, to confirm the 'required' attribute functions as expected - *a mistake was initially made in the placement of the modal footer, resulting in div containing the 'Purchase' and 'Close' buttons being situated outside of the form. This has since been rectified, and 'required' attribute now works as expected.*
+   4. Hover over 'Purchase' and 'Close' buttons to confirm that they respond as expected.
+   4. Fill in Delivery details and check 'Same as Billing Address' checkbox to confirm that this functionality works as expected.
+
+6. Footer
+   1. Testing already verified since HTML code is identical across all pages.
+
+7. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes.
+   
+### Contact Page:
+1. Navigation Bar
+   1. Testing already verified since HTML code is identical across all pages.
+   2. Confirm the 'active' class is correctly assigned to relevant link in navbar.
+
+2. Contact Form Section 
+   1. Confirm that all content in the section are centered correctly on all devices.
+   2. Ensure there is sufficient contrast between background image and content in foreground.
+   3. Click Submit button before entering text in input fields to confirm that 'required' attribute functions correctly - *the text area class wasn't responding as expected, and it was discovered that there was some space between the opening and closing tags, this space was removed in order to make the functionality respond correctly.*
+   4. Reduce device size to confirm that band representative's contact information moved below the contact form on mobile device sizes, and representative's logos reduce in size.
+   5. Hover over buttons and email links to confirm that colours change as expected.
+
+6. Footer
+   1. Testing already verified since HTML code is identical across all pages.
+
+7. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes.
+   
+
+## Further Testing
+
+1. Tested all pages on my mobile and laptop device after deploying website to GitHub pages.
+2. Asked family to check website on their tablet device, as I am not in ownership of a tablet. They reported no issues.
+
+
+
+
+
+
+
+
+
+
 
  
 
