@@ -105,7 +105,7 @@ Similarly to the Home Page, the top of the about page features another black and
 
 The next section has a header included, with a dark background spanning the full width of the screen. Another incarnation of the band's logo is included in the header, to further reinforce brand recognition to the user (this feature is included in multiple sections of the website). Below the header features a comprehensive, detailed history of the band and it's catalogue of releases. Clickable images of their album art is featured when the relative album is mentioned through the history of the band. They are linked to bandcamp pages, which open in seperate tabs/windows. The clickable images are made from two squares; one slightly larger than the other, to create a border. These squares are layered with z-index, and upon hovering, the inner square increases in size, with the intention of providing a good visual feedback to the user. Between the first two images is a call-to-action "Click to Listen", to inform the user that the images are clickable.
 
-The final section features the core members of the band, in the form of bootstrap cards. Each card features an image of the band member, their name and instrument, and a clickable button which opens a modal window detailing a brief summary of their role in the band, and details of their other projects. Each modal window features an embedded video of the relative band member's work, either with the band or in one of their other projects, and a button to close the window. Users may also close the modal by clicking the outside the window. Though JavaScript code isn't a requirement of this particular assessment and is not expected by the assessors, I deemed it necessary to apply basic JavaScript in order to stop the embedded video playing upon closing the modal window, so the user doesn't have to stop the video before closing the window, therefore providing a better user experience. I must stress in earnest that the JavaScript used was referenced from Stack Overflow. [Click Here to View The Page I Referenced](https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed).
+The final section features the core members of the band, in the form of bootstrap cards. Each card features an image of the band member, their name and instrument, and a clickable button which opens a modal window detailing a brief summary of their role in the band, and details of their other projects. Each modal window features an embedded video of the relative band member's work, either with the band or in one of their other projects, and a button to close the window. Users may also close the modal by clicking the outside the window. Though JavaScript code isn't a requirement of this particular assessment and is not expected by the assessors, I deemed it necessary to apply basic JavaScript in order to stop the embedded video playing upon closing the modal window, so the user doesn't have to stop the video before closing the window, therefore providing a better user experience. I must stress in earnest that the JavaScript was referenced from another source, cited in the Credits section of this README.
 
 ---
 
@@ -130,24 +130,7 @@ A small clickable window is featured at the top of the page, inviting the user t
 
 Upon clicking the checkout button, a modal window is opened, featuring a bootstrap form to allow the user to input their delivery and billing details, headed by the characteristically styled header. A checkbox is provided for the user to click if their billing address is the same as their delivery address. At the footer of the modal are two buttons, one to purchase the product(s), and another to close the window. 
 
-A number of the features on this page rely on JavaScript in order to work smoothly as a complete entity; namely the small clickable basket information window, the collapsible 'Your Basket' window which opens when the Basket info button is clicked, and the 'Same as Billing Address' checkbox in the 'Checkout' form. Again I am aware of course that JavaScript code isn't a requirement of this assessment and is not expected by the assessors. However after deliberate consideration, I deemed it important to include, exclusively to fulfill the criteria for a smooth, intuitive user experience, as one of the chief business goals of the website is to of course, sell the band's products. The JavaScript I used is not my own; it was referenced from three sources:
-
-#### Clickable Basket Info Window & Expanding Basket Window
-This code was referenced from a YouTube Tutorial by John Smilga (freeCodeCamp.org)
-1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
-2. YouTube Video - [JavaScript Project Tutorial: Shopping Cart](https://www.youtube.com/watch?v=q_TZhCWbS3I)
-
-#### Button to Remove Item from Basket 
-
-This code was referenced from a YouTube Tutorial by 'Web Dev Simplified'
-1. YouTube Channel - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
-2. YouTube Video - [JavaScript Shopping Cart Tutorial for Beginners](https://www.youtube.com/watch?v=YeFzkC2awTM&t=907s)
-
-#### 'Same as Billing Address' Checkbox
-
-This code was referenced from a YouTube Tutorial by 'Cairocoders'
-1. YouTube Channel - [Cairocoders](https://www.youtube.com/channel/UCHyfpikAAfqmUTCDdLAp5OA)
-2. YouTube Video [Billing Address Same as Shipping Address jQuery](https://www.youtube.com/watch?v=E1_2gle0JAo)
+A number of the features on this page rely on JavaScript in order to work smoothly as a complete entity; namely the small clickable basket information window, the collapsible 'Your Basket' window which opens when the Basket info button is clicked, and the 'Same as Billing Address' checkbox in the 'Checkout' form. Again I am aware of course that JavaScript code isn't a requirement of this assessment and is not expected by the assessors. However after deliberate consideration, I deemed it important to include, exclusively to fulfill the criteria for a smooth, intuitive user experience, as one of the chief business goals of the website is to of course, sell the band's products. The JavaScript I used is not my own; it was referenced from three other sources, which are cited in the Credits section of this README.
 
 ---
 
@@ -191,13 +174,125 @@ Font Colours include:
 
 * [Popper.js](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Popper.js was used in conjunction with Bootstrap CDN and jQuery to provide responsiveness to collapsing navbar.
 
-* [YouTube](https://www.youtube.com/) - This website makes use of embedded videos from Youtube.
 
-* [Spotify Player](https://www.spotify.com/uk/home/) - This website makes use of the embedded player provided by Spotify.
 
 # Testing 
 
 Testing information can be found in seperate [TESTING.md file](TESTING.md)
+
+# Credits 
+
+## Code
+
+### About Page - Album Cover Images layered with z-index over grey square
+
+The CSS Code used for this design choice was originally taken from [Stack Overflow - How to Place a Centered Circle inside an other](https://stackoverflow.com/questions/1625926/how-to-place-a-centered-circle-inside-an-other), then edited by the developer to change the shape from circle to a square.
+
+### ':first-of-type', ':last-of-type', ':first-child' & nth-child()' pseudo class selectors
+
+These pseudo-classes are used a number of times during the development of the project, and were used to when the developer needed target elements of the same class name, but wanted to give one single or group of element(s) their own unique styling, without giving them another class name. Examples of this include the first 'td' tags in the live listings table, the 'h2' tags in 'About', 'Video' and 'Shop' Pages, and the testimonies in the Home page's album promotion section. 
+
+This CSS was found on [CSS Tricks](https://css-tricks.com/almanac/selectors/f/first-of-type/).
+
+### Centering content with Flexbox
+
+Flexbox was also used a number of times to center content both horizontally and vertically within containers. Though it was mentioned in the Code Institute's 'Whiskey Drop' mini-project, the developer explored the technology further. Code for flex-box referenced from [CSS Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+
+### JavaScript for Stopping Playback of Youtube Videos
+
+This code was used to target the videos displayed in the modal windows featuring Nubiyan Twist's band members in the website's 'About' page.
+
+Although the requirement of this assessment dictates explicitly that this is a static HTML and CSS project, the designer considered that the criteria for user experience would be better fulfilled if the embedded YouTube videos stopped playback when a user closes the modal window. Otherwise, without the JavaScript the user would have to take unnecessary time stopping the video before closing the window, or endure the continuation of the music when the window closes.
+
+The code used for this functionality was referenced from [Stack Overflow - Stop Playing Video in iframe when modal is closed](https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed).
+
+### JavaScript for Shop Basket and Basket Info in 'Shop' Section
+
+Fairly heavy use of JavaScript was employed to implement functionality of these features:
+
+* Basket Info Clickable Window - JavaScript was implemented for the Basket Information window to reveal a hidden basket window from the left hand side of the browser window, and to also display the quantity of items in the user's basket.
+
+* Basket Window - JavaScript was used to target the specific CSS required to open the Basket Window (using the 'classList.add' property to reveal ".show-basket" class in website's CSS file).
+This CSS was edited slightly by the developer to change the background colour, font colour and sizing, and to also make the window span the full width of the browser window on mobile devices.
+JavaScript was also used to add products to the basket (via the 'Add-to-Basket' button in the product modal window), update the basket's total when a user adds a product, and to import the selected product details into the basket by the use of string literals.
+
+All of this code was referenced from a YouTube Tutorial by John Smilga (freeCodeCamp.org)
+1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
+2. YouTube Video - [JavaScript Project Tutorial: Shopping Cart](https://www.youtube.com/watch?v=q_TZhCWbS3I).
+
+*  'Remove' buttons - JavaScript was employed to allow the user to remove products from their basket, and to update the basket total when a product was removed. 
+
+This code was referenced from a YouTube Tutorial by 'Web Dev Simplified'
+1. YouTube Channel - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
+2. YouTube Video - [JavaScript Shopping Cart Tutorial for Beginners](https://www.youtube.com/watch?v=YeFzkC2awTM&t=907s).
+
+* 'Same as Billing Address' Checkbox - JavaScript code was used to implement the functionality that enables the user to copy their delivery details into their billing details form fields, in the Shop's 'Checkout' modal window. This was a choice made by the develper, a choice made solely to fulfill the criteria for better user experience.
+
+This code was referenced from a YouTube Tutorial by 'Cairocoders'
+1. YouTube Channel - [Cairocoders](https://www.youtube.com/channel/UCHyfpikAAfqmUTCDdLAp5OA)
+2. YouTube Video [Billing Address Same as Shipping Address jQuery](https://www.youtube.com/watch?v=E1_2gle0JAo)
+
+*  Functionality to close basket window when 'Checkout' button is clicked - 
+    
+    This code was added by the developer, to the code already supplied by John Smilga (freeCodeCamp.org)
+1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
+2. YouTube Video - [JavaScript Project Tutorial: Shopping Cart](https://www.youtube.com/watch?v=q_TZhCWbS3I).
+
+Again, as with the JavaScript used in the 'About' page, it is understood that JavaScript was not a requirement of this particular assessment, and is not expected by the assessors. However, the developer determined that the 'Shop' page would not have been a complete entity without the use of JavaScript, and the inclusion of the page would have made less sense altogether, without the use of this functionality. I hope the assessors understand the developer's reasoning in these choices, and understand how clear the developer wants to be when they cite their sources for the JavaScript code they used.
+
+## Content
+
+* The testimony content displayed in the websites Home Page Album Promotion Section is supplied by --
+    * [Line of Best Fit](https://www.thelineofbestfit.com/reviews/albums/nubiyan-twist-freedom-fables-album-review)
+    * [Gigwise](https://www.gigwise.com/reviews/3396877/album-review-nubiyan-twist-freedom-fables)
+    * [Clash Magazine](https://www.clashmusic.com/reviews/nubiyan-twist-freedom-fables)
+    * Mojo - This content was referenced from the band's press pack, supplied by the management.
+    * The Guardian - This content was referenced from the band's press pack, supplied by the management.
+    
+* The quote used in the 'About' Page's hero image is taken from the band's press pack, supplied by the management.
+
+* The text content used in biography the 'About' Page was supplied by [Thom Jurek - allmusic.com](https://www.allmusic.com/artist/nubiyan-twist-mn0003607781/biography).
+
+## Media
+
+* [YouTube](https://www.youtube.com/) - Music videos and Live Videos, featured in the 'Home' and 'Video' pages, are embedded from YouTube, along with the videos used in the modal windows in the 'About' page.
+
+* [Spotify Player](https://www.spotify.com/uk/home/) - This website makes use of the embedded player provided by Spotify.
+
+* The logo used in navbar brand link and section header was taken from the band's press pack, supplied by the management. Background removal technology was used to extract the subject from the background, using [remove.bg](https://www.remove.bg/).
+
+* The image used in Home page's Album Promotion call-out is taken from the band's press pack, supplied by the management.
+
+* 'Listen on Spotify' full-width banner (displayed on mobile devices) - This was also taken from the band's press pack, supplied by the management.
+
+* 'Home' and 'About' page hero images were taken from the band's press pack, supplied by the management.
+
+* The two images used in the 'History' section of 'About' page are taken from the band's press pack, and from Google:
+    [Nubiyan Twist in Brussels, 2017](https://images.app.goo.gl/N8PYfVFuwoBPX6BQ6)
+    
+
+* The images used in the 'The Band' section of 'About' page are taken from the band's press pack, supplied by management.
+
+* The images used in the 'Shop' page were taken partly were taken from the band's press pack, and from Google Images:
+    * [Freedom Fables (Double Vinyl)](https://images.app.goo.gl/iYwkyBtbccsATF2E8)
+    * [Freedom Fables CD](https://images.app.goo.gl/ifPX9sgUYSHwd8co6)
+    * [Tell it To Me Slowly (7 inch vinyl)](https://images.app.goo.gl/fq7mxW8mhmnz8UAh9)
+    * [Freedom Fables T-Shirt](https://images.app.goo.gl/kBx8JCZJFsVtzVcY6)
+    * [Tittle Tattle Square Print](https://images.app.goo.gl/4s6iJVPUJZDU92Ks6)
+    * [Freedom Fables A2 Print](https://images.app.goo.gl/yqgUv4tR2KSgYvUu5)
+
+* The representative icons used in the website's footer and contact page were taken from Google, and background was removed, by using [remove.bg](https://www.remove.bg/).
+
+
+
+
+
+
+
+
+
+
+
 
 
 
