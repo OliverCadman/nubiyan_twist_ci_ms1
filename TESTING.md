@@ -89,6 +89,42 @@ With this, the home page acts as the central hub of the website, from where the 
 10. As a venue owner, I want to see how many of their shows have sold out, so I can be confident that my venue will be filled to capacity.
     1. Sold out shows are clearly indicated in the gig listings table, with strong lettering and white font contrasting the dark background of the table.
 
+### Manual Testing of features on all pages 
+
+##### Home Page
+1. Navigation Bar
+   1. Go to home page on desktop, tablet and mobile.
+   2. Change screen size from laptop to mobile to check if responsive navbar collapses to burger icon as intented.
+   3. Check if navbar logo is not displayed on mobile screen sizes, but displayed in collapsible dropdown menu as intented.
+   4. Hover cursor over logo to see if alt text appears - *alt text did not appear upon testing, so a title was added to the logo's div to account for this*.
+   5. Check if navbar links respond to hovering - *initial idea of having the nav links change to orange colour lead to accessibility issues due to the colour of the background. Any colour which was successfully contrasting didn't complement the colour pallette of the website. Therefore an underline was chosen for hovering.
+
+2. Jumbotron/Hero Image 
+   1. Check if jumbotron header, leading quote and call-to-action button have sufficient contrast against background hero image - *initially, the contents of jumbotron were unfortunately centered directly on top of main subject of hero image. So on laptop and mobile devices, a bottom margin was added to jumbotron, and call-to-action button positioned towards the bottom of the hero image on. Tablet screen size is small enough for left and right positioning to be applied effectively, so background image was repositioned to the left. These changes created breathing space for the contents and the background image. The transparency of call-to-action button was also reduced to improve contrast of lettering.*
+   2. Confirm that call-to-action button responds to hovering.
+   3. Confirm that call-to-action button hyperlinks to the area of page intended.
+
+3. Album Promotion Callout Section 
+   1. Reduce screen size to confirm two social media links are hidden on tablet and mobile devices, as intended.
+   2. Check there is no sentence breaking of call-out on laptop/desktop screen sizes - *Upon checking this on the Safari browser, there was a discrepancy between paddings between this browser and Chrome (which was being used to build the website). This caused an unwanted sentence break upon the final word ("Now!"). A small decrease in font-size was applied to callout to account for this.*
+   3. Reduce screen size to confirm top-level testimony is not displayed on tablet and mobile devices.
+   4. Confirm that featured videos respond to pressing play.
+   5. Confirm that all the section's call-to-action are correctly linked, and respond to hovering.
+4. Mailing List/Spotify Player Section 
+    1. Reduce screen size to confirm "Listen on Spotify" badge collapses to full-width banner on mobile devices.
+
+5. Footer
+   1. Hover over each social media icon to check if they change colour upon hovering.
+   2. Confirm that all icons in footer are correctly linked, and open in a seperate tab.
+   3. Reduce screen size to confirm that band representative icons are hidden on tablet and mobile screen sizes.
+   4. Confirm that social media icons decrease in font-size when screen size is changed, and footer looks good on all screen sizes.
+
+6. Confirm that all contents of page are responsive, and maintain functionality on all screen sizes.
+
+
+
+  
+  
 
 
 
