@@ -53,7 +53,7 @@ While the focus of the website should serve the needs of each of these criteria,
 6. As a potential fan, I want to find testimonies from verified publications, so I can determine how much of a presence the band has.
 7. As a fan, I want to view a biography, so I can find out more about the history of the band and its members.
 8. As a fan, I want to be able to easily navigate to and clearly view gig listings, so I can see if they are performing near me.
-9. As a promoter/venue owner, I want to easily navigate to a contact form, so I can get in touch with the band/band manager efficiently.
+9. As a promoter/venue owner, I want to easily navigate to a contact form, so I can get in touch with the band/band representatives efficiently.
 10. As a venue owner, I want to see how many of their shows have sold out, so I can be confident that my venue will be filled to capacity.
 
 ## Wireframes
