@@ -962,11 +962,6 @@ td:nth-child(2) {
     background-color: #DCB3AC;
 }
 
-/* Targets the header "Clothing/Prints" and decreases font-size to prevent spilling over logo */
-.shop-section:last-of-type h2 {
-    font-size: 1.5rem;
-}
-
 /* ----- Cart Info and Cart Styling ----- */
 /* Referenced from Youtube Tutorial:
    John Smilga (freeCodeCamp.org) 
@@ -1156,8 +1151,11 @@ td:nth-child(2) {
     border-top: 2px solid #fafafa;
 }
 
-.checkout-modal-button {
+/* This CSS ID Selector was added since one of two buttons in the containing div
+is of 'type=submit' and so wasn't being targetting by the class selector '.modal button' */
+#checkout-modal-buttons button {
     font-family: "Alata", sans-serif !important;
+    border: 3px solid #fafafa;
 }
 
 .checkout-modal-button:hover {
@@ -1278,13 +1276,19 @@ button[type="submit"] {
         font-size: 0.6rem;
     }
 
+    /* ------------ Shop Page --------------- */
+
+    /* Targets the header "Clothing/Prints" and decreases font-size to prevent spilling over logo */
+    .shop-section:last-of-type h2 {
+    font-size: 1.5rem;
+}
+
+
     /* ----------- Contact Page ----------- */
 
     #contact-hero {
         height: inherit;
     }
-
-
 }
 
 
