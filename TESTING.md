@@ -181,7 +181,7 @@ With this, the home page acts as the central hub of the website, from where the 
 
 5. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes. 
 
-### Video Page
+### Video Page:
 
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.
@@ -198,7 +198,7 @@ With this, the home page acts as the central hub of the website, from where the 
 
 4. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes. 
 
-### Shop Page 
+### Shop Page: 
 
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.

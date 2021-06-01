@@ -541,21 +541,21 @@
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
                                                     <input type="text" class="form-control" id="fname_delivery"
-                                                        name="fname_delivery" placeholder="First Name">
+                                                        name="fname_delivery" placeholder="First Name" required>
                                                 </div>
                                                 <div class="col-6 form-group">
                                                     <input type="text" class="form-control" id="lname_delivery"
-                                                        name="lname_delivery" placeholder="Last Name">
+                                                        name="lname_delivery" placeholder="Last Name" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <input type="email" class="form-control" id="email" name="email"
-                                                    placeholder="Email">
+                                                    placeholder="Email" required>
                                             </div>
                                             <div id="delivery-address">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" id="addr_delivery"
-                                                        name="addr_delivery" placeholder="Address Line 1">
+                                                        name="addr_delivery" placeholder="Address Line 1" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" id="addr_delivery_2"
@@ -564,11 +564,11 @@
                                                 <div class="form-group row">
                                                     <div class="col-6 form-group">
                                                         <input type="text" class="form-control" id="city_delivery"
-                                                            name="city_delivery" placeholder="City">
+                                                            name="city_delivery" placeholder="City" required>
                                                     </div>
                                                     <div class="col-6 form-group">
                                                         <input type="text" class="form-control" id="country_delivery"
-                                                            name="country_delivery" placeholder="Country">
+                                                            name="country_delivery" placeholder="Country" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row d-sm-flex justify-content-center">
@@ -578,7 +578,7 @@
                                                     </div>
                                                     <div class="col-12 col-md-6 form-group">
                                                         <label for="sameAddr">Same as Billing Address</label>
-                                                        <input type="checkbox" id="sameAddr" name="sameAddr">
+                                                        <input type="checkbox" id="sameAddr" name="sameAddr" required>
                                                     </div>
                                                 </div>
                                         </fieldset>
@@ -588,59 +588,63 @@
                                             <div class="form-group row">
                                                 <div class="col-12">
                                                     <input type="text" class="form-control" id="cardholder"
-                                                        name="cardholder" placeholder="Cardholder's Name">
+                                                        name="cardholder" placeholder="Cardholder's Name" required>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-12">
                                                     <input type="number" class="form-control" id="cardnumber"
-                                                        name="cardnumber" placeholder="Card Number">
+                                                        name="cardnumber" placeholder="Card Number" required>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-6">
                                                     <input type="text" maxlength="5" class="form-control"
-                                                        id="expirydate" name="expirydate" placeholder="Expiry (MM/YY)">
+                                                        id="expirydate" name="expirydate" placeholder="Expiry (MM/YY)" required>
                                                 </div>
                                                 <div class="col-6">
                                                     <input type="text" maxlength="3" class="form-control" id="ccv"
-                                                        name="ccv" placeholder="CCV">
+                                                        name="ccv" placeholder="CCV" required>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-6 form-group">
                                                     <input type="text" class="form-control" id="fname_billing"
-                                                        name="fname_billing" placeholder="First Name">
+                                                        name="fname_billing" placeholder="First Name" required>
                                                 </div>
                                                 <div class="col-6 form-group">
                                                     <input type="text" class="form-control" id="lname_billing"
-                                                        name="lname_billing" placeholder="Last Name">
+                                                        name="lname_billing" placeholder="Last Name" required>
                                                 </div>
                                             </div>
                                             <div id="billing-address">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" id="addr_billing"
-                                                        name="address_billing" placeholder="Address Line 1">
+                                                        name="address_billing" placeholder="Address Line 1" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" id="addr_billing_2"
                                                         name="address_billing_2"
-                                                        placeholder="Address Line 2 (Optional)">
+                                                        placeholder="Address Line 2 (Optional)" required>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-6 form-group">
                                                         <input type="text" class="form-control" id="city_billing"
-                                                            name="city_billing" placeholder="City">
+                                                            name="city_billing" placeholder="City" required>
                                                     </div>
                                                     <div class="col-6 form-group">
                                                         <input type="text" class="form-control" id="country_billing"
-                                                            name="country_billing" placeholder="Country">
+                                                            name="country_billing" placeholder="Country" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-6 form-group">
                                                         <input type="text" class="form-control" id="zip_billing"
-                                                            name="zip_billing" placeholder="Zip Code">
+                                                            name="zip_billing" placeholder="Zip Code" required>
+                                                    </div>
+                                                    <div class="col-12 modal-footer" id="checkout-modal-buttons">
+                                                        <button type="submit" class="btn checkout-modal-button">Purchase</button>
+                                                        <button type="button" class="btn checkout-modal-button" data-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
                                         </fieldset>
@@ -650,10 +654,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success checkout-modal-button">Purchase</button>
-                <button type="button" class="btn btn-success checkout-modal-button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

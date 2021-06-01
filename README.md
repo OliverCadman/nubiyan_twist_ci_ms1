@@ -175,24 +175,32 @@ Font Colours include:
 
 * Black - This colour is used also to ensure maximum accessibility and contrast against the relatively bright colours used for the backgrounds. This colour is also used when the site user hovers over any of the fontawesome social media icons.
 
+# Technologies Used
+
+* This project uses HTML and CSS as the primary programming languages
+
+* [Visual Studio Code](https://code.visualstudio.com/) - This developer used Visual Studio Code 2 as their IDE while building the website.
+
+* [BootstrapCDN](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Bootstrap 4 CDN framework was imported to provide responsiveness to website.
+
+* [FontAwesomeCDN](https://cdnjs.com/libraries/font-awesome) - FontAwesome 5 CDN was imported to make use of their collection of icons.
+
+* [Google Fonts](https://fonts.google.com/) - The fonts used were imported from the Google Fonts library.
+
+* [jQuery](https://jquery.com/download/) - This project uses jQuery to provide responsiveness to the website's navbar, and functionality to stop videos playing when closing modal windows in the website's 'About' page. jQuery was also employed to provide functionality to the website's 'Shop' page.
+
+* [Popper.js](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Popper.js was used in conjunction with Bootstrap CDN and jQuery to provide responsiveness to collapsing navbar.
+
+* [YouTube](https://www.youtube.com/) - This website makes use of embedded videos from Youtube.
+
+* [Spotify Player](https://www.spotify.com/uk/home/) - This website makes use of the embedded player provided by Spotify.
 
 # Testing 
 
-## Testing fan/potential fan stories from UX section of README.md file
-
-1. As a fan, I want to be able to easily navigate to and clearly view gig listings, so I can see if they are performing near me.
-    1. As each page features a navigation bar with a bright background and dark, constrasting font colour, fans will be able to access a list of the band's live shows regardless of which page of the website they are viewing.
-
-2. As a new fan, I want to be able to sign up to a mailing list, so I can keep updated about new releases and upcoming shows/tours.
-    1. The home page features a call-to-action to sign up to the band's mailing list, which is placed specifically to contrast against the dark colour of the fixed background image. A FontAwesome icon is also used to provide visual feedback.
+Testing information can be found in seperate [TESTING.md file](TESTING.md)
 
 
-3. As a potential fan, I want to see footage of their live shows, so I can determine if it's worth spending money to see them live.
-    1. The Home page features two embedded videos of the band playing live, positioned side by side on laptop/desktop and tablet screen sizes, and stacked vertically on mobile screen size. The videos are sized to be as large as possible, so as to draw attention to the user without crowding the section. The videos were placed strategically on the home page as the user is most likely to inspect this page first, upon visting the website for the first time.
 
-4. As a fan, I want to view a biography, so I can find out more about the history of the band.
-    1. The About Page features a detailed history of the band, and the font colour for this content chosen to contrast against the light red/pink background. 
-    2. The About Page also features bootstrap cards for each member of the band, with an image, their name, role in the band, and a button opening a modal window with relative embedded videos featured. Custom CSS is implemented to smoothly scale the cards up a small amount when the user hovers the cursor over each card.
 
 
     
