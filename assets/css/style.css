@@ -2350,6 +2350,13 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         transition: 0.3s ease-in-out;
     }
 
+    /* ------ 404 Page ------- */
+
+    .error-logo:hover {
+        transform: scale(1.2);
+        transition: 0.3s ease-in-out;
+    }
+
 }
 
 /* ----------------------- End of Laptop/Desktop Screen CSS Styling ------------------------ */
