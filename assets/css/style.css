@@ -179,7 +179,7 @@ ul li a.active {
 }
 
 /* Call-to-action styling */
-.anchor-wrapper button {
+.anchor-wrapper a {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 2rem;
@@ -207,7 +207,7 @@ ul li a.active {
 
 .promo-header {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #131313;
@@ -836,7 +836,7 @@ td:nth-child(2) {
     font-family: "Alatsi", sans-serif;
     text-align: center;
     background-color: rgb(22, 22, 22);
-    color: #d8d8d8;
+    color: #fafafa;
     border-radius: 5px;
     padding: 10px;
     margin: 15px 0;
@@ -1008,7 +1008,9 @@ td:nth-child(2) {
 /* '.show-basket' assigned to JavaScript classList property:
    Referenced from YouTube tutorial by John Smilga (freeCodeCamp.org)
    YouTube Video Title: JavaScript Project Tutorial - Shopping Cart
-   
+   Git Username: john-smilga
+   Repository handle: js-cart-setup 
+
    Credits given in README.md file */
 
    .show-basket {
@@ -1258,6 +1260,11 @@ button[type="submit"] {
         font-family: 'Alata', sans-serif;
         font-size: .8rem;
     }
+
+    .promo-header {
+        font-size: 1.7rem;
+    }
+    
 
     /* ------------ About Page ------------- */
 
@@ -1901,12 +1908,12 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
     /* (Watch/Listen call-to-action button) */
-    .anchor-wrapper button {
+    .anchor-wrapper a {
         position: relative;
         top: 100px;
     }
 
-    .anchor-wrapper button:hover {
+    .anchor-wrapper a:hover {
         color: #f48826;
     }
 
