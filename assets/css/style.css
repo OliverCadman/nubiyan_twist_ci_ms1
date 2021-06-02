@@ -85,7 +85,7 @@ where header content would result in word-breaking */
 }
 
 /* Displays brand logo in collapsible dropdown nav item list
-   on mobile screen sizes */ 
+   on mobile screen sizes */
 .collapse-brand img {
     width: 50%;
     float: right;
@@ -136,7 +136,8 @@ ul li a.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Relative positioning assigned to prevent overflow of opaque overlay */
+    position: relative;
+    /* Relative positioning assigned to prevent overflow of opaque overlay */
 
 }
 
@@ -153,7 +154,8 @@ ul li a.active {
 
 
 .callout-jumbotron {
-    background-color: rgba(0, 0, 0, 0); /* Creating a transparent background */
+    background-color: rgba(0, 0, 0, 0);
+    /* Creating a transparent background */
     padding: 0;
     position: relative;
     bottom: 40px;
@@ -189,7 +191,8 @@ ul li a.active {
     border: 1px solid #fafafa;
     letter-spacing: 2px;
     position: relative;
-    top: 100px; /* Pushes button towards bottom of hero image, to allow for breathing space between hero image
+    top: 100px;
+    /* Pushes button towards bottom of hero image, to allow for breathing space between hero image
                    subject and content */
 }
 
@@ -332,7 +335,7 @@ ul li a.active {
     border-radius: 3%;
     padding: 2rem 0;
     margin: 30px 0;
-    
+
 }
 
 .mail-icon {
@@ -414,7 +417,7 @@ button {
     font-size: 2rem;
     padding: 0 20px;
     text-decoration: none;
-    color: rgb(70,70,70);
+    color: rgb(70, 70, 70);
 }
 
 .footer-social-icons li a i:hover {
@@ -935,7 +938,8 @@ td:nth-child(2) {
 
 .video {
     width: 100%;
-    border: 0; /* Replaces deprecated frameborder attribute on iframe tags */
+    border: 0;
+    /* Replaces deprecated frameborder attribute on iframe tags */
 }
 
 /* ----------------------------- Shop Page ----------------------------- */
@@ -955,7 +959,7 @@ td:nth-child(2) {
    
    Credits given in project's README.md file */
 
-   .basket-info {
+.basket-info {
     font-family: "Alata", sans-serif;
     border: 2px solid black;
     background-color: #fafafa;
@@ -1014,11 +1018,12 @@ td:nth-child(2) {
 
    Credits given in README.md file */
 
-   .show-basket {
+.show-basket {
     width: 100%;
     /* Fills shopping basket the full width of screen */
     padding: 0 1.5rem;
-    transform: scale(1); /* Reveals shopping basket */
+    transform: scale(1);
+    /* Reveals shopping basket */
 
 }
 
@@ -1027,7 +1032,7 @@ td:nth-child(2) {
 /* ----- Music Shop Section ----- */
 
 /* Displays spotify player in centre of browser window */
-.spotify-shop-wrapper { 
+.spotify-shop-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1037,7 +1042,7 @@ td:nth-child(2) {
 .spotify-player-shop {
     max-height: 80px;
     border-radius: 5px;
-
+    border: 0;
 }
 
 .item-row {
@@ -1117,8 +1122,8 @@ td:nth-child(2) {
 
 .basket-btn {
     color: #fafafa;
-    float: right;
     border: 3px solid #fafafa;
+    background: transparent;
 }
 
 
@@ -1285,20 +1290,21 @@ button[type="submit"] {
     .promo-header {
         font-size: 1.7rem;
     }
-    
+
 
     /* ------------ About Page ------------- */
 
     .st-sa-cta p {
-        font-size: 0.6rem; /* 'Click to Listen' call-to-action */
+        font-size: 0.6rem;
+        /* 'Click to Listen' call-to-action */
     }
 
     /* ------------ Shop Page --------------- */
 
     /* Targets the header "Clothing/Prints" and decreases font-size to prevent spilling over logo */
     .shop-section:last-of-type h2 {
-    font-size: 1.5rem;
-}
+        font-size: 1.5rem;
+    }
 
 
     /* ----------- Contact Page ----------- */
@@ -1311,13 +1317,9 @@ button[type="submit"] {
 /* ------------------- End of Media Query for iPhone 5 screen size only ----------------------- */
 
 /* ---------------- Styling for iPad Pro screen size only ---------------- */
-@media only screen
-and (min-width: 1024px)
-and (max-height: 1366px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
 
-/* Navigation Bar */
+    /* Navigation Bar */
 
     .navbar-nav li {
         padding: 0 1rem !important;
@@ -1377,9 +1379,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 2.2rem;
     }
 
-     /* --------------------- End of Live Shows Page ------------------------ */
+    /* --------------------- End of Live Shows Page ------------------------ */
 
-      /* --------------------- Contact Page ------------------------ */
+    /* --------------------- Contact Page ------------------------ */
 
     #contact-hero {
         background-position: 50% !important;
@@ -1717,7 +1719,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 
     #gig-listings {
-        padding-top: 0; /* Removes padding assigned for header on mobile devices */
+        padding-top: 0;
+        /* Removes padding assigned for header on mobile devices */
     }
 
     /* Site-wide alert (displayed on tablet screen size up) */
@@ -1836,7 +1839,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
        John Smilga (freeCodeCamp.org) 
        YouTube Video Title: JavaScript Project Tutorial: Shopping Cart
        Git Username: john-smilga
-       Repository handle: js-cart-setup */ 
+       Repository handle: js-cart-setup */
 
     .show-basket {
         width: 500px;
@@ -1861,7 +1864,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
 
-  
+
 
     /* ------------- Contact Page --------------- */
 
@@ -1878,7 +1881,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         justify-content: center;
 
     }
-        /* Label Icon Images to accompany contact information */
+
+    /* Label Icon Images to accompany contact information */
 
 
     .representative-wrapper {
@@ -1936,7 +1940,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .callout-jumbotron {
         margin: 0;
-        font-size: 1.5rem;
     }
 
     /* (Watch/Listen call-to-action button) */
@@ -2005,7 +2008,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         max-height: 332px;
     }
 
-    
+
 
     /* ----- Mailing/Spotify Player Section ----- */
 
