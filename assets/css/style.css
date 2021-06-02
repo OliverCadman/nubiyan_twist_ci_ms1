@@ -245,10 +245,9 @@ ul li a.active {
 
 /* Targets final call-to-action button 'Watch More Videos', 
     decreasing font size relative to first two call-to-action buttons in section */
-.feature-video-container button {
+.feature-video-container a {
     font-size: 1.8rem;
 }
-
 
 .cta-listen-shop:hover {
 
@@ -935,6 +934,7 @@ td:nth-child(2) {
 
 .video {
     width: 100%;
+    border: 0; /* Replaces deprecated frameborder attribute on iframe tags */
 }
 
 /* ----------------------------- Shop Page ----------------------------- */
@@ -1231,6 +1231,26 @@ button[type="submit"] {
     width: 75%;
     height: auto;
     margin-bottom: 10px;
+}
+
+/* ---------------------- 404 Page -------------------- */
+
+#page-not-found {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 22, 22);
+}
+
+.error-header {
+    font-family: "Alatsi", sans-serif;
+    color: #f48826;
+}
+
+.error-container p {
+    font-family: 'Alata', sans-serif;
+    color: #fafafa;
 }
 
 /*-------------------- End of Mobile Screen CSS Styling --------------------- */
@@ -1865,6 +1885,16 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 1rem;
         margin-bottom: 20px;
 
+    }
+
+    /* ---------------- 404 Page --------------- */
+
+    .error-header {
+        font-size: 4rem;
+    }
+
+    .error-container p {
+        font-size: 1.5rem;
     }
 
 }
