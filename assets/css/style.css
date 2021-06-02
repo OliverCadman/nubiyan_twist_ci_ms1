@@ -154,8 +154,9 @@ ul li a.active {
 
 .callout-jumbotron {
     background-color: rgba(0, 0, 0, 0); /* Creating a transparent background */
-    bottom: 30px;
     padding: 0;
+    position: relative;
+    bottom: 40px;
 }
 
 .callout-jumbotron h1 {
@@ -1935,12 +1936,13 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .callout-jumbotron {
         margin: 0;
+        font-size: 1.5rem;
     }
 
     /* (Watch/Listen call-to-action button) */
     .anchor-wrapper a {
         position: relative;
-        top: 100px;
+        top: 150px;
     }
 
     .anchor-wrapper a:hover {
