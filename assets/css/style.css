@@ -4,14 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700');
 
-
-
-html,
-body {
-    min-height: 100%;
-    margin: 0;
-}
-
 /*  Global Styling for sections of all pages that aren't at Hero level */
 
 .section-header {
@@ -108,7 +100,6 @@ where header content would result in word-breaking */
     font-size: 1.4rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #0c0c0c;
     padding-left: 10px;
     display: inline-block;
 }
@@ -145,7 +136,7 @@ ul li a.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative; /* Relative positioning assigned to prevent overflow of opaque overlay */
 
 }
 
@@ -162,9 +153,7 @@ ul li a.active {
 
 
 .callout-jumbotron {
-    background-color: rgba(0, 0, 0, 0);
-    /* Providing a transparent background */
-    position: relative;
+    background-color: rgba(0, 0, 0, 0); /* Creating a transparent background */
     bottom: 30px;
     padding: 0;
 }
@@ -199,7 +188,8 @@ ul li a.active {
     border: 1px solid #fafafa;
     letter-spacing: 2px;
     position: relative;
-    top: 100px;
+    top: 100px; /* Pushes button towards bottom of hero image, to allow for breathing space between hero image
+                   subject and content */
 }
 
 
@@ -238,10 +228,6 @@ ul li a.active {
 
 }
 
-.download-shop-cta-wrapper {
-    margin-top: 30px;
-}
-
 /* Album Promotion Call-To-Action Buttons */
 .cta-promo-section {
 
@@ -251,6 +237,10 @@ ul li a.active {
     font-size: 35px;
     border-radius: 0 !important;
     margin-bottom: 10px;
+}
+
+.download-shop-cta-wrapper {
+    margin-top: 30px;
 }
 
 /* Targets final call-to-action button 'Watch More Videos', 
@@ -265,6 +255,8 @@ ul li a.active {
     background-color: #dadada;
     color: #252525;
 }
+
+/* Styling for testimonies in Album Promotion Section */
 
 .testimonies-container p {
     font-size: 20px;
@@ -305,6 +297,8 @@ ul li a.active {
     height: 100%;
 }
 
+/* Styling for feature videos in Album Promotion Section */
+
 .home-video-wrapper {
     font-family: "Lato", sans-serif;
     background-color: rgb(22, 22, 22);
@@ -323,7 +317,7 @@ ul li a.active {
 }
 
 
-/* ----- Mailing List/Spotify Section */
+/* ----- Mailing List/Spotify Section ----- */
 
 .mailing-spotify-container {
     background: url("../images/home-page/mailing-spotify-background.png") no-repeat bottom fixed;
@@ -357,17 +351,6 @@ ul li a.active {
 button {
     font-family: "Alata", sans-serif;
 }
-
-
-.spotify-desktop-image {
-
-    height: 70px;
-    border-style: none;
-    border-radius: 5px;
-    align-self: center;
-    margin: 0 auto;
-}
-
 
 .spotify-leaderboard {
     margin-bottom: 15px;
@@ -852,9 +835,8 @@ td:nth-child(2) {
 .mailing-cta-live {
     font-family: "Alatsi", sans-serif;
     text-align: center;
-    color: rgb(22, 22, 22);
-    background: none;
-    border: 3px solid rgb(22, 22, 22);
+    background-color: rgb(22, 22, 22);
+    color: #d8d8d8;
     border-radius: 5px;
     padding: 10px;
     margin: 15px 0;
@@ -867,6 +849,7 @@ td:nth-child(2) {
 }
 
 .mailing-cta-live h3 {
+    color: #f48826;
     text-transform: uppercase;
     text-decoration: underline;
 }
@@ -962,14 +945,16 @@ td:nth-child(2) {
     background-color: #DCB3AC;
 }
 
-/* ----- Cart Info and Cart Styling ----- */
+/* ----- Basket Info and Basket Styling ----- */
 /* Referenced from Youtube Tutorial:
    John Smilga (freeCodeCamp.org) 
    YouTube Video Title: JavaScript Project Tutorial: Shopping Cart
    Git Username: john-smilga
-   Repository handle: js-cart-setup */
+   Repository handle: js-cart-setup 
+   
+   Credits given in project's README.md file */
 
-   .cart-info {
+   .basket-info {
     font-family: "Alata", sans-serif;
     border: 2px solid black;
     background-color: #fafafa;
@@ -981,7 +966,7 @@ td:nth-child(2) {
 }
 
 /* FontAwesome Shopping Basket Icon */
-.cart-info-icon {
+.basket-info-icon {
     font-size: 1.5rem;
 }
 
@@ -989,7 +974,7 @@ td:nth-child(2) {
     display: block;
 }
 
-.cart {
+.basket {
     font-family: "Alata", sans-serif;
     position: absolute;
     height: auto;
@@ -1003,15 +988,15 @@ td:nth-child(2) {
     overflow: scroll;
 }
 
-.cart h4 {
+.basket h4 {
     text-decoration: underline;
 }
 
-.cart-basket-icon {
+.basket-icon {
     margin-right: 20px;
 }
 
-#cart-item-price {
+#basket-item-price {
     font-size: 0.8rem;
 }
 
@@ -1020,21 +1005,26 @@ td:nth-child(2) {
     margin-top: 10px;
 }
 
-/* Cart assigned to JavaScript classList toggle function:
+/* '.show-basket' assigned to JavaScript classList property:
    Referenced from YouTube tutorial by John Smilga (freeCodeCamp.org)
-   YouTube Video Title: JavaScript Project Tutorial - Shopping Cart */
-   .show-cart {
+   YouTube Video Title: JavaScript Project Tutorial - Shopping Cart
+   
+   Credits given in README.md file */
+
+   .show-basket {
     width: 100%;
-    /* Fills shopping cart the full width of screen */
+    /* Fills shopping basket the full width of screen */
     padding: 0 1.5rem;
-    transform: scale(1);
+    transform: scale(1); /* Reveals shopping basket */
 
 }
 
+/* ----------- End of CSS Referenced from freeCodeCamp YouTube Tutorial ----------- */
 
 /* ----- Music Shop Section ----- */
 
-.spotify-shop-wrapper {
+/* Displays spotify player in centre of browser window */
+.spotify-shop-wrapper { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1070,16 +1060,19 @@ td:nth-child(2) {
     float: left;
 }
 
+/* Class targets the images of vinyls */
 .modal-img-wide {
     width: 100%;
 
 }
+
 
 #print-modal-img {
     max-height: 400px;
     float: left;
 }
 
+/* Targets the wrapper containing the <select> input tags */
 #shirt-options-wrapper {
     margin-top: 30px;
 }
@@ -1103,19 +1096,10 @@ td:nth-child(2) {
     float: left;
 }
 
-
-
-
 #item-img {
     width: 25%;
     height: 25%;
 }
-
-
-
-
-
-/* ----------- End of CSS Referenced from YouTube Tutorial ----------- */
 
 .item-wrapper {
     transition: all 2s ease-in-out;
@@ -1251,7 +1235,12 @@ button[type="submit"] {
 
 
 /* ------ Media query targetting iphone 5 screen-size only ------ */
+
 @media (min-width: 320px) and (max-width: 370px) {
+
+    /* ------ Home Page ------ */
+
+    /* Hero Jumbotron */
 
     .callout-jumbotron h1 {
         letter-spacing: 2px;
@@ -1264,7 +1253,7 @@ button[type="submit"] {
         font-size: 1rem;
     }
 
-    /*  Mailing Modal Header */
+    /*  Mailing List Modal Window Header */
     #mailing-modal-header h5 {
         font-family: 'Alata', sans-serif;
         font-size: .8rem;
@@ -1273,7 +1262,7 @@ button[type="submit"] {
     /* ------------ About Page ------------- */
 
     .st-sa-cta p {
-        font-size: 0.6rem;
+        font-size: 0.6rem; /* 'Click to Listen' call-to-action */
     }
 
     /* ------------ Shop Page --------------- */
@@ -1291,11 +1280,93 @@ button[type="submit"] {
     }
 }
 
+/* ------------------- End of Media Query for iPhone 5 screen size only ----------------------- */
+
+/* ---------------- Styling for iPad Pro screen size only ---------------- */
+@media only screen
+and (min-width: 1024px)
+and (max-height: 1366px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+
+/* Navigation Bar */
+
+    .navbar-nav li {
+        padding: 0 1rem !important;
+        font-size: 1em;
+    }
+
+    /* Home Page Hero Image */
+
+    .callout-container {
+        height: 75vh !important;
+    }
+
+    /* Callout Promoting New Album */
+    .promo-header {
+        font-size: 3rem !important;
+        padding: 0 5px;
+    }
+
+    /* Bottom Section featuring Mailing List Call-to-action and Spotify Player */
+    .mailing-spotify-container {
+        height: 30vh !important;
+    }
+
+    /* --------------------- End of Home Page ------------------------ */
+
+    /* ------------------------ About Page --------------------------- */
+
+    .about-hero {
+        height: 63vh;
+        background-position: 90%;
+    }
+
+    .summary p {
+        font-size: 1.4rem !important;
+        line-height: 35px !important;
+    }
+
+    /* --------------------- End of About Page ------------------------ */
+
+    /* --------------------- Live Shows Page ------------------------ */
+
+    #gig-listings {
+        min-height: 100vh;
+    }
+
+    .listings-wrapper {
+        min-height: 75vh;
+    }
+
+    .mailing-cta-live {
+        display: block !important;
+        margin-left: 20px;
+        padding: 2rem 1rem !important;
+    }
+
+    .mailing-cta-live h3 {
+        font-size: 2.2rem;
+    }
+
+     /* --------------------- End of Live Shows Page ------------------------ */
+
+      /* --------------------- Contact Page ------------------------ */
+
+    #contact-hero {
+        background-position: 50% !important;
+        height: 100vh;
+    }
+
+    .form-wrapper {
+        padding: 30px;
+    }
+}
+
+/* ------------------- End of Media Query for iPad Pro screen size ----------------------- */
 
 /* ------------------- Media Query for Tablet Screen Size ------------------- */
 @media (min-width: 768px) {
-
-
 
     /* Page header (h1) - Applies to all pages */
 
@@ -1430,9 +1501,16 @@ button[type="submit"] {
         justify-content: center;
     }
 
-    .spotify-leaderboard {
-        width: 100%;
+    .spotify-desktop-image {
+
+        height: 70px;
+        border-style: none;
+        border-radius: 5px;
+        align-self: center;
+        margin: 0 auto;
     }
+
+    /* ----- Footer ----- */
 
     .footer-social-flex {
         display: flex;
@@ -1448,6 +1526,8 @@ button[type="submit"] {
     .footer-social-icons li a {
         font-size: 2rem;
     }
+
+    /* -------------------- End of Home Page ---------------- */
 
     /* -------------------- About Page -------------------- */
 
@@ -1486,6 +1566,7 @@ button[type="submit"] {
     /* ----- Band History Section ----- */
 
 
+    /* ----- Styling and positioning of the two images of band in History section ----- */
     .history-image-wrapper {
         font-family: "Lato", sans-serif;
         display: flex !important;
@@ -1517,7 +1598,7 @@ button[type="submit"] {
 
     }
 
-    /*  Clickable Images of Album Cover  */
+    /*  Clickable Images of Album Covers  */
 
     .st-square-outer {
         margin-top: 80px;
@@ -1579,7 +1660,7 @@ button[type="submit"] {
         color: #fafafa;
     }
 
-    /* ----- Band Cards ---- */
+    /* ----- 'The Band' Section - Band Cards ---- */
 
     .band-card {
         margin: 30px 0;
@@ -1602,10 +1683,13 @@ button[type="submit"] {
 
     }
 
-    /* --------------------------------- LIVE SHOWS -------------------------------------- */
+    /* ------------------------ End of About Page ----------------------------- */
+
+    /* ------------------------------- Live Shows Page ---------------------------- */
+
 
     #gig-listings {
-        padding-top: 0;
+        padding-top: 0; /* Removes padding assigned for header on mobile devices */
     }
 
     /* Site-wide alert (displayed on tablet screen size up) */
@@ -1675,11 +1759,14 @@ button[type="submit"] {
 
     }
 
-    /* ---------------------------- Video Page (min-width 768px) ----------------------------- */
-
-    .video-hero {
-        background-position: 50%;
+    .mailing-cta-live {
+        margin-left: 20px;
+        padding: 20px;
     }
+
+    /* ---------------------------- End of Live Shows Page ---------------------------- */
+
+    /* ---------------------------- Video Page  ----------------------------- */
 
     .video-wrapper {
         padding: 30px;
@@ -1723,7 +1810,7 @@ button[type="submit"] {
        Git Username: john-smilga
        Repository handle: js-cart-setup */ 
 
-    .show-cart {
+    .show-basket {
         width: 500px;
         padding: 0 1.5rem;
         transform: scale(1);
@@ -1763,11 +1850,7 @@ button[type="submit"] {
         justify-content: center;
 
     }
-
-
-
-
-    /* Label Icon Images to accompany contact information */
+        /* Label Icon Images to accompany contact information */
 
 
     .representative-wrapper {
@@ -1779,18 +1862,14 @@ button[type="submit"] {
 
 }
 
+/* -------------------------- End of Contact Page -------------------- */
+
 
 /* ------------------------- End of Tablet Screen CSS Styling ---------------------- */
 
 /* ------------------------- Laptop/Desktop Screen CSS Styling --------------------- */
 
 @media (min-width: 992px) {
-
-    .navalert-padding {
-        padding-top: 100px;
-    }
-
-
 
     /* ----- Navigation Bar ----- */
 
@@ -1799,7 +1878,6 @@ button[type="submit"] {
         letter-spacing: 1px;
         padding: 0 1.6rem;
     }
-
 
     .nav-link:hover {
         text-decoration: underline;
@@ -2085,12 +2163,20 @@ button[type="submit"] {
         color: #f48826;
     }
 
+    /* ------------------------ End of About Page ---------------------- */
+
     /* ------------------------ Live Shows Page ------------------------ */
 
     #gig-listings {
         height: inherit;
+
     }
 
+    /* Site Wide Alert Below NavBar */
+
+    .navalert-padding {
+        padding-top: 100px;
+    }
 
     .alert-button:hover {
         background-color: rgb(22, 22, 22);
@@ -2098,17 +2184,7 @@ button[type="submit"] {
         border: 1px solid #fafafa;
     }
 
-    /* ----- Gig Listings ----- */
-
-
-    .block-divider {
-        border-top: 3px solid black;
-    }
-
-    .section-header h2 {
-        font-size: 3rem !important;
-        margin-top: 0;
-    }
+    /* ----- Gig Listings Table ----- */
 
     .listings-wrapper {
         max-height: 800px;
@@ -2133,25 +2209,8 @@ button[type="submit"] {
         font-size: 1.3rem;
     }
 
-    .mailing-spotify-liveshows {
-        margin-top: 50px;
-    }
 
-    .mailing-cta-live {
-        background: none;
-        padding: 30px;
-        border-radius: 3%;
-        margin-bottom: 25px;
-        margin-right: 25px !important;
-    }
-
-    .mailing-cta-live button:hover {
-        background-color: rgb(22, 22, 22);
-    }
-
-    .mailing-cta h3 {
-        color: rgb(22, 22, 22);
-    }
+    /* ----- Spotify Player----- */
 
     .liveshows-spotify-player {
         height: 300px;
@@ -2177,16 +2236,24 @@ button[type="submit"] {
         position: relative;
     }
 
-    /* Cart Info Clickable Div */
+    /* Basket Info Clickable Div Referenced from Youtube Tutorial:
 
-    .cart-info:hover {
+   John Smilga (freeCodeCamp.org) 
+   YouTube Video Title: JavaScript Project Tutorial: Shopping Cart
+   Git Username: john-smilga
+   Repository handle: js-cart-setup 
+   
+   Credits given in project's README.md file */
+
+
+    .basket-info:hover {
         background-color: rgb(22, 22, 22);
         color: #f48826;
         transition: 0.5s ease-in-out;
 
     }
 
-    .cart-info-icon {
+    .basket-info-icon {
         font-size: 2rem;
     }
 
