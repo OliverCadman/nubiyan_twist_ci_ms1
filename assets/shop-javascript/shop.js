@@ -13,23 +13,23 @@
 // Show Cart - Referenced from YouTube channel "freecodecamp.org"
 
 (function(){
-    const cartInfo = document.getElementById('cart-info');
-    const cart = document.getElementById('cart');
+    const cartInfo = document.getElementById('basket-info');
+    const cart = document.getElementById('basket');
     const hideCart = document.getElementById('close-basket');
     const checkout = document.getElementById('checkout-button');
   
 
     
     cartInfo.addEventListener('click', function(){
-        cart.classList.toggle('show-cart');
+        cart.classList.toggle('show-basket');
     })
 
     hideCart.addEventListener('click', function(){
-        cart.classList.toggle('show-cart');
+        cart.classList.toggle('show-basket');
     })
 
     checkout.addEventListener('click', function(){
-        cart.classList.toggle('show-cart');
+        cart.classList.toggle('show-basket');
     })
 
     })();
@@ -69,18 +69,18 @@
 
     
                 const cartItem = document.createElement('div');
-                cartItem.classList.add('cart-item', 
+                cartItem.classList.add('basket-item', 
                                     'd-flex', 
                                     'justify-content-start', 
                                     'my-3');
     
                 cartItem.innerHTML = `
                     <img src="${item.img}" id="item-img" alt="">
-                    <div class="cart-item d-flex justify-content-between text-capitalize my-md-3">
+                    <div class="basket-item d-flex justify-content-between text-capitalize my-md-3">
                         <div class="item-text">
-                            <p id="cart-item-title" class="font-weight-bold ml-3 mb-0"><span class="block">${item.name}</span></p>
+                            <p id="basket-item-title" class="font-weight-bold ml-3 mb-0"><span class="block">${item.name}</span></p>
                             <span class="ml-3">£</span>
-                            <span id="cart-item-price" class="cart-item-price mb-0">${item.price}</span>
+                            <span id="basket-item-price" class="basket-item-price mb-0">${item.price}</span>
                         </div>
                         <div>
                         <button type="button" class="btn btn-danger">Remove</button>
@@ -92,8 +92,8 @@
 
                    // Select Cart - Referenced from YouTube Channel "freecodecamp.org"
     
-                const cart = document.getElementById('cart');
-                const total = document.querySelector('.cart-total-container');
+                const cart = document.getElementById('basket');
+                const total = document.querySelector('.basket-total-container');
              
     
                 cart.insertBefore(cartItem, total);
@@ -128,7 +128,7 @@
         function showTotals(){
            
             const total =[];
-            const items = document.querySelectorAll('.cart-item-price');
+            const items = document.querySelectorAll('.basket-item-price');
     
             items.forEach(function(item) {
                 total.push(parseFloat(item.textContent));
@@ -141,7 +141,7 @@
     
             const finalMoney = totalMoney.toFixed(2);
     
-            document.getElementById('cart-total').textContent = finalMoney;
+            document.getElementById('basket-total').textContent = finalMoney;
             document.getElementById('item-count').textContent = '(' + total.length + ')';
         }
     
