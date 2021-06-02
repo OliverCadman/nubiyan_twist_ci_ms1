@@ -501,25 +501,15 @@ button {
 
 /* ------ Biography Section ------ */
 
-
-#about-band {
-    background-color: #DCB3AC;
-    min-height: 100vh;
-}
-
-.profile-container p {
-    padding: 0 20px;
-}
-
-
-.profile-body {
+.history-body {
     padding: 0 10px;
     font-family: "Alata", sans-serif;
     text-align: center;
+    background-color: #DCB3AC;
 }
 
-.profile-body p:first-child {
-    margin-top: 20px;
+.history-body p {
+    margin: 15px 0;
 }
 
 .history-image-wrapper {
@@ -702,12 +692,12 @@ i.fa-angle-double-right {
 
 /* ----- Band Cards ----- */
 
-#band-profile {
+.band-cards-container {
     background-color: #DCB3AC;
 }
 
-#vocals-container {
-    margin-top: 30px;
+.band-card:first-of-type {
+    margin-top: 30px; /* Targets first band card to push it down from the header above */
 }
 
 .card {
@@ -1043,6 +1033,7 @@ td:nth-child(2) {
     max-height: 80px;
     border-radius: 5px;
     border: 0;
+    /* Replaces deprecated frameborder attribute on iframe tag */
 }
 
 .item-row {
@@ -2085,18 +2076,9 @@ button[type="submit"] {
 
     /* ------------- Band History Section -------------- */
 
-    #about-band h2 {
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-
-    .profile-body {
+    .history-body {
         padding: 0 50px;
         font-size: 1.2rem;
-    }
-
-    .profile-body:last-child {
-        margin-top: 60px;
     }
 
     /* ----- Clickable Images of Album Covers ----- */
