@@ -1954,6 +1954,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 2.8rem;
     }
 
+    .cta-promo-section,
+    .cta-promo-section:last-child {
+        font-size: 2.5rem;
+    }
+
     /* Download/Buy & Shop Buttons - Inverts font and background colours upon hovering */
     .cta-promo-section:hover {
         background-color: #dadada;
@@ -1997,6 +2002,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         max-width: 600px;
         max-height: 332px;
     }
+
+    
 
     /* ----- Mailing/Spotify Player Section ----- */
 
