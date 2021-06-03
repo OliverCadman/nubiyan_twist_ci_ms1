@@ -92,6 +92,8 @@ While the focus of the website should serve the needs of each of these criteria,
 
 ## Wireframes
 
+The wireframes were made during the planning stages of the project. As the project evolved during the life-cycle of the project's development, some aspects of the final website's design may differ from those featured in the wireframes.
+
 [Home](assets/wireframes/nt-homepage.pdf)
 
 [About](assets/wireframes/nt-about.pdf)
