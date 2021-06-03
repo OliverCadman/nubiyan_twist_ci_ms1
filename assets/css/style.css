@@ -248,6 +248,12 @@ ul li a.active {
     margin-bottom: 10px;
 }
 
+.cta-promo-section:focus,
+.cta-promo-section:active {
+    text-decoration: none; /* An attempt to remove typical blue anchor tag colour which displays when button is clicked */
+    color: #d8d8d8;
+}
+
 .download-shop-cta-wrapper {
     margin-top: 30px;
 }
@@ -259,7 +265,6 @@ ul li a.active {
 }
 
 .cta-listen-shop:hover {
-
     background-color: #dadada;
     color: #252525;
 }
@@ -648,10 +653,6 @@ figcaption small {
 
 .fa-angle-double-left,
 .fa-angle-double-right {
-    color: #fafafa;
-}
-
-.click-indicators:first-of-type {
     color: #fafafa;
 }
 
