@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,8 +64,8 @@
     </header>
     <!-- Music Shop Section -->
     <main>
-        <section class="shop-section">
-            <div class="container-fluid section-header">
+        <section>
+            <div class="container-fluid section-header header-navbar-clear">
                 <div class="row">
                     <div class="col-12 p-0">
                         <h1 class="my-5">Music Shop</h1>
@@ -96,13 +95,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container" id="music-shop-body">
+            <div class="container-fluid shop-container" id="music-shop-body">
                 <div class="row d-flex justify-content-sm-center align-items-sm-center justify-content-md-between shopping-cart">
                     <div class="col-12 col-md-4">
                         <div class="spotify-shop-wrapper">
                         <iframe class="spotify-player-shop"
                             src="https://open.spotify.com/embed/album/7dGOyxCI4QXNFxHEpgD4jt" width="300" height="380"
-                            allowtransparency="true" allow="encrypted-media"></iframe>
+                            allow="encrypted-media"></iframe>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
@@ -125,7 +124,7 @@
                                 <p>£22.99</p>
                                 <button class="btn" type="button" data-toggle="modal"
                                     data-target="#ff-vinyl-orange-modal" aria-expanded="false"
-                                    aria-controls="itemAccordion">More
+                                >More
                                     Info</button>
                             </div>
                         </div>
@@ -141,7 +140,7 @@
                                 <p>£22.99</p>
                                 <button class="btn" type="button" data-toggle="modal"
                                     data-target="#ff-vinyl-green-modal" aria-expanded="false"
-                                    aria-controls="itemAccordion">More
+                                >More
                                     Info</button>
                             </div>
                         </div>
@@ -154,7 +153,7 @@
                                 <h6>Freedom Fables (CD)</h6>
                                 <p>£11.99</p>
                                 <button class="btn" type="button" data-toggle="modal" data-target="#ff-cd-modal"
-                                    aria-expanded="false" aria-controls="itemAccordion">More
+                                    aria-expanded="false">More
                                     Info</button>
                             </div>
                         </div>
@@ -167,7 +166,7 @@
                                 <h6>Jungle Run <span class="block desktop-span">(Double Vinyl)</span></h6>
                                 <p>£19.99</p>
                                 <button class="btn" type="button" data-toggle="modal" data-target="#jr-vinyl-modal"
-                                    aria-expanded="false" aria-controls="itemAccordion">More
+                                    aria-expanded="false">More
                                     Info</button>
                             </div>
                         </div>
@@ -180,7 +179,7 @@
                                 <h6>Jungle Run (CD)</h6>
                                 <p>£10.99</p>
                                 <button class="btn" type="button" data-toggle="modal" data-target="#jr-cd-modal"
-                                    aria-expanded="false" aria-controls="itemAccordion">More
+                                    aria-expanded="false">More
                                     Info</button>
                             </div>
                         </div>
@@ -196,7 +195,7 @@
                                 </h6>
                                 <p>£10.99</p>
                                 <button class="btn" type="button" data-toggle="modal" data-target="#titms-vinyl-modal"
-                                    aria-expanded="false" aria-controls="itemAccordion">More
+                                    aria-expanded="false">More
                                     Info</button>
                             </div>
                         </div>
@@ -204,7 +203,7 @@
                 </div>
             </div>
         </section>
-        <section class="shop-section">
+        <section>
             <div class="container-fluid section-header">
                 <div class="row">
                     <div class="col-12 p-0">
@@ -212,17 +211,17 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-center justify-content-md-between item-row" loading="lazy">
+            <div class="container-fluid shop-container">
+                <div class="row justify-content-center justify-content-md-between item-row">
                     <div class="col-12 col-md-4 item-card">
                         <div class="card" title="Nubiyan Twist Freedom Fables T-Shirt">
                             <img class="card-img-top item-image" src="assets/images/shop-images/ff-shirt.jpg"
-                                alt="Buy the Freedom Fables T-Shirt">
+                            loading="lazy" alt="Buy the Freedom Fables T-Shirt">
                             <div class="card-body">
-                                <h6>Freedom Fables T-Shirt</span></h6>
+                                <h6>Freedom Fables T-Shirt</h6>
                                 <p>£22.00</p>
                                 <button class="btn" type="button" data-toggle="modal" data-target="#ff-shirt-modal"
-                                    aria-expanded="false" aria-controls="itemAccordion">More
+                                    aria-expanded="false">More
                                     Info</button>
                             </div>
                         </div>
@@ -235,7 +234,7 @@
                                 <h6>Tittle Tattle - Square Screen Print</h6>
                                 <p>£20.00</p>
                                 <button class="btn" type="button" data-toggle="modal" data-target="#tt-print-modal"
-                                    aria-expanded="false" aria-controls="itemAccordion">More
+                                    aria-expanded="false">More
                                     Info</button>
                             </div>
                         </div>
@@ -249,7 +248,7 @@
                                 <h6>Freedom Fables - A2 Screen Print</h6>
                                 <p>£25.00</p>
                                 <button class="btn" type="button" data-toggle="modal" data-target="#ff-print-modal"
-                                    aria-expanded="false" aria-controls="itemAccordion">More
+                                    aria-expanded="false">More
                                     Info</button>
                             </div>
                         </div>
@@ -581,6 +580,7 @@
                                                         <input type="checkbox" id="sameAddr" name="sameAddr" required>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </fieldset>
                                         <fieldset>
                                             <legend>Billing Details</legend>
@@ -647,6 +647,7 @@
                                                         <button type="button" class="btn checkout-modal-button" data-dismiss="modal">Close</button>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -658,8 +659,8 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container-fluid">
+    <footer>
+        <div class="container-fluid footer">
             <div class="row">
                 <div class="col-lg-4 d-none d-md-none d-lg-block">
                     <div class="label-icon-wrapper">
