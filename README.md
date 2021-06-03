@@ -19,27 +19,29 @@ preview and purchase albums and EPs from the group's catalogue.
     * [Wireframes](#wireframes)
 
 * [Features](#Features)
-    * [Home Page](#Home-Page)
-    * [About Page](#About-Page)
-    * [Live Shows](#Live-Shows)
-    * [Video](#Video)
-    * [Shop](#Shop)
-    * [Contact](#Contact-Page)
+
+* [Existing Features](#Existing-Features)
+  * [Home Page](#Home-Page)
+  * [About Page](#About-Page)
+  * [Live Shows](#Live-Shows)
+  * [Video](#Video)
+  * [Shop](#Shop)
+  * [Contact](#Contact-Page)
+             
+* [Features to be Implemented in the Future](#Features-for-future-implementation)
 
 * [Technologies Used](#Technologies-Used)
 
 * [Testing](#Testing)
 
 * [Credits](#Credits)
-    * [Code](#Code)
-    * [Content](#Content)
-    * [Media](#Media)
-        * [Embedded Media](#Embedded-Media)
-        * [Images/Icons](#Images/Icons)
+  * [Code](#Code)
+  * [Content](#Content)
+  * [Media](#Media)
+  * [Embedded Media](#Embedded-Media)
+  * [Images/Icons](#Images-Icons)
 
 * [Deployment](#Deployment)
-
-* [Acknowledgements](#Acknowledgements)
 
 # UX
 
@@ -106,6 +108,8 @@ While the focus of the website should serve the needs of each of these criteria,
 ---
 
 # Features
+
+## Existing Features
 
 ![NavBar - Tablet and Laptop Screen Size and Up](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/navbar-footer/nt-navbar-tablet-laptop.png)
 
@@ -201,6 +205,10 @@ Displayed immediately below the headings are the products, contained within boot
 
 The contact page features a fixed background image of the band's cover art for one of their releases. Sitting on top is a bootstrap form with fields for the user to input their name and email address, a textarea for the user to ask any questions or make any comments, and a button for the user to submit their query. On either side of the form are the logos, and a clickable email address for the band's industry representatives, hyperlinked to the user's email platform. The email links smoothly change colour and increase in size slightly upon hovering, ro provide visual feedback. The representative's contact information collapses to sit below the form on mobile devices.
 
+## Features for future implementation
+
+* JavaScript Functionality in Shop Page to allow users to add products to a basket, and to make payments through the website.
+* Form validation upon entering details into mailing list form and contact form.
 
 # Technologies Used
 
@@ -217,8 +225,6 @@ The contact page features a fixed background image of the band's cover art for o
 * [jQuery](https://jquery.com/download/) - This project uses jQuery to provide responsiveness to the website's navbar, and functionality to stop videos playing when closing modal windows in the website's 'About' page. jQuery was also employed to provide functionality to the website's 'Shop' page.
 
 * [Popper.js](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Popper.js was used in conjunction with Bootstrap CDN and jQuery to provide responsiveness to collapsing navbar.
-
-
 
 # Testing 
 
