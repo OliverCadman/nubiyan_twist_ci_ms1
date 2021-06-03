@@ -157,9 +157,12 @@ The final section features the core members of the band, in the form of bootstra
 
 ![About Page Band Cards](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/about-page/nt-band-cards.png)
 
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/about-page/nt-band-modal.png"
+     width="400" alt="Band Modal Window">
+
 ---
 
-### Live Shows
+## Live Shows Page
 
 ![Live Shows Page](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/liveshows-page/nt-liveshows.png)
 
@@ -169,7 +172,7 @@ Below is a table featuring the band's upcoming gig listings with dates, venues, 
 
 ---
 
-### Video
+## Video Page
 
 ![Video Page](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/video-page/nt-videos.png)
 
@@ -177,22 +180,25 @@ The video page is divided into two sections; Music Videos and Live Videos. Each 
 
 ---
 
-### Shop 
+## Shop Page
 
 
 The shop page contains two sections, divided according to the category of product; 'Music Shop' and 'Clothing/Prints'. Each section beings again with a heading, styled characteristically with the dark background and brand logo. 
 
-Displayed immediately below the headings are the products, contained within bootstrap cards. Each card features an image of the product, and a heading below stating the name of the product and the price. Below each heading is a button inviting the user to find out more information, with hover effect to provide visual feedback. Upon clicking, a modal window is opened, featuring an image of the product and the price, and a detailed summary of the product being offered. At the bottom of the modal window are two buttons; one inviting the user to add the product to their basket and another to close the modal window. Each button is again given hover styling, providing visual feedback. 
+     
+![Shop Item Cards](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/shop-page/nt-shop-cards.png)
 
-A small clickable window is featured at the top of the page, inviting the user to view their basket, along with a FontAwesome basket icon, to make more explicit the purpose of the feature. The window displays the quantity of products that are in their basket, and is given hover styling to inform the user that it is clickable. Upon clicking, a hidden window expands from the left hand side of the section displaying information about the product the user has chosen. The window expands to the full-width of the screen on mobile devices. Featured inside is an image of the product, the product's name, the price, a button to remove the product, and a total price of the products in the basket. Then the user is invited to close the window, or checkout. 
+Displayed immediately below the headings are the products, contained within bootstrap cards. Each card features an image of the product, and a heading below stating the name of the product and the price. Below each heading is a button inviting the user to find out more information, with hover effect to provide visual feedback. Upon clicking, a modal window is opened, featuring an image of the product and the price, and a detailed summary of the product being offered. At the bottom of the modal window are two buttons; one inviting the user to buy the product from Bootcamp and another to close the modal window. Each button is again given hover styling, providing visual feedback. 
 
-Upon clicking the checkout button, a modal window is opened, featuring a bootstrap form to allow the user to input their delivery and billing details, headed by the characteristically styled header. A checkbox is provided for the user to click if their billing address is the same as their delivery address. At the footer of the modal are two buttons, one to purchase the product(s), and another to close the window. 
-
-A number of the features on this page rely on JavaScript in order to work smoothly as a complete entity; namely the small clickable basket information window, the collapsible 'Your Basket' window which opens when the Basket info button is clicked, and the 'Same as Billing Address' checkbox in the 'Checkout' form. Again I am aware of course that JavaScript code isn't a requirement of this assessment and is not expected by the assessors. However after deliberate consideration, I deemed it important to include, exclusively to fulfill the criteria for a smooth, intuitive user experience, as one of the chief business goals of the website is to of course, sell the band's products. The JavaScript I used is not my own; it was referenced from three other sources, which are cited in the Credits section of this README.
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/shop-page/nt-shop-modal.png"
+     width="400" alt="Shop Modal Window">
 
 ---
 
-### Contact Page
+## Contact Page
+
+![Contact Page](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/contact-page/nt-contact-page.png)
+
 The contact page features a fixed background image of the band's cover art for one of their releases. Sitting on top is a bootstrap form with fields for the user to input their name and email address, a textarea for the user to ask any questions or make any comments, and a button for the user to submit their query. On either side of the form are the logos, and a clickable email address for the band's industry representatives, hyperlinked to the user's email platform. The email links smoothly change colour and increase in size slightly upon hovering, ro provide visual feedback. The representative's contact information collapses to sit below the form on mobile devices.
 
 
