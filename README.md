@@ -3,13 +3,45 @@
 Welcome to Nubiyan Twist's website! 
 
 A comprehensive website for the 9-piece contemporary UK Jazz collective based in London, United Kingdom. 
-The website features listings for upcoming shows and tours, audio/video clips showcasing their music both live and in-studio,
-a biography detailing the history of the group and it's members, a merchandise section for both fans and record collectors,
-and a contact page.
+The website features listings for upcoming shows and tours, a video page showcasing their music both live and in-studio, a biography detailing the history of the group and it's members, a merchandise section, and a contact page.
 
 While the website is designed to immediately draw the user's attention to the captivating, virtuosic live shows
-that the group is notorious for, it will also serve as an online hub where record collectors and DJs can
+that the group is notorious for, it will also serve as an online hub where users can
 preview and purchase albums and EPs from the group's catalogue. 
+
+# Table of Contents 
+* [UX](#UX)
+    * [Business Goals](#Business-Goals)
+    * [Target Audience](#Target-Audience)
+    * [User Stories](#User-Stories)
+    * [Wireframes](#wireframes)
+
+* [Features](#Features)
+    * [Home Page](#Home-Page)
+    * [About Page](#About-Page)
+    * [Live Shows](#Live-Shows)
+    * [Video](#Video)
+    * [Shop](#Shop)
+    * [Contact](#Contact-Page)
+
+* [Technologies Used](#Technologies-Used)
+
+* [Testing](#Testing)
+
+* [Credits](#Credits)
+    * [Code](#Code)
+    * [Content](#Content)
+    * [Media](#Media)
+        * [Embedded Media](#Embedded-Media)
+        * [Images/Icons](#Images/Icons)
+
+* [Deployment](#Deployment)
+
+* [Acknowledgements](#Acknowledgements)
+
+# UX
+
+## Business Goals
 
 The business goals of this website are:
 
@@ -26,8 +58,6 @@ The user goals of this website are:
 * Keep up-to-date on upcoming live shows and tours.
 * Discover new releases/promotional offers.
 * Learn more about the group's identity and history.
-
-# UX
 
 ## Target Audience
 
