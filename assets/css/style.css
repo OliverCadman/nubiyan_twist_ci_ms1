@@ -1558,9 +1558,17 @@ button[type="submit"] {
         padding-top: 110px;
     }
 
+    .about-header {
+        font-family: "Alatsi", sans-serif;
+        font-size: 4rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: #f48826;
+    }
+
     .about-quote p {
         line-height: 50px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .summary p {
@@ -2055,10 +2063,16 @@ button[type="submit"] {
 
     /* ------------------------ About Page ---------------------- */
 
+    /* --- Header --- */
+
+    .about-header {
+        font-size: 4.5rem;
+    }
+
     /* --- Header Quote --- */
 
     .about-quote p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .summary p {
