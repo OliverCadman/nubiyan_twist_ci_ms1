@@ -25,6 +25,11 @@ h2 {
     margin-top: 20px;
 }
 
+/* Pushes top header clear of navbar in Video and Shop Pages */
+.header-navbar-clear {
+    margin-top: 48px;
+}
+
 /* Class added to span elements in header elements for modals and videos, 
 where header content would result in word-breaking */
 
@@ -868,37 +873,9 @@ td:nth-child(2) {
 
 /* ----------------------------- Video Page ---------------------------------- */
 
-.video-hero {
-    background: url("../images/hero-images/video-hero.png") no-repeat bottom fixed;
-    background-size: cover;
-    background-position: 52%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: 100vh;
-}
-
-.video-hero h1 {
-    font-family: "Alatsi", sans-serif;
-    color: #f48826;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-.opaque-overlay-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 /* Video Section (Music Videos/Live Videos) */
 
-.video-collection {
+.video-collection-container {
     background-color: #DCB3AC;
 }
 
@@ -1401,9 +1378,16 @@ button[type="submit"] {
         margin-right: 40px;
     }
 
+    /* ---- Pushes top header clear of navbar on Video and Shop Pages */
+    .header-navbar-clear {
+        margin-top: 84px;
+    }
+
     .shop-section:last-of-type h2 {
         font-size: 3rem;
     }
+
+
 
     /* ----- Navigation Bar ----- */
 
@@ -1911,6 +1895,11 @@ button[type="submit"] {
 /* ------------------------- Laptop/Desktop Screen CSS Styling --------------------- */
 
 @media (min-width: 992px) {
+
+    /* Pushes top header clear of navbar on Video and Shop Pages */
+    .header-navbar-clear {
+        margin-top: 100px;
+    }
 
     /* ----- Navigation Bar ----- */
 
