@@ -29,6 +29,7 @@ preview and purchase albums and EPs from the group's catalogue.
   * [Video](#Video)
   * [Shop](#Shop)
   * [Contact](#Contact-Page)
+  * [404 Page](#404-page)
              
 * [Features to be Implemented in the Future](#Features-for-future-implementation)
 
@@ -209,6 +210,10 @@ Displayed immediately below the headings are the products, contained within boot
 
 The contact page features a fixed background image of the band's cover art for one of their releases. Sitting on top is a bootstrap form with fields for the user to input their name and email address, a textarea for the user to ask any questions or make any comments, and a button for the user to submit their query. On either side of the form are the logos, and a clickable email address for the band's industry representatives, hyperlinked to the user's email platform. The email links smoothly change colour and increase in size slightly upon hovering, ro provide visual feedback. The representative's contact information collapses to sit below the form on mobile devices.
 
+## 404 Page
+
+This website features a custom 404 page, in the instance a user tries to use a link that is broken, or visits a part of the website that doesn't exist.
+
 ## Features for future implementation
 
 * JavaScript Functionality in Shop Page to allow users to add products to a basket, and to make payments through the website.
@@ -258,7 +263,9 @@ This code was used to target the videos displayed in the modal windows featuring
 
 Although the requirement of this assessment dictates explicitly that this is a static HTML and CSS project, the designer considered that the criteria for user experience would be better fulfilled if the embedded YouTube videos stopped playback when a user closes the modal window. Otherwise, without the JavaScript the user would have to take unnecessary time stopping the video before closing the window, or endure the continuation of the music when the window closes.
 
-The code used for this functionality was referenced from [Stack Overflow - Stop Playing Video in iframe when modal is closed](https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed).
+The code used for this functionality was referenced from:
+
+* [Stack Overflow - Stop Playing Video in iframe when modal is closed](https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed).
 
 ## Content
 
