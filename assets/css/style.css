@@ -830,6 +830,20 @@ td:nth-child(2) {
     font-weight: 400 !important;
 }
 
+.liveshows-image-wrapper {
+    background-color: rgb(22, 22, 22);
+    color: #d8d8d8;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#liveshows-image {
+    width: 100%;
+}
+
 
 .mailing-cta-live {
     font-family: "Alatsi", sans-serif;
@@ -867,7 +881,7 @@ td:nth-child(2) {
 
 .liveshows-spotify-player {
     border: none;
-    height: 80px;
+    height: 300px;
     width: 100%;
 }
 
@@ -1701,7 +1715,7 @@ button[type="submit"] {
     /* ------------------------- Shop Page ------------------------------ */
 
     .spotify-shop-wrapper {
-        display: initial;
+        margin-top: 20px;
     }
 
     /* Item Cards */
@@ -2117,30 +2131,7 @@ button[type="submit"] {
         height: 300px;
     }
 
-    /* --------------------- Video Page ----------------------- */
-
-    /* Receiving anchor element for 'Live Videos' button */
-
-    .live-videos-anchor-target {
-        margin-top: 100px;
-    }
-
-    /* ---------------------- Shop Page ------------------------ */
-
-    /* ----- Music Shop Section ----- */
-
-    .spotify-shop-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    #music-shop-body {
-        position: relative;
-    }
-
-   /* ------------------ Contact Page ------------------- */
+    /* ------------------ Contact Page ------------------- */
 
     #contact-hero {
         background-position: 100% 15%;
