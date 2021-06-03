@@ -210,7 +210,7 @@ Displayed immediately below the headings are the products, contained within boot
 
 ![Contact Page](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/readme-images/contact-page/nt-contact-page.png)
 
-The contact page features a fixed background image of the band's cover art for one of their releases. Sitting on top is a bootstrap form with fields for the user to input their name and email address, a textarea for the user to ask any questions or make any comments, and a button for the user to submit their query. On either side of the form are the logos, and a clickable email address for the band's industry representatives, hyperlinked to the user's email platform. The email links smoothly change colour and increase in size slightly upon hovering, ro provide visual feedback. The representative's contact information collapses to sit below the form on mobile devices.
+The contact page features a fixed background image of the band's cover art for one of their releases. Sitting on top is a bootstrap form with fields for the user to input their name and email address, a textarea for the user to ask any questions or make any comments, and a button for the user to submit their query. On either side of the form are the logos, and a clickable email address for the band's industry representatives, hyperlinked to the user's email platform. The email links smoothly change colour upon hovering, providing visual feedback. The representative's contact information collapses to sit below the form on mobile devices.
 
 ## 404 Page
 
