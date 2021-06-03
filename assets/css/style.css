@@ -18,10 +18,10 @@
 
 .section-header h1,
 h2 {
+    
     padding-right: 5px;
     text-align: right;
     color: #d8d8d8;
-    font-size: 2rem;
     margin-top: 20px;
 }
 
@@ -511,6 +511,10 @@ button {
 
 /* ------ Biography Section ------ */
 
+.history-header {
+    font-size: 2.5rem;
+}
+
 .history-body {
     padding: 0 10px;
     font-family: "Alata", sans-serif;
@@ -673,8 +677,6 @@ figcaption small {
     margin: -90px 0px 0px -90px;
 }
 
-
-
 .ff-square-container {
     margin-top: 100px;
 }
@@ -705,6 +707,10 @@ figcaption small {
 
 .band-cards-container {
     background-color: #DCB3AC;
+}
+
+.band-card-header {
+    font-size: 2.5rem;
 }
 
 .band-card:first-of-type {
@@ -898,6 +904,14 @@ td:nth-child(2) {
 
 .video-collection-container {
     background-color: #DCB3AC;
+}
+
+.music-video-header {
+    font-size: 2.3rem;
+}
+
+.live-video-header {
+    font-size: 2.5rem;
 }
 
 .video-wrapper {
@@ -1190,10 +1204,26 @@ button[type="submit"] {
         /* 'Click to Listen' call-to-action */
     }
 
+    /* ----------- Live Shows Page ---------- */
+
+    .live-shows-header {
+        font-size: 2.2rem;
+    }
+
+    /* ----------- Video Page ------------- */
+
+    .music-video-header,
+    .live-video-header {
+        font-size: 2rem;
+    }
+
     /* ------------ Shop Page --------------- */
 
     /* Targets the header "Clothing/Prints" and decreases font-size to prevent spilling over logo */
-    .clothing-prints-header h2 {
+    .music-shop-header {
+        font-size: 2.2rem;
+    }
+    .clothing-prints-header {
         font-size: 1.6rem;
     }
 
@@ -1271,6 +1301,7 @@ button[type="submit"] {
     }
 
     /* --------------------- End of Live Shows Page ------------------------ */
+    
 
     /* --------------------- Contact Page ------------------------ */
 
@@ -1598,6 +1629,10 @@ button[type="submit"] {
 
     /* ----- 'The Band' Section - Band Cards ---- */
 
+    .band-card-header {
+        font-size: 3rem;
+    }
+
     .band-card {
         margin: 30px 0;
     }
@@ -1712,6 +1747,10 @@ button[type="submit"] {
 
     .desktop-span {
         display: inline;
+    }
+
+    .live-video-header {
+        font-size: 3rem;
     }
 
     /* ------------------------- End of Video Page ---------------------- */
