@@ -72,34 +72,9 @@
                         <h1 class="my-5">Music Shop</h1>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <!-- Shopping Cart Window -->
-                        <!-- Shopping Cart Referenced from John Smilga of freecodecamp.org
-                Git Username: john-smilga
-                Repository Handle: js-cart-setup -->
-                        <div id="basket" class="basket">
-                            <div class="basket-header text-center my-4">
-                                <h4><span><i class="fa fa-shopping-basket basket-icon"
-                                            aria-hidden="true"></i></span>Your Basket</h4>
-                            </div>
-                            <div class="basket-total-container d-flex justify-content-around mt-md-5">
-                                <h5>Total</h5>
-                                <h5>£<strong id="basket-total" class="font-weight-bold"></strong> </h5>
-                            </div>
-                            <div class="basket-buttons-container mb-3 d-flex justify-content-between">
-                                <button type="button" id="close-basket"
-                                    class="btn basket-btn btn-outline-secondary">Close</button>
-                                <button type="button" id="checkout-button" class="btn basket-btn btn-outline-secondary"
-                                    data-toggle="modal" data-target="#checkout-modal">Checkout</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="container-fluid shop-container" id="music-shop-body">
-                <div
-                    class="row d-flex justify-content-sm-center align-items-sm-center justify-content-md-between shopping-cart">
+                <div class="row d-flex justify-content-center">
                     <div class="col-12 col-md-4">
                         <div class="spotify-shop-wrapper">
                             <iframe class="spotify-player-shop"
@@ -107,16 +82,7 @@
                                 height="380" allow="encrypted-media"></iframe>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <div id="basket-info" class="basket-info text-center d-flex justify-content-between">
-                            <p style="text-decoration: underline;">View Your Basket</p>
-                            <p id="item-count">
-                                <p>
-                                    <span class="basket-info-icon mr-lg-3"><i class="fas fa-shopping-basket"></i></span>
-                        </div>
-                    </div>
                 </div>
-
                 <div class="row justify-content-lg-between item-row">
                     <div class="col-12 col-md-4 item-card">
                         <div class="card" title="Nubiyan Twist Freedom Fables - Double Vinyl">
@@ -525,147 +491,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Checkout Modal -->
-    <div class="modal" id="checkout-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content text-center">
-                <div class="modal-header checkout-header">
-                    <h5 class="modal-title justify-content-end">Checkout</h5>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="checkoutform-wrapper">
-                                    <form action="#">
-                                        <fieldset>
-                                            <legend>Delivery Details</legend>
-                                            <hr class="blockdivider-checkout">
-                                            <div class="form-group row">
-                                                <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="fname_delivery"
-                                                        name="fname_delivery" placeholder="First Name" required>
-                                                </div>
-                                                <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="lname_delivery"
-                                                        name="lname_delivery" placeholder="Last Name" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" id="email" name="email"
-                                                    placeholder="Email" required>
-                                            </div>
-                                            <div id="delivery-address">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="addr_delivery"
-                                                        name="addr_delivery" placeholder="Address Line 1" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="addr_delivery_2"
-                                                        name="addr_delivery_2" placeholder="Address Line 2 (Optional)">
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-6 form-group">
-                                                        <input type="text" class="form-control" id="city_delivery"
-                                                            name="city_delivery" placeholder="City" required>
-                                                    </div>
-                                                    <div class="col-6 form-group">
-                                                        <input type="text" class="form-control" id="country_delivery"
-                                                            name="country_delivery" placeholder="Country" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row d-sm-flex justify-content-center">
-                                                    <div class="col-6 form-group">
-                                                        <input type="text" class="form-control" id="zip_delivery"
-                                                            name="zip_delivery" placeholder="Zip Code">
-                                                    </div>
-                                                    <div class="col-12 col-md-6 form-group">
-                                                        <label for="sameAddr">Same as Billing Address</label>
-                                                        <input type="checkbox" id="sameAddr" name="sameAddr" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <fieldset>
-                                            <legend>Billing Details</legend>
-                                            <hr class="blockdivider-checkout">
-                                            <div class="form-group row">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control" id="cardholder"
-                                                        name="cardholder" placeholder="Cardholder's Name" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-12">
-                                                    <input type="number" class="form-control" id="cardnumber"
-                                                        name="cardnumber" placeholder="Card Number" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-6">
-                                                    <input type="text" maxlength="5" class="form-control"
-                                                        id="expirydate" name="expirydate" placeholder="Expiry (MM/YY)"
-                                                        required>
-                                                </div>
-                                                <div class="col-6">
-                                                    <input type="text" maxlength="3" class="form-control" id="ccv"
-                                                        name="ccv" placeholder="CCV" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="fname_billing"
-                                                        name="fname_billing" placeholder="First Name" required>
-                                                </div>
-                                                <div class="col-6 form-group">
-                                                    <input type="text" class="form-control" id="lname_billing"
-                                                        name="lname_billing" placeholder="Last Name" required>
-                                                </div>
-                                            </div>
-                                            <div id="billing-address">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="addr_billing"
-                                                        name="address_billing" placeholder="Address Line 1" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="addr_billing_2"
-                                                        name="address_billing_2" placeholder="Address Line 2 (Optional)"
-                                                        required>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-6 form-group">
-                                                        <input type="text" class="form-control" id="city_billing"
-                                                            name="city_billing" placeholder="City" required>
-                                                    </div>
-                                                    <div class="col-6 form-group">
-                                                        <input type="text" class="form-control" id="country_billing"
-                                                            name="country_billing" placeholder="Country" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col-6 form-group">
-                                                        <input type="text" class="form-control" id="zip_billing"
-                                                            name="zip_billing" placeholder="Zip Code" required>
-                                                    </div>
-                                                    <div class="col-12 modal-footer" id="checkout-modal-buttons">
-                                                        <button type="submit"
-                                                            class="btn checkout-modal-button">Purchase</button>
-                                                        <button type="button" class="btn checkout-modal-button"
-                                                            data-dismiss="modal">Close</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Footer -->
     <footer>
         <div class="container-fluid footer">

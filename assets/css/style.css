@@ -917,80 +917,6 @@ td:nth-child(2) {
     background-color: #DCB3AC;
 }
 
-/* ----- Basket Info and Basket Styling ----- */
-/* Referenced from Youtube Tutorial:
-   John Smilga (freeCodeCamp.org) 
-   YouTube Video Title: JavaScript Project Tutorial: Shopping Cart
-   Git Username: john-smilga
-   Repository handle: js-cart-setup 
-   
-   Credits given in project's README.md file */
-
-.basket-info {
-    font-family: "Alata", sans-serif;
-    border: 2px solid black;
-    background-color: #fafafa;
-    border-radius: 0.25rem;
-    padding: 0.1rem 0.5rem;
-    cursor: pointer;
-    color: rgb(22, 22, 22);
-    margin: 20px 0;
-}
-
-/* FontAwesome Shopping Basket Icon */
-.basket-info-icon {
-    font-size: 1.5rem;
-}
-
-#item-count {
-    display: block;
-}
-
-.basket {
-    font-family: "Alata", sans-serif;
-    position: absolute;
-    height: auto;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    transition: all 0.5s ease-in-out;
-    background: rgba(0, 0, 0, 0.89);
-    color: #fafafa;
-    width: 0;
-    overflow: scroll;
-}
-
-.basket h4 {
-    text-decoration: underline;
-}
-
-.basket-icon {
-    margin-right: 20px;
-}
-
-#basket-item-price {
-    font-size: 0.8rem;
-}
-
-/* '.show-basket' assigned to JavaScript classList property:
-   Referenced from YouTube tutorial by John Smilga (freeCodeCamp.org)
-   YouTube Video Title: JavaScript Project Tutorial - Shopping Cart
-   Git Username: john-smilga
-   Repository handle: js-cart-setup 
-
-   Credits given in README.md file */
-
-.show-basket {
-    width: 100%;
-    /* Fills shopping basket the full width of screen */
-    padding: 0 1.5rem;
-    transform: scale(1);
-    /* Reveals shopping basket */
-
-}
-
-/* ----------- End of CSS Referenced from freeCodeCamp YouTube Tutorial ----------- */
-
 /* ----- Music Shop Section ----- */
 
 /* Displays spotify player in centre of browser window */
@@ -998,7 +924,7 @@ td:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .spotify-player-shop {
@@ -1030,18 +956,11 @@ td:nth-child(2) {
 /* Class targets the images of vinyls */
 .modal-img-wide {
     width: 100%;
-
 }
-
 
 #print-modal-img {
     max-height: 400px;
     float: left;
-}
-
-/* Targets the wrapper containing the <select> input tags */
-#shirt-options-wrapper {
-    margin-top: 30px;
 }
 
 .item-info {
@@ -1057,10 +976,6 @@ td:nth-child(2) {
 
 .mobile-card-header {
     font-size: .8rem;
-}
-
-.addbasket-button {
-    float: left;
 }
 
 #item-img {
@@ -1100,22 +1015,6 @@ td:nth-child(2) {
     text-transform: uppercase;
     font-size: 2.3rem;
 }
-
-.blockdivider-checkout {
-    border-top: 2px solid #fafafa;
-}
-
-/* This CSS ID Selector was added since one of two buttons in the containing div
-is of 'type=submit' and so wasn't being targetting by the class selector '.modal button' */
-#checkout-modal-buttons button {
-    font-family: "Alata", sans-serif !important;
-    border: 3px solid #fafafa;
-}
-
-.checkout-modal-button:hover {
-    cursor: pointer !important;
-}
-
 
 /* ----------------- Contact Page ------------------ */
 
@@ -1805,19 +1704,6 @@ button[type="submit"] {
         display: initial;
     }
 
-    /* Displays hidden shopping basket upon clicking "View Your Basket" 
-       Referenced from Youtube Tutorial:
-       John Smilga (freeCodeCamp.org) 
-       YouTube Video Title: JavaScript Project Tutorial: Shopping Cart
-       Git Username: john-smilga
-       Repository handle: js-cart-setup */
-
-    .show-basket {
-        width: 500px;
-        padding: 0 1.5rem;
-        transform: scale(1);
-    }
-
     /* Item Cards */
 
 
@@ -1833,9 +1719,6 @@ button[type="submit"] {
     .item-text {
         margin-right: 50px;
     }
-
-
-
 
     /* ------------- Contact Page --------------- */
 
@@ -2250,51 +2133,14 @@ button[type="submit"] {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
     }
 
     #music-shop-body {
         position: relative;
     }
 
-    /* Basket Info Clickable Div Referenced from Youtube Tutorial:
-
-   John Smilga (freeCodeCamp.org) 
-   YouTube Video Title: JavaScript Project Tutorial: Shopping Cart
-   Git Username: john-smilga
-   Repository handle: js-cart-setup 
-   
-   Credits given in project's README.md file */
-
-
-    .basket-info:hover {
-        background-color: rgb(22, 22, 22);
-        color: #f48826;
-        transition: 0.5s ease-in-out;
-
-    }
-
-    .basket-info-icon {
-        font-size: 2rem;
-    }
-
-    .basket-btn:hover {
-        background-color: rgb(22, 22, 22);
-        border: 3px solid #fafafa;
-        transition: 0.3s ease-in-out;
-        color: #f48826;
-    }
-
-    .checkout-modal-button:hover,
-    .modal a:hover {
-        background-color: rgb(22, 22, 22);
-        border: 2px solid #fafafa;
-        transition: 0.3s ease-in-out;
-        color: #f48826;
-    }
-
-
-
-    /* ------------------ Contact Page ------------------- */
+   /* ------------------ Contact Page ------------------- */
 
     #contact-hero {
         background-position: 100% 15%;
