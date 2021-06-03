@@ -2,6 +2,8 @@
 
 Welcome to Nubiyan Twist's website! 
 
+![Website Homepage Displayed on 'AmIResponsive.com'](assets/images/readme-images/nt-amiresponsive-collection.png)
+
 A comprehensive website for the 9-piece contemporary UK Jazz collective based in London, United Kingdom. 
 The website features listings for upcoming shows and tours, a video page showcasing their music both live and in-studio, a biography detailing the history of the group and it's members, a merchandise section, and a contact page.
 
