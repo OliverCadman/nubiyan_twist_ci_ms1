@@ -958,6 +958,10 @@ td:nth-child(2) {
     width: 100%;
 }
 
+.item-card {
+    margin-top: 20px;
+}
+
 .item-card h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -966,6 +970,8 @@ td:nth-child(2) {
 .item-card button {
     border: 3px solid #fafafa;
 }
+
+/* Item Modals */
 
 .modal-img {
     height: 200px;
@@ -1021,19 +1027,6 @@ td:nth-child(2) {
     color: black;
     border: 3px solid #fafafa !important;
     letter-spacing: 1px;
-}
-
-
-.checkout-header {
-    background: url("../images/section-header/nt-header-logo.png") no-repeat right;
-    background-size: contain;
-    background-color: rgb(22, 22, 22);
-}
-
-.checkout-header h5 {
-    font-family: "Alata", sans-serif;
-    text-transform: uppercase;
-    font-size: 2.3rem;
 }
 
 /* ----------------- Contact Page ------------------ */
@@ -1195,8 +1188,8 @@ button[type="submit"] {
     /* ------------ Shop Page --------------- */
 
     /* Targets the header "Clothing/Prints" and decreases font-size to prevent spilling over logo */
-    .shop-section:last-of-type h2 {
-        font-size: 1.5rem;
+    .clothing-prints-header h2 {
+        font-size: 1.6rem;
     }
 
 
