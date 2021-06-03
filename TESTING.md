@@ -259,3 +259,10 @@ With this, the home page acts as the central hub of the website, from where the 
 1. Tested all pages on my mobile and laptop device after deploying website to GitHub pages.
 2. Asked family to check website on their tablet device, as I am not in ownership of a tablet. They reported no issues.
 
+# Acknowledgements
+
+* Inspiration for this project came from the need for a website with good UX for my band, which is a currently gigging band with a recent album release.
+* My mentor Adegbenga Adeye guided me through the refinement of my design and implementation for the project. Thankyou Adegbenga!
+
+Thanks for taking the time to look at my work. I wish you all the best.
+

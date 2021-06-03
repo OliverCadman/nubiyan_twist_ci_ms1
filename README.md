@@ -46,6 +46,8 @@ preview and purchase albums and EPs from the group's catalogue.
 
 * [Deployment](#Deployment)
 
+* [Acknowledgements](#Acknowledgements)
+
 # UX
 
 ## Business Goals
@@ -352,33 +354,9 @@ For those who would rather use their own local IDE (such as VSCode, Sublime Text
 7. Hit Enter, and the repository's folders and files will be cloned into your chosen directory.
 8. Finally, navigate to the cloned files and have fun coding!
 
+# Acknowledgements
 
+* Inspiration for this project came from the need for a website with good UX for my band, which is a currently gigging band with a recent album release.
+* My mentor Adegbenga Adeye guided me through the refinement of my design and implementation for the project. Thankyou Adegbenga!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-        
-
-
-
-
-
-
+Thanks to anyone for taking the time to look at my work. I wish you all the best.
