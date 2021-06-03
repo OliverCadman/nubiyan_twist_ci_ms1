@@ -137,26 +137,6 @@ A number of the features on this page rely on JavaScript in order to work smooth
 ### Contact Page
 The contact page features a fixed background image of the band's cover art for one of their releases. Sitting on top is a bootstrap form with fields for the user to input their name and email address, a textarea for the user to ask any questions or make any comments, and a button for the user to submit their query. On either side of the form are the logos, and a clickable email address for the band's industry representatives, hyperlinked to the user's email platform. The email links smoothly change colour and increase in size slightly upon hovering, ro provide visual feedback. The representative's contact information collapses to sit below the form on mobile devices.
 
----
-
-# Design
-
-## Colour Scheme
-
-The two primary background colours used in the website are:
-
-* (#9ad0c0) - This colour is a light, pastel shade of cyan, and was chosen based on it's association with the colour scheme used for the band's latest album release "Freedom Fables". Furthermore, the intention behind using this colour is to invoke a pleasant, positive emotional response from the site user. The colour is used as the background colour for both the navigation bar and the footer, on all pages. 
-
-* (#dcb3ac) - This colour is a light, pastel shade of red, bordering on pink, and was chosen simply to complement the colour selected for the navigation bar and the footer. 
-
-
-Font Colours include:
-
-* Orange (#f48826) - This colour is used only for top-level headings, where the background is a black and white hero image. 
-
-* Charcoal (rgb(70,70,70)) - This colour is used for the fontawesome icons used in the social media links on the Home Page. This colour was chosen to complement the light red (#db3ac) colour used as the relative section's background, and in turn provide accessibility in the form of colour contrast.
-
-* Black - This colour is used also to ensure maximum accessibility and contrast against the relatively bright colours used for the backgrounds. This colour is also used when the site user hovers over any of the fontawesome social media icons.
 
 # Technologies Used
 
@@ -217,8 +197,10 @@ This CSS was edited slightly by the developer to change the background colour, f
 JavaScript was also used to add products to the basket (via the 'Add-to-Basket' button in the product modal window), update the basket's total when a user adds a product, and to import the selected product details into the basket by the use of string literals.
 
 All of this code was referenced from a YouTube Tutorial by John Smilga (freeCodeCamp.org)
-1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
+1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ).
 2. YouTube Video - [JavaScript Project Tutorial: Shopping Cart](https://www.youtube.com/watch?v=q_TZhCWbS3I).
+3. GitHub Username - [john-smilga](https://github.com/john-smilga)
+4. GitHub Repository - [js-cart-setup](https://github.com/john-smilga/js-cart-setup)
 
 *  'Remove' buttons - JavaScript was employed to allow the user to remove products from their basket, and to update the basket total when a product was removed. 
 
@@ -281,7 +263,51 @@ Again, as with the JavaScript used in the 'About' page, it is understood that Ja
     * [Tittle Tattle Square Print](https://images.app.goo.gl/4s6iJVPUJZDU92Ks6)
     * [Freedom Fables A2 Print](https://images.app.goo.gl/yqgUv4tR2KSgYvUu5)
 
-* The representative icons used in the website's footer and contact page were taken from Google, and background was removed, by using [remove.bg](https://www.remove.bg/).
+* The representative icons used in the website's footer and contact page were taken from Google, and background was removed by using [remove.bg](https://www.remove.bg/).
+
+# Deployment
+
+This project was developed using the Visual Studio Code 2 IDE, and committed and pushed to GitHub using the VSCode2 integrated terminal.
+
+In order to run this project through GitHub pages, take the following steps:
+
+* Navigate to [this repository](https://github.com/OliverCadman/nubiyan_twist_ci_ms1), which contains all files needed to run the project.
+* From the row of menu tabs listed along the top of the repository towards the top of the page, select the last menu item, named 'Settings'.
+* Scroll down the Settings page and select the tab named 'Pages', listed down the left hand side of the page.
+* Under Source, open the dropdown list labelled 'None'.
+* Select the master branch, and click Save. The website is now deployed!
+* Once saved, the website's URL link will be displayed above, with the message ' Your site is published at https://olivercadman.github.io/nubiyan_twist_ci_ms1/'. Click the link to enter the website!
+
+## Running the project locally
+
+In order to run this project on GitPod, you will need:
+
+* A GitHub account. If you don't have one already, you can [create one here](https://github.com/join).
+* A Google Chrome Browser
+
+If you are using GitPod for the first time, you will need to then follow these steps:
+
+1. Install [the GitPod browser extension for Google Chrome](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki?hl=en).
+2. Login to GitPod using your GitHub account details.
+3. Navigate to the [project's GitHub repository](https://github.com/OliverCadman/nubiyan_twist_ci_ms1).
+4. Click the green 'Gitpod' button to the right hand of the page.
+5. This will open your Gitpod workspace, where you can start working on the repository's files on your local machine.
+
+For those who would rather use their own local IDE (such as VSCode, Sublime Text or PyCharm), follow these steps:
+
+1. Navigate to the [project repository](https://github.com/OliverCadman/nubiyan_twist_ci_ms1).
+2. In the list of buttons above the collection of the repository's files, select 'Code'.
+3. Copy the HTTPS URL to your clipboard.
+4. Open your integrated terminal inside your preferred IDE.
+5. Change directory "cd" or make a new directory "mkdr DIRECTORY-NAME" to contain the repository's files.
+6. Type 'git clone', then paste the URL that you copied to your clipboard in step 3.
+7. Hit Enter, and the repository's folders and files will be cloned into your chosen directory.
+8. Finally, navigate to the cloned files and have fun coding!
+
+
+
+
+
 
 
 
