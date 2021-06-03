@@ -2,7 +2,7 @@
 
 Welcome to Nubiyan Twist's website! 
 
-![Website Homepage Displayed on 'AmIResponsive.com'](assets/images/readme-images/nt-amiresponsive-collection.png)
+![Website Homepage Displayed on 'AmIResponsive.com'](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/assets/images/readme-images/nt-amiresponsive-collection.png)
 
 A comprehensive website for the 9-piece contemporary UK Jazz collective based in London, United Kingdom. 
 The website features listings for upcoming shows and tours, a video page showcasing their music both live and in-studio, a biography detailing the history of the group and it's members, a merchandise section, and a contact page.
@@ -107,7 +107,7 @@ While the focus of the website should serve the needs of each of these criteria,
 
 # Features
 
-![NavBar - Tablet and Laptop Screen Size and Up](nt-navbar-mobile-laptop.png)
+![NavBar - Tablet and Laptop Screen Size and Up](https://github.com/OliverCadman/nubiyan_twist_ci_ms1/assets/images/nt-navbar-mobile-laptop.png)
 
 Each page features a responsive navigation bar, with a clickable logo icon positioned on the left (featured on desktop and tablet screen sizes, and displayed in collapsible dropdown on mobile screen size). The font chosen for the navigation links is "Alatsi" from Google Fonts, and the color "Sinbad" (#9ad0c0) was chosen for the navbar's background. These design choices were made as they represent the styling used on the album cover for Nubiyan Twist's latest release 'Freedom Fables', and so reinforces brand recognition, and promotion of the band's latest album.
 
