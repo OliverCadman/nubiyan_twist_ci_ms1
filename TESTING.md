@@ -246,6 +246,12 @@ With this, the home page acts as the central hub of the website, from where the 
    1. Testing already verified since HTML code is identical across all pages.
 
 7. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes.
+
+### 404 Page
+
+1. Type a non-existent destination in the URL to confirm 404 page displays upon trying to access page.
+2. Confirm all content is clearly displayed and centered on all device sizes.
+3. Confirm the logo link takes the user back to the website's home page.
    
 
 ## Further Testing
