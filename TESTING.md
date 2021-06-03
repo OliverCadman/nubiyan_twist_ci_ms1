@@ -207,16 +207,10 @@ With this, the home page acts as the central hub of the website, from where the 
 2. Music Shop Section
    1. Ensure that heading font and background size matches the headers on previous pages, on all device sizes.
    2. Confirm spotify player is clearly displayed, and functions correctly on all devices.
-   3. Hover over 'View Your Basket' window to confirm that colours change as expected.
-   4. Confirm that basket quantity is displayed when items are selected.
-   5. Click 'View Your Basket' window to confirm that basket opens as expected.
-   6. Confirm that basket window expands on all devices (full-width on mobile devices), and that it's content is sufficiently contrasted against background.
-   7. Click remove button to confirm items are removed from basket successfully and basket total updates as expected.
-   8. Click Basket's 'Close' and 'Checkout' buttons to confirm that both buttons close the basket window successfully.
-   9. Confirm that all images in item cards are displayed successfully.
-   10. Hover over item images in cards to confirm alt text appears on hovering - *similarly to the images in the 'About' page and 'Live Shows' page, titles were added to the divs containing images, in order for the alt text to appear when hovered over.*
-   11. Hover over card's 'More Info' buttons on laptop to confirm that colours change as expected.
-   12. Click on all cards' 'More Info' buttons to confirm they open the relevant modal windows.
+   3. Confirm that all images in item cards are displayed successfully.
+   4. Hover over item images in cards to confirm alt text appears on hovering - *similarly to the images in the 'About' page and 'Live Shows' page, titles were added to the divs containing images, in order for the alt text to appear when hovered over.*
+   5. Hover over card's 'More Info' buttons on laptop to confirm that colours change as expected.
+   6. Click on all cards' 'More Info' buttons to confirm they open the relevant modal windows.
 
 3. Clothing Shop Section 
    1. Ensure that heading font and background size matches the headers on previous pages, on all device sizes - *the font size for the header to 'Clothing/Prints' section had to be reduced as retaining the same font size resulted in the text spilling into background logo image*.
@@ -224,20 +218,12 @@ With this, the home page acts as the central hub of the website, from where the 
 
 4. Item Modal Windows
    1. Confirm that images are displayed in all modal windows, and all images relate to the images shown in their relative bootstrap cards.
-   2. Confirm that all text content is contrasted sufficiently againt background.
+   2. Confirm that all text content is contrasted sufficiently against background.
    3. Hover over images to confirm alt text displays successfully - *again, titles were added to the each image's containing div in order to display alt text on hovering*
-   4. Click Add-to-Basket button to ensure this adds product to basket. 
+   4. Click each 'Buy-From-Bootcamp' button to confirm there are no broken external links, and each link opens up in a seperate tab/window.
    5. Click Close button and on main page (anywhere but the modal window) to confirm the modal window closes as expected.
-   6. Hover over 'Add-to-Basket' and 'Close' buttons to confirm they respond as expected - *the difference in border thickness resulted in the modal window expanding slightly when the buttons were hovered over. Border thickness was changed to match the thickness of button's borders before hovering*
-   7. Select all options in Colour and Sizes dropdown list, in T-Shirt Modal to confirm they function correctly.
-
-
-5. Checkout Window
-   1. Reduce device size to confirm that header font and background size decrease as expected.
-   2. Confirm that all input's placeholder text is displayed correctly.
-   3. Click purchase button before filling any input fields, to confirm the 'required' attribute functions as expected - *a mistake was initially made in the placement of the modal footer, resulting in div containing the 'Purchase' and 'Close' buttons being situated outside of the form. This has since been rectified, and 'required' attribute now works as expected.*
-   4. Hover over 'Purchase' and 'Close' buttons to confirm that they respond as expected.
-   4. Fill in Delivery details and check 'Same as Billing Address' checkbox to confirm that this functionality works as expected.
+   6. Hover over 'Buy from Bootcamp' and 'Close' buttons to confirm they respond as expected - *the difference in border thickness resulted in the modal window expanding slightly when the buttons were hovered over. Border thickness was changed to match the thickness of button's borders before hovering*
+  
 
 6. Footer
    1. Testing already verified since HTML code is identical across all pages.
@@ -266,46 +252,4 @@ With this, the home page acts as the central hub of the website, from where the 
 
 1. Tested all pages on my mobile and laptop device after deploying website to GitHub pages.
 2. Asked family to check website on their tablet device, as I am not in ownership of a tablet. They reported no issues.
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
 
