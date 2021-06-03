@@ -912,8 +912,7 @@ td:nth-child(2) {
 /* ----------------------------- Shop Page ----------------------------- */
 
 /* Padding-top clears section from navbar */
-.shop-section {
-    padding-top: 48px;
+.shop-container {
     background-color: #DCB3AC;
 }
 
@@ -972,11 +971,6 @@ td:nth-child(2) {
     font-size: 0.8rem;
 }
 
-
-.shopping-cart {
-    margin-top: 10px;
-}
-
 /* '.show-basket' assigned to JavaScript classList property:
    Referenced from YouTube tutorial by John Smilga (freeCodeCamp.org)
    YouTube Video Title: JavaScript Project Tutorial - Shopping Cart
@@ -1011,10 +1005,6 @@ td:nth-child(2) {
     border-radius: 5px;
     border: 0;
     /* Replaces deprecated frameborder attribute on iframe tag */
-}
-
-.item-row {
-    margin-top: 10px;
 }
 
 .item-image {
@@ -1794,18 +1784,8 @@ button[type="submit"] {
 
     /* ------------------------- Shop Page ------------------------------ */
 
-    .shop-section {
-        padding-top: 85px;
-
-    }
-
-    .spotify-shop-wrapper h2 {
-        font-size: 1rem;
-    }
-
-    .spotify-player-shop {
-        margin-bottom: 0;
-        margin-left: 30px;
+    .spotify-shop-wrapper {
+        display: initial;
     }
 
     /* Displays hidden shopping basket upon clicking "View Your Basket" 
@@ -2249,10 +2229,11 @@ button[type="submit"] {
 
     /* ----- Music Shop Section ----- */
 
-    .shop-section {
-        padding-top: 100px;
-    }
-
+   .spotify-shop-wrapper {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
     #music-shop-body {
         position: relative;
     }
