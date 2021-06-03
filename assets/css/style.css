@@ -702,7 +702,8 @@ i.fa-angle-double-right {
 }
 
 .band-card:first-of-type {
-    margin-top: 30px; /* Targets first band card to push it down from the header above */
+    margin-top: 30px;
+    /* Targets first band card to push it down from the header above */
 }
 
 .card {
@@ -783,7 +784,7 @@ i.fa-angle-double-right {
 
 .listings-body {
     background-color: #DCB3AC;
-   
+
 }
 
 /* Listings Table */
@@ -1228,9 +1229,21 @@ button[type="submit"] {
 
     /* Hero Jumbotron */
 
+    /* Alters positioning of hero call-out  */
+    .callout-jumbotron {
+        bottom: 25px;
+    }
+
+    /* Alters positioning of 'Watch/Listen' call-to-action button */
+    .anchor-wrapper a {
+        top: 75px;
+    }
+
+
     .callout-jumbotron h1 {
         letter-spacing: 2px;
         font-size: 2.5rem;
+
     }
 
     .callout-jumbotron p {
@@ -1638,7 +1651,7 @@ button[type="submit"] {
         width: 180px;
         height: 180px;
         right: 60%;
-        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no--eat;
+        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
         background-size: cover;
         z-index: 10;
         position: absolute;
@@ -1692,7 +1705,8 @@ button[type="submit"] {
 
 
     .live-shows-header-navbar-clear {
-        margin-top: 0; /* Removed margin assigned for mobile devices */
+        margin-top: 0;
+        /* Removed margin assigned for mobile devices */
     }
 
     /* Site-wide alert (displayed on tablet screen size up) */
@@ -2229,11 +2243,12 @@ button[type="submit"] {
 
     /* ----- Music Shop Section ----- */
 
-   .spotify-shop-wrapper {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
+    .spotify-shop-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #music-shop-body {
         position: relative;
     }
