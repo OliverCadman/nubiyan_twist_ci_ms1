@@ -971,6 +971,11 @@ td:nth-child(2) {
     border: 3px solid #fafafa;
 }
 
+/* Targets the header "Clothing/Prints" and decreases font-size to prevent spilling over logo */
+.clothing-prints-header h2 {
+    font-size: 1.9rem;
+}
+
 /* Item Modals */
 
 .modal-img {
