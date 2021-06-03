@@ -186,42 +186,6 @@ Although the requirement of this assessment dictates explicitly that this is a s
 
 The code used for this functionality was referenced from [Stack Overflow - Stop Playing Video in iframe when modal is closed](https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed).
 
-### JavaScript for Shop Basket and Basket Info in 'Shop' Section
-
-Fairly heavy use of JavaScript was employed to implement functionality of these features:
-
-* Basket Info Clickable Window - JavaScript was implemented for the Basket Information window to reveal a hidden basket window from the left hand side of the browser window, and to also display the quantity of items in the user's basket.
-
-* Basket Window - JavaScript was used to target the specific CSS required to open the Basket Window (using the 'classList.add' property to reveal ".show-basket" class in website's CSS file).
-This CSS was edited slightly by the developer to change the background colour, font colour and sizing, and to also make the window span the full width of the browser window on mobile devices.
-JavaScript was also used to add products to the basket (via the 'Add-to-Basket' button in the product modal window), update the basket's total when a user adds a product, and to import the selected product details into the basket by the use of string literals.
-
-All of this code was referenced from a YouTube Tutorial by John Smilga (freeCodeCamp.org)
-1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ).
-2. YouTube Video - [JavaScript Project Tutorial: Shopping Cart](https://www.youtube.com/watch?v=q_TZhCWbS3I).
-3. GitHub Username - [john-smilga](https://github.com/john-smilga)
-4. GitHub Repository - [js-cart-setup](https://github.com/john-smilga/js-cart-setup)
-
-*  'Remove' buttons - JavaScript was employed to allow the user to remove products from their basket, and to update the basket total when a product was removed. 
-
-This code was referenced from a YouTube Tutorial by 'Web Dev Simplified'
-1. YouTube Channel - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
-2. YouTube Video - [JavaScript Shopping Cart Tutorial for Beginners](https://www.youtube.com/watch?v=YeFzkC2awTM&t=907s).
-
-* 'Same as Billing Address' Checkbox - JavaScript code was used to implement the functionality that enables the user to copy their delivery details into their billing details form fields, in the Shop's 'Checkout' modal window. This was a choice made by the develper, a choice made solely to fulfill the criteria for better user experience.
-
-This code was referenced from a YouTube Tutorial by 'Cairocoders'
-1. YouTube Channel - [Cairocoders](https://www.youtube.com/channel/UCHyfpikAAfqmUTCDdLAp5OA)
-2. YouTube Video [Billing Address Same as Shipping Address jQuery](https://www.youtube.com/watch?v=E1_2gle0JAo)
-
-*  Functionality to close basket window when 'Checkout' button is clicked - 
-    
-    This code was added by the developer, to the code already supplied by John Smilga (freeCodeCamp.org)
-1. YouTube Channel - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
-2. YouTube Video - [JavaScript Project Tutorial: Shopping Cart](https://www.youtube.com/watch?v=q_TZhCWbS3I).
-
-Again, as with the JavaScript used in the 'About' page, it is understood that JavaScript was not a requirement of this particular assessment, and is not expected by the assessors. However, the developer determined that the 'Shop' page would not have been a complete entity without the use of JavaScript, and the inclusion of the page would have made less sense altogether, without the use of this functionality. I hope the assessors understand the developer's reasoning in these choices, and understand how clear the developer wants to be when they cite their sources for the JavaScript code they used.
-
 ## Content
 
 * The testimony content displayed in the websites Home Page Album Promotion Section is supplied by --
@@ -237,9 +201,13 @@ Again, as with the JavaScript used in the 'About' page, it is understood that Ja
 
 ## Media
 
+### Embedded Media
+
 * [YouTube](https://www.youtube.com/) - Music videos and Live Videos, featured in the 'Home' and 'Video' pages, are embedded from YouTube, along with the videos used in the modal windows in the 'About' page.
 
 * [Spotify Player](https://www.spotify.com/uk/home/) - This website makes use of the embedded player provided by Spotify.
+
+### Images/Icons
 
 * The logo used in navbar brand link and section header was taken from the band's press pack, supplied by the management. Background removal technology was used to extract the subject from the background, using [remove.bg](https://www.remove.bg/).
 
@@ -252,7 +220,6 @@ Again, as with the JavaScript used in the 'About' page, it is understood that Ja
 * The two images used in the 'History' section of 'About' page are taken from the band's press pack, and from Google:
     [Nubiyan Twist in Brussels, 2017](https://images.app.goo.gl/N8PYfVFuwoBPX6BQ6)
     
-
 * The images used in the 'The Band' section of 'About' page are taken from the band's press pack, supplied by management.
 
 * The images used in the 'Shop' page were taken partly were taken from the band's press pack, and from Google Images:
