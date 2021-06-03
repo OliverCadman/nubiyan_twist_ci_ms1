@@ -777,19 +777,19 @@ i.fa-angle-double-right {
 
 /* --------------------------------------- Live Shows ----------------------------------------- */
 
+.live-shows-header-navbar-clear {
+    margin-top: 48px;
+}
 
-#gig-listings {
+.listings-body {
     background-color: #DCB3AC;
-    padding-top: 45px;
+   
 }
 
 /* Listings Table */
 
-.table-container {
-    margin-top: 20px;
-}
-
 .listings-wrapper {
+    margin-top: 20px;
     padding: 10px;
     background-color: rgb(22, 22, 22);
     overflow: scroll;
@@ -1701,9 +1701,8 @@ button[type="submit"] {
     /* ------------------------------- Live Shows Page ---------------------------- */
 
 
-    #gig-listings {
-        padding-top: 0;
-        /* Removes padding assigned for header on mobile devices */
+    .live-shows-header-navbar-clear {
+        margin-top: 0; /* Removed margin assigned for mobile devices */
     }
 
     /* Site-wide alert (displayed on tablet screen size up) */
@@ -1733,14 +1732,10 @@ button[type="submit"] {
 
     }
 
-    .table-container {
-        margin-top: 20px;
-    }
-
-
     .listings-wrapper {
         overflow: scroll;
         max-height: 850px;
+        margin-top: 20px;
     }
 
     tr {
@@ -1754,12 +1749,8 @@ button[type="submit"] {
         font-size: 1.4rem;
         text-align: center;
         padding: 10px;
-        margin-bottom: 20px;
+        margin-top: 20px;
         margin-left: 20px;
-    }
-
-    #liveshows-image {
-        width: 100%;
     }
 
     #liveshows-image {
@@ -2201,10 +2192,6 @@ button[type="submit"] {
 
     /* ------------------------ Live Shows Page ------------------------ */
 
-    #gig-listings {
-        height: inherit;
-
-    }
 
     /* Site Wide Alert Below NavBar */
 
