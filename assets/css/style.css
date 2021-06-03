@@ -628,16 +628,7 @@ figcaption small {
 }
 
 .st-sa-cta p {
-    font-size: 1rem;
-}
-
-
-i.fa-angle-double-left {
-    display: none;
-}
-
-i.fa-angle-double-right {
-    display: none;
+    font-size: .5rem;
 }
 
 .jr-square-container {
@@ -653,6 +644,20 @@ i.fa-angle-double-right {
     z-index: 3;
     margin: auto;
 
+}
+
+.fa-angle-double-left,
+.fa-angle-double-right {
+    color: #fafafa;
+}
+
+.click-indicators:first-of-type {
+    color: #fafafa;
+}
+
+.click-indicators {
+    font-size: 2rem;
+    margin: 0 10px;
 }
 
 .jr-square-inner {
