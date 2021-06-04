@@ -7,7 +7,7 @@
 * [Testing](#Testing)
     * [User Stories Testing](#User-Stories-Testing)
     * [Paths Through the Website](#Paths-Through-The-Website)
-    * [Testing User Stories from UX Section of README.md](#Testing-User-Stories-From-UX-Seciton-of-README.md)
+    * [Testing User Stories from UX Section of README.md](#Testing-User-Stories-From-UX-Section-of-README.md)
 
 * [Manual testing of features on all pages](#Manual-testing-of-features-on-all-pages)
     * [Home Page](#Home-page)
@@ -29,20 +29,20 @@
 
     * [Lighthouse Performance Issues](#Lighthouse-Performance-Issues)
 
-    * [Lighthouse Best Practice Issues](#Lighthouse-Best-Practice-Issues)
+    * [Lighthouse Best Practice Issues](#Lighthouse-Best-Practices-Issues)
 
 * [Further Testing](#Further-Testing)
 
-## Testing 
+# Testing 
 
 Both W3C Jigsaw CSS and HTML Markup Validators were used to check the validity of the source code:
 
 - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [W3C HTML Markup Validator](https://validator.w3.org/)
 
-### User Stories Testing
+## User Stories Testing
 
-##### Paths Through the Website
+### Paths Through the Website
 
 This is the default path through the website:
 
@@ -118,7 +118,7 @@ With this, the home page acts as the central hub of the website, from where the 
 10. As a venue owner, I want to see how many of their shows have sold out, so I can be confident that my venue will be filled to capacity.
     1. Sold out shows are clearly indicated in the gig listings table, with strong lettering and white font contrasting the dark background of the table.
 
-## Manual Testing of features on all pages 
+# Manual Testing of features on all pages 
 
 Manual testing was undertaken on the following browser platforms:
 
@@ -128,7 +128,7 @@ Manual testing was undertaken on the following browser platforms:
 
 The website was tested using the developer tools of all relative browsers to ensure that it's responsiveness was consistent across all three browsers on all device sizes.
 
-### Home Page:
+## Home Page:
 1. Navigation Bar
    1. Go to home page on desktop, tablet and mobile.
    2. Change screen size from laptop to mobile to check if responsive navbar collapses to burger icon as intented.
@@ -158,7 +158,7 @@ The website was tested using the developer tools of all relative browsers to ens
 
 6. Confirm that all contents of page are responsive, and maintain functionality on all screen sizes.
 
-### About Page:
+## About Page:
 1. Navigation Bar
    1. Repeat verification steps taken in home page testing.
    2. Confirm the 'active' class is correctly assigned to relevant link in navbar.
@@ -190,7 +190,7 @@ The website was tested using the developer tools of all relative browsers to ens
 
 6. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes.
 
-### Live Shows Page:
+## Live Shows Page:
 
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.
@@ -218,7 +218,7 @@ The website was tested using the developer tools of all relative browsers to ens
 
 5. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes. 
 
-### Video Page:
+## Video Page:
 
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.
@@ -235,7 +235,7 @@ The website was tested using the developer tools of all relative browsers to ens
 
 4. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes. 
 
-### Shop Page: 
+## Shop Page: 
 
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.
@@ -267,7 +267,7 @@ The website was tested using the developer tools of all relative browsers to ens
 
 7. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes.
    
-### Contact Page:
+## Contact Page:
 1. Navigation Bar
    1. Testing already verified since HTML code is identical across all pages.
    2. Confirm the 'active' class is correctly assigned to relevant link in navbar.
@@ -284,7 +284,7 @@ The website was tested using the developer tools of all relative browsers to ens
 
 7. Confirm that all contents of the page are responsive and maintain functionality on all screen sizes.
 
-### 404 Page
+## 404 Page
 
 1. Type a non-existent destination in the URL to confirm 404 page displays upon trying to access page.
 2. Confirm all content is clearly displayed and centered on all device sizes.
