@@ -235,9 +235,13 @@ This website features a custom 404 page, in the instance a user tries to use a l
 
 * [Google Fonts](https://fonts.google.com/) - The fonts used were imported from the Google Fonts library.
 
-* [jQuery](https://jquery.com/download/) - This project uses jQuery to provide responsiveness to the website's navbar, and functionality to stop videos playing when closing modal windows in the website's 'About' page. jQuery was also employed to provide functionality to the website's 'Shop' page.
+* [jQuery](https://jquery.com/download/) - This project uses jQuery to provide responsiveness to the website's navbar, the opening and closing of modal windows, and functionality to stop videos playing when closing modal windows in the website's 'About' page.
 
 * [Popper.js](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Popper.js was used in conjunction with Bootstrap CDN and jQuery to provide responsiveness to collapsing navbar.
+
+* [remove.bg](remove.bg) - This technology was for the brand logo icon and band representative icons, to remove the subject from the images of the background of original image.
+
+* [tinyjpg.com](tinyjpg.com) - This image compressor was used to compress the image files used in the project, when trying to improve performance and loading time.
 
 # Testing 
 
@@ -271,6 +275,10 @@ The code used for this functionality was referenced from:
 
 * [Stack Overflow - Stop Playing Video in iframe when modal is closed](https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed).
 
+### CSS Media Query to target iPad Pro Device Size 
+
+Media queries for targetting iPad Pro Devices was referenced from [fjorgedigital.com](https://fjorgedigital.com/insights/blog/how-can-i-target-only-an-ipad-pro/)
+
 ## Text Content
 
 * The testimony content displayed in the websites Home Page Album Promotion Section is supplied by --
@@ -284,7 +292,11 @@ The code used for this functionality was referenced from:
 
 * The text content used in biography the 'About' Page was supplied by [Thom Jurek - allmusic.com](https://www.allmusic.com/artist/nubiyan-twist-mn0003607781/biography).
 
-* The text content used in band member modal windows and shop modal windows was created by the author.
+* The text content used in the shop page's modal windows was referenced from [the band's current online shop](https://www.nubiyantwist.co.uk/shop).
+
+* The text content used in band member modal windows was created by the author.
+
+* The text content used in the live listings table was taken from the [the band's current live shows page](https://www.nubiyantwist.co.uk/listings)
 
 ## Media
 
@@ -318,6 +330,8 @@ The code used for this functionality was referenced from:
     * [Freedom Fables A2 Print](https://images.app.goo.gl/yqgUv4tR2KSgYvUu5)
 
 * The representative icons used in the website's footer and contact page were taken from Google, and background was removed by using [remove.bg](https://www.remove.bg/).
+
+* Social media, ticket and envelope icons were supplied from [FontAwesome](https://fontawesome.com/)
 
 # Deployment
 
