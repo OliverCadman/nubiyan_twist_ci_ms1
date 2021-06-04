@@ -64,8 +64,7 @@
     </nav>
     <!-- Header -->
     <section>
-     
-        <div class="container-fluid about-quote-container about-hero" title="Photo of Nubiyan Twist playing a live show">
+     <div class="container-fluid about-quote-container about-hero" title="Photo of Nubiyan Twist playing a live show">
             <div class="opaque-overlay">&nbsp;</div>
             <div class="row no-gutters">
                 <div class="col-lg-4 col-md-4 d-none d-md-block">
@@ -389,7 +388,7 @@
     </section>
 
     <!-- Band Member Modal Windows -->
-
+    <aside>
     <div class="modal band-modal" id="nick-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -462,8 +461,7 @@
                     <p>Joe is very handy indeed. As well as covering the Baritone saxophone <span
                             style="text-transform:uppercase">and</span> the Dub station, he has also built his
                         own beautiful, professional studio, located in Oxfordshire, where we record our records. Without
-                        has hard
-                        work and ingenuity, we would have had a much harder time developing our sound. Thanks Joe.</p>
+                        Joe's hard work and ingenuity, we would have had a much harder time developing our sound. Thanks Joe.</p>
                     <p>Check out his studio in action here, with a video featuring our good friends, Me and My Friends!
                     </p>
                     <iframe class="modal-video" width="560" height="315" src="https://www.youtube.com/embed/QJU6fQXrNAE"
@@ -586,6 +584,7 @@
             </div>
         </div>
     </div>
+</aside>
 
     <!-- Footer -->
     <footer class="footer">
@@ -645,7 +644,8 @@
 
     <!-- JavaScript to stop embedded videos when user closes band modal windows.
     Code referenced from Stack Overflow. URL :
-     https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed -->
+     https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed 
+    Credits given in project's README.md file -->
 
     <script>
         $("#nick-modal").on('hidden.bs.modal', function (e) {
