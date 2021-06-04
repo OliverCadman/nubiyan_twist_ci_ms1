@@ -7,7 +7,7 @@
 * [Testing](#Testing)
     * [User Stories Testing](#User-Stories-Testing)
     * [Paths Through the Website](#Paths-Through-The-Website)
-    * [Testing User Stories from UX Section of README.md](#Testing-User-Stories-from-UX-Section-of-README.md)
+    * [Testing User Stories from UX Section of README.md](#Testing-User-Stories-from-UX-Section-of-README)
 
 * [Manual testing of features on all pages](#Manual-testing-of-features-on-all-pages)
     * [Home Page](#Home-page)
@@ -62,7 +62,7 @@ Home Page > Shop
 
 With this, the home page acts as the central hub of the website, from where the casual user’s attention could be re-directed to other parts of the website on impulse.
 
-### Testing User Stories from UX Section of README.md
+### Testing User Stories from UX Section of README
 
 1. As a new visitor, I want to navigate through the website easily, so I can find what I need with efficiency.
    1. With a fixed navbar displayed on all pages, users on all screen sizes are always able to view the navigation and navigate around the website with minimum effort.
