@@ -258,6 +258,45 @@ The website was tested using the developer tools of all relative browsers to ens
 1. Type a non-existent destination in the URL to confirm 404 page displays upon trying to access page.
 2. Confirm all content is clearly displayed and centered on all device sizes.
 3. Confirm the logo link takes the user back to the website's home page.
+
+# Lighthouse Testing
+
+Google Chrome’s ‘Lighthouse’ extension for its DevTools feature was used to test the website’s Performance, Accessibility, Best Practices and Search Engine Optimisation. Listed below are the latest reports from Lighthouse’s run of testing:
+
+* Home Page
+* About Page
+* Live Shows Page
+* Video Page
+* Shop Page
+* Contact Page
+
+While all of the pages Accessibility and Search-Engine-Optimisation points scored relatively optimally throughout all pages of the website, there were issues when it came to Lighthouse’s scoring on the performance of these pages:
+
+Home Page Performance - 61%
+
+About Page Performance - 67%
+
+Live Shows Page Performance - 89%
+
+Video Page Performance - 85%
+
+Shop Page Performance - 87%
+
+Upon investigating, it was found that the chief culprit of this relatively low score were the images used in the website. Upon discovering this, the developer made great efforts to do what they could to reduce the file sizes of these images:
+
+* Home Page Hero Image
+* About Page Hero Image
+* Contact Page Hero Image
+* All images displayed in shop page
+
+While this did improve each page’s performance, Lighthouse was still registering an average score between 61 and 80. 
+
+Furthermore, the developer attempted to add a “sizes” attribute to the image tags displaying the band members in the ‘About’ Page’s History section, with the hopes that this would improve performance through having a collection of images of different sizes for the browser to choose from when rendering the code onto the page. However, this didn’t make any significant to the improvement of the page’s performance. Upon investigating further still, the developer found good information on how to correctly implement ‘sizes’ and ’srcsets’, from the website CSS-Tricks. However, it is beyond the current skill-set of the developer to accurately and efficiently add this to his HTML and CSS Code, as the recommendations CSS-Tricks gave involve CSS grid-templates, and using ‘calc()’ rules, which the developer isn’t familiar with as-of-yet.
+
+On top of this investigation, the developer added a lazy loading attribute to each image and video tag that were displayed further down each page. This seemed to improve the score marginally, but not enough to make a significant improvement to Lighthouse’s performance score.
+
+As the developer learns more and improves his skill-set, changes will be made to the website in future, in order to maximise its performance result.
+
    
 
 ## Further Testing
