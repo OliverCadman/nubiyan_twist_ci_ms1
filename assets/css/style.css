@@ -1630,7 +1630,7 @@ button[type="submit"] {
     /* ----- 'The Band' Section - Band Cards ---- */
 
     .band-card-header {
-        font-size: 3rem;
+        font-size: 3rem; 
     }
 
     .band-card {
@@ -2172,6 +2172,16 @@ button[type="submit"] {
 
     .liveshows-spotify-player {
         height: 300px;
+    }
+
+    /* ------------------ Shop Page ---------------------- */
+
+    /* Hover styling for "Buy From Bandcamp button" in modal window */
+
+    .modal a:hover {
+        background-color: rgb(22, 22, 22);
+        color: #f48826;
+        transition: 0.3s ease-in-out;
     }
 
     /* ------------------ Contact Page ------------------- */
