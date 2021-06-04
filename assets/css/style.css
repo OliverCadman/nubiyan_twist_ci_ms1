@@ -58,7 +58,7 @@ h2 {
     font-weight: 400;
     background-color: #DCB3AC;
     color: black;
-    border: 3px solid #fafafa;
+    border: 3px solid #fafafa !important;
     letter-spacing: 1px;
 }
 
@@ -73,7 +73,7 @@ where header content would result in word-breaking */
 /* ---------- Block Dividers (to be used on multiple pages) -------- */
 
 .block-divider {
-    border-top: 3px solid black;
+    border-top: 3px solid black !important;
 }
 
 .history-block-divider {
@@ -233,7 +233,9 @@ ul li a.active {
                    subject and content */
 }
 
+
 /* ----- Album Promotion Section ----- */
+
 
 #album-promotion-section {
     font-family: "Alata", sans-serif;
@@ -1230,7 +1232,7 @@ button[type="submit"] {
 
 /* ------------------- End of Media Query for iPhone 5 screen size only ----------------------- */
 
-/* ---------------- Styling for iPad Pro screen size only - Referenced from "https://fjorgedigital.com/insights/blog/how-can-i-target-only-an-ipad-pro/"---------------- */
+/* ---------------- Styling for iPad Pro screen size only - referenced from https://fjorgedigital.com/insights/blog/how-can-i-target-only-an-ipad-pro/ ---------------- */
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
 
     /* Navigation Bar */
@@ -1747,9 +1749,9 @@ button[type="submit"] {
     /* ---------------- 404 Page --------------- */
 
     .error-header {
-        font-size: 4rem; /* Styling also applies to all device widths above tablet size */
+        font-size: 4rem; /* Styling targets all device sizes from tablet up */
     }
-
+                                
     .error-container p {
         font-size: 1.5rem;
     }
