@@ -39,10 +39,10 @@ preview and purchase albums and EPs from the group's catalogue.
 
 * [Credits](#Credits)
   * [Code](#Code)
-  * [Content](#Content)
+  * [Text Content](#Text-Content)
   * [Media](#Media)
   * [Embedded Media](#Embedded-Media)
-  * [Images/Icons](#Images-Icons)
+  * [Images and Icons](#Images and Icons)
 
 * [Deployment](#Deployment)
 
@@ -306,7 +306,7 @@ Media queries for targetting iPad Pro Devices was referenced from [fjorgedigital
 
 * [Spotify Player](https://www.spotify.com/uk/home/) - This website makes use of the embedded player provided by Spotify.
 
-### Images/Icons
+### Images and Icons
 
 * The logo used in navbar brand link and section header was taken from the band's press pack, supplied by the management. Background removal technology was used to extract the subject from the background, using [remove.bg](https://www.remove.bg/).
 
