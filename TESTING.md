@@ -7,7 +7,7 @@
 * [Testing](#Testing)
     * [User Stories Testing](#User-Stories-Testing)
     * [Paths Through the Website](#Paths-Through-The-Website)
-    * [Testing User Stories from UX Section of README.md](#Testing-User-Stories-From-UX-Section-of-README.md)
+    * [Testing User Stories from UX Section of README.md](#Testing-User-Stories)
 
 * [Manual testing of features on all pages](#Manual-testing-of-features-on-all-pages)
     * [Home Page](#Home-page)
