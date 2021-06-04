@@ -26,8 +26,8 @@ preview and purchase albums and EPs from the group's catalogue.
   * [Home Page](#Home-Page)
   * [About Page](#About-Page)
   * [Live Shows](#Live-Shows)
-  * [Video](#Video)
-  * [Shop](#Shop)
+  * [Video](#Video-Page)
+  * [Shop](#Shop-Page)
   * [Contact](#Contact-Page)
   * [404 Page](#404-page)
              
