@@ -214,6 +214,8 @@ The contact page features a fixed background image of the band's cover art for o
 
 ## 404 Page
 
+![404 Page](assets/images/readme-images/404-page/404-page.png)
+
 This website features a custom 404 page, in the instance a user tries to use a link that is broken, or visits a part of the website that doesn't exist.
 
 ## Features for future implementation
@@ -269,7 +271,7 @@ The code used for this functionality was referenced from:
 
 * [Stack Overflow - Stop Playing Video in iframe when modal is closed](https://stackoverflow.com/questions/40211944/stop-playing-video-in-iframe-when-modal-is-closed).
 
-## Content
+## Text Content
 
 * The testimony content displayed in the websites Home Page Album Promotion Section is supplied by --
     * [Line of Best Fit](https://www.thelineofbestfit.com/reviews/albums/nubiyan-twist-freedom-fables-album-review)
@@ -281,6 +283,8 @@ The code used for this functionality was referenced from:
 * The quote used in the 'About' Page's hero image is taken from the band's press pack, supplied by the management.
 
 * The text content used in biography the 'About' Page was supplied by [Thom Jurek - allmusic.com](https://www.allmusic.com/artist/nubiyan-twist-mn0003607781/biography).
+
+* The text content used in band member modal windows and shop modal windows was created by the author.
 
 ## Media
 
