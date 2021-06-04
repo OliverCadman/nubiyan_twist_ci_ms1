@@ -33,7 +33,7 @@ h2 {
 /* Class added to span elements in header elements for modals and videos, 
 where header content would result in word-breaking */
 
-.block {
+.block-span {
     display: block;
 }
 
@@ -709,33 +709,22 @@ figcaption small {
     background-color: #DCB3AC;
 }
 
-.band-card-header {
-    font-size: 2.5rem;
+.band-card-wrapper {
+    margin: 20px 0;
 }
-
-.band-card:first-of-type {
-    margin-top: 30px;
-    /* Targets first band card to push it down from the header above */
-}
-
-.card {
+.card,
+.band-card {
+    width: 100%;
+    margin: 0 auto;
     background-color: rgb(22, 22, 22);
     color: #f0e7df;
     height: 100%;
     padding: 10px;
     text-align: center;
-    margin: 0 auto;
-    height: 95%
 }
 
-
-.card button {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    background-color: #DCB3AC;
-    color: black;
-    border: 3px solid #fafafa !important;
-    letter-spacing: 1px;
+.band-card-header {
+    font-size: 2.5rem;
 }
 
 .card-title {
@@ -746,11 +735,16 @@ figcaption small {
     font-family: "Alata", sans-serif;
 }
 
-
+.card button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background-color: #DCB3AC;
+    color: black;
+    border: 3px solid #fafafa !important;
+    letter-spacing: 1px;
+}
 
 /* ----- Band Modals ----- */
-
-
 
 .modal-video {
     width: 100%;
@@ -1526,7 +1520,7 @@ button[type="submit"] {
     }
 
     #bio-summary-2 {
-        margin-top: 100px !important;
+        margin-top: 100px;
         width: 100%;
     }
 
@@ -1534,35 +1528,16 @@ button[type="submit"] {
 
 
     /* ----- Styling and positioning of the two images of band in History section ----- */
-    .history-image-wrapper {
-        font-family: "Lato", sans-serif;
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
     .history-image-wrapper:first-of-type {
-        height: 100%;
+        height: 100%; /* Adding explicit height to wrapper centers image within */
         margin: 0 10px;
     }
 
     .history-image-inner {
         background: rgb(22, 22, 22);
         color: #fafafa;
-        padding-top: 24px;
-    }
-
-    .history-image {
-        width: 90%;
-    }
-
-    .history-flex-wrapper {
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+        padding-top: 1.5rem;
     }
 
     /*  Clickable Images of Album Covers  */
@@ -1601,13 +1576,6 @@ button[type="submit"] {
     .ss-square-inner {
         width: 180px;
         height: 180px;
-        right: 60%;
-        background: url('http://www.rhythmpassport.com/wp-content/uploads/2016/09/a0160417941_10-1050x1030.jpg') no-repeat;
-        background-size: cover;
-        z-index: 10;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         margin: -90px 0px 0px -90px;
     }
 
@@ -1634,25 +1602,9 @@ button[type="submit"] {
     }
 
     .band-card {
-        margin: 30px 0;
+      margin-bottom: 0;
     }
-
-    .card {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .card {
-        background-color: rgb(22, 22, 22);
-        color: #f0e7df;
-        height: 100%;
-    }
-
-    .card button {
-        background-color: #DCB3AC;
-        color: black;
-
-    }
+    
 
     /* ------------------------ End of About Page ----------------------------- */
 
@@ -2012,74 +1964,22 @@ button[type="submit"] {
         font-size: 1.2rem;
     }
 
-    /* ----- Clickable Images of Album Covers ----- */
-
-    .st-square-outer {
-        margin-top: 80px;
-        width: 200px;
-        height: 200px;
-        background-color: rgba(102, 102, 102);
-        position: relative;
-        z-index: 3;
-        margin: auto;
-    }
-
-    .st-square-inner {
-        width: 180px;
-        height: 180px;
-        margin: -90px 0px 0px -90px;
-    }
-
-    .st-square-inner:hover {
-        transform: scale(1.05);
-        transition: 0.3s ease-in-out;
-    }
-
-    .ss-square-outer {
-        margin-top: 100px;
-        width: 200px;
-        height: 200px;
-        background-color: rgb(102, 102, 102);
-        position: relative;
-        z-index: 3;
-        margin: auto;
-    }
-
-    .ss-square-inner {
-        width: 180px;
-        height: 180px;
-        margin: -90px 0px 0px -90px;
-    }
-
-    .ss-square-inner:hover {
-        transform: scale(1.05);
-        transition: 0.3s ease-in-out;
-    }
-
-
     .st-sa-cta {
         font-size: 2rem;
         letter-spacing: 1px;
         color: black;
     }
 
-    .jr-square-inner {
-        float: left;
-    }
-
     .jr-square-outer {
         margin: 10px 0;
-    }
-
-    .jr-square-inner:hover {
-        transform: scale(1.05);
-        transition: 0.3s ease-in-out;
     }
 
     .ff-square-outer {
         margin: 10px 0;
     }
-
+    .st-square-inner:hover,
+    .ss-square-inner:hover,
+    .jr-square-inner:hover,
     .ff-square-inner:hover {
         transform: scale(1.05);
         transition: 0.3s ease-in-out;
@@ -2097,9 +1997,10 @@ button[type="submit"] {
 
     /* --- Band Cards --- */
 
-    .card {
-        cursor: pointer;
-    }
+    .band-card {
+        width: 75%;
+        margin-bottom: 0;
+      }
 
 
     .band-card:hover {
