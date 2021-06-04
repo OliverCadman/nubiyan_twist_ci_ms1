@@ -2,6 +2,37 @@
 
 [Main README.md file](README.md)
 
+# Table of Contents
+
+* [Testing](#Testing)
+    * [User Stories Testing](#User-Stories-Testing)
+    * [Paths Through the Website](#Paths-Through-The-Website)
+    * [Testing User Stories from UX Section of README.md](#Testing-User-Stories-From-UX-Seciton-of-README.md)
+
+* [Manual testing of features on all pages](#Manual-testing-of-features-on-all-pages)
+    * [Home Page](#Home-page)
+    * [About Page](#About-page)
+    * [Live Shows Page](#Live-Shows-Page)
+    * [Video Page](#Video-Page)
+    * [Shop Page](#Shop-Page)
+    * [Contact Page](#Contact-Page)
+    * [404 Page](#404-Page)
+
+* [Lighthouse Testing](#Lighthouse-Testing)
+    * [Home Page Results](#Home-page-Results)
+    * [About Page Results](#About-page-Results)
+    * [Live Shows Page Results](#Live-Shows-Page-Results)
+    * [Video Page Results](#Video-Page-Results)
+    * [Shop Page Results](#Shop-Page-Results)
+    * [Contact Page Results](#Contact-Page-Results)
+ 
+
+    * [Lighthouse Performance Issues](#Lighthouse-Performance-Issues)
+
+    * [Lighthouse Best Practice Issues](#Lighthouse-Best-Practice-Issues)
+
+* [Further Testing](#Further-Testing)
+
 ## Testing 
 
 Both W3C Jigsaw CSS and HTML Markup Validators were used to check the validity of the source code:
@@ -263,12 +294,25 @@ The website was tested using the developer tools of all relative browsers to ens
 
 Google Chrome’s ‘Lighthouse’ extension for its DevTools feature was used to test the website’s Performance, Accessibility, Best Practices and Search Engine Optimisation. Listed below are the latest reports from Lighthouse’s run of testing:
 
-* Home Page
-* About Page
-* Live Shows Page
-* Video Page
-* Shop Page
-* Contact Page
+## Home Page Results
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/testing-images/lighthouse-home.png" width="500" alt="Screenshot of Lighthouse Testing on Home Page">
+
+## About Page Results
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/testing-images/lighthouse-about.png" width="500" alt="Screenshot of Lighthouse Testing on About Page">
+
+## Live Shows Page Results
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/testing-images/lighthouse-liveshows.png" width="500" alt="Screenshot of Lighthouse Testing on Live Shows Page">
+
+## Video Page Results
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/testing-images/lighthouse-videos.png" width="500" alt="Screenshot of Lighthouse Testing on Video Page">
+
+## Shop Page Results
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/testing-images/lighthouse-shop.png" width="500" alt="Screenshot of Lighthouse Testing on Live Shop Page">
+
+## Contact Page Results
+<img src="https://github.com/OliverCadman/nubiyan_twist_ci_ms1/blob/master/assets/images/testing-images/lighthouse-contact.png" width="500" alt="Screenshot of Lighthouse Testing on Contact Page">
+
+### Lighthouse Performance Issues
 
 While all of the pages Accessibility and Search-Engine-Optimisation points scored relatively optimally throughout all pages of the website, there were issues when it came to Lighthouse’s scoring on the performance of these pages:
 
@@ -297,9 +341,11 @@ On top of this investigation, the developer added a lazy loading attribute to ea
 
 As the developer learns more and improves his skill-set, changes will be made to the website in future, in order to maximise its performance result.
 
-   
+### Lighthouse "Best Practices" Issues
 
-## Further Testing
+There were also issues in Lighthouse's score in the category for Best Practices. These principally stemmed from the Bootstrap Javascript libraries which were used to build the website, as well as many issues which read "Indicate whether a cookie is intended to be set in a cross-site context by specifying its SameSite attribute". Unfortunately, it is beyond the current scope of the developer's skillset to address these issues in a timely manner, but it is their intention to improve on this area as their journey in web development progresses.
+
+# Further Testing
 
 1. Tested all pages on my mobile and laptop device after deploying website to GitHub pages.
 2. Asked family to check website on their tablet device, as I am not in ownership of a tablet. They reported no issues.
