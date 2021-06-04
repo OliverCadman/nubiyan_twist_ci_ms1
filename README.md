@@ -42,7 +42,7 @@ preview and purchase albums and EPs from the group's catalogue.
   * [Text Content](#Text-Content)
   * [Media](#Media)
   * [Embedded Media](#Embedded-Media)
-  * [Images and Icons](#Images and Icons)
+  * [Images and Icons](#Images-and-Icons)
 
 * [Deployment](#Deployment)
 
