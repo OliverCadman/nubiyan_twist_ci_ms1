@@ -1617,6 +1617,10 @@ button[type="submit"] {
         /* Removed margin assigned for mobile devices */
     }
 
+    .lives-shows-header {
+        clear: both;
+    }
+
     /* Site-wide alert (displayed on tablet screen size up) */
 
     .alert {
@@ -1626,20 +1630,22 @@ button[type="submit"] {
         border: none;
         border-radius: 0;
         margin-bottom: 0;
+        text-align: center;
     }
 
     #alert-link {
         text-transform: uppercase;
         text-decoration: underline;
         font-size: 1.2rem;
-        float: right;
-        padding-right: 20px;
+        margin-left: 50px;
+       
     }
 
     #alert-link:hover {
         cursor: pointer;
+        background-color: rgb(22,22,22);
         color: #f48826;
-        transition: 0.3s ease-in-out;
+        transition: 0.5s ease-in-out;
         transform: scale(1.1);
 
     }
