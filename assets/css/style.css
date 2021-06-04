@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700');
 
-/*  Global Styling for sections of all pages that aren't at Hero level */
+/*  Global Styling for features that appear across multiple pages */
 
 .section-header {
     background: url("../images/section-header/nt-header-logo.png") no-repeat;
@@ -28,6 +28,38 @@ h2 {
 /* Pushes top header clear of navbar in Video and Shop Pages */
 .header-navbar-clear {
     margin-top: 48px;
+}
+
+.card,           /* Targets all cards in website, as well as band cards in website's 'About' Page */
+.band-card {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(22, 22, 22);
+    color: #f0e7df;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.band-card-header {
+    font-size: 2.5rem;
+}
+
+.card-title {
+    font-family: "Alatsi", sans-serif;
+}
+
+.card-text {
+    font-family: "Alata", sans-serif;
+}
+
+.card button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background-color: #DCB3AC;
+    color: black;
+    border: 3px solid #fafafa !important;
+    letter-spacing: 1px;
 }
 
 /* Class added to span elements in header elements for modals and videos, 
@@ -712,37 +744,6 @@ figcaption small {
 .band-card-wrapper {
     margin: 20px 0;
 }
-.card,
-.band-card {
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(22, 22, 22);
-    color: #f0e7df;
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
-.band-card-header {
-    font-size: 2.5rem;
-}
-
-.card-title {
-    font-family: "Alatsi", sans-serif;
-}
-
-.card-text {
-    font-family: "Alata", sans-serif;
-}
-
-.card button {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    background-color: #DCB3AC;
-    color: black;
-    border: 3px solid #fafafa !important;
-    letter-spacing: 1px;
-}
 
 /* ----- Band Modals ----- */
 
@@ -967,7 +968,7 @@ td:nth-child(2) {
 }
 
 .item-card {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .item-card h6 {
