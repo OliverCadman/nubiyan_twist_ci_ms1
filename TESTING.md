@@ -41,12 +41,10 @@ With this, the home page acts as the central hub of the website, from where the 
 
 2. As a new visitor, I want to find and navigate through the merchandise section intuitively, so I can make any purchases with ease.
    1. Users are immediately presented with a collection on products on offer upon opening the page.
-   2. The use of bootstrap cards with buttons provide organised presentation of the products.
+   2. The use of bootstrap cards with buttons provide organised presentation of the products, with a button provided inviting the user to investigate each product further.
    3. The use of modal windows provide the user with more information about the products, without overcrowding the main page.
-   4. A basket information window is provided, which shows the user how many products they have selected.
-   5. A collapsible basket window is shown upon clicking 'View Your Basket' window, providing the user the option to review their products, while keeping visual noise to a minimum.
-   6. Users have the option to remove items from their basket via the "Remove" button.
-   7. A modal window is included with a bootstrap form for the user to input their details. Placeholder text is included to provide visual indicators about the details required from the user.
+   4. Each product's image, information and price is clearly displayed in their modal window.
+   5. A button is included to invite the user to buy the product from Bandcamp, which opens the website in a seperate tab.
 
 3. As a visitor interested in buying a record, I want to be able to preview the band's songs easily, so I can better determine if I want to make a final purchase.
    1. A call-to-action is clearly displayed in the home page, linked to the band's catalogue of records on bandcamp. This link opens in a new tab so the user isn't re-directed away from the main site.
@@ -90,6 +88,14 @@ With this, the home page acts as the central hub of the website, from where the 
     1. Sold out shows are clearly indicated in the gig listings table, with strong lettering and white font contrasting the dark background of the table.
 
 ## Manual Testing of features on all pages 
+
+Manual testing was undertaken on the following browser platforms:
+
+* Google Chrome
+* Apple Safari
+* Mozilla Firefox
+
+The website was tested using the developer tools of all relative browsers to ensure that it's responsiveness was consistent across all three browsers on all device sizes.
 
 ### Home Page:
 1. Navigation Bar
@@ -258,11 +264,3 @@ With this, the home page acts as the central hub of the website, from where the 
 
 1. Tested all pages on my mobile and laptop device after deploying website to GitHub pages.
 2. Asked family to check website on their tablet device, as I am not in ownership of a tablet. They reported no issues.
-
-# Acknowledgements
-
-* Inspiration for this project came from the need for a website with good UX for my band, which is a currently gigging band with a recent album release.
-* My mentor Adegbenga Adeye guided me through the refinement of my design and implementation for the project. Thankyou Adegbenga!
-
-Thanks for taking the time to look at my work. I wish you all the best.
-
